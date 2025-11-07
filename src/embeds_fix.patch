@@ -1,0 +1,4 @@
+# This will handle null/missing authors in control data
+
+# Open src/embeds.py and find the aggregate_user_embeddings function
+# Replace the problematic section around line 120-133

@@ -1,0 +1,14 @@
+feature,reddit_dir,reddit_p,daic_dir,daic_p,consistent,both_significant
+vader_neg,↑ Anxiety,0.0,↑ Anxiety,0.001175302658294723,True,True
+vader_neu,↓ Anxiety,2.2477990468062564e-73,↑ Anxiety,0.30665232202251697,False,False
+vader_pos,↓ Anxiety,5.9468550186973505e-127,↓ Anxiety,0.0011335410810591406,True,True
+vader_compound,↓ Anxiety,0.0,↓ Anxiety,0.30131680915801834,True,False
+textblob_polarity,↓ Anxiety,1.6425816105721134e-235,↓ Anxiety,0.005103152602963811,True,True
+textblob_subjectivity,↑ Anxiety,1.8862822136014835e-39,↑ Anxiety,0.9129746262711498,True,False
+fp_pronoun_rate,↑ Anxiety,0.0,↑ Anxiety,0.36738067872256597,True,False
+fp_pronoun_count,↑ Anxiety,0.0,↑ Anxiety,0.3738074597479254,True,False
+char_count,↑ Anxiety,0.0,↑ Anxiety,0.593145205520077,True,False
+word_count,↑ Anxiety,0.0,↑ Anxiety,0.5634715466764653,True,False
+avg_word_length,↑ Anxiety,0.43149144581163834,↓ Anxiety,0.3884818034977048,False,False
+punct_density,↓ Anxiety,4.012538160795442e-120,↑ Anxiety,0.1440063171995842,False,False
+emoji_count,↑ Anxiety,2.2526448177549754e-12,↓ Anxiety,,False,False

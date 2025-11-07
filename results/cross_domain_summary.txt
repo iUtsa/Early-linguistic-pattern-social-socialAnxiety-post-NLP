@@ -1,0 +1,31 @@
+======================================================================
+CROSS-DOMAIN VALIDATION SUMMARY
+Reddit Social Media vs DAIC-WOZ Clinical Interviews
+======================================================================
+
+Sample Sizes:
+  Reddit: 30000 posts
+  DAIC-WOZ: 35 participants
+    - Anxiety: 17
+    - Control: 18
+
+Results:
+  Directional Consistency: 9/13 (69.2%)
+  Both significant (p<0.05): 3/13
+
+Consistent Features:
+  ✓ vader_neg
+  ✓ vader_pos
+  ✓ vader_compound
+  ✓ textblob_polarity
+  ✓ textblob_subjectivity
+  ✓ fp_pronoun_rate
+  ✓ fp_pronoun_count
+  ✓ char_count
+  ✓ word_count
+
+Inconsistent Features:
+  ✗ vader_neu
+  ✗ avg_word_length
+  ✗ punct_density
+  ✗ emoji_count

@@ -1,0 +1,103 @@
+{
+  "train": {
+    "accuracy": 0.8966108923559108,
+    "f1": 0.892999384110039,
+    "precision": 0.9345163923860267,
+    "recall": 0.8550143491763966,
+    "roc_auc": 0.9465821169849409
+  },
+  "validation": {
+    "accuracy": 0.8981570381472028,
+    "f1": 0.8919422565657068,
+    "precision": 0.9286046872574888,
+    "recall": 0.8580648245530166,
+    "roc_auc": 0.949879446642181
+  },
+  "test": {
+    "accuracy": 0.8998241294407316,
+    "f1": 0.8934078546833675,
+    "precision": 0.9301709357302437,
+    "recall": 0.8594402573088186,
+    "roc_auc": 0.9499585035397989
+  },
+  "bootstrap_ci": {
+    "lower": 0.8902890238279703,
+    "upper": 0.8965769186747083,
+    "width": 0.006287894846738085
+  },
+  "cross_val": {
+    "mean": 0.8930399276701942,
+    "std": 0.0012812542869814468,
+    "scores": [
+      0.8913300138596582,
+      0.8932601559294214,
+      0.891975150177132,
+      0.8949649883294432,
+      0.8936693300553166
+    ]
+  },
+  "confusion_matrix": [
+    [
+      20470,
+      1344
+    ],
+    [
+      2928,
+      17903
+    ]
+  ],
+  "feature_importance": [
+    {
+      "feature": "fp_pronoun_rate",
+      "coefficient": 4.1087181883788295
+    },
+    {
+      "feature": "vader_neu",
+      "coefficient": -2.648387280875486
+    },
+    {
+      "feature": "vader_pos",
+      "coefficient": -1.6094396927689543
+    },
+    {
+      "feature": "punct_density",
+      "coefficient": -1.4027940661226577
+    },
+    {
+      "feature": "avg_word_length",
+      "coefficient": 0.8574840838347069
+    },
+    {
+      "feature": "vader_neg",
+      "coefficient": 0.6339727958854572
+    },
+    {
+      "feature": "textblob_subjectivity",
+      "coefficient": -0.6186071495128204
+    },
+    {
+      "feature": "fp_pronoun_count",
+      "coefficient": 0.5282508699885213
+    },
+    {
+      "feature": "textblob_polarity",
+      "coefficient": -0.4420848438955384
+    },
+    {
+      "feature": "vader_compound",
+      "coefficient": -0.3177089580656601
+    },
+    {
+      "feature": "emoji_count",
+      "coefficient": 0.03380271106337809
+    },
+    {
+      "feature": "word_count",
+      "coefficient": 0.032031028032147586
+    },
+    {
+      "feature": "char_count",
+      "coefficient": -0.006009346744180073
+    }
+  ]
+}

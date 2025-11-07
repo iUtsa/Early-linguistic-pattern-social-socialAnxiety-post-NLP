@@ -1,0 +1,19 @@
+dataset:
+  posts_csv: data/raw/rmhd_posts.csv
+  users_csv: data/raw/rmhd_users.csv
+  text_column: text
+  label_column: label
+  split_column: split
+
+training:
+  seed: 42
+  early_slice_ks: [3, 5, 10, 20]
+  stage_pairs: 
+    - ["control", "pre_onset"]
+    - ["control", "post_onset"]
+  max_posts_per_user: 20
+  batch_size: 16
+  embedder: all-MiniLM-L6-v2   # CPU-friendly sentence transformer
+  pca_components: 300
+  results_dir: models/results
+  reports_dir: data/reports
