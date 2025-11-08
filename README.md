@@ -29,7 +29,7 @@ This project detects anxiety disorders from Reddit posts using **13 interpretabl
 ## 📊 Quick Results
 
 <p align="center">
-  <img src="figures/main_results_summary.png" alt="Main Results" width="800"/>
+  <img src="/results/figures/fig1_main_results.png" alt="Main Results" width="800"/>
 </p>
 
 <!-- 
@@ -81,11 +81,9 @@ Existing NLP approaches have critical flaws:
 ---
 
 ## System Architecture
-
 <p align="center">
-  <img src="figures/system_architecture.png" alt="System Architecture" width="900"/>
+  <img src="/system_architecture.png" alt="System Architecture" width="900"/>
 </p>
-
 <!--
 TO ADD THIS FIGURE:
 Create a flowchart showing:
@@ -115,7 +113,7 @@ Prediction: Anxiety (1) or Control (0)
 ## 📈 Feature Importance
 
 <p align="center">
-  <img src="figures/feature_importance.png" alt="Feature Importance" width="800"/>
+  <img src="/results/figures/fig5_feature_importance.png" alt="Feature Importance" width="800"/>
 </p>
 
 <!--
@@ -150,7 +148,7 @@ Copy it to: figures/feature_importance.png
 We prove the model learns **genuine psychological patterns**, not just keywords:
 
 <p align="center">
-  <img src="figures/keyword_robustness.png" alt="Keyword Robustness" width="800"/>
+  <img src="/results/figures/fig3_keyword_robustness.png" alt="Keyword Robustness" width="800"/>
 </p>
 
 <!--
@@ -182,7 +180,7 @@ Save as: figures/keyword_robustness.png
 Does Reddit learning generalize to clinical settings?
 
 <p align="center">
-  <img src="figures/cross_domain_validation.png" alt="Cross-Domain Validation" width="800"/>
+  <img src="/results/figures/fig4_cross_domain.png" alt="Cross-Domain Validation" width="800"/>
 </p>
 
 <!--
@@ -217,7 +215,7 @@ We tested our features on professional clinical interviews (189 participants):
 Can we detect anxiety from just the first few posts?
 
 <p align="center">
-  <img src="figures/early_detection.png" alt="Early Detection" width="800"/>
+  <img src="/results/figures/fig2_early_detection.png" alt="Early Detection" width="800"/>
 </p>
 
 <!--
