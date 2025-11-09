@@ -538,19 +538,7 @@ This work builds upon extensive prior research in mental health NLP, clinical ps
 **Reddit Mental Health Dataset (RMHD)**
 
 Rani, S., Ahmed, K., & Subramani, S. (2024). From Posts to Knowledge: Annotating a Pandemic-Era Reddit Dataset to Navigate Mental Health Narratives. *Applied Sciences*, 14(4), 1547. https://doi.org/10.3390/app14041547
-```bibtex
-@article{rani2024posts,
-  title={From Posts to Knowledge: Annotating a Pandemic-Era Reddit Dataset to Navigate Mental Health Narratives},
-  author={Rani, S. and Ahmed, K. and Subramani, S.},
-  journal={Applied Sciences},
-  volume={14},
-  number={4},
-  pages={1547},
-  year={2024},
-  doi={10.3390/app14041547},
-  publisher={MDPI}
-}
-```
+
 
 ---
 
@@ -603,17 +591,7 @@ Rani, S., Ahmed, K., & Subramani, S. (2024). From Posts to Knowledge: Annotating
 ### NLP Tools & Sentiment Analysis
 
 **[19]** Hutto, C. J., & Gilbert, E. (2014). VADER: A parsimonious rule-based model for sentiment analysis of social media text. *Proceedings of the International AAAI Conference on Web and Social Media*, 8(1), 216-225. https://doi.org/10.1609/icwsm.v8i1.14550
-```bibtex
-@inproceedings{hutto2014vader,
-  title={VADER: A parsimonious rule-based model for sentiment analysis of social media text},
-  author={Hutto, C. J. and Gilbert, Eric},
-  booktitle={Proceedings of the International AAAI Conference on Web and Social Media},
-  volume={8},
-  number={1},
-  pages={216--225},
-  year={2014}
-}
-```
+
 
 **[20]** Loria, S. (2018). textblob Documentation. Release 0.15.2. https://textblob.readthedocs.io/
 
@@ -624,15 +602,7 @@ Rani, S., Ahmed, K., & Subramani, S. (2024). From Posts to Knowledge: Annotating
 ### Cross-Domain Validation
 
 **[22]** Gratch, J., Artstein, R., Lucas, G. M., Stratou, G., Scherer, S., Nazarian, A., Wood, R., Boberg, J., DeVault, D., Marsella, S., Traum, D., Rizzo, A. S., & Morency, L. P. (2014). The Distress Analysis Interview Corpus of human and computer interviews. *Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC'14)*, 3123-3128. European Language Resources Association (ELRA).
-```bibtex
-@inproceedings{gratch2014distress,
-  title={The Distress Analysis Interview Corpus of human and computer interviews},
-  author={Gratch, Jonathan and Artstein, Ron and Lucas, Gale M and Stratou, Giota and Scherer, Stefan and Nazarian, Angela and Wood, Rachel and Boberg, Jill and DeVault, David and Marsella, Stacy and others},
-  booktitle={Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC)},
-  pages={3123--3128},
-  year={2014}
-}
-```
+
 
 **[23]** Matero, M., Idnani, A., Son, Y., Giorgi, S., Vu, H., Zamani, M., Limbachiya, P., Guntuku, S. C., & Schwartz, H. A. (2019). Suicide risk assessment with multi-level dual-context language and BERT. *Proceedings of the Sixth Workshop on Computational Linguistics and Clinical Psychology*, 39-44. https://doi.org/10.18653/v1/W19-3005
 
@@ -685,16 +655,7 @@ Rani, S., Ahmed, K., & Subramani, S. (2024). From Posts to Knowledge: Annotating
 ### Machine Learning Libraries
 
 **[38]** Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830.
-```bibtex
-@article{scikit-learn,
-  title={Scikit-learn: Machine Learning in Python},
-  author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V. and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P. and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
-  journal={Journal of Machine Learning Research},
-  volume={12},
-  pages={2825--2830},
-  year={2011}
-}
-```
+
 
 **[39]** Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N. J., Kern, R., Picus, M., Hoyer, S., van Kerkwijk, M. H., Brett, M., Haldane, A., del Río, J. F., Wiebe, M., Peterson, P., Gérard-Marchant, P., Sheppard, K., Reddy, T., Weckesser, W., Abbasi, H., Gohlke, C., & Oliphant, T. E. (2020). Array programming with NumPy. *Nature*, 585(7825), 357-362. https://doi.org/10.1038/s41586-020-2649-2
 
