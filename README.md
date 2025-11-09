@@ -712,7 +712,7 @@ If you use this code, methodology, or findings in your research, please cite:
 @misc{utsa2024anxiety,
   author = {Utsa, Arnab Das},
   title = {Early Detection of Anxiety Disorders from Social Media Text Using Interpretable Linguistic Features},
-  year = {2024},
+  year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP}},
@@ -722,19 +722,19 @@ If you use this code, methodology, or findings in your research, please cite:
 
 ### APA (7th Edition)
 
-Utsa, A. D. (2024). *Early detection of anxiety disorders from social media text using interpretable linguistic features* [Computer software]. GitHub. https://github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP
+Utsa, A. D. (2025). *Early detection of anxiety disorders from social media text using interpretable linguistic features* [Computer software]. GitHub. https://github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP
 
 ### IEEE
 
-[1] A. D. Utsa, "Early Detection of Anxiety Disorders from Social Media Text Using Interpretable Linguistic Features," GitHub, 2024. [Online]. Available: https://github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP
+[1] A. D. Utsa, "Early Detection of Anxiety Disorders from Social Media Text Using Interpretable Linguistic Features," GitHub, 2025. [Online]. Available: https://github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP
 
 ### MLA (9th Edition)
 
-Utsa, Arnab Das. "Early Detection of Anxiety Disorders from Social Media Text Using Interpretable Linguistic Features." *GitHub*, 2024, github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP.
+Utsa, Arnab Das. "Early Detection of Anxiety Disorders from Social Media Text Using Interpretable Linguistic Features." *GitHub*, 2025, github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP.
 
 ### Chicago (17th Edition)
 
-Utsa, Arnab Das. 2024. "Early Detection of Anxiety Disorders from Social Media Text Using Interpretable Linguistic Features." GitHub. https://github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP.
+Utsa, Arnab Das. 2025. "Early Detection of Anxiety Disorders from Social Media Text Using Interpretable Linguistic Features." GitHub. https://github.com/iUtsa/Early-linguistic-pattern-social-socialAnxiety-post-NLP.
 
 ---
 
