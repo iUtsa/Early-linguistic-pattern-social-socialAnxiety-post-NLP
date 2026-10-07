@@ -4,7 +4,7 @@ Current-instance checks completed on 7 October 2026 using Python 3.12 and `/work
 
 | Check | Outcome |
 |---|---|
-| `python -m unittest discover -s tests -v` | 23 tests passed in 32.764 seconds; includes prior integrity/integration tests plus upload deduplication/checksums, UTC boundaries, past-author exclusion before text filtering, no future relabeling, deterministic balanced matching exact-test underflow, validation-threshold tie rules and exhaustive-vs-prefix near-duplicate agreement |
+| `python -m unittest discover -s tests -v` | 27 tests passed in 35.636 seconds; includes prior integrity/integration tests plus upload deduplication/checksums, UTC boundaries, past-author exclusion before text filtering, no future relabeling, deterministic balanced matching exact-test underflow, validation-threshold tie rules and exhaustive-vs-prefix near-duplicate agreement |
 | Revised benchmark CLI on an external synthetic fixture, `--ks 3 --bootstrap 100` | Completed with `status=synthetic_software_validation`; six baselines, paired full/prefix outputs, frozen keyword sensitivity, manifest and model artifacts retained in `/workspace/nlp-research-validation/run1` |
 | Prepared environment's feature/training/evaluation/SHAP/plotting smoke after repairs | Passed on synthetic data; no Hugging Face download or real-study prediction was used |
 | Pinned requirements installation and `python -m pip check` | Passed; no broken requirements |
@@ -17,10 +17,12 @@ Current-instance checks completed on 7 October 2026 using Python 3.12 and `/work
 | Saved individual prediction/aggregate arithmetic | Verified confusion matrices and macro-F1 independently from saved predictions; all primary and secondary artifact checksums passed |
 | Post-hoc reviewer checks | Completed frozen inference parity to 1e-12, May-only threshold selection, same-target comparator transfer and five-word-shingle reuse audit; no primary models changed |
 | Nonlinear representation control | Four validation-selected histogram-boosting configurations fit March features only; June macro-F1 .613/.659 at May thresholds; saved probabilities and artifact hashes independently checked |
-| Source release/license | Kaggle RMHD v1 and stated CC0 verified; all 15 authored filenames/byte lengths match fully paginated 225-file listing; upstream checksum identity unverified |
+| Source release/license | Kaggle RMHD v1 and stated CC0 verified; complete archive and 225 extracted files verified; all 15 authored uploads are byte-identical by SHA-256 |
 | Uploaded clinical label audit | Completed: 189 nonoverlapping train/dev/test IDs; `anxiety_label` exactly PHQ-8 ≥ 10; one discrepancy against supplied original depression binary label; no clinical feature effects computed |
-| New independent external study | Not run: the two contrasts share some authors and the same source; upstream checksum identity and suitable independent data remain outstanding |
-| Standalone scientific figure | Aggregate-only baseline PNG/PDF generated and visually inspected; writable Matplotlib/font cache check passed |
+| Frozen later-period extension | Completed four July/August cohorts with three retained models, May thresholds, historical-absence/reuse sensitivities and 1,000 paired account bootstraps; all saved prediction arithmetic/hashes verified |
+| Training-account resampling | Completed all 20 seeds in each comparison; scaling/vocabulary/LR refitted on stratified March-account resamples, thresholds selected on May only; positive lexical advantage in all 40 runs |
+| New independent external study | Not run: the two contrasts share some authors and the same source; suitable independent data remain outstanding |
+| Standalone scientific figures | Aggregate-only baseline/reviewer/temporal PNG/PDF figures generated and visually inspected; writable Matplotlib/font cache check passed |
 
 The 100-replicate software fixture supplies no empirical evidence. The exploratory upload pilots use their separately fixed 1,000-replicate protocols; the proposed future study protocol recommends 2,000. Bootstrap intervals condition on observed class prevalence and the fitted model. These are not intervals for label validity or clinical/population generalization.
 
@@ -42,3 +44,45 @@ python -m scripts.summarize_reviewer_checks \
 ```
 
 The current completed private runs are `reviewer-checks-seed42` and `nonlinear-check-seed42`. The initial reviewer protocol is preserved under `research/protocol_snapshots` with the exact run hash; the nonlinear addition is dated and explicitly post hoc. These commands require the retained inputs and model files; they are not evidence that private data are available in a fresh clone.
+
+## Reproduce the frozen extension
+
+For a fresh machine, obtain version 1 from the Kaggle link in the data card, verify the archive SHA-256 there, and extract it into a private directory outside the checkout. Recreate the input manifests from the public source record, preserving its file ordering and recorded hashes:
+
+```python
+import json
+from pathlib import Path
+
+record = json.loads(Path('research/rmhd_source_manifest.json').read_text())
+private = Path('/workspace/research-private/rmhd-v1')
+files = private / 'files'  # extracted archive; not a directory in the Git release
+release = [{'name': f['path'], 'path': str(files / f['path']),
+            'size_bytes': f['bytes'], 'sha256': f['sha256']}
+           for f in record['upstream_files']]
+uploads = [{'name': f['upload_name'], 'path': str(files / f['source_path']),
+            'sha256': f['upload_sha256']}
+           for f in record['upload_correspondence']]
+(private / 'manifest.json').write_text(json.dumps(release, indent=2))
+(private / 'authored_inputs.json').write_text(json.dumps(uploads, indent=2))
+```
+
+For a fresh reproduction, use `authored_inputs.json` as the upload manifest; the current instance retains the original `upload-audit/uploads.json` below. First reconstruct the March/May/June cohorts and primary models using the exact archived primary code, the [pilot cohort policy](UPLOADED_PILOT_PROTOCOL.md) and the [retained-data commands](EXPERIMENT_PROTOCOL.md), then run the reviewer/nonlinear checks above. Organize those runs under the directory names expected by the reviewer/extension CLIs. The original primary provenance records predate source identification; the current source manifest/data card provide its verified release attribution. A new run records its own paths/hashes and must not be represented as the original run merely because its measured results agree.
+
+```bash
+python -m src.temporal_extension \
+  --release-manifest /workspace/research-private/rmhd-v1/manifest.json \
+  --upload-manifest /workspace/research-private/upload-audit/uploads.json \
+  --private-root /workspace/research-private \
+  --output /workspace/research-private/new-temporal-run --bootstrap 1000
+python -m src.training_resampling --private-root /workspace/research-private \
+  --output /workspace/research-private/new-training-resamples
+python -m scripts.summarize_temporal_extension \
+  --temporal-directory /workspace/research-private/new-temporal-run \
+  --resampling-directory /workspace/research-private/new-training-resamples --destination research
+```
+
+The completed private outputs are `temporal-extension-seed42` and `training-resampling-seeds100-119`. Source data/history and individual predictions are deliberately absent from the Git release. Complete archive retrieval was verified in this instance; access can still depend on the execution environment's network policy.
+
+## Render the manuscript draft
+
+`python scripts/render_research_manuscript.py` uses the existing Pandoc/pdflatex installation to create the PDF and editable DOCX. Input and output hashes and renderer versions are recorded in `manuscript_export_manifest.json`. These are working drafts for human review, not submitted or accepted documents. Rendering adds no research results or authorship/ethics assertions.

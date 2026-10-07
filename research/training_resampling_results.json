@@ -1,0 +1,2723 @@
+{
+  "status": "exploratory_training_account_resampling",
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "protocol_sha256": "979535e4d09b16dfef701d5695f2b2ce6587364d797b86c1e21edf91f083a4b2",
+  "code_sha256": {
+    "src/training_resampling.py": "54dc10f43e571ef2fc918a054b71b77799cefd9c10789bcb1f3354887ab4afc2",
+    "src/features.py": "8f8778096e4db1cb7378a84327c25992c7cd9533c56404ad939db78aa86c210e",
+    "src/preprocess.py": "87604acffc4cf3cdd44980f8d687d62eb7b090661e4d61f9a7cfeacd34a601be"
+  },
+  "scope": "Same March/May/June cohort and selected C; uncertainty in labels/source collection not addressed",
+  "comparisons": {
+    "mentalhealth": {
+      "input_sha256": "838a71e4078f6b6523f212fbb1397bd65f27414ae0e61d39e4a9dc2811b37bcb",
+      "resamples": [
+        {
+          "seed": 100,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.45,
+              "validation_macro_f1": 0.5807336833498247,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.45,
+                "accuracy": 0.6018125501892853,
+                "macro_f1": 0.5898616066039739,
+                "positive_f1": 0.5198506017429797,
+                "positive_precision": 0.5330496453900709,
+                "positive_recall": 0.5072894168466523,
+                "roc_auc": 0.6287478150760507,
+                "average_precision": 0.524955507509784,
+                "brier": 0.23299615920583724,
+                "log_loss": 0.6576223499240936,
+                "confusion_matrix": [
+                  [
+                    3367,
+                    1646
+                  ],
+                  [
+                    1825,
+                    1879
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.847109227339538,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.37,
+                "accuracy": 0.8593552827807732,
+                "macro_f1": 0.8566245964522139,
+                "positive_f1": 0.8368379025818472,
+                "positive_precision": 0.8251968503937008,
+                "positive_recall": 0.8488120950323974,
+                "roc_auc": 0.9295460851462224,
+                "average_precision": 0.904448052226264,
+                "brier": 0.10270021563446728,
+                "log_loss": 0.34005483103937234,
+                "confusion_matrix": [
+                  [
+                    4347,
+                    666
+                  ],
+                  [
+                    560,
+                    3144
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.26676298984824,
+          "private_predictions_sha256": "12344a97a7d15258480292014b870bf830738cca3a4770379124b46c56dfc3ea"
+        },
+        {
+          "seed": 101,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.5831965296713074,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.6005506481587702,
+                "macro_f1": 0.5918740145978021,
+                "positive_f1": 0.5323663712060167,
+                "positive_precision": 0.5296632816675575,
+                "positive_recall": 0.535097192224622,
+                "roc_auc": 0.6301125173899912,
+                "average_precision": 0.5280237449499404,
+                "brier": 0.2329949827460713,
+                "log_loss": 0.6576900266828942,
+                "confusion_matrix": [
+                  [
+                    3253,
+                    1760
+                  ],
+                  [
+                    1722,
+                    1982
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.42,
+              "validation_macro_f1": 0.8472647019795725,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.42,
+                "accuracy": 0.8599288746128255,
+                "macro_f1": 0.8562743595081691,
+                "positive_f1": 0.833356080251126,
+                "positive_precision": 0.8426718189345846,
+                "positive_recall": 0.824244060475162,
+                "roc_auc": 0.9270907519498979,
+                "average_precision": 0.902330759352356,
+                "brier": 0.1042498597235976,
+                "log_loss": 0.3446071141529836,
+                "confusion_matrix": [
+                  [
+                    4443,
+                    570
+                  ],
+                  [
+                    651,
+                    3053
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.264400344910367,
+          "private_predictions_sha256": "6f4c87e4a058dace00c137562681bd0db7ad21ae83c0e53ea58c982dfa6ed474"
+        },
+        {
+          "seed": 102,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.5794175379119911,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.5952736033038889,
+                "macro_f1": 0.5880411826255735,
+                "positive_f1": 0.5334567574715684,
+                "positive_precision": 0.5228097459823743,
+                "positive_recall": 0.5445464362850972,
+                "roc_auc": 0.6285572199107374,
+                "average_precision": 0.5274892634818241,
+                "brier": 0.23293512394830906,
+                "log_loss": 0.657545915256358,
+                "confusion_matrix": [
+                  [
+                    3172,
+                    1841
+                  ],
+                  [
+                    1687,
+                    2017
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.42,
+              "validation_macro_f1": 0.8435690691239746,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.42,
+                "accuracy": 0.8563726052541012,
+                "macro_f1": 0.8526418832140283,
+                "positive_f1": 0.8291950886766712,
+                "positive_precision": 0.8381136238279095,
+                "positive_recall": 0.8204643628509719,
+                "roc_auc": 0.9264638721182378,
+                "average_precision": 0.9026379088678688,
+                "brier": 0.1043260231051876,
+                "log_loss": 0.34494516686008014,
+                "confusion_matrix": [
+                  [
+                    4426,
+                    587
+                  ],
+                  [
+                    665,
+                    3039
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.26460070058845486,
+          "private_predictions_sha256": "27aac25905cfaecef9ad745080505f1b99a6013ef0c87405605dd3781d81c19f"
+        },
+        {
+          "seed": 103,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.5826590177001623,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.5960766318687621,
+                "macro_f1": 0.5927995471681993,
+                "positive_f1": 0.5562696912413359,
+                "positive_precision": 0.5216260931221933,
+                "positive_recall": 0.5958423326133909,
+                "roc_auc": 0.6294621026368159,
+                "average_precision": 0.5283415731074858,
+                "brier": 0.23292822218089332,
+                "log_loss": 0.6576585788717495,
+                "confusion_matrix": [
+                  [
+                    2989,
+                    2024
+                  ],
+                  [
+                    1497,
+                    2207
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.844837382465637,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.4,
+                "accuracy": 0.8582080991166686,
+                "macro_f1": 0.8548442064658399,
+                "positive_f1": 0.8327469553450609,
+                "positive_precision": 0.8347802495930549,
+                "positive_recall": 0.8307235421166307,
+                "roc_auc": 0.9284583624692431,
+                "average_precision": 0.9026793704752137,
+                "brier": 0.10320246312624487,
+                "log_loss": 0.34261826049246197,
+                "confusion_matrix": [
+                  [
+                    4404,
+                    609
+                  ],
+                  [
+                    627,
+                    3077
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.26204465929764065,
+          "private_predictions_sha256": "11772744387038c886a4754c59a80d546ede1321ccdcdf8db60bb5902557df93"
+        },
+        {
+          "seed": 104,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.582115283968536,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.6003212114259493,
+                "macro_f1": 0.5913580474160935,
+                "positive_f1": 0.5308375976299489,
+                "positive_precision": 0.5295540032240731,
+                "positive_recall": 0.5321274298056156,
+                "roc_auc": 0.6313343406495164,
+                "average_precision": 0.5302744023186843,
+                "brier": 0.23277777608712977,
+                "log_loss": 0.6574134932262254,
+                "confusion_matrix": [
+                  [
+                    3262,
+                    1751
+                  ],
+                  [
+                    1733,
+                    1971
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.8466329947444442,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.4,
+                "accuracy": 0.8563726052541012,
+                "macro_f1": 0.8530487306349674,
+                "positive_f1": 0.8309478800972184,
+                "positive_precision": 0.831172339276067,
+                "positive_recall": 0.8307235421166307,
+                "roc_auc": 0.926067602204032,
+                "average_precision": 0.9007925670817883,
+                "brier": 0.10482181207731336,
+                "log_loss": 0.34756500370177157,
+                "confusion_matrix": [
+                  [
+                    4388,
+                    625
+                  ],
+                  [
+                    627,
+                    3077
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2616906832188739,
+          "private_predictions_sha256": "4f0763c37f17b7aaf33e71d14c73ca37e9a57240b2b40a54170c0a411460e4f5"
+        },
+        {
+          "seed": 105,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.5822270904268149,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.5998623379603074,
+                "macro_f1": 0.5952453674771958,
+                "positive_f1": 0.5520164397636784,
+                "positive_precision": 0.5264576188143067,
+                "positive_recall": 0.5801835853131749,
+                "roc_auc": 0.6327499365580376,
+                "average_precision": 0.5307443331920101,
+                "brier": 0.2325410758346418,
+                "log_loss": 0.6569041209704207,
+                "confusion_matrix": [
+                  [
+                    3080,
+                    1933
+                  ],
+                  [
+                    1555,
+                    2149
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.42,
+              "validation_macro_f1": 0.8491469779261203,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.42,
+                "accuracy": 0.8575197889182058,
+                "macro_f1": 0.8540237850382912,
+                "positive_f1": 0.8314332247557004,
+                "positive_precision": 0.835971615720524,
+                "positive_recall": 0.8269438444924406,
+                "roc_auc": 0.9281289274236876,
+                "average_precision": 0.90250690221263,
+                "brier": 0.10310020449476662,
+                "log_loss": 0.3424000026850057,
+                "confusion_matrix": [
+                  [
+                    4412,
+                    601
+                  ],
+                  [
+                    641,
+                    3063
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.25877841756109543,
+          "private_predictions_sha256": "b6ebddeeb128ae3e3a8499f96432e40e7c93fd376cecf05736501f4a74eb2eac"
+        },
+        {
+          "seed": 106,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.5823806392457447,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.5996329012274865,
+                "macro_f1": 0.5948307614382156,
+                "positive_f1": 0.5507209062821833,
+                "positive_precision": 0.5263287401574803,
+                "positive_recall": 0.5774838012958964,
+                "roc_auc": 0.6325675813080376,
+                "average_precision": 0.5315279166196017,
+                "brier": 0.23283406438437582,
+                "log_loss": 0.6575348909954858,
+                "confusion_matrix": [
+                  [
+                    3088,
+                    1925
+                  ],
+                  [
+                    1565,
+                    2139
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.8472545946557469,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.4,
+                "accuracy": 0.8584375358494895,
+                "macro_f1": 0.8551920529287806,
+                "positive_f1": 0.8335132218024824,
+                "positive_precision": 0.8330636461704423,
+                "positive_recall": 0.833963282937365,
+                "roc_auc": 0.9270076526732439,
+                "average_precision": 0.9006160005920404,
+                "brier": 0.1042157658404896,
+                "log_loss": 0.34554638991933845,
+                "confusion_matrix": [
+                  [
+                    4394,
+                    619
+                  ],
+                  [
+                    615,
+                    3089
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2603612914905651,
+          "private_predictions_sha256": "9b80aacb91e7b7f8bf4c42924b87c8db31e9e2a80c8be8e523d87ebe0f2fbf6a"
+        },
+        {
+          "seed": 107,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.5821677992466068,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.605942411380062,
+                "macro_f1": 0.5965214592033228,
+                "positive_f1": 0.5348679756262694,
+                "positive_precision": 0.5365389839717468,
+                "positive_recall": 0.533207343412527,
+                "roc_auc": 0.6331177706860651,
+                "average_precision": 0.5320224008645643,
+                "brier": 0.2329072926598039,
+                "log_loss": 0.6577127133230742,
+                "confusion_matrix": [
+                  [
+                    3307,
+                    1706
+                  ],
+                  [
+                    1729,
+                    1975
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.41,
+              "validation_macro_f1": 0.8433157922140412,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.41,
+                "accuracy": 0.8570609154525639,
+                "macro_f1": 0.8534786435197776,
+                "positive_f1": 0.8305683981506663,
+                "positive_precision": 0.8367123287671233,
+                "positive_recall": 0.8245140388768899,
+                "roc_auc": 0.9275103952186519,
+                "average_precision": 0.9038466427585389,
+                "brier": 0.104018906997906,
+                "log_loss": 0.34277930702661336,
+                "confusion_matrix": [
+                  [
+                    4417,
+                    596
+                  ],
+                  [
+                    650,
+                    3054
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.25695718431645487,
+          "private_predictions_sha256": "36f68253e2955826ba082af310deb99cdfa87fffb85e5887a6db4be853d08b48"
+        },
+        {
+          "seed": 108,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.5818426698547647,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.5969943788000459,
+                "macro_f1": 0.5932532509214417,
+                "positive_f1": 0.5542443852303007,
+                "positive_precision": 0.5228632990184343,
+                "positive_recall": 0.5896328293736501,
+                "roc_auc": 0.6290567849724626,
+                "average_precision": 0.5280105451829615,
+                "brier": 0.2330162386279992,
+                "log_loss": 0.6578048167713303,
+                "confusion_matrix": [
+                  [
+                    3020,
+                    1993
+                  ],
+                  [
+                    1520,
+                    2184
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.45,
+              "validation_macro_f1": 0.8456303532499072,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.45,
+                "accuracy": 0.8578639440174372,
+                "macro_f1": 0.8535505734502378,
+                "positive_f1": 0.8284171167428334,
+                "positive_precision": 0.8504407165197612,
+                "positive_recall": 0.8075053995680346,
+                "roc_auc": 0.9258448013566455,
+                "average_precision": 0.8999449543563558,
+                "brier": 0.1051134357486957,
+                "log_loss": 0.34732840195973436,
+                "confusion_matrix": [
+                  [
+                    4487,
+                    526
+                  ],
+                  [
+                    713,
+                    2991
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2602973225287961,
+          "private_predictions_sha256": "61406fe4852e0931ec7a46bfa5ac8a8cb7b91337f8ce5d7cd473581e2ed7b16d"
+        },
+        {
+          "seed": 109,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.42,
+              "validation_macro_f1": 0.5777970037213713,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.42,
+                "accuracy": 0.5899965584490077,
+                "macro_f1": 0.5889917785052328,
+                "positive_f1": 0.5686700458604875,
+                "positive_precision": 0.5141859450021824,
+                "positive_recall": 0.6360691144708424,
+                "roc_auc": 0.6283193933354272,
+                "average_precision": 0.5293745305402419,
+                "brier": 0.23322130557273163,
+                "log_loss": 0.6582132059522922,
+                "confusion_matrix": [
+                  [
+                    2787,
+                    2226
+                  ],
+                  [
+                    1348,
+                    2356
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.844124489860921,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.8580933807502581,
+                "macro_f1": 0.8541913725212117,
+                "positive_f1": 0.8303387738307503,
+                "positive_precision": 0.843880680234179,
+                "positive_recall": 0.8172246220302376,
+                "roc_auc": 0.9268025164809078,
+                "average_precision": 0.9006507602643281,
+                "brier": 0.10470286015768934,
+                "log_loss": 0.34594956425447926,
+                "confusion_matrix": [
+                  [
+                    4453,
+                    560
+                  ],
+                  [
+                    677,
+                    3027
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2651995940159789,
+          "private_predictions_sha256": "3531f921defcbf66877f46813b80fe552529f240a31078eb802b0fb06b414072"
+        },
+        {
+          "seed": 110,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.5818469215445784,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.6061718481128828,
+                "macro_f1": 0.597325894910069,
+                "positive_f1": 0.5376430976430976,
+                "positive_precision": 0.5364149422198333,
+                "positive_recall": 0.5388768898488121,
+                "roc_auc": 0.6307432748288574,
+                "average_precision": 0.5307639994507631,
+                "brier": 0.2329894518101981,
+                "log_loss": 0.657938486139541,
+                "confusion_matrix": [
+                  [
+                    3288,
+                    1725
+                  ],
+                  [
+                    1708,
+                    1996
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.8474426156207655,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.4,
+                "accuracy": 0.8609613399105197,
+                "macro_f1": 0.8577436593686745,
+                "positive_f1": 0.8363489062921955,
+                "positive_precision": 0.8365748244192328,
+                "positive_recall": 0.8361231101511879,
+                "roc_auc": 0.9299858704301861,
+                "average_precision": 0.9048466382836412,
+                "brier": 0.10240217240945067,
+                "log_loss": 0.33898543331673336,
+                "confusion_matrix": [
+                  [
+                    4408,
+                    605
+                  ],
+                  [
+                    607,
+                    3097
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2604177644586054,
+          "private_predictions_sha256": "acfc95b0e923581841b7f3955d31384e00986a380a8344810a2c87252dd5676c"
+        },
+        {
+          "seed": 111,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.42,
+              "validation_macro_f1": 0.5813863445725775,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.42,
+                "accuracy": 0.6011242399908225,
+                "macro_f1": 0.5991483972454206,
+                "positive_f1": 0.5710055521283158,
+                "positive_precision": 0.5257895932742559,
+                "positive_recall": 0.6247300215982722,
+                "roc_auc": 0.6327797187356071,
+                "average_precision": 0.5298661764861664,
+                "brier": 0.23279897739301986,
+                "log_loss": 0.6575319799716585,
+                "confusion_matrix": [
+                  [
+                    2926,
+                    2087
+                  ],
+                  [
+                    1390,
+                    2314
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.45,
+              "validation_macro_f1": 0.8459051415472474,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.45,
+                "accuracy": 0.8571756338189744,
+                "macro_f1": 0.8528054728270014,
+                "positive_f1": 0.8274428274428275,
+                "positive_precision": 0.8501851324409,
+                "positive_recall": 0.8058855291576674,
+                "roc_auc": 0.9274974160056423,
+                "average_precision": 0.9018345394414248,
+                "brier": 0.10377072474641735,
+                "log_loss": 0.3443716642064747,
+                "confusion_matrix": [
+                  [
+                    4487,
+                    526
+                  ],
+                  [
+                    719,
+                    2985
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2536570755815808,
+          "private_predictions_sha256": "7b8a3742ef99fb665b1542d438a59e3ed959f29ea0cb09b043d1f10c7d844e29"
+        },
+        {
+          "seed": 112,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.45,
+              "validation_macro_f1": 0.5820363075331182,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.45,
+                "accuracy": 0.605712974647241,
+                "macro_f1": 0.592598152681358,
+                "positive_f1": 0.5195023067244513,
+                "positive_precision": 0.538706871556973,
+                "positive_recall": 0.5016198704103672,
+                "roc_auc": 0.6288458862249727,
+                "average_precision": 0.5298917114841715,
+                "brier": 0.23319834427335148,
+                "log_loss": 0.6584673065747348,
+                "confusion_matrix": [
+                  [
+                    3422,
+                    1591
+                  ],
+                  [
+                    1846,
+                    1858
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.39,
+              "validation_macro_f1": 0.8460860411540304,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.39,
+                "accuracy": 0.8566020419869221,
+                "macro_f1": 0.853596362608767,
+                "positive_f1": 0.8326191751472951,
+                "positive_precision": 0.8259829968119022,
+                "positive_recall": 0.8393628509719222,
+                "roc_auc": 0.9274808823193608,
+                "average_precision": 0.9010478384690416,
+                "brier": 0.10438810974792075,
+                "log_loss": 0.3444777113560222,
+                "confusion_matrix": [
+                  [
+                    4358,
+                    655
+                  ],
+                  [
+                    595,
+                    3109
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2609982099274091,
+          "private_predictions_sha256": "bab0e90d681f22a13a3f7a049f506e3ed166de6477685d17fd3016ea7d3cef36"
+        },
+        {
+          "seed": 113,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.5808730884523907,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.5953883216702994,
+                "macro_f1": 0.5905249148385807,
+                "positive_f1": 0.545899317625853,
+                "positive_precision": 0.5217819345311346,
+                "positive_recall": 0.572354211663067,
+                "roc_auc": 0.6284226884829466,
+                "average_precision": 0.5290574355469526,
+                "brier": 0.23302063582009439,
+                "log_loss": 0.6577400734535099,
+                "confusion_matrix": [
+                  [
+                    3070,
+                    1943
+                  ],
+                  [
+                    1584,
+                    2120
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.39,
+              "validation_macro_f1": 0.8453778442058133,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.39,
+                "accuracy": 0.8586669725823104,
+                "macro_f1": 0.8554063969316925,
+                "positive_f1": 0.8336933045356372,
+                "positive_precision": 0.8336933045356372,
+                "positive_recall": 0.8336933045356372,
+                "roc_auc": 0.9266029812767582,
+                "average_precision": 0.9023078167409747,
+                "brier": 0.10391498187767162,
+                "log_loss": 0.3458260111675375,
+                "confusion_matrix": [
+                  [
+                    4397,
+                    616
+                  ],
+                  [
+                    616,
+                    3088
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2648814820931118,
+          "private_predictions_sha256": "d0208c1a699708d10847ba8b2b2653cb9aeaba238268917e467f9e8dae374308"
+        },
+        {
+          "seed": 114,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.5819496147262546,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.6033038889526213,
+                "macro_f1": 0.5942376644068217,
+                "positive_f1": 0.533585109252765,
+                "positive_precision": 0.5331536388140161,
+                "positive_recall": 0.5340172786177105,
+                "roc_auc": 0.6330765711094998,
+                "average_precision": 0.5296957578315038,
+                "brier": 0.23285880863371836,
+                "log_loss": 0.6577326883134614,
+                "confusion_matrix": [
+                  [
+                    3281,
+                    1732
+                  ],
+                  [
+                    1726,
+                    1978
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.8437563828860042,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.4,
+                "accuracy": 0.8551107032235861,
+                "macro_f1": 0.8517523893739889,
+                "positive_f1": 0.8294395678595543,
+                "positive_precision": 0.8297757362874899,
+                "positive_recall": 0.8291036717062635,
+                "roc_auc": 0.9258604194967814,
+                "average_precision": 0.8995324119327264,
+                "brier": 0.10499469106741768,
+                "log_loss": 0.3480068524383227,
+                "confusion_matrix": [
+                  [
+                    4383,
+                    630
+                  ],
+                  [
+                    633,
+                    3071
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2575147249671672,
+          "private_predictions_sha256": "f9d6e4b41dd3181ff465173a6ee4e1461a40b8d67694b7dc8093e44c207320f5"
+        },
+        {
+          "seed": 115,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.45,
+              "validation_macro_f1": 0.5791844770915675,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.45,
+                "accuracy": 0.6005506481587702,
+                "macro_f1": 0.5882442171909559,
+                "positive_f1": 0.5170596393897364,
+                "positive_precision": 0.5316600114090131,
+                "positive_recall": 0.5032397408207343,
+                "roc_auc": 0.6268707839099982,
+                "average_precision": 0.5259333369290986,
+                "brier": 0.23312989347874097,
+                "log_loss": 0.6579476293179365,
+                "confusion_matrix": [
+                  [
+                    3371,
+                    1642
+                  ],
+                  [
+                    1840,
+                    1864
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.41,
+              "validation_macro_f1": 0.8459378573602518,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.41,
+                "accuracy": 0.8568314787197431,
+                "macro_f1": 0.853445399452171,
+                "positive_f1": 0.8311688311688312,
+                "positive_precision": 0.8329718004338394,
+                "positive_recall": 0.8293736501079914,
+                "roc_auc": 0.9279171669857075,
+                "average_precision": 0.9013832785538328,
+                "brier": 0.10377213073879503,
+                "log_loss": 0.3437541100529297,
+                "confusion_matrix": [
+                  [
+                    4397,
+                    616
+                  ],
+                  [
+                    632,
+                    3072
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.26520118226121514,
+          "private_predictions_sha256": "53fb17d69346666f70549fd78a2c0ec0ea26d6786e9f83c33f43dd3c81693990"
+        },
+        {
+          "seed": 116,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.5816171125817042,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.5989445910290238,
+                "macro_f1": 0.5914194774932762,
+                "positive_f1": 0.5359702681178656,
+                "positive_precision": 0.527154046997389,
+                "positive_recall": 0.5450863930885529,
+                "roc_auc": 0.6308939629533408,
+                "average_precision": 0.5291877089122152,
+                "brier": 0.23278581916422542,
+                "log_loss": 0.6575176028295032,
+                "confusion_matrix": [
+                  [
+                    3202,
+                    1811
+                  ],
+                  [
+                    1685,
+                    2019
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.8453269708049893,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.8587816909487209,
+                "macro_f1": 0.8549097922230866,
+                "positive_f1": 0.8312080076785959,
+                "positive_precision": 0.8445249373084425,
+                "positive_recall": 0.818304535637149,
+                "roc_auc": 0.9276327552682677,
+                "average_precision": 0.9027498408439074,
+                "brier": 0.10355481603452499,
+                "log_loss": 0.3435986576765261,
+                "confusion_matrix": [
+                  [
+                    4455,
+                    558
+                  ],
+                  [
+                    673,
+                    3031
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.26349031472981044,
+          "private_predictions_sha256": "d84b9842646f1767fd80da4f774188da1411d0eaf151cc7985256dcdb85bec39"
+        },
+        {
+          "seed": 117,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.5786409028416806,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.43,
+                "accuracy": 0.5956177584031204,
+                "macro_f1": 0.5922689222016155,
+                "positive_f1": 0.5553172700895673,
+                "positive_precision": 0.5211934643618281,
+                "positive_recall": 0.5942224622030238,
+                "roc_auc": 0.6283088914825773,
+                "average_precision": 0.5268980378439827,
+                "brier": 0.23306349444298727,
+                "log_loss": 0.6578382312095521,
+                "confusion_matrix": [
+                  [
+                    2991,
+                    2022
+                  ],
+                  [
+                    1503,
+                    2201
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.39,
+              "validation_macro_f1": 0.8437204063282482,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.39,
+                "accuracy": 0.8541929562923024,
+                "macro_f1": 0.851240750553468,
+                "positive_f1": 0.8302844171451462,
+                "positive_precision": 0.8214002642007926,
+                "positive_recall": 0.8393628509719222,
+                "roc_auc": 0.9269578361917761,
+                "average_precision": 0.9013549189222102,
+                "brier": 0.1047240427297104,
+                "log_loss": 0.3448347556377377,
+                "confusion_matrix": [
+                  [
+                    4337,
+                    676
+                  ],
+                  [
+                    595,
+                    3109
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2589718283518525,
+          "private_predictions_sha256": "c1c05605c702f4245a2da78d4fdb5e2df31b88ae91c92f345e78e57c84d36977"
+        },
+        {
+          "seed": 118,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.5806545172968567,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.6031891705862108,
+                "macro_f1": 0.5949125940790186,
+                "positive_f1": 0.5370097711149779,
+                "positive_precision": 0.5325192460844174,
+                "positive_recall": 0.5415766738660908,
+                "roc_auc": 0.6317524759599125,
+                "average_precision": 0.5298873121012992,
+                "brier": 0.2327133131927726,
+                "log_loss": 0.6573138902889875,
+                "confusion_matrix": [
+                  [
+                    3252,
+                    1761
+                  ],
+                  [
+                    1698,
+                    2006
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.8463116699077129,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.4,
+                "accuracy": 0.8588964093151313,
+                "macro_f1": 0.8557819417568291,
+                "positive_f1": 0.8345884884346423,
+                "positive_precision": 0.8314576634512326,
+                "positive_recall": 0.837742980561555,
+                "roc_auc": 0.9258811000685474,
+                "average_precision": 0.9004066973307517,
+                "brier": 0.104065315821494,
+                "log_loss": 0.34654323544439375,
+                "confusion_matrix": [
+                  [
+                    4384,
+                    629
+                  ],
+                  [
+                    601,
+                    3103
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.26086934767781045,
+          "private_predictions_sha256": "38d08bf42342e0cc420b9b97f9ad279d3d3878cf96004f387e25da8997669cd3"
+        },
+        {
+          "seed": 119,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.44,
+              "validation_macro_f1": 0.58143020894371,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.44,
+                "accuracy": 0.6011242399908225,
+                "macro_f1": 0.5926676735670428,
+                "positive_f1": 0.5339766787293928,
+                "positive_precision": 0.5302102741549108,
+                "positive_recall": 0.5377969762419006,
+                "roc_auc": 0.6291316443338034,
+                "average_precision": 0.5285920895130404,
+                "brier": 0.23306675080252007,
+                "log_loss": 0.6580032262692501,
+                "confusion_matrix": [
+                  [
+                    3248,
+                    1765
+                  ],
+                  [
+                    1712,
+                    1992
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.41,
+              "validation_macro_f1": 0.8450134048988458,
+              "june": {
+                "n_users": 8717,
+                "positive_prevalence": 0.4249168291843524,
+                "threshold": 0.41,
+                "accuracy": 0.8596994378800046,
+                "macro_f1": 0.8563141777009211,
+                "positive_f1": 0.8342593847404798,
+                "positive_precision": 0.8375510204081633,
+                "positive_recall": 0.8309935205183585,
+                "roc_auc": 0.9276047503273346,
+                "average_precision": 0.9021617360788337,
+                "brier": 0.10344678095206304,
+                "log_loss": 0.3442347734690677,
+                "confusion_matrix": [
+                  [
+                    4416,
+                    597
+                  ],
+                  [
+                    626,
+                    3078
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.26364650413387836,
+          "private_predictions_sha256": "911b266d047e0eacf1409216ae5f891c12ecc92fbd9b1e760d46affafab20e11"
+        }
+      ],
+      "summary": {
+        "linguistic_13": {
+          "mean": 0.5928062462285604,
+          "sd": 0.002976845450540466,
+          "minimum": 0.5880411826255735,
+          "maximum": 0.5991483972454206,
+          "quantiles_025_50_975": [
+            0.5881376240441302,
+            0.5926329131242003,
+            0.5982827086361286
+          ],
+          "interpretation": "Descriptive distribution across 20 stratified training-account resamples, not a population confidence interval"
+        },
+        "tfidf_lr": {
+          "mean": 0.8543433273265058,
+          "sd": 0.0017015752087122568,
+          "minimum": 0.851240750553468,
+          "maximum": 0.8577436593686745,
+          "quantiles_025_50_975": [
+            0.8514837789932155,
+            0.8541075787797514,
+            0.8572121044833557
+          ],
+          "interpretation": "Descriptive distribution across 20 stratified training-account resamples, not a population confidence interval"
+        }
+      },
+      "lexical_advantage_summary": {
+        "mean": 0.2615370810979454,
+        "sd": 0.0033230730682309866,
+        "minimum": 0.2536570755815808,
+        "maximum": 0.26676298984824,
+        "quantiles_025_50_975": [
+          0.255224627230646,
+          0.2613444465731415,
+          0.2660211312444032
+        ],
+        "interpretation": "Descriptive distribution across 20 stratified training-account resamples, not a population confidence interval"
+      }
+    },
+    "depression": {
+      "input_sha256": "500c57b4cfd7e531ec9a54dd7ad8c391b265a7c958b5f0b51088e6b8736b0273",
+      "resamples": [
+        {
+          "seed": 100,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.39,
+              "validation_macro_f1": 0.6401807944688273,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.39,
+                "accuracy": 0.6521513198919143,
+                "macro_f1": 0.6362298214806014,
+                "positive_f1": 0.5601261663819161,
+                "positive_precision": 0.5356963298139769,
+                "positive_recall": 0.5868906637290002,
+                "roc_auc": 0.6998433480570622,
+                "average_precision": 0.5410248985729369,
+                "brier": 0.21075375243036476,
+                "log_loss": 0.6087401241631004,
+                "confusion_matrix": [
+                  [
+                    4144,
+                    1847
+                  ],
+                  [
+                    1500,
+                    2131
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.41,
+              "validation_macro_f1": 0.9195039497842787,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.41,
+                "accuracy": 0.9229889835792975,
+                "macro_f1": 0.9174947879537726,
+                "positive_f1": 0.8962039501330719,
+                "positive_precision": 0.9119156214367161,
+                "positive_recall": 0.8810245111539521,
+                "roc_auc": 0.9719778878820389,
+                "average_precision": 0.9621225360659136,
+                "brier": 0.05967847443662154,
+                "log_loss": 0.20495350139655866,
+                "confusion_matrix": [
+                  [
+                    5682,
+                    309
+                  ],
+                  [
+                    432,
+                    3199
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.28126496647317123,
+          "private_predictions_sha256": "1e9a2374fa181c8bcfe0e6202246013284710c92cd9c9a11d5d96b4666018758"
+        },
+        {
+          "seed": 101,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.39,
+              "validation_macro_f1": 0.6408815774237087,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.39,
+                "accuracy": 0.6566202452712534,
+                "macro_f1": 0.6395830598271646,
+                "positive_f1": 0.5612217795484727,
+                "positive_precision": 0.541933829186971,
+                "positive_recall": 0.5819333516937483,
+                "roc_auc": 0.7016838486408581,
+                "average_precision": 0.5421966941154194,
+                "brier": 0.21041189959908996,
+                "log_loss": 0.607704384917537,
+                "confusion_matrix": [
+                  [
+                    4205,
+                    1786
+                  ],
+                  [
+                    1518,
+                    2113
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.36,
+              "validation_macro_f1": 0.9162485399329312,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.36,
+                "accuracy": 0.9216379131157764,
+                "macro_f1": 0.9164207208386632,
+                "positive_f1": 0.8955389304516487,
+                "positive_precision": 0.9010315026484528,
+                "positive_recall": 0.890112916551914,
+                "roc_auc": 0.9713761406821515,
+                "average_precision": 0.9618132987310825,
+                "brier": 0.06036859316304392,
+                "log_loss": 0.20728440097883039,
+                "confusion_matrix": [
+                  [
+                    5636,
+                    355
+                  ],
+                  [
+                    399,
+                    3232
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27683766101149865,
+          "private_predictions_sha256": "b6f2e86662259b1f32c839b9327f764ef102a33774ff90ebe954c60b5feec803"
+        },
+        {
+          "seed": 102,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6410181799198525,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6488256079817086,
+                "macro_f1": 0.6394575560676407,
+                "positive_f1": 0.5813406021558667,
+                "positive_precision": 0.5283783783783784,
+                "positive_recall": 0.6461030019278435,
+                "roc_auc": 0.7007139737422163,
+                "average_precision": 0.5441149167198116,
+                "brier": 0.210500103348294,
+                "log_loss": 0.6082978410683303,
+                "confusion_matrix": [
+                  [
+                    3897,
+                    2094
+                  ],
+                  [
+                    1285,
+                    2346
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.39,
+              "validation_macro_f1": 0.921696339771578,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.39,
+                "accuracy": 0.9211182706298067,
+                "macro_f1": 0.9156160302433266,
+                "positive_f1": 0.8940683879972087,
+                "positive_precision": 0.9063384267119411,
+                "positive_recall": 0.8821261360506747,
+                "roc_auc": 0.971652834066118,
+                "average_precision": 0.961691946639713,
+                "brier": 0.060533494856160705,
+                "log_loss": 0.20688132390126038,
+                "confusion_matrix": [
+                  [
+                    5660,
+                    331
+                  ],
+                  [
+                    428,
+                    3203
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27615847417568595,
+          "private_predictions_sha256": "61882e58b042f905ffa43208d6a69c7b920d6f9b4831fae51602e9d2ecc93186"
+        },
+        {
+          "seed": 103,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6406348566292068,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6503845354396175,
+                "macro_f1": 0.6408218807912969,
+                "positive_f1": 0.5822155986090413,
+                "positive_precision": 0.5301967880570007,
+                "positive_recall": 0.6455521894794822,
+                "roc_auc": 0.7001285458896137,
+                "average_precision": 0.5420144263918822,
+                "brier": 0.2106888491106314,
+                "log_loss": 0.6080160667573103,
+                "confusion_matrix": [
+                  [
+                    3914,
+                    2077
+                  ],
+                  [
+                    1287,
+                    2344
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.42,
+              "validation_macro_f1": 0.9175967823026647,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.42,
+                "accuracy": 0.9211182706298067,
+                "macro_f1": 0.9151142130898497,
+                "positive_f1": 0.8925385813393742,
+                "positive_precision": 0.9184149184149184,
+                "positive_recall": 0.8680804186174608,
+                "roc_auc": 0.9705821469742482,
+                "average_precision": 0.9604161511974212,
+                "brier": 0.06148863256838441,
+                "log_loss": 0.21010132557511826,
+                "confusion_matrix": [
+                  [
+                    5711,
+                    280
+                  ],
+                  [
+                    479,
+                    3152
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2742923322985529,
+          "private_predictions_sha256": "b8b6899e7f02c3a8bef0e99640771dcf23e3527952c8cc93b8953178e508489f"
+        },
+        {
+          "seed": 104,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.6417247594650202,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.6536063188526294,
+                "macro_f1": 0.6393817752766267,
+                "positive_f1": 0.5677603423680456,
+                "positive_precision": 0.5365196078431372,
+                "positive_recall": 0.6028642247314789,
+                "roc_auc": 0.6990133598451473,
+                "average_precision": 0.5413093572371374,
+                "brier": 0.21113561292914776,
+                "log_loss": 0.6093976492349666,
+                "confusion_matrix": [
+                  [
+                    4100,
+                    1891
+                  ],
+                  [
+                    1442,
+                    2189
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.9192528256489036,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.9241321970484306,
+                "macro_f1": 0.9189455422090714,
+                "positive_f1": 0.8984418475236505,
+                "positive_precision": 0.907787461343829,
+                "positive_recall": 0.8892866978793721,
+                "roc_auc": 0.9715484821834791,
+                "average_precision": 0.9622564714542778,
+                "brier": 0.05974018612191354,
+                "log_loss": 0.20584682390168377,
+                "confusion_matrix": [
+                  [
+                    5663,
+                    328
+                  ],
+                  [
+                    402,
+                    3229
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2795637669324448,
+          "private_predictions_sha256": "a996d92f2884c4e8576e9641cb77189cf38712c0677a551481dd73fd7d28e7bd"
+        },
+        {
+          "seed": 105,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6399594534193598,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6506963209311993,
+                "macro_f1": 0.6406478107213432,
+                "positive_f1": 0.58055659553226,
+                "positive_precision": 0.5308078502966682,
+                "positive_recall": 0.6405948774442303,
+                "roc_auc": 0.7004310284392898,
+                "average_precision": 0.5411611639114409,
+                "brier": 0.21089036212304713,
+                "log_loss": 0.6083211251134926,
+                "confusion_matrix": [
+                  [
+                    3935,
+                    2056
+                  ],
+                  [
+                    1305,
+                    2326
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.41,
+              "validation_macro_f1": 0.9177280431753705,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.41,
+                "accuracy": 0.9228850550821035,
+                "macro_f1": 0.9171478484971776,
+                "positive_f1": 0.895345557122708,
+                "positive_precision": 0.9176062445793582,
+                "positive_recall": 0.8741393555494354,
+                "roc_auc": 0.9710878168901198,
+                "average_precision": 0.9614799977505843,
+                "brier": 0.060713881714080334,
+                "log_loss": 0.20851075244806838,
+                "confusion_matrix": [
+                  [
+                    5706,
+                    285
+                  ],
+                  [
+                    457,
+                    3174
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2765000377758343,
+          "private_predictions_sha256": "1dcfc6305a7b4f61f39422d2edc7ffc2105190ccf37e4b6e162fd75ff6a6d646"
+        },
+        {
+          "seed": 106,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.36,
+              "validation_macro_f1": 0.6394322943936758,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.36,
+                "accuracy": 0.6453959675743088,
+                "macro_f1": 0.6389465162127217,
+                "positive_f1": 0.5906909788867563,
+                "positive_precision": 0.5232731137088205,
+                "positive_recall": 0.6780501239328008,
+                "roc_auc": 0.6985493847123389,
+                "average_precision": 0.5412693738577327,
+                "brier": 0.21094593208923446,
+                "log_loss": 0.6091344528892435,
+                "confusion_matrix": [
+                  [
+                    3748,
+                    2243
+                  ],
+                  [
+                    1169,
+                    2462
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.9167070020424093,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.4,
+                "accuracy": 0.9225732695905218,
+                "macro_f1": 0.9169824387687595,
+                "positive_f1": 0.895438596491228,
+                "positive_precision": 0.9129937034917001,
+                "positive_recall": 0.8785458551363261,
+                "roc_auc": 0.9711006884879785,
+                "average_precision": 0.9612892431304095,
+                "brier": 0.06064833154017353,
+                "log_loss": 0.20851199301148107,
+                "confusion_matrix": [
+                  [
+                    5687,
+                    304
+                  ],
+                  [
+                    441,
+                    3190
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2780359225560378,
+          "private_predictions_sha256": "fb604c9c635f79966488475fb9aeb39e94bb87b12e78c01204c7db47251777e6"
+        },
+        {
+          "seed": 107,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6405332286501182,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6492413219704843,
+                "macro_f1": 0.6391767439790708,
+                "positive_f1": 0.578914535246413,
+                "positive_precision": 0.5291970802919708,
+                "positive_recall": 0.6389424400991462,
+                "roc_auc": 0.6983475304759214,
+                "average_precision": 0.5410740463635484,
+                "brier": 0.2110943096148475,
+                "log_loss": 0.6092956905354224,
+                "confusion_matrix": [
+                  [
+                    3927,
+                    2064
+                  ],
+                  [
+                    1311,
+                    2320
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.35,
+              "validation_macro_f1": 0.9152691739220087,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.35,
+                "accuracy": 0.9202868426522552,
+                "macro_f1": 0.9152349742778054,
+                "positive_f1": 0.8945414546954489,
+                "positive_precision": 0.8931905546403075,
+                "positive_recall": 0.8958964472597081,
+                "roc_auc": 0.9707958614686925,
+                "average_precision": 0.9603959664540415,
+                "brier": 0.061238394885649076,
+                "log_loss": 0.20922729015913966,
+                "confusion_matrix": [
+                  [
+                    5602,
+                    389
+                  ],
+                  [
+                    378,
+                    3253
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27605823029873466,
+          "private_predictions_sha256": "2e01b7bce34b51533e5f95a759a45b20573618b857b45d0af60b219b9fb60300"
+        },
+        {
+          "seed": 108,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.640324627922766,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6513198919143629,
+                "macro_f1": 0.6420429891801805,
+                "positive_f1": 0.5844171931128452,
+                "positive_precision": 0.5310670868977938,
+                "positive_recall": 0.6496832828421922,
+                "roc_auc": 0.7000918158657246,
+                "average_precision": 0.5428688673983502,
+                "brier": 0.21052444346720323,
+                "log_loss": 0.6077647503952932,
+                "confusion_matrix": [
+                  [
+                    3908,
+                    2083
+                  ],
+                  [
+                    1272,
+                    2359
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.39,
+              "validation_macro_f1": 0.9169399085599689,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.39,
+                "accuracy": 0.9249636250259822,
+                "macro_f1": 0.9196333743625813,
+                "positive_f1": 0.898936170212766,
+                "positive_precision": 0.9140335895246229,
+                "positive_recall": 0.8843293858441201,
+                "roc_auc": 0.9720428434812319,
+                "average_precision": 0.9623351437926725,
+                "brier": 0.059894577132622855,
+                "log_loss": 0.2055869240322558,
+                "confusion_matrix": [
+                  [
+                    5689,
+                    302
+                  ],
+                  [
+                    420,
+                    3211
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27759038518240076,
+          "private_predictions_sha256": "07e87a0eaeb29f513543fa41e7d099e7a00c1356dc28fc9030d2b3b56882bf53"
+        },
+        {
+          "seed": 109,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6418804239874938,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6510081064227812,
+                "macro_f1": 0.6409813992032198,
+                "positive_f1": 0.5809832792612928,
+                "positive_precision": 0.5311430527036276,
+                "positive_recall": 0.6411456898925916,
+                "roc_auc": 0.7008513780493562,
+                "average_precision": 0.5427139793683873,
+                "brier": 0.2106996555562743,
+                "log_loss": 0.6086260145151104,
+                "confusion_matrix": [
+                  [
+                    3936,
+                    2055
+                  ],
+                  [
+                    1303,
+                    2328
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.9163676639701877,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.4,
+                "accuracy": 0.9223654125961338,
+                "macro_f1": 0.9169595902225406,
+                "positive_f1": 0.895772289660946,
+                "positive_precision": 0.9078054298642534,
+                "positive_recall": 0.8840539796199394,
+                "roc_auc": 0.9707977002683867,
+                "average_precision": 0.9610362221006955,
+                "brier": 0.060848449897438116,
+                "log_loss": 0.20854666759115,
+                "confusion_matrix": [
+                  [
+                    5665,
+                    326
+                  ],
+                  [
+                    421,
+                    3210
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27597819101932075,
+          "private_predictions_sha256": "114800c4fdbe2dc453a51eb8c936c950e34a7cf24e0952eea1a4e1a771ec4d67"
+        },
+        {
+          "seed": 110,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.6412817536162219,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.6536063188526294,
+                "macro_f1": 0.6396285417523416,
+                "positive_f1": 0.5686553643069755,
+                "positive_precision": 0.536376953125,
+                "positive_recall": 0.6050674745249243,
+                "roc_auc": 0.7000782547179808,
+                "average_precision": 0.5405254232722844,
+                "brier": 0.21097524961901856,
+                "log_loss": 0.6089334237011832,
+                "confusion_matrix": [
+                  [
+                    4092,
+                    1899
+                  ],
+                  [
+                    1434,
+                    2197
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.9201069948391603,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.9204946996466431,
+                "macro_f1": 0.9151306616180639,
+                "positive_f1": 0.8937942523948355,
+                "positive_precision": 0.9011758118701008,
+                "positive_recall": 0.8865326356375655,
+                "roc_auc": 0.9718601587316255,
+                "average_precision": 0.9623495144030262,
+                "brier": 0.06015757510290017,
+                "log_loss": 0.20586601174680236,
+                "confusion_matrix": [
+                  [
+                    5638,
+                    353
+                  ],
+                  [
+                    412,
+                    3219
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27550211986572226,
+          "private_predictions_sha256": "48dfc085ce2b5b5c538fdde906178940bb23a77559222a0abdba17d119f4265f"
+        },
+        {
+          "seed": 111,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6409729449218122,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6487216794845146,
+                "macro_f1": 0.6389873535301922,
+                "positive_f1": 0.5797065406615269,
+                "positive_precision": 0.5284515982770347,
+                "positive_recall": 0.6419719085651335,
+                "roc_auc": 0.699328208322766,
+                "average_precision": 0.5434894940941368,
+                "brier": 0.2109042827971069,
+                "log_loss": 0.6093886357028709,
+                "confusion_matrix": [
+                  [
+                    3911,
+                    2080
+                  ],
+                  [
+                    1300,
+                    2331
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.9172894926894026,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.43,
+                "accuracy": 0.9227811265849096,
+                "macro_f1": 0.9169431020052528,
+                "positive_f1": 0.8949229246216942,
+                "positive_precision": 0.9197674418604651,
+                "positive_recall": 0.8713852933076287,
+                "roc_auc": 0.9702281780331381,
+                "average_precision": 0.9600739987953024,
+                "brier": 0.061075946353800294,
+                "log_loss": 0.20994360331876616,
+                "confusion_matrix": [
+                  [
+                    5715,
+                    276
+                  ],
+                  [
+                    467,
+                    3164
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27795574847506055,
+          "private_predictions_sha256": "78afe0b544f24e7cb0e391885af3dbed500db52a9a2692ea78a9b09c1bc235d6"
+        },
+        {
+          "seed": 112,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6413885215789881,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6490334649760965,
+                "macro_f1": 0.6391169950298904,
+                "positive_f1": 0.57929487978074,
+                "positive_precision": 0.5288898999090081,
+                "positive_recall": 0.6403194712200496,
+                "roc_auc": 0.7016593006649421,
+                "average_precision": 0.5422205428883077,
+                "brier": 0.21060783828516474,
+                "log_loss": 0.6081217925166761,
+                "confusion_matrix": [
+                  [
+                    3920,
+                    2071
+                  ],
+                  [
+                    1306,
+                    2325
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.41,
+              "validation_macro_f1": 0.9186881226467898,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.41,
+                "accuracy": 0.9229889835792975,
+                "macro_f1": 0.9174472533669508,
+                "positive_f1": 0.8960583532052181,
+                "positive_precision": 0.9130931961120641,
+                "positive_recall": 0.8796474800330487,
+                "roc_auc": 0.9716228616311046,
+                "average_precision": 0.9619528995527226,
+                "brier": 0.05984267028237003,
+                "log_loss": 0.20573040626656214,
+                "confusion_matrix": [
+                  [
+                    5687,
+                    304
+                  ],
+                  [
+                    437,
+                    3194
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2783302583370604,
+          "private_predictions_sha256": "5534392093f924e3780211fd90d5f8446e71a4c361677b649c14c3620303c591"
+        },
+        {
+          "seed": 113,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6417261061460033,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6477863230097692,
+                "macro_f1": 0.6379114415457077,
+                "positive_f1": 0.5781152744927175,
+                "positive_precision": 0.5274875056792367,
+                "positive_recall": 0.6394932525475076,
+                "roc_auc": 0.6988784838875867,
+                "average_precision": 0.5410410727915989,
+                "brier": 0.21107493653712103,
+                "log_loss": 0.6093572142513063,
+                "confusion_matrix": [
+                  [
+                    3911,
+                    2080
+                  ],
+                  [
+                    1309,
+                    2322
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.36,
+              "validation_macro_f1": 0.9179418194735447,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.36,
+                "accuracy": 0.9231968405736853,
+                "macro_f1": 0.9181602280206453,
+                "positive_f1": 0.8978576364892882,
+                "positive_precision": 0.9012208657047724,
+                "positive_recall": 0.8945194161388047,
+                "roc_auc": 0.9711557605388162,
+                "average_precision": 0.9617211827358599,
+                "brier": 0.0602424879752619,
+                "log_loss": 0.2073280093229198,
+                "confusion_matrix": [
+                  [
+                    5635,
+                    356
+                  ],
+                  [
+                    383,
+                    3248
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2802487864749377,
+          "private_predictions_sha256": "0bd169e91ca2d2f31db717b31327b28b1fcb021a5ca97bb06911eed0e1993d5d"
+        },
+        {
+          "seed": 114,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6420271993444437,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.645292039077115,
+                "macro_f1": 0.6360784802362945,
+                "positive_f1": 0.5781732789519219,
+                "positive_precision": 0.5244394618834081,
+                "positive_recall": 0.6441751583585789,
+                "roc_auc": 0.700247148469882,
+                "average_precision": 0.5390911245581311,
+                "brier": 0.21079731244628452,
+                "log_loss": 0.6087713443390305,
+                "confusion_matrix": [
+                  [
+                    3870,
+                    2121
+                  ],
+                  [
+                    1292,
+                    2339
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.9186305456665974,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.4,
+                "accuracy": 0.9214300561213885,
+                "macro_f1": 0.9158969179296179,
+                "positive_f1": 0.8943248532289628,
+                "positive_precision": 0.908032926483111,
+                "positive_recall": 0.8810245111539521,
+                "roc_auc": 0.9715248995774025,
+                "average_precision": 0.9614083283748889,
+                "brier": 0.0601809553544802,
+                "log_loss": 0.20626886204639167,
+                "confusion_matrix": [
+                  [
+                    5667,
+                    324
+                  ],
+                  [
+                    432,
+                    3199
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2798184376933234,
+          "private_predictions_sha256": "a2bf7dba3785a55f6ce8b4b68f761c022b440a3076ef3a0b045e9647cd08339a"
+        },
+        {
+          "seed": 115,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.6384027487255768,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.6523591768863022,
+                "macro_f1": 0.6385763130076354,
+                "positive_f1": 0.5679969004261914,
+                "positive_precision": 0.5347762645914397,
+                "positive_recall": 0.6056182869732856,
+                "roc_auc": 0.6994560508714968,
+                "average_precision": 0.5424788801232262,
+                "brier": 0.210818371589343,
+                "log_loss": 0.6083212853215778,
+                "confusion_matrix": [
+                  [
+                    4078,
+                    1913
+                  ],
+                  [
+                    1432,
+                    2199
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.4,
+              "validation_macro_f1": 0.9178934894415249,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.4,
+                "accuracy": 0.9231968405736853,
+                "macro_f1": 0.9177646356006509,
+                "positive_f1": 0.8966288991467338,
+                "positive_precision": 0.9110289937464469,
+                "positive_recall": 0.8826769484990361,
+                "roc_auc": 0.9717561746089252,
+                "average_precision": 0.9618567134584,
+                "brier": 0.0601239518126628,
+                "log_loss": 0.20568317008183398,
+                "confusion_matrix": [
+                  [
+                    5678,
+                    313
+                  ],
+                  [
+                    426,
+                    3205
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2791883225930155,
+          "private_predictions_sha256": "36fb166b68516fe3106c1b40368ca5219a4213ef7e3706f41194890ea335e3e4"
+        },
+        {
+          "seed": 116,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6408896504686259,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6476823945125754,
+                "macro_f1": 0.6371410794158994,
+                "positive_f1": 0.5752944124279629,
+                "positive_precision": 0.5276947828085498,
+                "positive_recall": 0.6323326907188103,
+                "roc_auc": 0.7003798178678097,
+                "average_precision": 0.5426225704634408,
+                "brier": 0.21066535889906773,
+                "log_loss": 0.6082760669492834,
+                "confusion_matrix": [
+                  [
+                    3936,
+                    2055
+                  ],
+                  [
+                    1335,
+                    2296
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.9173314589221644,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.9227811265849096,
+                "macro_f1": 0.9175252477586597,
+                "positive_f1": 0.8967051299874879,
+                "positive_precision": 0.9053902302077484,
+                "positive_recall": 0.8881850729826494,
+                "roc_auc": 0.9716381696385575,
+                "average_precision": 0.9618090335609628,
+                "brier": 0.05998152072107412,
+                "log_loss": 0.20602636486824283,
+                "confusion_matrix": [
+                  [
+                    5654,
+                    337
+                  ],
+                  [
+                    406,
+                    3225
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.28038416834276036,
+          "private_predictions_sha256": "044334a6baca2ec1e3ace18e8158dbcc54128cde54d6a5784d904292e5507ddd"
+        },
+        {
+          "seed": 117,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.6418286361466712,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.6473706090209935,
+                "macro_f1": 0.6378387619226789,
+                "positive_f1": 0.5790844808336435,
+                "positive_precision": 0.52686230248307,
+                "positive_recall": 0.6427981272376756,
+                "roc_auc": 0.7010439003773263,
+                "average_precision": 0.5417965304334154,
+                "brier": 0.21061758285920182,
+                "log_loss": 0.6082100492753065,
+                "confusion_matrix": [
+                  [
+                    3895,
+                    2096
+                  ],
+                  [
+                    1297,
+                    2334
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.37,
+              "validation_macro_f1": 0.9194197040318659,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.37,
+                "accuracy": 0.920702556641031,
+                "macro_f1": 0.9155301861824513,
+                "positive_f1": 0.8946278138378677,
+                "positive_precision": 0.897229916897507,
+                "positive_recall": 0.8920407601211787,
+                "roc_auc": 0.9706790057481338,
+                "average_precision": 0.9610349050937762,
+                "brier": 0.06063964785323178,
+                "log_loss": 0.20847074746451946,
+                "confusion_matrix": [
+                  [
+                    5620,
+                    371
+                  ],
+                  [
+                    392,
+                    3239
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.27769142425977245,
+          "private_predictions_sha256": "5b1509ea072ec34a234dc17a481544276e837f09575971bbe7db302509fe3ce4"
+        },
+        {
+          "seed": 118,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.36,
+              "validation_macro_f1": 0.6405012808003712,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.36,
+                "accuracy": 0.6443566826023696,
+                "macro_f1": 0.6370414571357619,
+                "positive_f1": 0.5855135658914729,
+                "positive_precision": 0.5225945945945946,
+                "positive_recall": 0.6656568438446709,
+                "roc_auc": 0.7013731834325435,
+                "average_precision": 0.5404434046356976,
+                "brier": 0.21072166001667167,
+                "log_loss": 0.6079146487301798,
+                "confusion_matrix": [
+                  [
+                    3783,
+                    2208
+                  ],
+                  [
+                    1214,
+                    2417
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.9184080914575696,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.9224693410933278,
+                "macro_f1": 0.9171875986409652,
+                "positive_f1": 0.896273637374861,
+                "positive_precision": 0.9050828418983432,
+                "positive_recall": 0.8876342605342881,
+                "roc_auc": 0.9718886601268836,
+                "average_precision": 0.9621301356758103,
+                "brier": 0.060122717796084045,
+                "log_loss": 0.20566647979515515,
+                "confusion_matrix": [
+                  [
+                    5653,
+                    338
+                  ],
+                  [
+                    408,
+                    3223
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.28014614150520334,
+          "private_predictions_sha256": "2e412f4fd1f09dbef5e8b053a9834910a34dd49031884a2a58c448b13ea5e57d"
+        },
+        {
+          "seed": 119,
+          "models": {
+            "linguistic_13": {
+              "C": 10.0,
+              "threshold": 0.38,
+              "validation_macro_f1": 0.6397179600458052,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.38,
+                "accuracy": 0.6545416753273747,
+                "macro_f1": 0.6417233718593931,
+                "positive_f1": 0.5739553960522943,
+                "positive_precision": 0.5368017262047471,
+                "positive_recall": 0.6166345359405122,
+                "roc_auc": 0.7003915861858518,
+                "average_precision": 0.539350374942312,
+                "brier": 0.2108830965002137,
+                "log_loss": 0.6087008417305623,
+                "confusion_matrix": [
+                  [
+                    4059,
+                    1932
+                  ],
+                  [
+                    1392,
+                    2239
+                  ]
+                ]
+              }
+            },
+            "tfidf_lr": {
+              "C": 10.0,
+              "threshold": 0.43,
+              "validation_macro_f1": 0.9189231408767162,
+              "june": {
+                "n_users": 9622,
+                "positive_prevalence": 0.3773643733111619,
+                "threshold": 0.43,
+                "accuracy": 0.92517148202037,
+                "macro_f1": 0.9196326850467682,
+                "positive_f1": 0.8985343855693348,
+                "positive_precision": 0.92005772005772,
+                "positive_recall": 0.8779950426879648,
+                "roc_auc": 0.9709908661762496,
+                "average_precision": 0.9614865926362137,
+                "brier": 0.05967680076929698,
+                "log_loss": 0.20659000054061474,
+                "confusion_matrix": [
+                  [
+                    5714,
+                    277
+                  ],
+                  [
+                    443,
+                    3188
+                  ]
+                ]
+              }
+            }
+          },
+          "lexical_minus_linguistic_macro_f1": 0.2779093131873751,
+          "private_predictions_sha256": "8a08061320427c0d9b3198b1928629534b310dff7710c93a1d2c0fa210124e10"
+        }
+      ],
+      "summary": {
+        "linguistic_13": {
+          "mean": 0.6390656674087831,
+          "sd": 0.0016843307695961851,
+          "minimum": 0.6360784802362945,
+          "maximum": 0.6420429891801805,
+          "quantiles_025_50_975": [
+            0.6361503673273403,
+            0.6391468695044806,
+            0.6418911709528065
+          ],
+          "interpretation": "Descriptive distribution across 20 stratified training-account resamples, not a population confidence interval"
+        },
+        "tfidf_lr": {
+          "mean": 0.9170384018316786,
+          "sd": 0.0013789604911306082,
+          "minimum": 0.9151142130898497,
+          "maximum": 0.9196333743625813,
+          "quantiles_025_50_975": [
+            0.9151220261407514,
+            0.9170651436329685,
+            0.9196330469375701
+          ],
+          "interpretation": "Descriptive distribution across 20 stratified training-account resamples, not a population confidence interval"
+        }
+      },
+      "lexical_advantage_summary": {
+        "mean": 0.2779727344228956,
+        "sd": 0.0018970423289646904,
+        "minimum": 0.2742923322985529,
+        "maximum": 0.28126496647317123,
+        "quantiles_025_50_975": [
+          0.27486698139295834,
+          0.27793253083121783,
+          0.2808465873612261
+        ],
+        "interpretation": "Descriptive distribution across 20 stratified training-account resamples, not a population confidence interval"
+      }
+    }
+  },
+  "private_report_sha256": "5a76d453ab1ad012548649b1266cd7ade3848974c2277138b57b4fb13739ecd8",
+  "export_code_sha256": "b8e7f3edd9bc879e0a65e65412b529e44257cae93bf201b1340d4f2fc1fc9e7b",
+  "saved_probability_arithmetic_verified": true
+}

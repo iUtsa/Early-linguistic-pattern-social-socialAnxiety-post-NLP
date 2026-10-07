@@ -12,7 +12,7 @@ If new data supply self-reported diagnostic labels with real matched controls, u
 
 ## Replacement contribution statement
 
-The proposed contribution is a reproducible evaluation of which linguistic associations remain useful under explicit controls for data-source, genre, activity and temporal shifts. Logistic regression and a small feature set enable inspection and low-cost replication, but are not themselves methodological novelty. A finding that confounds explain much of the original score can be the central contribution.
+The contribution is a reproducible evaluation of linguistic and lexical prediction under adjacent-community comparisons, activity/length restrictions, term perturbations and temporal evaluation. Logistic regression and a small feature set enable inspection and low-cost replication, but are not methodological novelty. The completed experiments do not causally reconstruct or explain the original preprint's score; they support the bounded replacement study. See the [completed manuscript](REVISED_PILOT_MANUSCRIPT.md), [later-period findings](TEMPORAL_EXTENSION_FINDINGS.md) and [submission assessment](SUBMISSION_DECISION.md).
 
 ## Abstract scaffold
 

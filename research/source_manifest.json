@@ -187,17 +187,24 @@
       "local_file": "research/sources/ernala2019_crossref.json",
       "sha256": "71ebf495d954c2844374fe2bac4aab4c3d84df47372835f6dc63eb966bba41de",
       "reading_scope": "Bibliographic metadata only; measurement claims checked against Shani and Stade 2025, not independently against this full text"
+    },
+    {
+      "url": "https://aclanthology.org/W18-0620.pdf",
+      "local_file": "research/sources/W18-0620.pdf",
+      "sha256": "2d208ab55065a50d0225329e301cc9bd0710f4905768ae572eeba41864afbe8a",
+      "reading_scope": "Full text reviewed, including cohort construction, held-out-user classification, within/between-context results and limitations; directly constrains novelty"
     }
   ],
   "limitations": [
     "Several publisher pages returned HTTP 403; source statuses are retained locally.",
-    "SMHD access was not obtained. No private datasets downloaded.",
+    "SMHD access was not obtained. No controlled-access clinical or SMHD data downloaded; the public RMHD source archive was acquired privately.",
     "Hugging Face model identity checked using public LFS SHA-256 and matching local artifact; model CDN download initially failed."
   ],
   "dataset_attribution_followup": {
     "source_study_identified_by": "User",
     "url": "https://www.mdpi.com/2076-3417/14/4/1547",
     "retrieval_scope": "Publisher HTML/XML returned 403; publisher asset PDF obtained after runtime reconnect; methods/organization/ethics/availability read",
-    "exact_uploaded_dataset_version_verified": false
+    "exact_uploaded_dataset_version_verified": true,
+    "verification": "Complete RMHD version-1 archive downloaded and hashed; all 15 authored uploads byte-identical to upstream files. See rmhd_source_manifest.json."
   }
 }

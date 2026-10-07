@@ -1,0 +1,13 @@
+{
+  "status": "Human-review draft; ethics details and author declarations incomplete",
+  "pandoc_version": "pandoc 3.1.11.1",
+  "pdflatex_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "sha256": {
+    "research/REVISED_PILOT_MANUSCRIPT.md": "9057987db93e5d588ec539facdfc77e3178f623670041e70146554615e387839",
+    "research/figures/reviewer_controls.png": "eda29a9c51ed8b2ddae576fe2d851f1246070443ee0c637c45ade9064ffc9e7d",
+    "research/figures/temporal_extension.png": "9e7f6e1b7213a3a453fa759a16ed192d085ecac26de183bf0ca7c26b0476ed9e",
+    "scripts/render_research_manuscript.py": "e1df542c5931513b0bf9f7bc1b76005a1c71b5e67f971f5e88dec0df62341917",
+    "research/REVISED_PILOT_MANUSCRIPT.pdf": "1b5a871d7c167b6b2b21a65ccaa4cb108e7fc8cf4f4194d65b9346b4052b64d4",
+    "research/REVISED_PILOT_MANUSCRIPT.docx": "1ed632ac714097c865e2dededff4c4bf1028c7440099804ab0b4742b5519ba73"
+  }
+}

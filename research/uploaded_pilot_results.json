@@ -2,7 +2,7 @@
   "date": "2026-10-07",
   "status": "exploratory_community_proxy_pilot",
   "scope": "Selected uploaded examples; community-affiliation labels, not anxiety diagnosis or onset",
-  "provenance_status": "Kaggle RMHD version 1 and publisher-stated CC0 verified; uploaded names/byte lengths match release listing, upstream checksum identity/completeness and secondary institutional determination remain unresolved",
+  "provenance_status": "Kaggle RMHD version 1 and publisher-stated CC0 verified; all 15 authored uploads are byte-identical to downloaded upstream files. Secondary institutional determination remains outstanding; whole-release parsing coverage is documented separately.",
   "author_attributed_dataset_study": "https://www.mdpi.com/2076-3417/14/4/1547",
   "source_study_documented_facts": {
     "source_pdf": "https://mdpi-res.com/d_attachment/applsci/applsci-14-01547/article_deploy/applsci-14-01547.pdf",
@@ -17,7 +17,8 @@
     "identified_version": 1,
     "publisher_stated_license": "CC0: Public Domain",
     "version_and_stated_license_metadata_verified": true,
-    "upstream_content_checksum_identity_verified": false
+    "upstream_content_checksum_identity_verified": true,
+    "archive_sha256": "6078fe83304c266ca976973f8b1e553dc5d818c59810508151f9e6bc615bf9e4"
   },
   "comparison_dependence": "The two comparisons share some Anxiety authors and are not independent replications",
   "comparisons": {
@@ -2739,7 +2740,7 @@
       }
     }
   },
-  "export_code_sha256": "e28951f79b7976bd5ae793cce8df920886a81506993fcef015a8fba26adbeebc",
+  "export_code_sha256": "e68cd8215e98f11c38373fc6d9e1331c21df9fafa2b89426983f2b0a334b7ad5",
   "uploads": {
     "uploaded_files": 36,
     "raw_csv_rows_including_duplicates": 259190,
@@ -3291,7 +3292,7 @@
   },
   "statistical_format_note": "Underflowed exact McNemar p-values are stored as null with finite log10 probability; private original reports remain unchanged.",
   "figure_sha256": {
-    "pilot_baselines.pdf": "9be53a4f5722b1b6ebb71d0a03c715d3626917d1b91aa17893756080485d0208",
+    "pilot_baselines.pdf": "56e76df4e0d41d7c0f015ab3884f526762c04c99a5b6721ecb3fac861eef3136",
     "pilot_baselines.png": "5f4e35977f59bb375286e35851516a7ba1dc63d2410ba4404ddf5c9fc89636f4"
   }
 }

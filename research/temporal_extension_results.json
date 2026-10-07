@@ -1,0 +1,4421 @@
+{
+  "status": "frozen_later_period_exploratory_extension",
+  "bootstrap": 1000,
+  "seed": 42,
+  "protocol_sha256": "979535e4d09b16dfef701d5695f2b2ce6587364d797b86c1e21edf91f083a4b2",
+  "code_sha256": {
+    "src/temporal_extension.py": "507460f08fec2f08336eb246cad8e7284b44652524b50b0e6d397350ad752a26",
+    "src/features.py": "8f8778096e4db1cb7378a84327c25992c7cd9533c56404ad939db78aa86c210e",
+    "src/preprocess.py": "87604acffc4cf3cdd44980f8d687d62eb7b090661e4d61f9a7cfeacd34a601be"
+  },
+  "release_manifest_sha256": "16cc08cceaf82d0993280ef82f2a8d9dd83dbeab9e952a6fcf4353adb13a3a9c",
+  "source_inventory": {
+    "files": [
+      {
+        "name": "Original Reddit Data/raw data/2019/Aug/anipjaug19.csv",
+        "sha256": "73b70f120f81242ae1d3058886668f37f37760e13c72b80b77943e155813244b",
+        "size_bytes": 4948595,
+        "status": "parsed",
+        "rows": 5394,
+        "excluded_metadata_rows": 12,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/Aug/depjaug19.csv",
+        "sha256": "d514eacb3354aa5738ac7271dfd7039a4bcec1fc02fd8ea5524a678d4cf5924a",
+        "size_bytes": 14647605,
+        "status": "parsed",
+        "rows": 15320,
+        "excluded_metadata_rows": 18,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/Aug/lonaug19.csv",
+        "sha256": "0c9cfcdf8eb3de80eb58cfaaacca9b31038c3c71d3f405682bb324e3b26dd118",
+        "size_bytes": 1702685,
+        "status": "parsed",
+        "rows": 2110,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/Aug/mhaug19.csv",
+        "sha256": "ce9d9b4ba52e0328662c83e9fd26d83c88ca438855df7dc06f1b7014fbddb62c",
+        "size_bytes": 4860387,
+        "status": "parsed",
+        "rows": 3644,
+        "excluded_metadata_rows": 4,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/Aug/swaug19.csv",
+        "sha256": "75126658f9adca74bc7172afb82137fe454a931dfb4edd06deb541364879a8cb",
+        "size_bytes": 6786969,
+        "status": "parsed",
+        "rows": 7327,
+        "excluded_metadata_rows": 6,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/JAN/anijan19.csv",
+        "sha256": "ddc920f146c9cc2cc50135a753f23961b341da12d7cc91324a49b18c8e9737a1",
+        "size_bytes": 4754656,
+        "status": "parsed",
+        "rows": 5219,
+        "excluded_metadata_rows": 67,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/JAN/depjan19.csv",
+        "sha256": "dd6091ab057280ba3ed1b9f5cd4cac1a5e227944522d3bf7fc9d99296faece66",
+        "size_bytes": 12292357,
+        "status": "parsed",
+        "rows": 12818,
+        "excluded_metadata_rows": 252,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/JAN/lonejan19.csv",
+        "sha256": "27c3d1ab9d7da35e0793a97f5438cf15d7380dbc66debfd3851d933d1d2af69f",
+        "size_bytes": 865199,
+        "status": "parsed",
+        "rows": 1076,
+        "excluded_metadata_rows": 37,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/JAN/mhjan22.csv",
+        "sha256": "6332aa783931e0e80e707a8de5f0778c42311b9b781a42887a9671e79560d672",
+        "size_bytes": 4156893,
+        "status": "parsed",
+        "rows": 3116,
+        "excluded_metadata_rows": 47,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/JAN/swjun19.csv",
+        "sha256": "861290e8f2b04f0191894c62c9a7554650dbc0bd0a3a853585e5e5877ace2438",
+        "size_bytes": 5244185,
+        "status": "parsed",
+        "rows": 5529,
+        "excluded_metadata_rows": 89,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/MAy/animay19.csv",
+        "sha256": "74892800f275007e570bd6128ec94c524d307635f54eaa7735c3a9ce71090667",
+        "size_bytes": 4530293,
+        "status": "parsed",
+        "rows": 4809,
+        "excluded_metadata_rows": 10,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/MAy/depamay19.csv",
+        "sha256": "39442e998dc866d0bc2d1946e95145a1c0b66699fa92064761df05d619feb14c",
+        "size_bytes": 14453222,
+        "status": "parsed",
+        "rows": 14806,
+        "excluded_metadata_rows": 10,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/MAy/lonemay19.csv",
+        "sha256": "ad9e57d3f1b44c120ca9f630acafbcf24b89e4c9d6d0fa026a070b0502c66773",
+        "size_bytes": 1083294,
+        "status": "parsed",
+        "rows": 1315,
+        "excluded_metadata_rows": 2,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/MAy/mhmay19.csv",
+        "sha256": "ffcd108705b685b85083917a62c1e252a92c680e367f975f86e9697a04e871db",
+        "size_bytes": 4958724,
+        "status": "parsed",
+        "rows": 3915,
+        "excluded_metadata_rows": 5,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/MAy/swmay19.csv",
+        "sha256": "4de449e1634a14249401e3d80b8b715e25d21da840146ce4a238fea4338d228f",
+        "size_bytes": 5853630,
+        "status": "parsed",
+        "rows": 6326,
+        "excluded_metadata_rows": 8,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/apr/anxapr19.csv",
+        "sha256": "1b4054109e8d9adee510e787c07768a01a5e7d0f01cee7acc4ca166c5055dfcf",
+        "size_bytes": 4534894,
+        "status": "parsed",
+        "rows": 4663,
+        "excluded_metadata_rows": 10,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/apr/depapr19.csv",
+        "sha256": "a9bd272d882de465291772c3c9f1efd4a5e2141b680df0b710654bbf753c3634",
+        "size_bytes": 13834129,
+        "status": "parsed",
+        "rows": 14277,
+        "excluded_metadata_rows": 1,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/apr/loneapr19.csv",
+        "sha256": "790a7d2342f5339fd19bb71f4f14bda6bd54f950d129290cd78aec1e89dfc04e",
+        "size_bytes": 986652,
+        "status": "parsed",
+        "rows": 1188,
+        "excluded_metadata_rows": 0,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/apr/mentalhealthapr19.csv",
+        "sha256": "77eda28a3539c08d7c8b15cf301e2d09039106f2a99741f56ba835d79bd4e140",
+        "size_bytes": 4520595,
+        "status": "parsed",
+        "rows": 3500,
+        "excluded_metadata_rows": 0,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/apr/swapr19.csv",
+        "sha256": "001aa9898dc4d50f76ecac9fcb74c43c89f54bc786876b01632357a4662bf3af",
+        "size_bytes": 5638637,
+        "status": "parsed",
+        "rows": 6018,
+        "excluded_metadata_rows": 2,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/dec/anidec19.csv",
+        "sha256": "a316578711a50e11ca30816e93d96d7130956e9d34dfbe30cafbfa13c9885752",
+        "size_bytes": 4590026,
+        "status": "parsed",
+        "rows": 4921,
+        "excluded_metadata_rows": 12,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/dec/depdec19.csv",
+        "sha256": "52aaf5f3af796c74980587c72d89d411e841bafe250338fa93a0d6c30a061541",
+        "size_bytes": 7232609,
+        "status": "parsed",
+        "rows": 7964,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/dec/lonedec19.csv",
+        "sha256": "8b187effb3cd4289ce182f04e773a0d9ed5bf7c6a7b90be14ff9d472a61db119",
+        "size_bytes": 2295698,
+        "status": "parsed",
+        "rows": 2906,
+        "excluded_metadata_rows": 2,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/dec/mhdec19.csv",
+        "sha256": "dadbef3438cb07f3fe57b80c1862b4d6b9fa20dc1dae69b30fc0413a4acb9ab3",
+        "size_bytes": 5308087,
+        "status": "parsed",
+        "rows": 4350,
+        "excluded_metadata_rows": 1,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/dec/swdec19.csv",
+        "sha256": "52aaf5f3af796c74980587c72d89d411e841bafe250338fa93a0d6c30a061541",
+        "size_bytes": 7232609,
+        "status": "byte_identical_file_skipped"
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/feb/Swfeb19.csv",
+        "sha256": "5300027d73c3c50a66034518e8c1f40f50dcf2120ca09e1383680cdac82a4184",
+        "size_bytes": 4877645,
+        "status": "parsed",
+        "rows": 5097,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/feb/anifeb19.csv",
+        "sha256": "3b7c5bd6779f76cc57732bf20569edd1e2bcf47bd6540ab1bb7f4e8dda811301",
+        "size_bytes": 4277810,
+        "status": "parsed",
+        "rows": 4582,
+        "excluded_metadata_rows": 13,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/feb/depfeb19.csv",
+        "sha256": "ba4daedc7287afada46f021ad4074cb4a33eecff0092f5e5edad95449edd2895",
+        "size_bytes": 12250392,
+        "status": "parsed",
+        "rows": 12535,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/feb/lonfeb19.csv",
+        "sha256": "042f5abc09e776192935c6cce628028c61ebece4916186d2323b419df289363d",
+        "size_bytes": 790657,
+        "status": "parsed",
+        "rows": 1041,
+        "excluded_metadata_rows": 0,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/feb/mhfeb19.csv",
+        "sha256": "265b1c2435b43e0a9973efeb4cbb68b7c82641ffc17fff09da28536448a98347",
+        "size_bytes": 4262029,
+        "status": "parsed",
+        "rows": 3248,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/jul/anijul19.csv",
+        "sha256": "f5ac67efc22616faef7b766440e815691c1eff0feb27ee30ae5c3f2edf7b6054",
+        "size_bytes": 5162136,
+        "status": "parsed",
+        "rows": 5279,
+        "excluded_metadata_rows": 12,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/jul/depjul19.csv",
+        "sha256": "5a2b144e27f8cec010e2f4801917075c1727e2a6176cab3d23563772e893d746",
+        "size_bytes": 15407379,
+        "status": "parsed",
+        "rows": 15705,
+        "excluded_metadata_rows": 26,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/jul/lonejul19.csv",
+        "sha256": "32809cc8702b43a46b216bae9c50fc72b159ee27919cb1ca5f63f93312d11668",
+        "size_bytes": 1554417,
+        "status": "parsed",
+        "rows": 1937,
+        "excluded_metadata_rows": 0,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/jul/mhjul19.csv",
+        "sha256": "8e9bedda1c2c97762a9127430549ba8d1a8b336242789012a076c6b32528e5e0",
+        "size_bytes": 4264791,
+        "status": "parsed",
+        "rows": 3309,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/jul/swjul19.csv",
+        "sha256": "0978181039178dc6b75ca81b47b8f65361b520e5d86b8fe1d11bb2413619c966",
+        "size_bytes": 6766658,
+        "status": "parsed",
+        "rows": 7312,
+        "excluded_metadata_rows": 15,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/june/anijun19.csv",
+        "sha256": "4034cae10a8d6b9bd225a9f1122ad450569e0abd890c3126941999a56acded02",
+        "size_bytes": 4503087,
+        "status": "parsed",
+        "rows": 4738,
+        "excluded_metadata_rows": 14,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/june/depjun19.csv",
+        "sha256": "f46699921cbfc864b5174305ac2d17247a5872453b84bcde9627d1fd14fe9428",
+        "size_bytes": 14394182,
+        "status": "parsed",
+        "rows": 14912,
+        "excluded_metadata_rows": 20,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/june/lonejun19.csv",
+        "sha256": "648dec98955e7640b4e998e1538ad3b314072978667257e7d8053e3480cf4eba",
+        "size_bytes": 1313254,
+        "status": "parsed",
+        "rows": 1582,
+        "excluded_metadata_rows": 9,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/june/mhjun19.csv",
+        "sha256": "802f1bacf23742c86340b130e5661954aff9bd8e91fff73cfabbc6a2200cafbd",
+        "size_bytes": 4672394,
+        "status": "parsed",
+        "rows": 3632,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/june/swjun19.csv",
+        "sha256": "b54b939cc65ab66a1ed4c69e8e16f0f8cc7b53e5093d1c4851f3d283517a0ac8",
+        "size_bytes": 6220962,
+        "status": "parsed",
+        "rows": 6651,
+        "excluded_metadata_rows": 8,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/mar/anxmar19.csv",
+        "sha256": "6cd73e8dbd6baa17b84afabfaa422ab65cbff6a93746616128d664154145db58",
+        "size_bytes": 4894856,
+        "status": "parsed",
+        "rows": 5149,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/mar/depmar19.csv",
+        "sha256": "a762cc3b3df83396b5a37c96ceba2a9b76a31ed541b1c3d095ae91c721998bf5",
+        "size_bytes": 14348453,
+        "status": "parsed",
+        "rows": 14513,
+        "excluded_metadata_rows": 2,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/mar/lonmar19.csv",
+        "sha256": "bd9473e910db0a89e83b21c3f0583749bbc69fbd593661773dc80d9c63e8f482",
+        "size_bytes": 790120,
+        "status": "parsed",
+        "rows": 1011,
+        "excluded_metadata_rows": 0,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/mar/mhmar19.csv",
+        "sha256": "752b77051d161a470599e83f73be002f3f373c8cea4b55b8fcf92cf403456a02",
+        "size_bytes": 4694958,
+        "status": "parsed",
+        "rows": 3568,
+        "excluded_metadata_rows": 2,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/mar/swmar19.csv",
+        "sha256": "c751e620203838462e8bf987e73c0368de2cf1ba2a5ec25edaf8f60a4c6e63e4",
+        "size_bytes": 5492241,
+        "status": "parsed",
+        "rows": 5877,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/nov/aninov19.csv",
+        "sha256": "250a1953615cb8da80a3b229941ab0d03045c99571d6820881de1ead52dd99b4",
+        "size_bytes": 4389241,
+        "status": "parsed",
+        "rows": 4767,
+        "excluded_metadata_rows": 11,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/nov/lonnov19.csv",
+        "sha256": "d7e584b22754ee2420a7c6ccdabedbfe1080f617d4e1ffc1a7b5c9aaac44fe2e",
+        "size_bytes": 1919290,
+        "status": "parsed",
+        "rows": 2567,
+        "excluded_metadata_rows": 2,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/nov/mhnov19.csv",
+        "sha256": "de1b07e1df526f5204f4ceb81ac573558d62206a248e9e37d7341df48d7ae250",
+        "size_bytes": 5308642,
+        "status": "parsed",
+        "rows": 4246,
+        "excluded_metadata_rows": 4,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/nov/sdepnov19.csv",
+        "sha256": "03520186c5e8f4f9d5ca92ac299c606891f14d89e2b8afe7b3caa47560571711",
+        "size_bytes": 15897706,
+        "status": "parsed",
+        "rows": 17284,
+        "excluded_metadata_rows": 16,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/nov/swnov19.csv",
+        "sha256": "5d3a3c2c10424b599e3d360ecb5eefddf49a18e619c4a28b2d3780226a9be6f3",
+        "size_bytes": 6593169,
+        "status": "parsed",
+        "rows": 7386,
+        "excluded_metadata_rows": 14,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/oct/anioct19.csv",
+        "sha256": "ee76092f4c56996bf5710a74343c6a22a94a54a5a9d4297c48de5e75da6372cb",
+        "size_bytes": 4762606,
+        "status": "parsed",
+        "rows": 5102,
+        "excluded_metadata_rows": 10,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/oct/depoct19.csv",
+        "sha256": "9c0087133d00a3f9ea6786848ae5caa2caa3fe34dd99110772a63920c1dd2612",
+        "size_bytes": 16625801,
+        "status": "parsed",
+        "rows": 17798,
+        "excluded_metadata_rows": 13,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/oct/lonoct19.csv",
+        "sha256": "9ec47d8be66a243b4a131486ff919e668fcf3661bf9560496f070628e061ccae",
+        "size_bytes": 1865013,
+        "status": "parsed",
+        "rows": 2382,
+        "excluded_metadata_rows": 1,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/oct/mhoct19.csv",
+        "sha256": "bb5aa44fe6619bc436aab830e0de2aabb7d0690a8e52f60e0cd0e094bd1110ee",
+        "size_bytes": 5572576,
+        "status": "parsed",
+        "rows": 4408,
+        "excluded_metadata_rows": 4,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/oct/swsoct19.csv",
+        "sha256": "514b872999fdb5ad15ce3d7c77c1fc3a29e05c565e0052b5303f725ee7edd59b",
+        "size_bytes": 6906204,
+        "status": "parsed",
+        "rows": 7578,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/sep/anisep19.csv",
+        "sha256": "506c99c1940054b594ed4b7555ef34b94178424dac1f0a0f244e8b95f1511927",
+        "size_bytes": 4738867,
+        "status": "parsed",
+        "rows": 5085,
+        "excluded_metadata_rows": 18,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/sep/depasep19.csv",
+        "sha256": "73035deb662442624c01a5512b49fe7ba95701612eda8a9d8c0e6250afbe29c0",
+        "size_bytes": 15137400,
+        "status": "parsed",
+        "rows": 15782,
+        "excluded_metadata_rows": 44,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/sep/lonasep19.csv",
+        "sha256": "6f06d731506082de9250dddd08756117c83acd00f35796db2b28539ade02071c",
+        "size_bytes": 1702605,
+        "status": "parsed",
+        "rows": 2142,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/sep/mhsep19.csv",
+        "sha256": "3dac212bf11d08c03c86085ec9b9355e0eb9ec7b675f7870474eb45de03ee2be",
+        "size_bytes": 4940780,
+        "status": "parsed",
+        "rows": 3863,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2019/sep/swsep19.csv",
+        "sha256": "5825cf8dd7123f5989fe921f223e19752ddf177e5b39ef2e4a8225cfb3d06a63",
+        "size_bytes": 6572679,
+        "status": "parsed",
+        "rows": 7192,
+        "excluded_metadata_rows": 25,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Apr 20/Mhapr20.csv",
+        "sha256": "4977b42eeb9c53be94c2aea1322dc815f8c6f2daa1fda72c3243e52771648c07",
+        "size_bytes": 6136264,
+        "status": "parsed",
+        "rows": 5034,
+        "excluded_metadata_rows": 194,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Apr 20/Swapr20.csv",
+        "sha256": "1a3b68c93667697f966cd6b61cef638b7221b2570c98831c4f2eac9fcfbee8a0",
+        "size_bytes": 7942445,
+        "status": "parsed",
+        "rows": 9011,
+        "excluded_metadata_rows": 515,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Apr 20/anxiapr20.csv",
+        "sha256": "5c7031c99c75ed05689afb763cbba96bd277e86a42ed11c849186573327e7b0b",
+        "size_bytes": 5364896,
+        "status": "parsed",
+        "rows": 5771,
+        "excluded_metadata_rows": 234,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Apr 20/depapr20.csv",
+        "sha256": "6963c915c0e6d16170dd9aa913ab1ff4c385f7a2fc1cf019af6689ee6d7d3d8f",
+        "size_bytes": 13129131,
+        "status": "parsed",
+        "rows": 14355,
+        "excluded_metadata_rows": 686,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Apr 20/loneapr20.csv",
+        "sha256": "727555e47b68e8a61c70af223ee03a8b3830fc42455b8cf791bf0d24f17ea823",
+        "size_bytes": 2292836,
+        "status": "parsed",
+        "rows": 3021,
+        "excluded_metadata_rows": 122,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Aug 20/Mheaug20.csv",
+        "sha256": "9a991ad74e278ad9120b92f60a9a07f7279f33424ee08b39d7dcfd76d2cd1981",
+        "size_bytes": 7224296,
+        "status": "parsed",
+        "rows": 6524,
+        "excluded_metadata_rows": 18,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Aug 20/Swaug20 copy.csv",
+        "sha256": "90e7c748444637155751ee99b06f4f92d103aebe2a86024e6aaa19d111f6f7e0",
+        "size_bytes": 8931226,
+        "status": "parsed",
+        "rows": 10721,
+        "excluded_metadata_rows": 20,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Aug 20/anxiaug20.csv",
+        "sha256": "ba118b807b5a93c82c468236c62c194168cf44c1572e2fbdaafb4224b712ba4b",
+        "size_bytes": 6394163,
+        "status": "parsed",
+        "rows": 6767,
+        "excluded_metadata_rows": 14,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Aug 20/depaug20.csv",
+        "sha256": "e9dc15f75cca5f8fe730d44358a0bab8fc623f8be2b98e3fe3008c25a80d68ba",
+        "size_bytes": 12852126,
+        "status": "parsed",
+        "rows": 14344,
+        "excluded_metadata_rows": 30,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Aug 20/loneaug20.csv",
+        "sha256": "9b8ab0820f1df285b820b1694239e2c2c96f0cc639b575404b8422bdd1909749",
+        "size_bytes": 2432018,
+        "status": "parsed",
+        "rows": 3213,
+        "excluded_metadata_rows": 2,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Dec 20/Mhdec20.csv",
+        "sha256": "385ec7babcb16501487f984876a5003cdfb0487d3f553e48e5b73e490b43bd3b",
+        "size_bytes": 11084032,
+        "status": "parsed",
+        "rows": 8786,
+        "excluded_metadata_rows": 68,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Dec 20/Swdec20.csv",
+        "sha256": "a7cb282047c8429fe6536d7c44da0367eb2653caf3def74c7ba6a287679b170d",
+        "size_bytes": 12428750,
+        "status": "parsed",
+        "rows": 15502,
+        "excluded_metadata_rows": 214,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Dec 20/anxietydec20.csv",
+        "sha256": "6dae8252f6128b7a4ab332bbcb253777e0e9d0f037f916f795c0a8037159a04f",
+        "size_bytes": 6805331,
+        "status": "parsed",
+        "rows": 7552,
+        "excluded_metadata_rows": 62,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Dec 20/depdec20.csv",
+        "sha256": "75f19d7d80cf91a542d3b4816f2e40a0cc23274645f5101d626ea39a4bda25df",
+        "size_bytes": 16722860,
+        "status": "parsed",
+        "rows": 19266,
+        "excluded_metadata_rows": 268,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Dec 20/lonedec20.csv",
+        "sha256": "3ef739154dad8c1a4ea337ac1c489b0252e66a3ce9fcdb98bb26d6ff7573ae43",
+        "size_bytes": 2657618,
+        "status": "parsed",
+        "rows": 4496,
+        "excluded_metadata_rows": 61,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Feb20/Mhfeb20.csv",
+        "sha256": "e3118ee6e292ce5a6064ad22ff0297a435db88beec9031f1653049f09241bd24",
+        "size_bytes": 5751308,
+        "status": "parsed",
+        "rows": 4505,
+        "excluded_metadata_rows": 6,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Feb20/anxifeb20.csv",
+        "sha256": "e501f923cd03adb3c60905570fefcd3a73d1b85084736c720de8b31df63b8bda",
+        "size_bytes": 5037838,
+        "status": "parsed",
+        "rows": 5426,
+        "excluded_metadata_rows": 10,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Feb20/depfeb20.csv",
+        "sha256": "ece81d20d93e2014730a33255ac2801692462942c8994d64122484d5f2d17ac0",
+        "size_bytes": 14934113,
+        "status": "parsed",
+        "rows": 16400,
+        "excluded_metadata_rows": 20,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Feb20/lonefeb20.csv",
+        "sha256": "01d907d07ecd5c9b1ac4fd8943e2bcaca57484e9698335fdefc8fd2c1494de3e",
+        "size_bytes": 2272531,
+        "status": "parsed",
+        "rows": 3189,
+        "excluded_metadata_rows": 8,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Feb20/swfeb20.csv",
+        "sha256": "db7f30505aeb3178e5eae8ad644aa650d551d193a29bdbbf50a9cdfaa588e432",
+        "size_bytes": 7842622,
+        "status": "parsed",
+        "rows": 8522,
+        "excluded_metadata_rows": 14,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jan 20/Mhjan20.csv",
+        "sha256": "a4496d30e11e7d4f37f9da95b33a3b4a7746af5b683b98f19225fb6bcd434598",
+        "size_bytes": 5892460,
+        "status": "parsed",
+        "rows": 4700,
+        "excluded_metadata_rows": 68,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jan 20/SWjan20.csv",
+        "sha256": "f5c0395c0b03be927d4b04e9683767541f254979178ceb1159cbe42c62462b63",
+        "size_bytes": 7421689,
+        "status": "parsed",
+        "rows": 8161,
+        "excluded_metadata_rows": 154,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jan 20/anxijan20.csv",
+        "sha256": "7c1a276aabaabe2ed48604d047f89257beb8530e0929b0342000bf422db1b877",
+        "size_bytes": 5317487,
+        "status": "parsed",
+        "rows": 5750,
+        "excluded_metadata_rows": 81,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jan 20/depjan20 .csv",
+        "sha256": "b1d7a9d4b455819d5d58194341c3c66f32995a876876b3d8760daddf77c1ff8f",
+        "size_bytes": 16366848,
+        "status": "parsed",
+        "rows": 17516,
+        "excluded_metadata_rows": 276,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jan 20/lonejan20.csv",
+        "sha256": "5d7fd90bdc4892c394ececf242cc226e65a183ae7c7d814ed8f37d51149410df",
+        "size_bytes": 2181322,
+        "status": "parsed",
+        "rows": 3061,
+        "excluded_metadata_rows": 28,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jul 20/MHjul20.csv",
+        "sha256": "6803fa641233fdae7a8d9460fae0b2410a9602f455213491e3ac395bbce9cd21",
+        "size_bytes": 7002747,
+        "status": "parsed",
+        "rows": 6559,
+        "excluded_metadata_rows": 309,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jul 20/Swjul20.csv",
+        "sha256": "35d41383aa4815f9c15e7f87d9b194858ab9f342392e7987bdf6aad9caa0d8bd",
+        "size_bytes": 8797108,
+        "status": "parsed",
+        "rows": 11166,
+        "excluded_metadata_rows": 724,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jul 20/anxijul20.csv",
+        "sha256": "eef2e06f6ba949df965f7c4cbf05a784e4f7a3613f1ed22897846ffac4d02910",
+        "size_bytes": 6193084,
+        "status": "parsed",
+        "rows": 6696,
+        "excluded_metadata_rows": 220,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jul 20/depjul20.csv",
+        "sha256": "8dab0f695f082d53630830515946bdb0670cbc90261d42d03e19f5ec5764e8f6",
+        "size_bytes": 13815424,
+        "status": "parsed",
+        "rows": 15780,
+        "excluded_metadata_rows": 910,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Jul 20/lonejul20.csv",
+        "sha256": "23ab32291b151dd3ccf8702e7e114d78f77125041f2a3262d24b4b46c0d37e57",
+        "size_bytes": 2458603,
+        "status": "parsed",
+        "rows": 3345,
+        "excluded_metadata_rows": 162,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/June 20/Mhjun20.csv",
+        "sha256": "36fc8eb08f288e9fe71f1a08b6e5fdcaecbcbe46e6122c9bf0afd31a1f7d5f2e",
+        "size_bytes": 6919208,
+        "status": "parsed",
+        "rows": 5971,
+        "excluded_metadata_rows": 329,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/June 20/anxijun20.csv",
+        "sha256": "acfee299dd32b414405dad122385dff36e7138e58f62119b76c9e91ba38708f7",
+        "size_bytes": 6116346,
+        "status": "parsed",
+        "rows": 6521,
+        "excluded_metadata_rows": 327,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/June 20/depjun20.csv",
+        "sha256": "195b47468592c3b510fc63f2aeb29c184d720639eab31fc4c91865ac44852137",
+        "size_bytes": 13605813,
+        "status": "parsed",
+        "rows": 15462,
+        "excluded_metadata_rows": 1023,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/June 20/lonejun20.csv",
+        "sha256": "dad31d7b598fe6c0d9ff7fb8d61e57bf33a15287efb69fb9a68ed8dde39f4a3e",
+        "size_bytes": 2278556,
+        "status": "parsed",
+        "rows": 2956,
+        "excluded_metadata_rows": 165,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/June 20/swjun20.csv",
+        "sha256": "000c046ee54386f9516145809c23cd16c5e08b75fd5d836cda2c301cfa1e38dc",
+        "size_bytes": 8705403,
+        "status": "parsed",
+        "rows": 10131,
+        "excluded_metadata_rows": 716,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Mar 20/Mhmar20.csv",
+        "sha256": "41d30b4e7c71f9d467f5306772c3c67dc8fb25ab95c8ea4bd230ea680630337f",
+        "size_bytes": 5879594,
+        "status": "parsed",
+        "rows": 4700,
+        "excluded_metadata_rows": 10,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Mar 20/anximar20.csv",
+        "sha256": "70e7090937942577b08b7716136edfd004f4d596b16ce231a795211b3b4981a9",
+        "size_bytes": 5176764,
+        "status": "parsed",
+        "rows": 5667,
+        "excluded_metadata_rows": 26,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Mar 20/depmar20.csv",
+        "sha256": "5c9bebfe0b27a6f16b3181c4aaf855667cbcd721a23f99cd93a1a415bbcfe75e",
+        "size_bytes": 13989147,
+        "status": "parsed",
+        "rows": 15199,
+        "excluded_metadata_rows": 71,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Mar 20/lonemar20.csv",
+        "sha256": "61c2b0c41c9ad31e8fa3f2e2a7f664ab7c7b5644b69a5e9e2717f14277cb133c",
+        "size_bytes": 2371925,
+        "status": "parsed",
+        "rows": 3229,
+        "excluded_metadata_rows": 10,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Mar 20/swmar20.csv",
+        "sha256": "62e68d9005244071d3046bae9a1e40ec50555fe631a6b59785cb04c90765b3b8",
+        "size_bytes": 7728147,
+        "status": "parsed",
+        "rows": 8732,
+        "excluded_metadata_rows": 37,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/May 20/Mhmay20.csv",
+        "sha256": "c8db1b8cc2feda76d6f43cef95b39e64aa0c56a572bd5301a77f9093ec6e4c31",
+        "size_bytes": 7514033,
+        "status": "parsed",
+        "rows": 5944,
+        "excluded_metadata_rows": 57,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/May 20/Swmay20.csv",
+        "sha256": "2f6602f51baaaf8c884d7f161e276ae3a06a24c09349fdcaf10d9d95a65b9a16",
+        "size_bytes": 9120263,
+        "status": "parsed",
+        "rows": 10198,
+        "excluded_metadata_rows": 113,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/May 20/anxmay20.csv",
+        "sha256": "8ba9363ea0764491f82b339639cdc41c11a96fdd587b581533530725b53623f9",
+        "size_bytes": 5718753,
+        "status": "parsed",
+        "rows": 6135,
+        "excluded_metadata_rows": 61,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/May 20/depmay20.csv",
+        "sha256": "1c02369ae174ef878b843df701d7cb642d13c0ddced21265a2ac021c1a73e669",
+        "size_bytes": 14976823,
+        "status": "parsed",
+        "rows": 15690,
+        "excluded_metadata_rows": 191,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/May 20/lonemay20.csv",
+        "sha256": "cfcefccc1d2ea968f88795616cfa3bf899e8b903fbfc8690fd052403a0fe021b",
+        "size_bytes": 2314949,
+        "status": "parsed",
+        "rows": 2996,
+        "excluded_metadata_rows": 38,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Nov 20/anxinov20.csv",
+        "sha256": "30c80059d9266c430901ed4d1db0e2a0c8afdc8c1d63be6a2216fd08106515f9",
+        "size_bytes": 6021204,
+        "status": "parsed",
+        "rows": 6760,
+        "excluded_metadata_rows": 134,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Nov 20/depnov20.csv",
+        "sha256": "971548e71d32e5e3f1a771d67889b789c6895af404e97ade5463898a8468656a",
+        "size_bytes": 14259144,
+        "status": "parsed",
+        "rows": 16332,
+        "excluded_metadata_rows": 389,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Nov 20/lonenov20.csv",
+        "sha256": "9e7fd32c7533b1321ba81603ad9b3e680d5513443fbbe1f44aad1cf3d8917c02",
+        "size_bytes": 2306452,
+        "status": "parsed",
+        "rows": 3808,
+        "excluded_metadata_rows": 94,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Nov 20/mhov20.csv",
+        "sha256": "7946859c1bf16a845e8954ae4ad25438bf8fd913a3e33afbe24c515295b65402",
+        "size_bytes": 9596831,
+        "status": "parsed",
+        "rows": 7905,
+        "excluded_metadata_rows": 179,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Nov 20/swnov20.csv",
+        "sha256": "630256125f9cb40fac0c967f6fcd4c180d1f377c69e41d859a93cec2b6ce23f8",
+        "size_bytes": 10095814,
+        "status": "parsed",
+        "rows": 13322,
+        "excluded_metadata_rows": 358,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Oct 20/Swoct20.csv",
+        "sha256": "de659c09c6aee3bc918917e3b791d600d120301285a0c671a6356d41264a8507",
+        "size_bytes": 8443404,
+        "status": "parsed",
+        "rows": 10715,
+        "excluded_metadata_rows": 35,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Oct 20/anxioct20.csv",
+        "sha256": "00e241fd45a5eef6888db9f6fe10e23635ffc3f51fb38d32a781a42748113608",
+        "size_bytes": 5382945,
+        "status": "parsed",
+        "rows": 5873,
+        "excluded_metadata_rows": 19,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Oct 20/depoct20.csv",
+        "sha256": "ee7f2dcf744cd9a8ffbbaf7e7ea49cafe0d5f1527e034ecf0b2df70bed6ad882",
+        "size_bytes": 12255536,
+        "status": "parsed",
+        "rows": 14098,
+        "excluded_metadata_rows": 40,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Oct 20/loneoct20.csv",
+        "sha256": "1f329540d99d8a0fd33f0667aaf5c998c272d9e1578124a0ea00dab62bdb4815",
+        "size_bytes": 1995569,
+        "status": "parsed",
+        "rows": 3153,
+        "excluded_metadata_rows": 5,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Oct 20/mhoct20.csv",
+        "sha256": "bb0b097beae9913384ab8ca39c101cb5b2c58fd2db36fcf11d21ea99894dcff6",
+        "size_bytes": 7854838,
+        "status": "parsed",
+        "rows": 6247,
+        "excluded_metadata_rows": 12,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Sep 20/Mhsep20.csv",
+        "sha256": "a9faa1b7a469bddc6960ac18695b0a2f8ad3976562ad66821243c237c62f4d28",
+        "size_bytes": 6544786,
+        "status": "parsed",
+        "rows": 6146,
+        "excluded_metadata_rows": 53,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Sep 20/Swsep20.csv",
+        "sha256": "414d02b309376bc7220151edf54077fe8b8e465edb7bc30a21c4e463c29d5090",
+        "size_bytes": 8193978,
+        "status": "parsed",
+        "rows": 10484,
+        "excluded_metadata_rows": 173,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Sep 20/anxisep20.csv",
+        "sha256": "02c7406dbe4dc95344ed4e335309d1a928cfb638ce0ffcedf72671073ce39bad",
+        "size_bytes": 5746393,
+        "status": "parsed",
+        "rows": 6191,
+        "excluded_metadata_rows": 47,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Sep 20/depsep20.csv",
+        "sha256": "aa14ad4706709d4a0e0ee7b54757de934aeebe5edc3ed4926990449b95064efd",
+        "size_bytes": 12182481,
+        "status": "parsed",
+        "rows": 13598,
+        "excluded_metadata_rows": 182,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2020/Sep 20/lonesep20.csv",
+        "sha256": "1cd12834c15a1030766c0d9a2c5438f6206a7e94b43cedaaff6b6848be81c147",
+        "size_bytes": 2123309,
+        "status": "parsed",
+        "rows": 2901,
+        "excluded_metadata_rows": 51,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Apr 21/Mhapr21.csv",
+        "sha256": "5691027d8b53c6d9ea7970203b78bd805e4a1434c8b4a416718475a6d4c6b5e4",
+        "size_bytes": 9713240,
+        "status": "parsed",
+        "rows": 7741,
+        "excluded_metadata_rows": 27,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Apr 21/anxiapr21.csv",
+        "sha256": "df7b9d93a3aab2da66ada2dceb0a48a4252762068101312d90b5fc6eae92eab0",
+        "size_bytes": 5983115,
+        "status": "parsed",
+        "rows": 6299,
+        "excluded_metadata_rows": 13,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Apr 21/depapr21.csv",
+        "sha256": "755962e05b615c1a287f243654c5972aa841190bb1ab60ccc39266d8785a5eb5",
+        "size_bytes": 12424683,
+        "status": "parsed",
+        "rows": 14292,
+        "excluded_metadata_rows": 58,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Apr 21/loneapr21.csv",
+        "sha256": "397f558232a54102db138e807b33b0b679ccf7988cbbf7d3473eea3c004bfa53",
+        "size_bytes": 2819789,
+        "status": "parsed",
+        "rows": 3747,
+        "excluded_metadata_rows": 14,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Apr 21/swapr21.csv",
+        "sha256": "d0865fa13b38f31c43b8f0f865ad65cf51089563c7b699b895e7a3f2eb957d4f",
+        "size_bytes": 10303643,
+        "status": "parsed",
+        "rows": 13501,
+        "excluded_metadata_rows": 69,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Aug 21/anxiaug21.csv",
+        "sha256": "b7f6c8d9cd9c6d441d018a412fc259e752e502303ea5a846ebc104b860cf71c5",
+        "size_bytes": 7207802,
+        "status": "parsed",
+        "rows": 8150,
+        "excluded_metadata_rows": 42,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Aug 21/depaug21.csv",
+        "sha256": "5fb8ce4c306b72e5f842422cb213187d1bc720f8ebb191f6b60d267b6ee7a040",
+        "size_bytes": 13656429,
+        "status": "parsed",
+        "rows": 15868,
+        "excluded_metadata_rows": 115,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Aug 21/loneaug21.csv",
+        "sha256": "dbd984d87cb36636b5f2779eb062174dda35ec036512b8fba580981f44c64cc6",
+        "size_bytes": 3390699,
+        "status": "parsed",
+        "rows": 4864,
+        "excluded_metadata_rows": 58,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Aug 21/mhaug21.csv",
+        "sha256": "ba82ea3100b6b98983606b4a780eab6265b8cdd7e67f11cf418609b886f4b0ce",
+        "size_bytes": 8426438,
+        "status": "parsed",
+        "rows": 9234,
+        "excluded_metadata_rows": 64,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Aug 21/swaug21.csv",
+        "sha256": "f54fd8c13c2ce7caa660e4fb94e20a5dd1bc3b4b30c4d9f4772cdd7b00e930a4",
+        "size_bytes": 11260616,
+        "status": "parsed",
+        "rows": 15359,
+        "excluded_metadata_rows": 181,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Dec 21/anxdec21.csv",
+        "sha256": "55f7566a3a4ac2f6ee4e83f5f280e85ed2e681035f643931cf9b44cb1621675a",
+        "size_bytes": 6231072,
+        "status": "parsed",
+        "rows": 7225,
+        "excluded_metadata_rows": 67,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Dec 21/depdec21.csv",
+        "sha256": "e08de32b4102ab7a6923b0201713e889b8d4073d18dae896234dcfce12a1da42",
+        "size_bytes": 11730045,
+        "status": "parsed",
+        "rows": 14962,
+        "excluded_metadata_rows": 174,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Dec 21/lonepdec21.csv",
+        "sha256": "eec7fb7f791374342373a615b74555e24a8080ccc9ea9d8f57d81abdad4a3157",
+        "size_bytes": 4173605,
+        "status": "parsed",
+        "rows": 5914,
+        "excluded_metadata_rows": 77,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Dec 21/mhdec21.csv",
+        "sha256": "8a1f024c17c25882f80e5c26ab02f3d35ea1cd6ad032170f5b835a698a2d2b66",
+        "size_bytes": 10434753,
+        "status": "parsed",
+        "rows": 9309,
+        "excluded_metadata_rows": 102,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Dec 21/swdec21.csv",
+        "sha256": "0f332fe6ba84e79b7387d3c50bafb72950b2b53c5a72ab8d893f3ab63dc2967b",
+        "size_bytes": 10638627,
+        "status": "parsed",
+        "rows": 15044,
+        "excluded_metadata_rows": 210,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Feb21/anxifeb21.csv",
+        "sha256": "53142a0072fb0c23feaed8783ca1e806a2b567c2ac00c4d7b7cb674779cfdf13",
+        "size_bytes": 5564522,
+        "status": "parsed",
+        "rows": 6206,
+        "excluded_metadata_rows": 448,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Feb21/depfeb21.csv",
+        "sha256": "639451a66cd60b5e4b12092984b07f94dfeb9b45ae45209baed2decd60c2de49",
+        "size_bytes": 12127629,
+        "status": "parsed",
+        "rows": 14330,
+        "excluded_metadata_rows": 1392,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Feb21/lonefeb21.csv",
+        "sha256": "794779ca36726c1bacb738b0c4232621a0620f6ad3f13a620dde7e5223eeb57d",
+        "size_bytes": 2373677,
+        "status": "parsed",
+        "rows": 3428,
+        "excluded_metadata_rows": 358,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Feb21/mhfeb21.csv",
+        "sha256": "fb0655a5e2c1791be4457f142de773e09170501f4d746b3c0fcc647edbb93364",
+        "size_bytes": 8419412,
+        "status": "parsed",
+        "rows": 7118,
+        "excluded_metadata_rows": 622,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Feb21/swfeb21.csv",
+        "sha256": "fb6274452a6c430750c3c745848c8a920fbbcf1da19fec50f6ded06516ca25d3",
+        "size_bytes": 8501287,
+        "status": "parsed",
+        "rows": 11643,
+        "excluded_metadata_rows": 1347,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jan 21/Mhjan21.csv",
+        "sha256": "288bcc251b614541ace1bd7bedbaae1eb4b61aebe706f4d0402a80373edc575e",
+        "size_bytes": 11538130,
+        "status": "parsed",
+        "rows": 9098,
+        "excluded_metadata_rows": 80,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jan 21/anxijan21.csv",
+        "sha256": "77c8bc23707772f41635b8ba862da79d57304c3de2390c69951cebb66e5233f4",
+        "size_bytes": 7406049,
+        "status": "parsed",
+        "rows": 7931,
+        "excluded_metadata_rows": 77,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jan 21/dep5jan21.csv",
+        "sha256": "94e5dbff7404b55883542a555fec9b5ff3d54ae93d72a03c42bef05dc9f5d292",
+        "size_bytes": 16227654,
+        "status": "parsed",
+        "rows": 18707,
+        "excluded_metadata_rows": 231,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jan 21/lonejan21.csv",
+        "sha256": "120c14dd68679675fb234a74cfe0291adf6e411529b106898016eb1d2601ac47",
+        "size_bytes": 2783788,
+        "status": "parsed",
+        "rows": 4382,
+        "excluded_metadata_rows": 62,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jan 21/swjan21.csv",
+        "sha256": "616b9364940c0f85f800590a0fa81a58385c2494192ea6e94feb3e0b03bc7582",
+        "size_bytes": 11640524,
+        "status": "parsed",
+        "rows": 15135,
+        "excluded_metadata_rows": 226,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jul 21/anxijul21.csv",
+        "sha256": "5f0df0d3bc11c5193efec3c8009587af9058ad17556d26fee90377842b4b4b42",
+        "size_bytes": 6993481,
+        "status": "parsed",
+        "rows": 7938,
+        "excluded_metadata_rows": 14,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jul 21/depjul21.csv",
+        "sha256": "6bc193ef9eae68be8e5ce3468ddf991b363c0f54d9bfac9cab02424f75624dea",
+        "size_bytes": 13033292,
+        "status": "parsed",
+        "rows": 15354,
+        "excluded_metadata_rows": 21,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jul 21/lonejul21.csv",
+        "sha256": "00faed5fcd6b1c15b5dcfec9d6ce316eb619c61a9e34c24db41cf5d3ed3f0301",
+        "size_bytes": 3331309,
+        "status": "parsed",
+        "rows": 4763,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jul 21/mhjul21.csv",
+        "sha256": "d4158102d0a10d53e86067f1059181e34a2547321a0d2e11f9ac1d8e815e2a04",
+        "size_bytes": 11004637,
+        "status": "parsed",
+        "rows": 9361,
+        "excluded_metadata_rows": 9,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Jul 21/swjjul21.csv",
+        "sha256": "20345ea2ddd8157d6ff1760460a9b29fd830d0cf4f50a2be9ba4e144ff5d2094",
+        "size_bytes": 11041160,
+        "status": "parsed",
+        "rows": 15303,
+        "excluded_metadata_rows": 18,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/June 21/anxijun21.csv",
+        "sha256": "25827770471402a237d7d0058dc7b3d496045bcdfb0b6de7014a8244cfe9fd63",
+        "size_bytes": 6798696,
+        "status": "parsed",
+        "rows": 7635,
+        "excluded_metadata_rows": 163,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/June 21/depjun21.csv",
+        "sha256": "1b0152fda3de3eb68e8406c7dec2339c68e5816767c29934587b855ff736b223",
+        "size_bytes": 12781606,
+        "status": "parsed",
+        "rows": 15253,
+        "excluded_metadata_rows": 499,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/June 21/lonejun21.csv",
+        "sha256": "8db1d569e0b071ab78d5a14889b72b104846f720d8979b994f78f80449367c5a",
+        "size_bytes": 3094109,
+        "status": "parsed",
+        "rows": 4352,
+        "excluded_metadata_rows": 129,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/June 21/mhjun21.csv",
+        "sha256": "8ecf8608735f906cc544c75982fe3aa608ea3c11b06625ead46d1183d874c95c",
+        "size_bytes": 10922791,
+        "status": "parsed",
+        "rows": 9138,
+        "excluded_metadata_rows": 246,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/June 21/swjun21.csv",
+        "sha256": "4ba5703918500970390f6df55109fe80e49796c1a05dda5a53a4d9f45535840f",
+        "size_bytes": 11315100,
+        "status": "parsed",
+        "rows": 15821,
+        "excluded_metadata_rows": 595,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Mar 21/Swmar21.csv",
+        "sha256": "ff03517fc4f01ee939d18d0b8b62b11600c863ab5cafec9eca136d69e1bea3db",
+        "size_bytes": 6214524,
+        "status": "parsed",
+        "rows": 8281,
+        "excluded_metadata_rows": 343,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Mar 21/anximar21.csv",
+        "sha256": "787e9a3a708268a054c0228839ef2e43e49cde6b0ba94873a473c61e5bc85e34",
+        "size_bytes": 3762039,
+        "status": "parsed",
+        "rows": 4195,
+        "excluded_metadata_rows": 118,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Mar 21/depmar21.csv",
+        "sha256": "bebdbceb0e32a27c73dd58c3ac1521763b66b554a5c95dd255d322152b1fcccc",
+        "size_bytes": 7959115,
+        "status": "parsed",
+        "rows": 9390,
+        "excluded_metadata_rows": 340,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Mar 21/lonmar21.csv",
+        "sha256": "688913976e87a4da5d7f9a1af5a712cbf26ff1cb9bdfa94c92a68186a3809741",
+        "size_bytes": 1559090,
+        "status": "parsed",
+        "rows": 2157,
+        "excluded_metadata_rows": 76,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Mar 21/mhmar21.csv",
+        "sha256": "50d749a5e1297a1e2c330fe5c3629055378e777823713f6d726d7d0a61d5acd7",
+        "size_bytes": 5994575,
+        "status": "parsed",
+        "rows": 4809,
+        "excluded_metadata_rows": 155,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/May 21/Mhmay21.csv",
+        "sha256": "157ed37517529c702087e39898d372087aeffa8bac50cca0e181b5ee3dacb39d",
+        "size_bytes": 11473522,
+        "status": "parsed",
+        "rows": 9185,
+        "excluded_metadata_rows": 18,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/May 21/anximay21.csv",
+        "sha256": "9b80ec22faced41abd33514c754492218176701f3ef958cb5a118f1d80d6feaf",
+        "size_bytes": 7108608,
+        "status": "parsed",
+        "rows": 7683,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/May 21/depmay21.numbers",
+        "sha256": "aa5d4e8c4b86ab7eff2ee0c0e6a9259a61f8778a0fb4c9c5b2ff0ea1fcaa609a",
+        "size_bytes": 28511882,
+        "status": "unsupported_format"
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/May 21/lonemay21.csv",
+        "sha256": "7fb67b5c004ce9d5d779923dd74dc4ad4202f725b3c1d0304b322a4b32d6f25e",
+        "size_bytes": 3191496,
+        "status": "parsed",
+        "rows": 4506,
+        "excluded_metadata_rows": 15,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/May 21/swmay21.csv",
+        "sha256": "4b82276cc945c9a7bc4397caaa86e004f65ef85c8341294d61dc6ebc05575de5",
+        "size_bytes": 11789106,
+        "status": "parsed",
+        "rows": 15944,
+        "excluded_metadata_rows": 66,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Nov 21/anxinov21.csv",
+        "sha256": "d9350d110c907a633ea100e4e3b8edc523b227847294ad622a1a31aa44119f1a",
+        "size_bytes": 6453955,
+        "status": "parsed",
+        "rows": 7391,
+        "excluded_metadata_rows": 27,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Nov 21/depnov21.csv",
+        "sha256": "747c0399dcb7a264db0f94d856cce02b2c317de1f259f6da056f8a3145a24ea7",
+        "size_bytes": 13211684,
+        "status": "parsed",
+        "rows": 16210,
+        "excluded_metadata_rows": 75,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Nov 21/lonenov21.csv",
+        "sha256": "ff4393e50531e34f8e9118dfdc71483d04466fe1a8cdcbbef89face69cd573db",
+        "size_bytes": 4124883,
+        "status": "parsed",
+        "rows": 5871,
+        "excluded_metadata_rows": 35,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Nov 21/mhnov21.csv",
+        "sha256": "9e54e6b97f7e6dc7806baee59004107d29c37899c132430dce2645439460ea80",
+        "size_bytes": 10608325,
+        "status": "parsed",
+        "rows": 9486,
+        "excluded_metadata_rows": 23,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Nov 21/swnov21.csv",
+        "sha256": "37dfe39a5b3b7e9f24d41d0bb48ef8aa2cceceed29257ecad47d2c79d6748a7f",
+        "size_bytes": 10915919,
+        "status": "parsed",
+        "rows": 15424,
+        "excluded_metadata_rows": 96,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Oct 21/anxioct21.csv",
+        "sha256": "8363ff5d6e072ee53f390b34577ea7acb0e1cfa51a0000793c239bc9518ca990",
+        "size_bytes": 6624252,
+        "status": "parsed",
+        "rows": 7680,
+        "excluded_metadata_rows": 54,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Oct 21/depoct21.csv",
+        "sha256": "0d5cdc5c34a862f98f630429aa8007e72fccf958c426151ab211b980e1743fc9",
+        "size_bytes": 12925723,
+        "status": "parsed",
+        "rows": 16116,
+        "excluded_metadata_rows": 149,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Oct 21/loneoct21.csv",
+        "sha256": "8d3281f01c6c8832104f64e8c86cb39ccba5a0f90f7c0d228cfbeca263a06c4f",
+        "size_bytes": 3494888,
+        "status": "parsed",
+        "rows": 5222,
+        "excluded_metadata_rows": 35,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Oct 21/mhoct21.csv",
+        "sha256": "cb30d253b6159e18ddeda2f654788357f23b43deda4b8396b92be40053fd22d7",
+        "size_bytes": 10218988,
+        "status": "parsed",
+        "rows": 9285,
+        "excluded_metadata_rows": 48,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Oct 21/swoct21.csv",
+        "sha256": "f656123438246b4477577a0df98aba9520836c4ee1d873ee90679c10feeacfd7",
+        "size_bytes": 10721667,
+        "status": "parsed",
+        "rows": 15379,
+        "excluded_metadata_rows": 159,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Sep 21/anxietysep21.csv",
+        "sha256": "7f307c9e252490028124ef18e3caa530f871c113206171faa030a4e40f536b70",
+        "size_bytes": 6843782,
+        "status": "parsed",
+        "rows": 8000,
+        "excluded_metadata_rows": 24,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Sep 21/depsep21.csv",
+        "sha256": "4717a3a21cd526b9ebae700f7a184727540ae1c1dcc04ad186100a48985db162",
+        "size_bytes": 12485704,
+        "status": "parsed",
+        "rows": 15478,
+        "excluded_metadata_rows": 43,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Sep 21/lonesep21.csv",
+        "sha256": "fc29023d1a10e4aebfdbcf04ff147a2c2fb2d5567afce0b179edad3eebd609cc",
+        "size_bytes": 3041541,
+        "status": "parsed",
+        "rows": 4409,
+        "excluded_metadata_rows": 12,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Sep 21/mhsep21.csv",
+        "sha256": "0b313f21b54351dfc0b8b62495a5308898b69cbc1db3275bc736dab8e7986d8a",
+        "size_bytes": 9900326,
+        "status": "parsed",
+        "rows": 8479,
+        "excluded_metadata_rows": 16,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2021/Sep 21/swsep21.csv",
+        "sha256": "07bc865f282804e1bd9c238a4017c83dc59ddb2158d6b17dbfafed2ec186c9aa",
+        "size_bytes": 11035669,
+        "status": "parsed",
+        "rows": 15270,
+        "excluded_metadata_rows": 54,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Apr 22/Swapr22.csv",
+        "sha256": "92fcb06031be00f8274ff87564a65ac9ce9f5b7b93f418010d920f1aab9ac415",
+        "size_bytes": 9288136,
+        "status": "parsed",
+        "rows": 13732,
+        "excluded_metadata_rows": 47,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Apr 22/anxapr22.csv",
+        "sha256": "50b449bf01fc5e9020535ded5ac71bf1239d2106582b01255acc9ad5e86380cb",
+        "size_bytes": 6130648,
+        "status": "parsed",
+        "rows": 7213,
+        "excluded_metadata_rows": 21,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Apr 22/depapr22.csv",
+        "sha256": "da4ea27d07377392d2daedc319b4b53490424f414ca12cb94dbe6b9ef80e5601",
+        "size_bytes": 10221390,
+        "status": "parsed",
+        "rows": 13226,
+        "excluded_metadata_rows": 30,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Apr 22/loneapr22.csv",
+        "sha256": "799924cd0c9e5d1ea18f49ec6b3d381aeb9f69a6b026612998d1ddf5042af2a5",
+        "size_bytes": 3643450,
+        "status": "parsed",
+        "rows": 5201,
+        "excluded_metadata_rows": 9,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Apr 22/mhapr22.csv",
+        "sha256": "3fe6d698084a1c2db9a1cb24fb94f726f11c127ca6d546609da7991cce9b27b5",
+        "size_bytes": 10591335,
+        "status": "parsed",
+        "rows": 9285,
+        "excluded_metadata_rows": 5,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Aug 22/anxiaug22.csv",
+        "sha256": "5f8ce900cc5dc739231fbdb3040fc4da063b909bb1284dfda8bb8da497b58e9b",
+        "size_bytes": 6671252,
+        "status": "parsed",
+        "rows": 7650,
+        "excluded_metadata_rows": 14,
+        "later_period_metadata_rows": 7636
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Aug 22/depaug22.csv",
+        "sha256": "b10518fd680355c31226aee43d7930902cc11e524eb90dd3e1c9835b00d819f5",
+        "size_bytes": 9384576,
+        "status": "parsed",
+        "rows": 11991,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 11984
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Aug 22/loneaug22.csv",
+        "sha256": "131953e9efeb80f0d848b30f34b8ca9cb808f50bbfc88aa0e90cf4f55f2b8a7e",
+        "size_bytes": 4213332,
+        "status": "parsed",
+        "rows": 5831,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 5828
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Aug 22/mhaug22.csv",
+        "sha256": "dcad0f44001ad2bfae9f542e009ab634e758718b5a6ccf91a427554eb0e29640",
+        "size_bytes": 10982244,
+        "status": "parsed",
+        "rows": 9566,
+        "excluded_metadata_rows": 5,
+        "later_period_metadata_rows": 9561
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Aug 22/swaug22.csv",
+        "sha256": "e35c39cac3237c9cc8f360dbf19e6411ab8be188aa2ede369e075342694c5be2",
+        "size_bytes": 9459168,
+        "status": "parsed",
+        "rows": 13480,
+        "excluded_metadata_rows": 19,
+        "later_period_metadata_rows": 13461
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Feb22/Swfeb22.csv",
+        "sha256": "a06502d3525ed1672fcc05ea5ad267725afe6898dd647b5a03238c73a7d644e9",
+        "size_bytes": 9008620,
+        "status": "parsed",
+        "rows": 13014,
+        "excluded_metadata_rows": 42,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Feb22/anxifeb22.csv",
+        "sha256": "8b699cacd87cca8ddb911471d3054b9be44d68ade7ac3031f172a376f653557a",
+        "size_bytes": 5538295,
+        "status": "parsed",
+        "rows": 6551,
+        "excluded_metadata_rows": 12,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Feb22/depfeb22.csv",
+        "sha256": "b68f1a5546ab19d808a996653c36f3493d8a5ffa333b23d0b094378ca45b8865",
+        "size_bytes": 10488848,
+        "status": "parsed",
+        "rows": 13152,
+        "excluded_metadata_rows": 24,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Feb22/lonefeb22.csv",
+        "sha256": "ea95add6cf6c9e760cc52764afa513d66999f579376e86b7948d8f04c57bac51",
+        "size_bytes": 2858437,
+        "status": "parsed",
+        "rows": 4725,
+        "excluded_metadata_rows": 8,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Feb22/mhfeb22.csv",
+        "sha256": "e463d413a6b3db3531a94f3272027937bc81db1c2a0ef71927b7df2e49f4a22f",
+        "size_bytes": 9649257,
+        "status": "parsed",
+        "rows": 8629,
+        "excluded_metadata_rows": 4,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jan 22/anxjan22.csv",
+        "sha256": "19539a6d86a799e92137b299a66c19ca69ec3560c0fa7d12b3fd5e556d3e64ed",
+        "size_bytes": 6742348,
+        "status": "parsed",
+        "rows": 7650,
+        "excluded_metadata_rows": 15,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jan 22/depjan22.csv",
+        "sha256": "c0470e821c17339084daf44cc994737ec352575fc31007067fffc8b8086eb75d",
+        "size_bytes": 11860759,
+        "status": "parsed",
+        "rows": 14953,
+        "excluded_metadata_rows": 17,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jan 22/lonejan22.csv",
+        "sha256": "4b4ce9c6b6e8fda289c3b24f66baeb080ed2acc33bd4b82c1a113cee2f899c52",
+        "size_bytes": 2101249,
+        "status": "parsed",
+        "rows": 5215,
+        "excluded_metadata_rows": 17,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jan 22/mhjan22.csv",
+        "sha256": "fdf4da2e53d1abe834f36e34b95366ac8245d454b3e13b1c1db728de30a6b215",
+        "size_bytes": 11023703,
+        "status": "parsed",
+        "rows": 9644,
+        "excluded_metadata_rows": 8,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jan 22/swjan22.csv",
+        "sha256": "e7bcb66c18fc62ef0ccf77b4adcff6a5385c328168357edea393da55199611b2",
+        "size_bytes": 10121762,
+        "status": "parsed",
+        "rows": 14309,
+        "excluded_metadata_rows": 11,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jul 22/anijul22.csv",
+        "sha256": "667250f81baf8d70f0d2b84e9795928e2ad52afd21a0260cdf44119b47a22ff5",
+        "size_bytes": 6333994,
+        "status": "parsed",
+        "rows": 7433,
+        "excluded_metadata_rows": 16,
+        "later_period_metadata_rows": 7319
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jul 22/depjul22.csv",
+        "sha256": "dd9ce8c488689091a6a6cbebd1b4c5a8d2f2322862b693127bcd0e618968c762",
+        "size_bytes": 9985743,
+        "status": "parsed",
+        "rows": 12523,
+        "excluded_metadata_rows": 8,
+        "later_period_metadata_rows": 12357
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jul 22/lonejul22.csv",
+        "sha256": "bfcb11b61be4e7cfc87b2f6aff7796b25984f6ac1c23a3cb94acbc59b3893669",
+        "size_bytes": 3995877,
+        "status": "parsed",
+        "rows": 5705,
+        "excluded_metadata_rows": 3,
+        "later_period_metadata_rows": 5618
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jul 22/mhjul22.csv",
+        "sha256": "0ab23d657a13795565f7dccd200073eb1bb8f0e89cf61bee779b94c680e7eabe",
+        "size_bytes": 10516910,
+        "status": "parsed",
+        "rows": 9240,
+        "excluded_metadata_rows": 8,
+        "later_period_metadata_rows": 9105
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Jul 22/swjul22.csv",
+        "sha256": "6406c714b741e90013b0f7f360dafaa5b9c2cee29fac6d6523a826a0117344f2",
+        "size_bytes": 9625782,
+        "status": "parsed",
+        "rows": 13469,
+        "excluded_metadata_rows": 31,
+        "later_period_metadata_rows": 13262
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/June 22/anijun22.csv",
+        "sha256": "8b3b7436a673b70d69ae2769e34f0fce5477dea671066602fc45a3d6d663a56f",
+        "size_bytes": 6110470,
+        "status": "parsed",
+        "rows": 7365,
+        "excluded_metadata_rows": 15,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/June 22/depjun22.csv",
+        "sha256": "76a5523c1e3a8fe4bc24f0933b3fd66883c249f962ba75d5a7166389662f5728",
+        "size_bytes": 10031934,
+        "status": "parsed",
+        "rows": 12695,
+        "excluded_metadata_rows": 19,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/June 22/lone1jun22.csv",
+        "sha256": "47861ef7ed9451ddad66722ba37047ddfff4af09dbe2d9b5b40bc9fa34ec0440",
+        "size_bytes": 3758561,
+        "status": "parsed",
+        "rows": 5447,
+        "excluded_metadata_rows": 1,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/June 22/mh1jun22.csv",
+        "sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+        "size_bytes": 9737214,
+        "status": "parsed",
+        "rows": 8745,
+        "excluded_metadata_rows": 9,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/June 22/mhjun22.csv",
+        "sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+        "size_bytes": 9737214,
+        "status": "byte_identical_file_skipped"
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Mar 22/Swmar22.csv",
+        "sha256": "6ca933ee2d7b1f77df6e0168ba875fae0315fa26695084efaf88299b388e3279",
+        "size_bytes": 9793165,
+        "status": "parsed",
+        "rows": 14148,
+        "excluded_metadata_rows": 77,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Mar 22/anximar22.csv",
+        "sha256": "eaf262fa26bbc00005790257291597e9497a92dbb3b28fc6c6bd4d51a9b5077c",
+        "size_bytes": 6690203,
+        "status": "parsed",
+        "rows": 7718,
+        "excluded_metadata_rows": 24,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Mar 22/depmar22.csv",
+        "sha256": "b5069d78dea7f6c1702192e3df2a57bd00491819a2e122e7a8199781a964c066",
+        "size_bytes": 11564014,
+        "status": "parsed",
+        "rows": 14459,
+        "excluded_metadata_rows": 33,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Mar 22/lonmar22.csv",
+        "sha256": "cc193e8d271d26578d32ca09988d66947587707e1e71c81273096e57c6159281",
+        "size_bytes": 3800186,
+        "status": "parsed",
+        "rows": 5402,
+        "excluded_metadata_rows": 13,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/Mar 22/mhmar22.csv",
+        "sha256": "f10223aca7502d49dd322a96a28bfd1df2130ff22ff631df3e62072664222be7",
+        "size_bytes": 11371978,
+        "status": "parsed",
+        "rows": 9742,
+        "excluded_metadata_rows": 12,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/May 22/Swmay22.csv",
+        "sha256": "3d2972b0d842cc445deef6aeb8dae69a0f8305284baca0d187390741be1e468b",
+        "size_bytes": 9917235,
+        "status": "parsed",
+        "rows": 14973,
+        "excluded_metadata_rows": 38,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/May 22/anximay22.csv",
+        "sha256": "09b2dee43490c71e28cfcb7c3e05a1a4d9c4377278b263310a97e48d4e411365",
+        "size_bytes": 6270850,
+        "status": "parsed",
+        "rows": 7408,
+        "excluded_metadata_rows": 16,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/May 22/depmay22.csv",
+        "sha256": "c4047255291044e699d12067350f4c13a78dea778cbf200b857bffb6de487475",
+        "size_bytes": 10906224,
+        "status": "parsed",
+        "rows": 13911,
+        "excluded_metadata_rows": 17,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/May 22/lonemay22.csv",
+        "sha256": "5a3f60b8a819c033f50a6cc91a496674ae2933a68a99f5cdfaa2f327958b121a",
+        "size_bytes": 3839947,
+        "status": "parsed",
+        "rows": 5595,
+        "excluded_metadata_rows": 7,
+        "later_period_metadata_rows": 0
+      },
+      {
+        "name": "Original Reddit Data/raw data/2022/May 22/mhmay22.csv",
+        "sha256": "4455a38b2d15ef53f0eef924a4c34477de79aa0a4f336f693e03b632d433e6cd",
+        "size_bytes": 10723780,
+        "status": "parsed",
+        "rows": 9647,
+        "excluded_metadata_rows": 4,
+        "later_period_metadata_rows": 0
+      }
+    ],
+    "raw_archive_paths": 220,
+    "parsed_distinct_file_rows": 1834871,
+    "metadata_valid_distinct_file_rows": 1813026,
+    "unsupported_files": [
+      "Original Reddit Data/raw data/2021/May 21/depmay21.numbers"
+    ],
+    "duplicate_file_paths_skipped": 2,
+    "history_scope": "Parseable metadata-valid raw CSV observations dated 2019 onward; unsupported format is not treated as observed"
+  },
+  "comparisons": {
+    "mentalhealth": {
+      "thresholds": {
+        "linguistic_13": 0.44,
+        "tfidf_lr": 0.42,
+        "linguistic_boosting": 0.45
+      },
+      "months": {
+        "2022-07": {
+          "cohort": {
+            "metadata_posts": 16717,
+            "metadata_authors": 12717,
+            "ambiguous_authors": 303,
+            "previously_observed_authors_excluded": 2339,
+            "body_quality_posts_excluded": 1403,
+            "identical_record_posts_excluded": 2,
+            "shared_within_month_posts_excluded": 8,
+            "repeated_same_author_text_posts_excluded": 39,
+            "training_validation_exact_reuse_authors_excluded": 0,
+            "earlier_extension_exact_reuse_posts_excluded": 0,
+            "retained_posts": 10400,
+            "retained_authors": 9074,
+            "positive_authors": 3764,
+            "utc_start": "2022-07-01T00:02:46+00:00",
+            "utc_end": "2022-07-31T23:59:45+00:00"
+          },
+          "main": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.44,
+                "accuracy": 0.6030416574829183,
+                "macro_f1": 0.5910154544114508,
+                "positive_f1": 0.5208832136206438,
+                "positive_precision": 0.5215769845498135,
+                "positive_recall": 0.5201912858660999,
+                "roc_auc": 0.62838397665664,
+                "average_precision": 0.5103265852721022,
+                "brier": 0.23210679709732338,
+                "log_loss": 0.6557891987899068,
+                "confusion_matrix": [
+                  [
+                    3514,
+                    1796
+                  ],
+                  [
+                    1806,
+                    1958
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.42,
+                "accuracy": 0.8578355741679524,
+                "macro_f1": 0.8538634342853249,
+                "positive_f1": 0.8297703879651623,
+                "positive_precision": 0.8243314105925538,
+                "positive_recall": 0.8352816153028693,
+                "roc_auc": 0.9276335828975467,
+                "average_precision": 0.9025084633871251,
+                "brier": 0.1035618766690874,
+                "log_loss": 0.3397902401141263,
+                "confusion_matrix": [
+                  [
+                    4640,
+                    670
+                  ],
+                  [
+                    620,
+                    3144
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.45,
+                "accuracy": 0.6137315406656381,
+                "macro_f1": 0.6039644239069965,
+                "positive_f1": 0.5417701660347758,
+                "positive_precision": 0.5333333333333333,
+                "positive_recall": 0.5504782146652497,
+                "roc_auc": 0.6549086799113817,
+                "average_precision": 0.5508802760424495,
+                "brier": 0.22631324067930822,
+                "log_loss": 0.6435867238403927,
+                "confusion_matrix": [
+                  [
+                    3497,
+                    1813
+                  ],
+                  [
+                    1692,
+                    2072
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.5813144708409417,
+                0.6010569998872104
+              ],
+              "tfidf_lr": [
+                0.8468795390436246,
+                0.8608871942386448
+              ],
+              "linguistic_boosting": [
+                0.5939053859995997,
+                0.6136781218381777
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.5,
+                "accuracy": 0.6027110425391228,
+                "macro_f1": 0.5322883381456701,
+                "positive_f1": 0.3508013686295696,
+                "positive_precision": 0.5444382336500838,
+                "positive_recall": 0.2587672688629118,
+                "roc_auc": 0.62838397665664,
+                "average_precision": 0.5103265852721022,
+                "brier": 0.23210679709732338,
+                "log_loss": 0.6557891987899068,
+                "confusion_matrix": [
+                  [
+                    4495,
+                    815
+                  ],
+                  [
+                    2790,
+                    974
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.5,
+                "accuracy": 0.8595988538681948,
+                "macro_f1": 0.8537003413104735,
+                "positive_f1": 0.8243243243243243,
+                "positive_precision": 0.8569380733944955,
+                "positive_recall": 0.7941020191285866,
+                "roc_auc": 0.9276335828975467,
+                "average_precision": 0.9025084633871251,
+                "brier": 0.1035618766690874,
+                "log_loss": 0.3397902401141263,
+                "confusion_matrix": [
+                  [
+                    4811,
+                    499
+                  ],
+                  [
+                    775,
+                    2989
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.5,
+                "accuracy": 0.623760193960767,
+                "macro_f1": 0.5946417178987249,
+                "positive_f1": 0.4859981933152665,
+                "positive_precision": 0.5608061153578874,
+                "positive_recall": 0.4287991498405951,
+                "roc_auc": 0.6549086799113817,
+                "average_precision": 0.5508802760424495,
+                "brier": 0.22631324067930822,
+                "log_loss": 0.6435867238403927,
+                "confusion_matrix": [
+                  [
+                    4046,
+                    1264
+                  ],
+                  [
+                    2150,
+                    1614
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2628479798738741,
+              "macro_f1_ci95": [
+                0.2512504654272976,
+                0.27459614227800944
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.44,
+              "threshold_b": 0.42
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2498990103783284,
+              "macro_f1_ci95": [
+                0.2389619666805689,
+                0.26163395570734044
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.45,
+              "threshold_b": 0.42
+            }
+          },
+          "historical_absence_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 7629,
+                "positive_prevalence": 0.3975619347227684,
+                "threshold": 0.44,
+                "accuracy": 0.6038799318390352,
+                "macro_f1": 0.5881487841059148,
+                "positive_f1": 0.5076572173346366,
+                "positive_precision": 0.5017713365539452,
+                "positive_recall": 0.5136828222881635,
+                "roc_auc": 0.626535653503369,
+                "average_precision": 0.4912097822195034,
+                "brier": 0.22980115755052452,
+                "log_loss": 0.6508772074403706,
+                "confusion_matrix": [
+                  [
+                    3049,
+                    1547
+                  ],
+                  [
+                    1475,
+                    1558
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7629,
+                "positive_prevalence": 0.3975619347227684,
+                "threshold": 0.42,
+                "accuracy": 0.8622362039585791,
+                "macro_f1": 0.8566808882701613,
+                "positive_f1": 0.8284641749632773,
+                "positive_precision": 0.8202973497091144,
+                "positive_recall": 0.8367952522255193,
+                "roc_auc": 0.9306436853445865,
+                "average_precision": 0.9023585190589303,
+                "brier": 0.10006669423904113,
+                "log_loss": 0.32905945189831787,
+                "confusion_matrix": [
+                  [
+                    4040,
+                    556
+                  ],
+                  [
+                    495,
+                    2538
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7629,
+                "positive_prevalence": 0.3975619347227684,
+                "threshold": 0.45,
+                "accuracy": 0.6158081006685018,
+                "macro_f1": 0.6026946919318356,
+                "positive_f1": 0.5305141758769822,
+                "positive_precision": 0.5158878504672897,
+                "positive_recall": 0.5459940652818991,
+                "roc_auc": 0.6563355741327556,
+                "average_precision": 0.532534234774855,
+                "brier": 0.22371208813394405,
+                "log_loss": 0.637728929888571,
+                "confusion_matrix": [
+                  [
+                    3042,
+                    1554
+                  ],
+                  [
+                    1377,
+                    1656
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.5763862312240098,
+                0.599824314776772
+              ],
+              "tfidf_lr": [
+                0.8491827238450844,
+                0.8640080071525358
+              ],
+              "linguistic_boosting": [
+                0.5924752431648579,
+                0.6136062370598446
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 7629,
+                "positive_prevalence": 0.3975619347227684,
+                "threshold": 0.5,
+                "accuracy": 0.6122689736531656,
+                "macro_f1": 0.5338542480014873,
+                "positive_f1": 0.3426666666666667,
+                "positive_precision": 0.5255623721881391,
+                "positive_recall": 0.2542037586547972,
+                "roc_auc": 0.626535653503369,
+                "average_precision": 0.4912097822195034,
+                "brier": 0.22980115755052452,
+                "log_loss": 0.6508772074403706,
+                "confusion_matrix": [
+                  [
+                    3900,
+                    696
+                  ],
+                  [
+                    2262,
+                    771
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7629,
+                "positive_prevalence": 0.3975619347227684,
+                "threshold": 0.5,
+                "accuracy": 0.8655131734172238,
+                "macro_f1": 0.8578346820174292,
+                "positive_f1": 0.8247950819672131,
+                "positive_precision": 0.8554729011689692,
+                "positive_recall": 0.7962413452027696,
+                "roc_auc": 0.9306436853445865,
+                "average_precision": 0.9023585190589303,
+                "brier": 0.10006669423904113,
+                "log_loss": 0.32905945189831787,
+                "confusion_matrix": [
+                  [
+                    4188,
+                    408
+                  ],
+                  [
+                    618,
+                    2415
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7629,
+                "positive_prevalence": 0.3975619347227684,
+                "threshold": 0.5,
+                "accuracy": 0.6293092148381177,
+                "macro_f1": 0.5943025478210049,
+                "positive_f1": 0.47512991833704527,
+                "positive_precision": 0.5435244161358811,
+                "positive_recall": 0.4220243982855259,
+                "roc_auc": 0.6563355741327556,
+                "average_precision": 0.532534234774855,
+                "brier": 0.22371208813394405,
+                "log_loss": 0.637728929888571,
+                "confusion_matrix": [
+                  [
+                    3521,
+                    1075
+                  ],
+                  [
+                    1753,
+                    1280
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.26853210416424655,
+              "macro_f1_ci95": [
+                0.2557749926243689,
+                0.28106094628363737
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.44,
+              "threshold_b": 0.42
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.25398619633832575,
+              "macro_f1_ci95": [
+                0.241393206500201,
+                0.2661507612554856
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.45,
+              "threshold_b": 0.42
+            }
+          },
+          "near_duplicate_audit": {
+            "matched_query_posts": 0,
+            "matched_post_pairs": 0,
+            "candidate_pairs_verified": 0,
+            "reference_posts": 26291,
+            "query_posts": 10400,
+            "similarity": 0.8,
+            "definition": "Set Jaccard of consecutive five-word shingles; no semantic-paraphrase coverage",
+            "affected_test_authors": 0
+          },
+          "near_duplicate_exclusion_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.44,
+                "accuracy": 0.6030416574829183,
+                "macro_f1": 0.5910154544114508,
+                "positive_f1": 0.5208832136206438,
+                "positive_precision": 0.5215769845498135,
+                "positive_recall": 0.5201912858660999,
+                "roc_auc": 0.62838397665664,
+                "average_precision": 0.5103265852721022,
+                "brier": 0.23210679709732338,
+                "log_loss": 0.6557891987899068,
+                "confusion_matrix": [
+                  [
+                    3514,
+                    1796
+                  ],
+                  [
+                    1806,
+                    1958
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.42,
+                "accuracy": 0.8578355741679524,
+                "macro_f1": 0.8538634342853249,
+                "positive_f1": 0.8297703879651623,
+                "positive_precision": 0.8243314105925538,
+                "positive_recall": 0.8352816153028693,
+                "roc_auc": 0.9276335828975467,
+                "average_precision": 0.9025084633871251,
+                "brier": 0.1035618766690874,
+                "log_loss": 0.3397902401141263,
+                "confusion_matrix": [
+                  [
+                    4640,
+                    670
+                  ],
+                  [
+                    620,
+                    3144
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.45,
+                "accuracy": 0.6137315406656381,
+                "macro_f1": 0.6039644239069965,
+                "positive_f1": 0.5417701660347758,
+                "positive_precision": 0.5333333333333333,
+                "positive_recall": 0.5504782146652497,
+                "roc_auc": 0.6549086799113817,
+                "average_precision": 0.5508802760424495,
+                "brier": 0.22631324067930822,
+                "log_loss": 0.6435867238403927,
+                "confusion_matrix": [
+                  [
+                    3497,
+                    1813
+                  ],
+                  [
+                    1692,
+                    2072
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.5813144708409417,
+                0.6010569998872104
+              ],
+              "tfidf_lr": [
+                0.8468795390436246,
+                0.8608871942386448
+              ],
+              "linguistic_boosting": [
+                0.5939053859995997,
+                0.6136781218381777
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.5,
+                "accuracy": 0.6027110425391228,
+                "macro_f1": 0.5322883381456701,
+                "positive_f1": 0.3508013686295696,
+                "positive_precision": 0.5444382336500838,
+                "positive_recall": 0.2587672688629118,
+                "roc_auc": 0.62838397665664,
+                "average_precision": 0.5103265852721022,
+                "brier": 0.23210679709732338,
+                "log_loss": 0.6557891987899068,
+                "confusion_matrix": [
+                  [
+                    4495,
+                    815
+                  ],
+                  [
+                    2790,
+                    974
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.5,
+                "accuracy": 0.8595988538681948,
+                "macro_f1": 0.8537003413104735,
+                "positive_f1": 0.8243243243243243,
+                "positive_precision": 0.8569380733944955,
+                "positive_recall": 0.7941020191285866,
+                "roc_auc": 0.9276335828975467,
+                "average_precision": 0.9025084633871251,
+                "brier": 0.1035618766690874,
+                "log_loss": 0.3397902401141263,
+                "confusion_matrix": [
+                  [
+                    4811,
+                    499
+                  ],
+                  [
+                    775,
+                    2989
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9074,
+                "positive_prevalence": 0.4148115494820366,
+                "threshold": 0.5,
+                "accuracy": 0.623760193960767,
+                "macro_f1": 0.5946417178987249,
+                "positive_f1": 0.4859981933152665,
+                "positive_precision": 0.5608061153578874,
+                "positive_recall": 0.4287991498405951,
+                "roc_auc": 0.6549086799113817,
+                "average_precision": 0.5508802760424495,
+                "brier": 0.22631324067930822,
+                "log_loss": 0.6435867238403927,
+                "confusion_matrix": [
+                  [
+                    4046,
+                    1264
+                  ],
+                  [
+                    2150,
+                    1614
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2628479798738741,
+              "macro_f1_ci95": [
+                0.2512504654272976,
+                0.27459614227800944
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.44,
+              "threshold_b": 0.42
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2498990103783284,
+              "macro_f1_ci95": [
+                0.2389619666805689,
+                0.26163395570734044
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.45,
+              "threshold_b": 0.42
+            }
+          },
+          "private_predictions_sha256": "6dea37d20cc1a57cacd43a38120620504b0f776dda343e0ba868695e57173157",
+          "prepared_posts_sha256": "7bb156827adbbc5ffae3a83d955e2dc66da7e7d59fc0379ea57ea18e7bd2245f"
+        },
+        "2022-08": {
+          "cohort": {
+            "metadata_posts": 16904,
+            "metadata_authors": 12871,
+            "ambiguous_authors": 284,
+            "previously_observed_authors_excluded": 2698,
+            "body_quality_posts_excluded": 1195,
+            "identical_record_posts_excluded": 1,
+            "shared_within_month_posts_excluded": 20,
+            "repeated_same_author_text_posts_excluded": 39,
+            "training_validation_exact_reuse_authors_excluded": 0,
+            "earlier_extension_exact_reuse_posts_excluded": 0,
+            "retained_posts": 10157,
+            "retained_authors": 9016,
+            "positive_authors": 3653,
+            "utc_start": "2022-08-01T00:08:34+00:00",
+            "utc_end": "2022-08-31T13:49:56+00:00"
+          },
+          "main": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.44,
+                "accuracy": 0.6099157054125999,
+                "macro_f1": 0.5956933918705221,
+                "positive_f1": 0.519863481228669,
+                "positive_precision": 0.5185185185185185,
+                "positive_recall": 0.5212154393649056,
+                "roc_auc": 0.6351433428313833,
+                "average_precision": 0.5159303487611371,
+                "brier": 0.22957095823659388,
+                "log_loss": 0.6514962238555543,
+                "confusion_matrix": [
+                  [
+                    3595,
+                    1768
+                  ],
+                  [
+                    1749,
+                    1904
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.42,
+                "accuracy": 0.8643522626441881,
+                "macro_f1": 0.8596340257142158,
+                "positive_f1": 0.8338992258590249,
+                "positive_precision": 0.8274932614555256,
+                "positive_recall": 0.8404051464549686,
+                "roc_auc": 0.9296250699107894,
+                "average_precision": 0.9008593702950468,
+                "brier": 0.10059221269021495,
+                "log_loss": 0.3339900067056167,
+                "confusion_matrix": [
+                  [
+                    4723,
+                    640
+                  ],
+                  [
+                    583,
+                    3070
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.45,
+                "accuracy": 0.6221162377994676,
+                "macro_f1": 0.6096215097263142,
+                "positive_f1": 0.5397811697960286,
+                "positive_precision": 0.5328,
+                "positive_recall": 0.5469477142075007,
+                "roc_auc": 0.6555189339370924,
+                "average_precision": 0.5447342156377453,
+                "brier": 0.22524402183111203,
+                "log_loss": 0.6422339045269431,
+                "confusion_matrix": [
+                  [
+                    3611,
+                    1752
+                  ],
+                  [
+                    1655,
+                    1998
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.5854199819436579,
+                0.605493151139475
+              ],
+              "tfidf_lr": [
+                0.8521453212643597,
+                0.866931111460657
+              ],
+              "linguistic_boosting": [
+                0.5991278681922264,
+                0.6196682068564433
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.5,
+                "accuracy": 0.6157941437444543,
+                "macro_f1": 0.5398889407662676,
+                "positive_f1": 0.35300709749719833,
+                "positive_precision": 0.5555555555555556,
+                "positive_recall": 0.2586914864494936,
+                "roc_auc": 0.6351433428313833,
+                "average_precision": 0.5159303487611371,
+                "brier": 0.22957095823659388,
+                "log_loss": 0.6514962238555543,
+                "confusion_matrix": [
+                  [
+                    4607,
+                    756
+                  ],
+                  [
+                    2708,
+                    945
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.5,
+                "accuracy": 0.8621339840283939,
+                "macro_f1": 0.8553756885354568,
+                "positive_f1": 0.8241120701853686,
+                "positive_precision": 0.8529584065612185,
+                "positive_recall": 0.797153024911032,
+                "roc_auc": 0.9296250699107894,
+                "average_precision": 0.9008593702950468,
+                "brier": 0.10059221269021495,
+                "log_loss": 0.3339900067056167,
+                "confusion_matrix": [
+                  [
+                    4861,
+                    502
+                  ],
+                  [
+                    741,
+                    2912
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.5,
+                "accuracy": 0.6340949423247559,
+                "macro_f1": 0.6013219896391486,
+                "positive_f1": 0.48701601617166845,
+                "positive_precision": 0.5637149028077754,
+                "positive_recall": 0.4286887489734465,
+                "roc_auc": 0.6555189339370924,
+                "average_precision": 0.5447342156377453,
+                "brier": 0.22524402183111203,
+                "log_loss": 0.6422339045269431,
+                "confusion_matrix": [
+                  [
+                    4151,
+                    1212
+                  ],
+                  [
+                    2087,
+                    1566
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2639406338436937,
+              "macro_f1_ci95": [
+                0.2521422515864464,
+                0.2753518333611533
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.44,
+              "threshold_b": 0.42
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.25001251598790153,
+              "macro_f1_ci95": [
+                0.2385366699558534,
+                0.2627431010112422
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.45,
+              "threshold_b": 0.42
+            }
+          },
+          "historical_absence_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 7805,
+                "positive_prevalence": 0.39154388212684177,
+                "threshold": 0.44,
+                "accuracy": 0.614862267777066,
+                "macro_f1": 0.597004399420556,
+                "positive_f1": 0.5121713729308666,
+                "positive_precision": 0.5080489375402447,
+                "positive_recall": 0.5163612565445026,
+                "roc_auc": 0.6371454337589948,
+                "average_precision": 0.5040462991533323,
+                "brier": 0.2273221848434081,
+                "log_loss": 0.6469353718408725,
+                "confusion_matrix": [
+                  [
+                    3221,
+                    1528
+                  ],
+                  [
+                    1478,
+                    1578
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7805,
+                "positive_prevalence": 0.39154388212684177,
+                "threshold": 0.42,
+                "accuracy": 0.8680333119795003,
+                "macro_f1": 0.8620229126596447,
+                "positive_f1": 0.8332253886010362,
+                "positive_precision": 0.8246794871794871,
+                "positive_recall": 0.8419502617801047,
+                "roc_auc": 0.9314669029247271,
+                "average_precision": 0.8994423686136521,
+                "brier": 0.09787199192420874,
+                "log_loss": 0.32710278344737753,
+                "confusion_matrix": [
+                  [
+                    4202,
+                    547
+                  ],
+                  [
+                    483,
+                    2573
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7805,
+                "positive_prevalence": 0.39154388212684177,
+                "threshold": 0.45,
+                "accuracy": 0.6280589365791159,
+                "macro_f1": 0.6129515889927446,
+                "positive_f1": 0.5364841130448667,
+                "positive_precision": 0.5238540692235735,
+                "positive_recall": 0.5497382198952879,
+                "roc_auc": 0.6588135391413348,
+                "average_precision": 0.5321511557948513,
+                "brier": 0.2228373179578835,
+                "log_loss": 0.6373087194643029,
+                "confusion_matrix": [
+                  [
+                    3222,
+                    1527
+                  ],
+                  [
+                    1376,
+                    1680
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.5851886815591748,
+                0.6085493146596974
+              ],
+              "tfidf_lr": [
+                0.8546018414330502,
+                0.869602743726624
+              ],
+              "linguistic_boosting": [
+                0.6014799294753909,
+                0.6246560667435115
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 7805,
+                "positive_prevalence": 0.39154388212684177,
+                "threshold": 0.5,
+                "accuracy": 0.6237027546444587,
+                "macro_f1": 0.5404529029621926,
+                "positive_f1": 0.34485835378095026,
+                "positive_precision": 0.5416958654519972,
+                "positive_recall": 0.25294502617801046,
+                "roc_auc": 0.6371454337589948,
+                "average_precision": 0.5040462991533323,
+                "brier": 0.2273221848434081,
+                "log_loss": 0.6469353718408725,
+                "confusion_matrix": [
+                  [
+                    4095,
+                    654
+                  ],
+                  [
+                    2283,
+                    773
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7805,
+                "positive_prevalence": 0.39154388212684177,
+                "threshold": 0.5,
+                "accuracy": 0.8663677130044843,
+                "macro_f1": 0.8580997375060898,
+                "positive_f1": 0.8238473230873163,
+                "positive_precision": 0.8513089005235602,
+                "positive_recall": 0.7981020942408377,
+                "roc_auc": 0.9314669029247271,
+                "average_precision": 0.8994423686136521,
+                "brier": 0.09787199192420874,
+                "log_loss": 0.32710278344737753,
+                "confusion_matrix": [
+                  [
+                    4323,
+                    426
+                  ],
+                  [
+                    617,
+                    2439
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7805,
+                "positive_prevalence": 0.39154388212684177,
+                "threshold": 0.5,
+                "accuracy": 0.6425368353619475,
+                "macro_f1": 0.605652860428608,
+                "positive_f1": 0.4850498338870432,
+                "positive_precision": 0.5563082133784928,
+                "positive_recall": 0.42997382198952877,
+                "roc_auc": 0.6588135391413348,
+                "average_precision": 0.5321511557948513,
+                "brier": 0.2228373179578835,
+                "log_loss": 0.6373087194643029,
+                "confusion_matrix": [
+                  [
+                    3701,
+                    1048
+                  ],
+                  [
+                    1742,
+                    1314
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.26501851323908865,
+              "macro_f1_ci95": [
+                0.2523569506329866,
+                0.2779358415833816
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.44,
+              "threshold_b": 0.42
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2490713236669001,
+              "macro_f1_ci95": [
+                0.23687474931896,
+                0.2611700894526326
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.45,
+              "threshold_b": 0.42
+            }
+          },
+          "near_duplicate_audit": {
+            "matched_query_posts": 0,
+            "matched_post_pairs": 0,
+            "candidate_pairs_verified": 0,
+            "reference_posts": 26291,
+            "query_posts": 10157,
+            "similarity": 0.8,
+            "definition": "Set Jaccard of consecutive five-word shingles; no semantic-paraphrase coverage",
+            "affected_test_authors": 0
+          },
+          "near_duplicate_exclusion_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.44,
+                "accuracy": 0.6099157054125999,
+                "macro_f1": 0.5956933918705221,
+                "positive_f1": 0.519863481228669,
+                "positive_precision": 0.5185185185185185,
+                "positive_recall": 0.5212154393649056,
+                "roc_auc": 0.6351433428313833,
+                "average_precision": 0.5159303487611371,
+                "brier": 0.22957095823659388,
+                "log_loss": 0.6514962238555543,
+                "confusion_matrix": [
+                  [
+                    3595,
+                    1768
+                  ],
+                  [
+                    1749,
+                    1904
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.42,
+                "accuracy": 0.8643522626441881,
+                "macro_f1": 0.8596340257142158,
+                "positive_f1": 0.8338992258590249,
+                "positive_precision": 0.8274932614555256,
+                "positive_recall": 0.8404051464549686,
+                "roc_auc": 0.9296250699107894,
+                "average_precision": 0.9008593702950468,
+                "brier": 0.10059221269021495,
+                "log_loss": 0.3339900067056167,
+                "confusion_matrix": [
+                  [
+                    4723,
+                    640
+                  ],
+                  [
+                    583,
+                    3070
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.45,
+                "accuracy": 0.6221162377994676,
+                "macro_f1": 0.6096215097263142,
+                "positive_f1": 0.5397811697960286,
+                "positive_precision": 0.5328,
+                "positive_recall": 0.5469477142075007,
+                "roc_auc": 0.6555189339370924,
+                "average_precision": 0.5447342156377453,
+                "brier": 0.22524402183111203,
+                "log_loss": 0.6422339045269431,
+                "confusion_matrix": [
+                  [
+                    3611,
+                    1752
+                  ],
+                  [
+                    1655,
+                    1998
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.5854199819436579,
+                0.605493151139475
+              ],
+              "tfidf_lr": [
+                0.8521453212643597,
+                0.866931111460657
+              ],
+              "linguistic_boosting": [
+                0.5991278681922264,
+                0.6196682068564433
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.5,
+                "accuracy": 0.6157941437444543,
+                "macro_f1": 0.5398889407662676,
+                "positive_f1": 0.35300709749719833,
+                "positive_precision": 0.5555555555555556,
+                "positive_recall": 0.2586914864494936,
+                "roc_auc": 0.6351433428313833,
+                "average_precision": 0.5159303487611371,
+                "brier": 0.22957095823659388,
+                "log_loss": 0.6514962238555543,
+                "confusion_matrix": [
+                  [
+                    4607,
+                    756
+                  ],
+                  [
+                    2708,
+                    945
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.5,
+                "accuracy": 0.8621339840283939,
+                "macro_f1": 0.8553756885354568,
+                "positive_f1": 0.8241120701853686,
+                "positive_precision": 0.8529584065612185,
+                "positive_recall": 0.797153024911032,
+                "roc_auc": 0.9296250699107894,
+                "average_precision": 0.9008593702950468,
+                "brier": 0.10059221269021495,
+                "log_loss": 0.3339900067056167,
+                "confusion_matrix": [
+                  [
+                    4861,
+                    502
+                  ],
+                  [
+                    741,
+                    2912
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9016,
+                "positive_prevalence": 0.40516858917480036,
+                "threshold": 0.5,
+                "accuracy": 0.6340949423247559,
+                "macro_f1": 0.6013219896391486,
+                "positive_f1": 0.48701601617166845,
+                "positive_precision": 0.5637149028077754,
+                "positive_recall": 0.4286887489734465,
+                "roc_auc": 0.6555189339370924,
+                "average_precision": 0.5447342156377453,
+                "brier": 0.22524402183111203,
+                "log_loss": 0.6422339045269431,
+                "confusion_matrix": [
+                  [
+                    4151,
+                    1212
+                  ],
+                  [
+                    2087,
+                    1566
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2639406338436937,
+              "macro_f1_ci95": [
+                0.2521422515864464,
+                0.2753518333611533
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.44,
+              "threshold_b": 0.42
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.25001251598790153,
+              "macro_f1_ci95": [
+                0.2385366699558534,
+                0.2627431010112422
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.45,
+              "threshold_b": 0.42
+            }
+          },
+          "private_predictions_sha256": "b48e9fa18852415eef2fe41cc01dcdb7b44f2112032ae4f255ecb1e29e63b3b3",
+          "prepared_posts_sha256": "9022b6dd82c689707a3b3fd2a6b8f6da13462521ac5b4a25b957c8b6a9f8be0c"
+        }
+      },
+      "model_sha256": {
+        "linguistic_13": "6b845cc27cfbb70ae6fdc4a207d0b2cc2eeb36faa0f4505387253986ed4f7bf6",
+        "tfidf_lr": "519cb4106f16187f34898581746ab00901cb8dbcff59dc018234e6dea6ff9cda",
+        "linguistic_boosting": "d9ccf7fd0d3e53572a5feeaa37bb6d14bcf24f47e433fc22ebb9219deda02db0"
+      }
+    },
+    "depression": {
+      "thresholds": {
+        "linguistic_13": 0.37,
+        "tfidf_lr": 0.37,
+        "linguistic_boosting": 0.42
+      },
+      "months": {
+        "2022-07": {
+          "cohort": {
+            "metadata_posts": 20020,
+            "metadata_authors": 14907,
+            "ambiguous_authors": 391,
+            "previously_observed_authors_excluded": 2958,
+            "body_quality_posts_excluded": 2700,
+            "identical_record_posts_excluded": 2,
+            "shared_within_month_posts_excluded": 45,
+            "repeated_same_author_text_posts_excluded": 81,
+            "training_validation_exact_reuse_authors_excluded": 0,
+            "earlier_extension_exact_reuse_posts_excluded": 0,
+            "retained_posts": 10961,
+            "retained_authors": 9520,
+            "positive_authors": 3674,
+            "utc_start": "2022-07-01T00:08:35+00:00",
+            "utc_end": "2022-07-31T23:56:38+00:00"
+          },
+          "main": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.37,
+                "accuracy": 0.6504201680672269,
+                "macro_f1": 0.6399157671008802,
+                "positive_f1": 0.5784139853052952,
+                "positive_precision": 0.5409952606635071,
+                "positive_recall": 0.6213935764833969,
+                "roc_auc": 0.6977653718160046,
+                "average_precision": 0.5579129762379613,
+                "brier": 0.21278287032597437,
+                "log_loss": 0.613641173763369,
+                "confusion_matrix": [
+                  [
+                    3909,
+                    1937
+                  ],
+                  [
+                    1391,
+                    2283
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.37,
+                "accuracy": 0.9296218487394958,
+                "macro_f1": 0.9257797789320974,
+                "positive_f1": 0.9088931193908077,
+                "positive_precision": 0.9081521739130435,
+                "positive_recall": 0.909635274904736,
+                "roc_auc": 0.9767081083688375,
+                "average_precision": 0.9686872968039062,
+                "brier": 0.05478175042515435,
+                "log_loss": 0.1914949079171517,
+                "confusion_matrix": [
+                  [
+                    5508,
+                    338
+                  ],
+                  [
+                    332,
+                    3342
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.42,
+                "accuracy": 0.6680672268907563,
+                "macro_f1": 0.6470326961261641,
+                "positive_f1": 0.5608671484157866,
+                "positive_precision": 0.5729699034639409,
+                "positive_recall": 0.5492651061513337,
+                "roc_auc": 0.71408796564182,
+                "average_precision": 0.5979162819872934,
+                "brier": 0.2063816402760035,
+                "log_loss": 0.5992882428978573,
+                "confusion_matrix": [
+                  [
+                    4342,
+                    1504
+                  ],
+                  [
+                    1656,
+                    2018
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.6306704418559742,
+                0.6504564965108859
+              ],
+              "tfidf_lr": [
+                0.9202601014571398,
+                0.9314121357194315
+              ],
+              "linguistic_boosting": [
+                0.6366346138321529,
+                0.6571825590460176
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.5,
+                "accuracy": 0.6543067226890756,
+                "macro_f1": 0.573154071318564,
+                "positive_f1": 0.3870366921214379,
+                "positive_precision": 0.6129793510324484,
+                "positive_recall": 0.2827980402830702,
+                "roc_auc": 0.6977653718160046,
+                "average_precision": 0.5579129762379613,
+                "brier": 0.21278287032597437,
+                "log_loss": 0.613641173763369,
+                "confusion_matrix": [
+                  [
+                    5190,
+                    656
+                  ],
+                  [
+                    2635,
+                    1039
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.5,
+                "accuracy": 0.9281512605042017,
+                "macro_f1": 0.9230015326191328,
+                "positive_f1": 0.9030886936809295,
+                "positive_precision": 0.9417848699763594,
+                "positive_recall": 0.8674469243331518,
+                "roc_auc": 0.9767081083688375,
+                "average_precision": 0.9686872968039062,
+                "brier": 0.05478175042515435,
+                "log_loss": 0.1914949079171517,
+                "confusion_matrix": [
+                  [
+                    5649,
+                    197
+                  ],
+                  [
+                    487,
+                    3187
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.5,
+                "accuracy": 0.6765756302521009,
+                "macro_f1": 0.6287472415603967,
+                "positive_f1": 0.4954940193347534,
+                "positive_precision": 0.622478386167147,
+                "positive_recall": 0.4115405552531301,
+                "roc_auc": 0.71408796564182,
+                "average_precision": 0.5979162819872934,
+                "brier": 0.2063816402760035,
+                "log_loss": 0.5992882428978573,
+                "confusion_matrix": [
+                  [
+                    4929,
+                    917
+                  ],
+                  [
+                    2162,
+                    1512
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.28586401183121724,
+              "macro_f1_ci95": [
+                0.27584418682872497,
+                0.2960151455618644
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.37,
+              "threshold_b": 0.37
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2787470828059333,
+              "macro_f1_ci95": [
+                0.268284708775936,
+                0.28923991816438105
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.42,
+              "threshold_b": 0.37
+            }
+          },
+          "historical_absence_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 7786,
+                "positive_prevalence": 0.37747238633444646,
+                "threshold": 0.37,
+                "accuracy": 0.6518109427176985,
+                "macro_f1": 0.6399181085784473,
+                "positive_f1": 0.5744781039083346,
+                "positive_precision": 0.5332167832167832,
+                "positive_recall": 0.6226607689690371,
+                "roc_auc": 0.6984273375708381,
+                "average_precision": 0.549605150741717,
+                "brier": 0.21077275737052906,
+                "log_loss": 0.6092523864164051,
+                "confusion_matrix": [
+                  [
+                    3245,
+                    1602
+                  ],
+                  [
+                    1109,
+                    1830
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7786,
+                "positive_prevalence": 0.37747238633444646,
+                "threshold": 0.37,
+                "accuracy": 0.9323144104803494,
+                "macro_f1": 0.9281285866435878,
+                "positive_f1": 0.9107838158117487,
+                "positive_precision": 0.9063342318059299,
+                "positive_recall": 0.9152773052058524,
+                "roc_auc": 0.9778733147199858,
+                "average_precision": 0.9687537989181484,
+                "brier": 0.053126263808250196,
+                "log_loss": 0.18669128214617195,
+                "confusion_matrix": [
+                  [
+                    4569,
+                    278
+                  ],
+                  [
+                    249,
+                    2690
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7786,
+                "positive_prevalence": 0.37747238633444646,
+                "threshold": 0.42,
+                "accuracy": 0.671333162085795,
+                "macro_f1": 0.6484365823277907,
+                "positive_f1": 0.5587170201758924,
+                "positive_precision": 0.5664335664335665,
+                "positive_recall": 0.5512078938414426,
+                "roc_auc": 0.7169978406261195,
+                "average_precision": 0.5965726900378506,
+                "brier": 0.2035468831125496,
+                "log_loss": 0.5926561821327765,
+                "confusion_matrix": [
+                  [
+                    3607,
+                    1240
+                  ],
+                  [
+                    1319,
+                    1620
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.629191823767313,
+                0.6503754842823999
+              ],
+              "tfidf_lr": [
+                0.9223508134546712,
+                0.9345517146863423
+              ],
+              "linguistic_boosting": [
+                0.6374123302893341,
+                0.6588653725197383
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 7786,
+                "positive_prevalence": 0.37747238633444646,
+                "threshold": 0.5,
+                "accuracy": 0.6590033393269972,
+                "macro_f1": 0.573937945752695,
+                "positive_f1": 0.3835616438356164,
+                "positive_precision": 0.6038011695906432,
+                "positive_recall": 0.2810479755018714,
+                "roc_auc": 0.6984273375708381,
+                "average_precision": 0.549605150741717,
+                "brier": 0.21077275737052906,
+                "log_loss": 0.6092523864164051,
+                "confusion_matrix": [
+                  [
+                    4305,
+                    542
+                  ],
+                  [
+                    2113,
+                    826
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7786,
+                "positive_prevalence": 0.37747238633444646,
+                "threshold": 0.5,
+                "accuracy": 0.9301310043668122,
+                "macro_f1": 0.9245248375449617,
+                "positive_f1": 0.903954802259887,
+                "positive_precision": 0.9394495412844037,
+                "positive_recall": 0.8710445729840082,
+                "roc_auc": 0.9778733147199858,
+                "average_precision": 0.9687537989181484,
+                "brier": 0.053126263808250196,
+                "log_loss": 0.18669128214617195,
+                "confusion_matrix": [
+                  [
+                    4682,
+                    165
+                  ],
+                  [
+                    379,
+                    2560
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7786,
+                "positive_prevalence": 0.37747238633444646,
+                "threshold": 0.5,
+                "accuracy": 0.6814795787310557,
+                "macro_f1": 0.6307468714622281,
+                "positive_f1": 0.49387755102040815,
+                "positive_precision": 0.6170321264660887,
+                "positive_recall": 0.4117046614494726,
+                "roc_auc": 0.7169978406261195,
+                "average_precision": 0.5965726900378506,
+                "brier": 0.2035468831125496,
+                "log_loss": 0.5926561821327765,
+                "confusion_matrix": [
+                  [
+                    4096,
+                    751
+                  ],
+                  [
+                    1729,
+                    1210
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.28821047806514044,
+              "macro_f1_ci95": [
+                0.27704091399945685,
+                0.3001406366613557
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.37,
+              "threshold_b": 0.37
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2796920043157971,
+              "macro_f1_ci95": [
+                0.26838540751159967,
+                0.29183181546242276
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.42,
+              "threshold_b": 0.37
+            }
+          },
+          "near_duplicate_audit": {
+            "matched_query_posts": 0,
+            "matched_post_pairs": 0,
+            "candidate_pairs_verified": 0,
+            "reference_posts": 29471,
+            "query_posts": 10961,
+            "similarity": 0.8,
+            "definition": "Set Jaccard of consecutive five-word shingles; no semantic-paraphrase coverage",
+            "affected_test_authors": 0
+          },
+          "near_duplicate_exclusion_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.37,
+                "accuracy": 0.6504201680672269,
+                "macro_f1": 0.6399157671008802,
+                "positive_f1": 0.5784139853052952,
+                "positive_precision": 0.5409952606635071,
+                "positive_recall": 0.6213935764833969,
+                "roc_auc": 0.6977653718160046,
+                "average_precision": 0.5579129762379613,
+                "brier": 0.21278287032597437,
+                "log_loss": 0.613641173763369,
+                "confusion_matrix": [
+                  [
+                    3909,
+                    1937
+                  ],
+                  [
+                    1391,
+                    2283
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.37,
+                "accuracy": 0.9296218487394958,
+                "macro_f1": 0.9257797789320974,
+                "positive_f1": 0.9088931193908077,
+                "positive_precision": 0.9081521739130435,
+                "positive_recall": 0.909635274904736,
+                "roc_auc": 0.9767081083688375,
+                "average_precision": 0.9686872968039062,
+                "brier": 0.05478175042515435,
+                "log_loss": 0.1914949079171517,
+                "confusion_matrix": [
+                  [
+                    5508,
+                    338
+                  ],
+                  [
+                    332,
+                    3342
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.42,
+                "accuracy": 0.6680672268907563,
+                "macro_f1": 0.6470326961261641,
+                "positive_f1": 0.5608671484157866,
+                "positive_precision": 0.5729699034639409,
+                "positive_recall": 0.5492651061513337,
+                "roc_auc": 0.71408796564182,
+                "average_precision": 0.5979162819872934,
+                "brier": 0.2063816402760035,
+                "log_loss": 0.5992882428978573,
+                "confusion_matrix": [
+                  [
+                    4342,
+                    1504
+                  ],
+                  [
+                    1656,
+                    2018
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.6306704418559742,
+                0.6504564965108859
+              ],
+              "tfidf_lr": [
+                0.9202601014571398,
+                0.9314121357194315
+              ],
+              "linguistic_boosting": [
+                0.6366346138321529,
+                0.6571825590460176
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.5,
+                "accuracy": 0.6543067226890756,
+                "macro_f1": 0.573154071318564,
+                "positive_f1": 0.3870366921214379,
+                "positive_precision": 0.6129793510324484,
+                "positive_recall": 0.2827980402830702,
+                "roc_auc": 0.6977653718160046,
+                "average_precision": 0.5579129762379613,
+                "brier": 0.21278287032597437,
+                "log_loss": 0.613641173763369,
+                "confusion_matrix": [
+                  [
+                    5190,
+                    656
+                  ],
+                  [
+                    2635,
+                    1039
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.5,
+                "accuracy": 0.9281512605042017,
+                "macro_f1": 0.9230015326191328,
+                "positive_f1": 0.9030886936809295,
+                "positive_precision": 0.9417848699763594,
+                "positive_recall": 0.8674469243331518,
+                "roc_auc": 0.9767081083688375,
+                "average_precision": 0.9686872968039062,
+                "brier": 0.05478175042515435,
+                "log_loss": 0.1914949079171517,
+                "confusion_matrix": [
+                  [
+                    5649,
+                    197
+                  ],
+                  [
+                    487,
+                    3187
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 9520,
+                "positive_prevalence": 0.3859243697478992,
+                "threshold": 0.5,
+                "accuracy": 0.6765756302521009,
+                "macro_f1": 0.6287472415603967,
+                "positive_f1": 0.4954940193347534,
+                "positive_precision": 0.622478386167147,
+                "positive_recall": 0.4115405552531301,
+                "roc_auc": 0.71408796564182,
+                "average_precision": 0.5979162819872934,
+                "brier": 0.2063816402760035,
+                "log_loss": 0.5992882428978573,
+                "confusion_matrix": [
+                  [
+                    4929,
+                    917
+                  ],
+                  [
+                    2162,
+                    1512
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.28586401183121724,
+              "macro_f1_ci95": [
+                0.27584418682872497,
+                0.2960151455618644
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.37,
+              "threshold_b": 0.37
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2787470828059333,
+              "macro_f1_ci95": [
+                0.268284708775936,
+                0.28923991816438105
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.42,
+              "threshold_b": 0.37
+            }
+          },
+          "private_predictions_sha256": "6cf3272d205cf9657b8c49adf673c2a51af253fafb7eb3116019cf8fc60b787a",
+          "prepared_posts_sha256": "99f551d1adfe122985ba958ed9e9820e9b416fc0f07c7118a2bee1e8ca5ab70a"
+        },
+        "2022-08": {
+          "cohort": {
+            "metadata_posts": 19276,
+            "metadata_authors": 14346,
+            "ambiguous_authors": 395,
+            "previously_observed_authors_excluded": 3215,
+            "body_quality_posts_excluded": 2434,
+            "identical_record_posts_excluded": 0,
+            "shared_within_month_posts_excluded": 51,
+            "repeated_same_author_text_posts_excluded": 28,
+            "training_validation_exact_reuse_authors_excluded": 0,
+            "earlier_extension_exact_reuse_posts_excluded": 1,
+            "retained_posts": 9968,
+            "retained_authors": 8859,
+            "positive_authors": 3571,
+            "utc_start": "2022-08-01T00:00:43+00:00",
+            "utc_end": "2022-08-31T13:56:55+00:00"
+          },
+          "main": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 8859,
+                "positive_prevalence": 0.40309289987583247,
+                "threshold": 0.37,
+                "accuracy": 0.652669601535162,
+                "macro_f1": 0.6462873321169612,
+                "positive_f1": 0.5987742860868431,
+                "positive_precision": 0.5602733040507565,
+                "positive_recall": 0.6429571548585831,
+                "roc_auc": 0.6996598820300192,
+                "average_precision": 0.5782530805223713,
+                "brier": 0.21576146316006967,
+                "log_loss": 0.6204102920242553,
+                "confusion_matrix": [
+                  [
+                    3486,
+                    1802
+                  ],
+                  [
+                    1275,
+                    2296
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 8859,
+                "positive_prevalence": 0.40309289987583247,
+                "threshold": 0.37,
+                "accuracy": 0.9245964555818941,
+                "macro_f1": 0.9215961527210259,
+                "positive_f1": 0.9062587706988493,
+                "positive_precision": 0.9082981715893108,
+                "positive_recall": 0.9042285074208906,
+                "roc_auc": 0.9735136824588392,
+                "average_precision": 0.9672385479386626,
+                "brier": 0.05850049303719838,
+                "log_loss": 0.20291532849122598,
+                "confusion_matrix": [
+                  [
+                    4962,
+                    326
+                  ],
+                  [
+                    342,
+                    3229
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 8859,
+                "positive_prevalence": 0.40309289987583247,
+                "threshold": 0.42,
+                "accuracy": 0.6630545208262784,
+                "macro_f1": 0.6496956953227386,
+                "positive_f1": 0.5812876981343807,
+                "positive_precision": 0.5823496346261945,
+                "positive_recall": 0.5802296275553066,
+                "roc_auc": 0.7121516684876618,
+                "average_precision": 0.6086508111674196,
+                "brier": 0.21006268622395685,
+                "log_loss": 0.6086592725868234,
+                "confusion_matrix": [
+                  [
+                    3802,
+                    1486
+                  ],
+                  [
+                    1499,
+                    2072
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.6366365220605823,
+                0.6564150328912267
+              ],
+              "tfidf_lr": [
+                0.9161660633415131,
+                0.9273016913777353
+              ],
+              "linguistic_boosting": [
+                0.640170617940897,
+                0.6599765335759785
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 8859,
+                "positive_prevalence": 0.40309289987583247,
+                "threshold": 0.5,
+                "accuracy": 0.6479286601196523,
+                "macro_f1": 0.5795787108371404,
+                "positive_f1": 0.41006241724985815,
+                "positive_precision": 0.6317016317016317,
+                "positive_recall": 0.30355642677121253,
+                "roc_auc": 0.6996598820300192,
+                "average_precision": 0.5782530805223713,
+                "brier": 0.21576146316006967,
+                "log_loss": 0.6204102920242553,
+                "confusion_matrix": [
+                  [
+                    4656,
+                    632
+                  ],
+                  [
+                    2487,
+                    1084
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 8859,
+                "positive_prevalence": 0.40309289987583247,
+                "threshold": 0.5,
+                "accuracy": 0.9238062986793092,
+                "macro_f1": 0.9196450437648339,
+                "positive_f1": 0.9013590530469092,
+                "positive_precision": 0.9425427872860636,
+                "positive_recall": 0.8636236348361803,
+                "roc_auc": 0.9735136824588392,
+                "average_precision": 0.9672385479386626,
+                "brier": 0.05850049303719838,
+                "log_loss": 0.20291532849122598,
+                "confusion_matrix": [
+                  [
+                    5100,
+                    188
+                  ],
+                  [
+                    487,
+                    3084
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 8859,
+                "positive_prevalence": 0.40309289987583247,
+                "threshold": 0.5,
+                "accuracy": 0.671181848967152,
+                "macro_f1": 0.6339895078361475,
+                "positive_f1": 0.5173156586578294,
+                "positive_precision": 0.6335227272727273,
+                "positive_recall": 0.43713245589470734,
+                "roc_auc": 0.7121516684876618,
+                "average_precision": 0.6086508111674196,
+                "brier": 0.21006268622395685,
+                "log_loss": 0.6086592725868234,
+                "confusion_matrix": [
+                  [
+                    4385,
+                    903
+                  ],
+                  [
+                    2010,
+                    1561
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2753088206040647,
+              "macro_f1_ci95": [
+                0.2642331738826787,
+                0.2858410284603316
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.37,
+              "threshold_b": 0.37
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2719004573982873,
+              "macro_f1_ci95": [
+                0.26039761937217126,
+                0.2825956764276355
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.42,
+              "threshold_b": 0.37
+            }
+          },
+          "historical_absence_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 7450,
+                "positive_prevalence": 0.39691275167785234,
+                "threshold": 0.37,
+                "accuracy": 0.6520805369127517,
+                "macro_f1": 0.6448361869814321,
+                "positive_f1": 0.5941121202630755,
+                "positive_precision": 0.5532225138524351,
+                "positive_recall": 0.6415285762597227,
+                "roc_auc": 0.6976291455818132,
+                "average_precision": 0.568632864902572,
+                "brier": 0.21505808121557976,
+                "log_loss": 0.619015346135795,
+                "confusion_matrix": [
+                  [
+                    2961,
+                    1532
+                  ],
+                  [
+                    1060,
+                    1897
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7450,
+                "positive_prevalence": 0.39691275167785234,
+                "threshold": 0.37,
+                "accuracy": 0.9273825503355705,
+                "macro_f1": 0.9241718310764868,
+                "positive_f1": 0.9085685313503464,
+                "positive_precision": 0.9081081081081082,
+                "positive_recall": 0.9090294217111938,
+                "roc_auc": 0.975193215674388,
+                "average_precision": 0.9686663562090547,
+                "brier": 0.055859446710585785,
+                "log_loss": 0.19574844606785036,
+                "confusion_matrix": [
+                  [
+                    4221,
+                    272
+                  ],
+                  [
+                    269,
+                    2688
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7450,
+                "positive_prevalence": 0.39691275167785234,
+                "threshold": 0.42,
+                "accuracy": 0.6644295302013423,
+                "macro_f1": 0.6499738095839482,
+                "positive_f1": 0.5788409703504043,
+                "positive_precision": 0.576703591809332,
+                "positive_recall": 0.5809942509299966,
+                "roc_auc": 0.7132799143988383,
+                "average_precision": 0.6060098014414286,
+                "brier": 0.20843286104627634,
+                "log_loss": 0.6047916598684989,
+                "confusion_matrix": [
+                  [
+                    3232,
+                    1261
+                  ],
+                  [
+                    1239,
+                    1718
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.634393738328722,
+                0.6557850671353558
+              ],
+              "tfidf_lr": [
+                0.9182096308774367,
+                0.9302295480420947
+              ],
+              "linguistic_boosting": [
+                0.6394160234070698,
+                0.6615885822750297
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 7450,
+                "positive_prevalence": 0.39691275167785234,
+                "threshold": 0.5,
+                "accuracy": 0.6502013422818792,
+                "macro_f1": 0.5792119014540875,
+                "positive_f1": 0.40637813211845103,
+                "positive_precision": 0.6224703419399861,
+                "positive_recall": 0.3016570848833277,
+                "roc_auc": 0.6976291455818132,
+                "average_precision": 0.568632864902572,
+                "brier": 0.21505808121557976,
+                "log_loss": 0.619015346135795,
+                "confusion_matrix": [
+                  [
+                    3952,
+                    541
+                  ],
+                  [
+                    2065,
+                    892
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 7450,
+                "positive_prevalence": 0.39691275167785234,
+                "threshold": 0.5,
+                "accuracy": 0.9279194630872484,
+                "macro_f1": 0.9236125602477254,
+                "positive_f1": 0.905474388311917,
+                "positive_precision": 0.9441997063142438,
+                "positive_recall": 0.8698004734528239,
+                "roc_auc": 0.975193215674388,
+                "average_precision": 0.9686663562090547,
+                "brier": 0.055859446710585785,
+                "log_loss": 0.19574844606785036,
+                "confusion_matrix": [
+                  [
+                    4341,
+                    152
+                  ],
+                  [
+                    385,
+                    2572
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 7450,
+                "positive_prevalence": 0.39691275167785234,
+                "threshold": 0.5,
+                "accuracy": 0.674228187919463,
+                "macro_f1": 0.6354073123486887,
+                "positive_f1": 0.5164375373580394,
+                "positive_precision": 0.6285160038797284,
+                "positive_recall": 0.43828204261075415,
+                "roc_auc": 0.7132799143988383,
+                "average_precision": 0.6060098014414286,
+                "brier": 0.20843286104627634,
+                "log_loss": 0.6047916598684989,
+                "confusion_matrix": [
+                  [
+                    3727,
+                    766
+                  ],
+                  [
+                    1661,
+                    1296
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.27933564409505474,
+              "macro_f1_ci95": [
+                0.26723214970533093,
+                0.2907487651426911
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.37,
+              "threshold_b": 0.37
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2741980214925386,
+              "macro_f1_ci95": [
+                0.2621085745245594,
+                0.2857700362598396
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.42,
+              "threshold_b": 0.37
+            }
+          },
+          "near_duplicate_audit": {
+            "matched_query_posts": 1,
+            "matched_post_pairs": 1,
+            "candidate_pairs_verified": 1,
+            "reference_posts": 29471,
+            "query_posts": 9968,
+            "similarity": 0.8,
+            "definition": "Set Jaccard of consecutive five-word shingles; no semantic-paraphrase coverage",
+            "affected_test_authors": 1
+          },
+          "near_duplicate_exclusion_sensitivity": {
+            "metrics_at_validation_threshold": {
+              "linguistic_13": {
+                "n_users": 8858,
+                "positive_prevalence": 0.4031384059607135,
+                "threshold": 0.37,
+                "accuracy": 0.6527432829081057,
+                "macro_f1": 0.6463609001259265,
+                "positive_f1": 0.5988523735002608,
+                "positive_precision": 0.560410056138638,
+                "positive_recall": 0.6429571548585831,
+                "roc_auc": 0.6997559359099638,
+                "average_precision": 0.5784137092406456,
+                "brier": 0.21575083810602957,
+                "log_loss": 0.6203885011128392,
+                "confusion_matrix": [
+                  [
+                    3486,
+                    1801
+                  ],
+                  [
+                    1275,
+                    2296
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 8858,
+                "positive_prevalence": 0.4031384059607135,
+                "threshold": 0.37,
+                "accuracy": 0.9245879431022804,
+                "macro_f1": 0.921590197436299,
+                "positive_f1": 0.9062587706988493,
+                "positive_precision": 0.9082981715893108,
+                "positive_recall": 0.9042285074208906,
+                "roc_auc": 0.973514075330046,
+                "average_precision": 0.9672417056585134,
+                "brier": 0.05850575317600403,
+                "log_loss": 0.20292519244295712,
+                "confusion_matrix": [
+                  [
+                    4961,
+                    326
+                  ],
+                  [
+                    342,
+                    3229
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 8858,
+                "positive_prevalence": 0.4031384059607135,
+                "threshold": 0.42,
+                "accuracy": 0.6631293745766539,
+                "macro_f1": 0.6497703814792343,
+                "positive_f1": 0.5813692480359147,
+                "positive_precision": 0.5825133539499578,
+                "positive_recall": 0.5802296275553066,
+                "roc_auc": 0.712220953558119,
+                "average_precision": 0.6087488993551732,
+                "brier": 0.21005263970622054,
+                "log_loss": 0.608638625418217,
+                "confusion_matrix": [
+                  [
+                    3802,
+                    1485
+                  ],
+                  [
+                    1499,
+                    2072
+                  ]
+                ]
+              }
+            },
+            "macro_f1_ci95": {
+              "linguistic_13": [
+                0.63605922094818,
+                0.6559387003610024
+              ],
+              "tfidf_lr": [
+                0.9155476017706098,
+                0.927191366565764
+              ],
+              "linguistic_boosting": [
+                0.6399306909462565,
+                0.66050998103998
+              ]
+            },
+            "metrics_at_05": {
+              "linguistic_13": {
+                "n_users": 8858,
+                "positive_prevalence": 0.4031384059607135,
+                "threshold": 0.5,
+                "accuracy": 0.6480018062768119,
+                "macro_f1": 0.5796476309710467,
+                "positive_f1": 0.4101399924328415,
+                "positive_precision": 0.632069970845481,
+                "positive_recall": 0.30355642677121253,
+                "roc_auc": 0.6997559359099638,
+                "average_precision": 0.5784137092406456,
+                "brier": 0.21575083810602957,
+                "log_loss": 0.6203885011128392,
+                "confusion_matrix": [
+                  [
+                    4656,
+                    631
+                  ],
+                  [
+                    2487,
+                    1084
+                  ]
+                ]
+              },
+              "tfidf_lr": {
+                "n_users": 8858,
+                "positive_prevalence": 0.4031384059607135,
+                "threshold": 0.5,
+                "accuracy": 0.9237976969970648,
+                "macro_f1": 0.9196393352239053,
+                "positive_f1": 0.9013590530469092,
+                "positive_precision": 0.9425427872860636,
+                "positive_recall": 0.8636236348361803,
+                "roc_auc": 0.973514075330046,
+                "average_precision": 0.9672417056585134,
+                "brier": 0.05850575317600403,
+                "log_loss": 0.20292519244295712,
+                "confusion_matrix": [
+                  [
+                    5099,
+                    188
+                  ],
+                  [
+                    487,
+                    3084
+                  ]
+                ]
+              },
+              "linguistic_boosting": {
+                "n_users": 8858,
+                "positive_prevalence": 0.4031384059607135,
+                "threshold": 0.5,
+                "accuracy": 0.6712576202303003,
+                "macro_f1": 0.6340645036228818,
+                "positive_f1": 0.5174013921113689,
+                "positive_precision": 0.6337799431587495,
+                "positive_recall": 0.43713245589470734,
+                "roc_auc": 0.712220953558119,
+                "average_precision": 0.6087488993551732,
+                "brier": 0.21005263970622054,
+                "log_loss": 0.608638625418217,
+                "confusion_matrix": [
+                  [
+                    4385,
+                    902
+                  ],
+                  [
+                    2010,
+                    1561
+                  ]
+                ]
+              }
+            },
+            "imprecision_flag": false,
+            "lexical_minus_linguistic_13": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2752292973103725,
+              "macro_f1_ci95": [
+                0.2647390379157196,
+                0.2858761013319548
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.37,
+              "threshold_b": 0.37
+            },
+            "lexical_minus_linguistic_boosting": {
+              "direction": "B minus A",
+              "macro_f1_delta": 0.2718198159570647,
+              "macro_f1_ci95": [
+                0.2606031836777754,
+                0.2829518365116629
+              ],
+              "bootstrap": 1000,
+              "seed": 42,
+              "threshold_a": 0.42,
+              "threshold_b": 0.37
+            }
+          },
+          "private_predictions_sha256": "d0329438326bb00b9ed096d941be292a43816999d3e15f248577b576aaff221e",
+          "prepared_posts_sha256": "a8ac08821b2da98d78e14e3f12a5c205d98ccda32e11900038c2359fa9ce804b"
+        }
+      },
+      "model_sha256": {
+        "linguistic_13": "ec7d989bad20872d62d3073024674ebb98b80dfdbb1b11200f3376d6e2892b30",
+        "tfidf_lr": "4a9035a8df2f57616a7a54c7cd62754ca8dc1d550994033f492b5e98f83c8c6d",
+        "linguistic_boosting": "bc27d13fb2396ef9b2bbc97ac9a3465011ed60d80de20086249a0e12e721e77b"
+      }
+    }
+  },
+  "scope": "Two new months from the same collection, not independent-source or clinical validation",
+  "private_report_sha256": "5c4529a8f72654e56e14d4364b330659aac24e1beef725a739c846603e37a54d",
+  "export_code_sha256": "b8e7f3edd9bc879e0a65e65412b529e44257cae93bf201b1340d4f2fc1fc9e7b",
+  "saved_probability_arithmetic_verified": true
+}

@@ -63,7 +63,7 @@ def summarize(private_root, output):
     result = {
         'date': '2026-10-07', 'status': 'exploratory_community_proxy_pilot',
         'scope': 'Selected uploaded examples; community-affiliation labels, not anxiety diagnosis or onset',
-        'provenance_status': 'Kaggle RMHD version 1 and publisher-stated CC0 verified; uploaded names/byte lengths match release listing, upstream checksum identity/completeness and secondary institutional determination remain unresolved',
+        'provenance_status': 'Kaggle RMHD version 1 and publisher-stated CC0 verified; all 15 authored uploads are byte-identical to downloaded upstream files. Secondary institutional determination remains outstanding; whole-release parsing coverage is documented separately.',
         'author_attributed_dataset_study': 'https://www.mdpi.com/2076-3417/14/4/1547',
         'source_study_documented_facts': {
             'source_pdf': 'https://mdpi-res.com/d_attachment/applsci/applsci-14-01547/article_deploy/applsci-14-01547.pdf',
@@ -76,7 +76,8 @@ def summarize(private_root, output):
             'resolved_dataset_url': 'https://www.kaggle.com/datasets/entenam/reddit-mental-health-dataset',
             'identified_version': 1, 'publisher_stated_license': 'CC0: Public Domain',
             'version_and_stated_license_metadata_verified': True,
-            'upstream_content_checksum_identity_verified': False,
+            'upstream_content_checksum_identity_verified': True,
+            'archive_sha256': '6078fe83304c266ca976973f8b1e553dc5d818c59810508151f9e6bc615bf9e4',
         },
         'comparison_dependence': 'The two comparisons share some Anxiety authors and are not independent replications',
         'comparisons': {},
