@@ -1,8 +1,8 @@
 # Secondary-analysis statement worksheet for the human authors
 
-This is a factual preparation document, not an ethics approval or institutional decision. Complete the missing author/institution information and have the appropriate body determine applicability under your local rules.
+This is a factual preparation document, not an ethics approval or institutional decision. Use the existing determination to complete the missing author/institution information and verify its applicability to the submitted study.
 
-Current author response, 7 October 2026: an institutional determination **exists**. The reviewing body, decision, reference, date and scope have been requested and are not yet documented. Do not state that no determination exists, or fill these fields using the source study's approval.
+Current author response, 7 October 2026: an institutional determination **exists**, but its details cannot be shared in this chat. Record this as author-reported, with details withheld here; do not request the documents here again. The authors can add the reviewing body, decision, reference, date and scope privately to their submission copy and provide documentation through the journal's appropriate channel if required. Do not state that no determination exists, claim independent verification, or fill these fields using the source study's approval.
 
 ## Facts available for that determination
 
@@ -19,6 +19,12 @@ Identifiers are used privately to prevent account overlap and deduplicate observ
 - Institution's determination: who reviewed the project, date, decision, reference if applicable and governing basis. Report no reference number if none was issued; do not copy the original collection's approval into this field.
 - Real storage access controls and retention/deletion plan applicable to the authors' institution.
 - Funding, competing interests, author contributions and required AI-assistance disclosure.
+
+## Ethics wording to complete privately
+
+“This secondary analysis was [actual decision: approved, exempted, or otherwise reviewed] by [reviewing institution/committee] on [date], reference [reference, if issued]. The determination covers [the actual approved or reviewed scope of this secondary Reddit analysis].”
+
+Replace the brackets from the actual determination and follow the target journal's reporting requirements. Add a consent or waiver statement only if supported by that determination. This template is not a claim that the assistant has reviewed the documents.
 
 ## Draft availability wording, subject to author verification
 

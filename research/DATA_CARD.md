@@ -25,7 +25,7 @@ General-interest files without author identifiers and the clinical PHQ-8 files a
 
 ## Use, ethics and release
 
-The study author supplied the files and requested analysis. The now-identified source states CC0; the current project must still document its applicable institutional determination and responsible research use. The author reports that a determination exists; its reviewing body, decision, reference, date and scope await documentation. The source paper's Victoria University HREC HRE23-005 approval belongs to that source study and is not assigned to this analysis. No current-project approval number or exemption is invented.
+The study author supplied the files and requested analysis. The now-identified source states CC0; the current project must still document its applicable institutional determination and responsible research use. The author reports that a determination exists and cannot share its details here. The required information will be completed privately in the submission copy; it has not been independently verified for this draft. The source paper's Victoria University HREC HRE23-005 approval belongs to that source study and is not assigned to this analysis. No current-project approval number or exemption is invented.
 
 Public research artifacts comprise code, frozen protocols, aggregate counts/results, input/code hashes and aggregate figures. Raw texts, usernames, clinical participant-level records, fitted vocabularies and individual predictions remain private. A future researcher can obtain the listed upstream release and apply the documented pipeline subject to their own applicable requirements. The present release does not provide a new downloadable clinical dataset.
 
