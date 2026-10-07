@@ -1,0 +1,483 @@
+{
+  "assessment_date": "2026-10-07",
+  "scope": "Targeted novelty audit for the revised RMHD community-language study; not an exhaustive systematic review or proof of uniqueness",
+  "report": "research/NOVELTY_CHECK.md",
+  "searches": {
+    "crossref": {
+      "method": "Top 30 relevance-ranked query.bibliographic records per query, publication filter 2010-01-01 through 2026-10-07; title/available-abstract screening and selected reference follow-up",
+      "query_count": 16,
+      "total_returned_records": 480,
+      "unique_dois": 382,
+      "fulltext_read_all_records": false,
+      "queries": [
+        {
+          "query": "Reddit mental health dataset anxiety depression linguistic",
+          "url": "https://api.crossref.org/works?query.bibliographic=Reddit+mental+health+dataset+anxiety+depression+linguistic&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 3689491,
+          "local_cache": "research/sources/novelty_check/crossref_00.json",
+          "bytes": 31412,
+          "sha256": "acdde66ce0aca1eac11a3e5458d7c61506201304bfe626acea48b6b3daacc6db",
+          "cache_redistributed": false
+        },
+        {
+          "query": "From Posts to Knowledge Annotating a Pandemic-Era Reddit Dataset",
+          "url": "https://api.crossref.org/works?query.bibliographic=From+Posts+to+Knowledge+Annotating+a+Pandemic-Era+Reddit+Dataset&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 7472654,
+          "local_cache": "research/sources/novelty_check/crossref_01.json",
+          "bytes": 65660,
+          "sha256": "299e854b377eb447a247092322ae6c6496c598ba6f7d4cdd1c4c81548e4cb0ab",
+          "cache_redistributed": false
+        },
+        {
+          "query": "RMHD anxiety classification",
+          "url": "https://api.crossref.org/works?query.bibliographic=RMHD+anxiety+classification&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 612586,
+          "local_cache": "research/sources/novelty_check/crossref_02.json",
+          "bytes": 44971,
+          "sha256": "377a2a21f66a61395fdfbe95013986728222e9860d2e9124aa9c0204ad8f4362",
+          "cache_redistributed": false
+        },
+        {
+          "query": "anxiety mentalhealth depression Reddit sentiment pronoun logistic regression",
+          "url": "https://api.crossref.org/works?query.bibliographic=anxiety+mentalhealth+depression+Reddit+sentiment+pronoun+logistic+regression&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 559196,
+          "local_cache": "research/sources/novelty_check/crossref_03.json",
+          "bytes": 49894,
+          "sha256": "4e05015b185c341b065bd3298679cb6e5b5315e135489af8e9de502685d70e33",
+          "cache_redistributed": false
+        },
+        {
+          "query": "anxiety Reddit TF-IDF linguistic temporal validation",
+          "url": "https://api.crossref.org/works?query.bibliographic=anxiety+Reddit+TF-IDF+linguistic+temporal+validation&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 832605,
+          "local_cache": "research/sources/novelty_check/crossref_04.json",
+          "bytes": 33097,
+          "sha256": "3bb2ad5b744f505a82e380ea657a53f1a6036f1ae5c50a92a17007e5e7e4cfca",
+          "cache_redistributed": false
+        },
+        {
+          "query": "subreddit mental health classification confounding negative controls",
+          "url": "https://api.crossref.org/works?query.bibliographic=subreddit+mental+health+classification+confounding+negative+controls&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 3790273,
+          "local_cache": "research/sources/novelty_check/crossref_05.json",
+          "bytes": 55200,
+          "sha256": "b4b6c6f4d1623747316670afc8770d0b973a4e9b5d57767a04da3b223c54311a",
+          "cache_redistributed": false
+        },
+        {
+          "query": "anxiety community identification LIWC language Reddit",
+          "url": "https://api.crossref.org/works?query.bibliographic=anxiety+community+identification+LIWC+language+Reddit&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 2314324,
+          "local_cache": "research/sources/novelty_check/crossref_06.json",
+          "bytes": 55373,
+          "sha256": "eb710d26f3e950d0ff49c4eaaad2100408ad366ca0fdc8c949cc95e454b72596",
+          "cache_redistributed": false
+        },
+        {
+          "query": "Reddit mental health comparator control selection",
+          "url": "https://api.crossref.org/works?query.bibliographic=Reddit+mental+health+comparator+control+selection&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 5192482,
+          "local_cache": "research/sources/novelty_check/crossref_07.json",
+          "bytes": 76166,
+          "sha256": "63e657f06fa610504d0b717f475b9511858e7a17cdaeabb523ab419b89b1d4cd",
+          "cache_redistributed": false
+        },
+        {
+          "query": "Reddit mental health user disjoint temporal split robustness",
+          "url": "https://api.crossref.org/works?query.bibliographic=Reddit+mental+health+user+disjoint+temporal+split+robustness&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 3552142,
+          "local_cache": "research/sources/novelty_check/crossref_08.json",
+          "bytes": 69838,
+          "sha256": "19ddd5ada6a4924062382e09ad3b3904e44291cedb83bb5a81f8e4c371570da7",
+          "cache_redistributed": false
+        },
+        {
+          "query": "mental health classification masking disorder keywords Reddit",
+          "url": "https://api.crossref.org/works?query.bibliographic=mental+health+classification+masking+disorder+keywords+Reddit&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 3776279,
+          "local_cache": "research/sources/novelty_check/crossref_09.json",
+          "bytes": 63586,
+          "sha256": "6c94519f89ed3744d86f29d1b6686dc9157f0e2c1cad0c096a42143fabe9a9ac",
+          "cache_redistributed": false
+        },
+        {
+          "query": "entenam reddit mental health dataset",
+          "url": "https://api.crossref.org/works?query.bibliographic=entenam+reddit+mental+health+dataset&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 3288045,
+          "local_cache": "research/sources/novelty_check/crossref_10.json",
+          "bytes": 64898,
+          "sha256": "85414bf599d01edaf0f68d81f7083a231684e1df99f55da2f71c98b2a14b2cad",
+          "cache_redistributed": false
+        },
+        {
+          "query": "Reddit mental health VADER TextBlob pronoun",
+          "url": "https://api.crossref.org/works?query.bibliographic=Reddit+mental+health+VADER+TextBlob+pronoun&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 3069436,
+          "local_cache": "research/sources/novelty_check/crossref_11.json",
+          "bytes": 56596,
+          "sha256": "aef907844ba3df5ca90c93d840eb81f90d138a15798291ab826e532397fe7357",
+          "cache_redistributed": false
+        },
+        {
+          "query": "early linguistic patterns social anxiety NLP",
+          "url": "https://api.crossref.org/works?query.bibliographic=early+linguistic+patterns+social+anxiety+NLP&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 4008784,
+          "local_cache": "research/sources/novelty_check/crossref_12.json",
+          "bytes": 38510,
+          "sha256": "ff94ecdd142004773edad732f64327d4afb71757ad9ab67d2914d0c689358391",
+          "cache_redistributed": false
+        },
+        {
+          "query": "anxiety depression subreddit interpretable feature lexical",
+          "url": "https://api.crossref.org/works?query.bibliographic=anxiety+depression+subreddit+interpretable+feature+lexical&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 593322,
+          "local_cache": "research/sources/novelty_check/crossref_13.json",
+          "bytes": 40936,
+          "sha256": "c41e73547f0a93a876bca69c3a036028eff653065c200b0eb8e97a26363cb4c0",
+          "cache_redistributed": false
+        },
+        {
+          "query": "negative control selection social media mental health",
+          "url": "https://api.crossref.org/works?query.bibliographic=negative+control+selection+social+media+mental+health&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 8280875,
+          "local_cache": "research/sources/novelty_check/crossref_14.json",
+          "bytes": 32712,
+          "sha256": "3d9cc6447fed6fca35a3f2d0e3402dd3a8f5b79acacae49e77d0a9dca55e22de",
+          "cache_redistributed": false
+        },
+        {
+          "query": "mental health generalization subreddit lexical features",
+          "url": "https://api.crossref.org/works?query.bibliographic=mental+health+generalization+subreddit+lexical+features&rows=30&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2026-10-07&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished%2Ccontainer-title%2Ctype%2CURL%2Clink%2Cis-referenced-by-count",
+          "http_status": 200,
+          "returned_records": 30,
+          "ranked_total_reported": 3466126,
+          "local_cache": "research/sources/novelty_check/crossref_15.json",
+          "bytes": 47695,
+          "sha256": "589357c88685bfdf67c4877a3ecbfe43f1231ced036e67fbd683bfc8759ddd08",
+          "cache_redistributed": false
+        }
+      ]
+    },
+    "acl_anthology": {
+      "url": "https://aclanthology.org/anthology+abstracts.bib.gz",
+      "local_cache": "research/sources/novelty_check/anthology_abstracts.bib.gz",
+      "bytes": 42545068,
+      "sha256": "930b6881dc91938db639c549777537abcf2c36f8f93ba1126c066cf62c8b8c91",
+      "cache_redistributed": false,
+      "bibliographic_entries": 131647,
+      "automatically_selected_candidates": 432,
+      "case_insensitive_regex_filters": {
+        "mental_health": "\\b(anxiety|mental health|mental-health|depression|psychological distress|psychiatric)\\b",
+        "context": "reddit|social media|subreddit|domain|generali[sz]|confound|control"
+      },
+      "selection_unit": "Entire BibTeX record; retain records matching both filters",
+      "screening_scope": "Selected titles/abstracts and referenced close papers, not full-text reading of every retrieved candidate",
+      "selected_metadata_cache": {
+        "local_cache": "research/sources/novelty_check/acl_candidates.json",
+        "bytes": 567780,
+        "sha256": "bd89061405a8ab750d844170177b4821183c1a49bf493344a895c12be179b2fe",
+        "cache_redistributed": false
+      }
+    },
+    "arxiv": {
+      "query_count": 5,
+      "method": "Metadata query results and selected preprint dataset checks; broad comparator query capped at 30 of 422 results",
+      "queries": [
+        {
+          "query_description": "arXiv Query: search_query=all:\"Reddit Mental Health Dataset\"&id_list=&start=0&max_results=20",
+          "url": "https://arxiv.org/api/query?search_query=all:%22Reddit+Mental+Health+Dataset%22&start=0&max_results=20&id_list=",
+          "returned_records": 2,
+          "total_results": 2,
+          "local_cache": "research/sources/novelty_check/arxiv_query.txt",
+          "bytes": 5386,
+          "sha256": "ee4583fbd4b2173a1e9babf5b460d85686dc3f5ae3f00a287957596419d52819",
+          "cache_redistributed": false
+        },
+        {
+          "query_description": "arXiv Query: search_query=ti:\"Natural Language Processing Reveals Vulnerable\"&id_list=&start=0&max_results=30",
+          "url": "https://arxiv.org/api/query?search_query=ti:%22Natural+Language+Processing+Reveals+Vulnerable%22&start=0&max_results=30&id_list=",
+          "returned_records": 0,
+          "total_results": 0,
+          "local_cache": "research/sources/novelty_check/arxiv_0.xml",
+          "bytes": 780,
+          "sha256": "06be347533006315aef4bd94d2185fb2d6f55f5f71c25535d51b06c552d8e391",
+          "cache_redistributed": false
+        },
+        {
+          "query_description": "arXiv Query: search_query=all:\"Rani\" AND all:\"Reddit\"&id_list=&start=0&max_results=30",
+          "url": "https://arxiv.org/api/query?search_query=all:%22Rani%22+AND+all:%22Reddit%22&start=0&max_results=30&id_list=",
+          "returned_records": 0,
+          "total_results": 0,
+          "local_cache": "research/sources/novelty_check/arxiv_1.xml",
+          "bytes": 736,
+          "sha256": "9b2ea23405287c49e6daa6b899b1ba8424428aa9cd0fc5d8374bcd2bf4314d3b",
+          "cache_redistributed": false
+        },
+        {
+          "query_description": "arXiv Query: search_query=all:\"anxiety\" AND all:\"linguistic\" AND all:\"Reddit\"&id_list=&start=0&max_results=30",
+          "url": "https://arxiv.org/api/query?search_query=all:%22anxiety%22+AND+(all:%22linguistic%22+AND+all:%22Reddit%22)&start=0&max_results=30&id_list=",
+          "returned_records": 7,
+          "total_results": 7,
+          "local_cache": "research/sources/novelty_check/arxiv_2.xml",
+          "bytes": 15904,
+          "sha256": "4d00a73d87decbcce425882f9379ba24595aa7b56e5be21c69d15de7711f9380",
+          "cache_redistributed": false
+        },
+        {
+          "query_description": "arXiv Query: search_query=all:\"mental health\" AND all:\"comparator\"&id_list=&start=0&max_results=30",
+          "url": "https://arxiv.org/api/query?search_query=all:%22mental+health%22+AND+all:%22comparator%22&start=0&max_results=30&id_list=",
+          "returned_records": 30,
+          "total_results": 422,
+          "local_cache": "research/sources/novelty_check/arxiv_3.xml",
+          "bytes": 70393,
+          "sha256": "20ad748e01e852a7e14cec1c08a7d4cf80d8f741c5ec6eb5d86cf36832da729e",
+          "cache_redistributed": false
+        }
+      ]
+    }
+  },
+  "targeted_sources": [
+    {
+      "url": "https://aclanthology.org/W17-3107.pdf",
+      "reading_scope": "Methods, results and conclusion examined for anxiety labels, comparison corpus and representations",
+      "local_cache": "research/sources/novelty_check/W17-3107.pdf",
+      "bytes": 125871,
+      "sha256": "d4d7a3534c1ef832289fe7c55fece842a62dacc8437a0c53fdf7ba4c9e26e274",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://aclanthology.org/W18-5903.pdf",
+      "reading_scope": "Full text examined, including corpus variants, common-target evaluation and limitations",
+      "local_cache": "research/sources/novelty_check/W18-5903.pdf",
+      "bytes": 175705,
+      "sha256": "731bacb040fe6c1ef0974789212f4c1042edb1a3e6df0743f0aa17821c7966e3",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://aclanthology.org/2026.bionlp-1.1.pdf",
+      "reading_scope": "Methods, results, discussion and limitations examined for representations, label sources, masks and generalization",
+      "local_cache": "research/sources/novelty_check/2026.bionlp-1.1.pdf",
+      "bytes": 321636,
+      "sha256": "6b98deabc4ccfa6a3d247135dfd19bec2ecc2374f50809ded153f34599b8e180",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://aclanthology.org/2023.cl-3.1.pdf",
+      "reading_scope": "Abstract and methods/results examined for selective masking, training phases and class imbalance",
+      "local_cache": "research/sources/novelty_check/2023.cl-3.1.pdf",
+      "bytes": 1599667,
+      "sha256": "fd67d83025b95af67c6c333093d207ed883b46e0a72837b22166134329aa9374",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://aclanthology.org/2024.wassa-1.28.pdf",
+      "reading_scope": "Methods/results examined for SMHD selection, sentiment tools, topic and linguistic-marker interpretation",
+      "local_cache": "research/sources/novelty_check/2024.wassa-1.28.pdf",
+      "bytes": 433036,
+      "sha256": "b8fe647fc6d4670925defa92a9ccbe2e864e43593e199eb5a8563ad1b3791ee4",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://aclanthology.org/W18-4102.pdf",
+      "reading_scope": "Abstract and methods/results examined for topic restriction and lexical/linguistic prediction",
+      "local_cache": "research/sources/novelty_check/W18-4102.pdf",
+      "bytes": 195687,
+      "sha256": "19d26ab124c6382b3740b42b44d3689dde4cb4eab6b135e03c1abd15ad6099fd",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://aclanthology.org/2024.rapid-1.8.pdf",
+      "reading_scope": "Abstract and methods examined for control-corpus construction; not used for a full results comparison",
+      "local_cache": "research/sources/novelty_check/2024.rapid-1.8.pdf",
+      "bytes": 680963,
+      "sha256": "675ae8a795933be3ec919a791426133880ec318ae03e33a3c85ac7e65f7742c2",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://aclanthology.org/2024.clpsych-1.13.pdf",
+      "reading_scope": "Abstract, methods/results, discussion and limitations examined for label-quality case auditing",
+      "local_cache": "research/sources/novelty_check/2024.clpsych-1.13.pdf",
+      "bytes": 214637,
+      "sha256": "ad68fa591b254406ff5dcafa2c4505f1d814d5a2454fa1d5ad668eb6fe241279",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/2503.07653",
+      "reading_scope": "Abstract, dataset section and source reference examined; not a full model-validity audit",
+      "local_cache": "research/sources/novelty_check/arxiv_2503.07653.pdf",
+      "bytes": 840297,
+      "sha256": "b13dba6a31409d73d771c046dd893ee071ac0f6625fdc4b1df4fd3a95a7906a7",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/2311.05075",
+      "reading_scope": "Abstract, dataset section and source reference examined; not a full model-validity audit",
+      "local_cache": "research/sources/novelty_check/arxiv_2311.05075.pdf",
+      "bytes": 1874595,
+      "sha256": "0228d9feb1d16b14d7e522699aee95aed075924c47dbc3c7d91d42b2a8bd0919",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/2505.18464",
+      "reading_scope": "Abstract examined to distinguish anxiety-support generation from community classification",
+      "local_cache": "research/sources/novelty_check/arxiv_2505.18464.pdf",
+      "bytes": 1208315,
+      "sha256": "005d6b8fee9f28822ef0a35e11ceb8e3b86e745ec762163c6ea7b50800f881be",
+      "cache_redistributed": false
+    }
+  ],
+  "metadata_only_candidates": [
+    {
+      "url": "https://api.crossref.org/works/10.2196/22635",
+      "doi": "10.2196/22635",
+      "title": "Natural Language Processing Reveals Vulnerable Mental Health Support Groups and Heightened Health Anxiety on Reddit During COVID-19: Observational Study",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read",
+      "abstract_available": true,
+      "local_cache": "research/sources/novelty_check/candidate_metadata_0.json",
+      "bytes": 9869,
+      "sha256": "23836fa32d7de14e52583483f9b52ecdf00d602da3dc6f258f3d26b825728b17",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.2139/ssrn.6788301",
+      "doi": "10.2139/ssrn.6788301",
+      "title": "Comparative Machine Learning Models for Mental Health Prediction on Reddit with SHAP Analysis",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read",
+      "abstract_available": true,
+      "local_cache": "research/sources/novelty_check/candidate_metadata_1.json",
+      "bytes": 2854,
+      "sha256": "78f2ea091fd1554b381bafbce4206fc89201100b9e6425c88b51c4207dfb99c9",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.21203/rs.3.rs-6392473/v2",
+      "doi": "10.21203/rs.3.rs-6392473/v2",
+      "title": "Mental Health on Reddit: Explainable Classification with Transformers",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read",
+      "abstract_available": true,
+      "local_cache": "research/sources/novelty_check/candidate_metadata_2.json",
+      "bytes": 4921,
+      "sha256": "46cb4dc870baf56a1f220fad4983d4409df883e0176fa0c26a4b73476d96c694",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.procs.2025.04.398",
+      "doi": "10.1016/j.procs.2025.04.398",
+      "title": "Classification of Mental Illnesses from Reddit Posts Using Sentence-BERT Embeddings and Neural Networks",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read",
+      "abstract_available": false,
+      "local_cache": "research/sources/novelty_check/candidate_metadata_3.json",
+      "bytes": 9048,
+      "sha256": "b67005e8c242bd2a274ef27b10c2e2230ef71c70eed00674fc674fc0f9f51bae",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.5220/0013375900003911",
+      "doi": "10.5220/0013375900003911",
+      "title": "Anxiety Detection in Reddit Posts Through Emotion Dynamics Analysis",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read",
+      "abstract_available": false,
+      "local_cache": "research/sources/novelty_check/candidate_metadata_4.json",
+      "bytes": 2037,
+      "sha256": "588212e87329ddd2982780b95b381302240482d3fe7c2f6d9191ce102815bbd8",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.11591/ijece.v14i5.pp5998-6005",
+      "doi": "10.11591/ijece.v14i5.pp5998-6005",
+      "title": "Reddit social media text analysis for depression prediction: using logistic regression with enhanced term frequency-inverse document frequency features",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read",
+      "abstract_available": true,
+      "local_cache": "research/sources/novelty_check/candidate_metadata_5.json",
+      "bytes": 4108,
+      "sha256": "f0e21f5d618691cd048702430d7f85c892150de1000387d12727b96cd8262beb",
+      "cache_redistributed": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1038/s41598-026-35918-3",
+      "doi": "10.1038/s41598-026-35918-3",
+      "title": "Understanding mental health discourse on Reddit with transformers and explainability",
+      "reading_scope": "Bibliographic metadata, version relations and references only; published full text blocked and abstract absent",
+      "abstract_available": false,
+      "published_date_parts": [
+        [
+          2026,
+          1,
+          31
+        ]
+      ],
+      "related_preprint": "10.21203/rs.3.rs-6392473/v2",
+      "local_cache": "research/sources/novelty_check/candidate_journal_metadata.json",
+      "bytes": 25487,
+      "sha256": "4b0edf1b890e6e2ced509a7d13bca0a99662cbc603d4fe61adf19e9d7ac2e117",
+      "cache_redistributed": false
+    }
+  ],
+  "earlier_review_manifest": "research/source_manifest.json",
+  "last_targeted_retrieval_status": [
+    {
+      "file": "candidate_journal_metadata.json",
+      "url": "https://api.crossref.org/works/10.1038/s41598-026-35918-3",
+      "http_status": 200,
+      "bytes": 25487,
+      "saved": true
+    },
+    {
+      "file": "candidate_journal.pdf",
+      "url": "https://www.nature.com/articles/s41598-026-35918-3.pdf",
+      "error_type": "ProxyError",
+      "saved": false
+    },
+    {
+      "file": "ssrn_candidate_landing.html",
+      "url": "https://www.ssrn.com/abstract=6788301",
+      "error_type": "ProxyError",
+      "saved": false
+    }
+  ],
+  "limitations": [
+    "Crossref bibliographic queries are relevance-ranked; retrieved DOI pool includes irrelevant records and is not a complete citation index search.",
+    "ACL snapshot screening is automated and can miss relevant terminology; full texts were read selectively, not for all 432 candidates.",
+    "No usable OpenAlex, Semantic Scholar or Bing results because runtime proxy blocked requests. No Scopus/Web of Science search performed.",
+    "JMIR/PMC, Research Square, Nature and SSRN full text or landing requests were blocked; metadata/abstract-only records cannot establish all cohort or method details.",
+    "Generic RMHD/Reddit Mental Health Dataset/Kaggle names refer to multiple distinct sources; exact release identity was not established for every candidate.",
+    "No global uniqueness certification, journal acceptance guarantee or general methodological novelty claim follows from this search.",
+    "Literature cache files are ignored and not redistributed in Git; URLs and hashes record the retrieved snapshots."
+  ],
+  "decision": {
+    "additional_experiment_identified_as_necessary_for_current_bounded_claims": false,
+    "scientific_positioning": "Empirical replication and extension in an audited RMHD release",
+    "main_submission_risk": "Incremental contribution",
+    "new_data_needed_for": "External-source generalization or clinical/onset claims, which are not made in the revised study"
+  }
+}

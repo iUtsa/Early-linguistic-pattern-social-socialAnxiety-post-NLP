@@ -23,6 +23,8 @@ Current-instance checks completed on 7 October 2026 using Python 3.12 and `/work
 | Training-account resampling | Completed all 20 seeds in each comparison; scaling/vocabulary/LR refitted on stratified March-account resamples, thresholds selected on May only; positive lexical advantage in all 40 runs |
 | New independent external study | Not run: the two contrasts share some authors and the same source; suitable independent data remain outstanding |
 | Standalone scientific figures | Aggregate-only baseline/reviewer/temporal PNG/PDF figures generated and visually inspected; writable Matplotlib/font cache check passed |
+| Expanded novelty audit | 16 Crossref queries return 382 unique DOIs; complete ACL metadata snapshot has 131,647 records and 432 automated candidates; five arXiv metadata queries and targeted close-paper reading documented in `novelty_search_manifest.json`. Counts describe retrieval/screening, not full-text reading of every record or worldwide uniqueness |
+| Manuscript after literature update | PDF/DOCX regenerated; source, figure, rendering-script and output hashes verified. Citations and local review links checked; updated title, figures and tables visually inspected. Experimental code and aggregate outcomes unchanged |
 
 The 100-replicate software fixture supplies no empirical evidence. The exploratory upload pilots use their separately fixed 1,000-replicate protocols; the proposed future study protocol recommends 2,000. Bootstrap intervals condition on observed class prevalence and the fitted model. These are not intervals for label validity or clinical/population generalization.
 

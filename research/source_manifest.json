@@ -193,6 +193,114 @@
       "local_file": "research/sources/W18-0620.pdf",
       "sha256": "2d208ab55065a50d0225329e301cc9bd0710f4905768ae572eeba41864afbe8a",
       "reading_scope": "Full text reviewed, including cohort construction, held-out-user classification, within/between-context results and limitations; directly constrains novelty"
+    },
+    {
+      "url": "https://aclanthology.org/W17-3107.pdf",
+      "local_file": "research/sources/novelty_check/W17-3107.pdf",
+      "sha256": "d4d7a3534c1ef832289fe7c55fece842a62dacc8437a0c53fdf7ba4c9e26e274",
+      "reading_scope": "Methods, results and conclusion examined for anxiety labels, comparison corpus and representations"
+    },
+    {
+      "url": "https://aclanthology.org/W18-5903.pdf",
+      "local_file": "research/sources/novelty_check/W18-5903.pdf",
+      "sha256": "731bacb040fe6c1ef0974789212f4c1042edb1a3e6df0743f0aa17821c7966e3",
+      "reading_scope": "Full text examined, including corpus variants, common-target evaluation and limitations"
+    },
+    {
+      "url": "https://aclanthology.org/2026.bionlp-1.1.pdf",
+      "local_file": "research/sources/novelty_check/2026.bionlp-1.1.pdf",
+      "sha256": "6b98deabc4ccfa6a3d247135dfd19bec2ecc2374f50809ded153f34599b8e180",
+      "reading_scope": "Methods, results, discussion and limitations examined for representations, label sources, masks and generalization"
+    },
+    {
+      "url": "https://aclanthology.org/2023.cl-3.1.pdf",
+      "local_file": "research/sources/novelty_check/2023.cl-3.1.pdf",
+      "sha256": "fd67d83025b95af67c6c333093d207ed883b46e0a72837b22166134329aa9374",
+      "reading_scope": "Abstract and methods/results examined for selective masking, training phases and class imbalance"
+    },
+    {
+      "url": "https://aclanthology.org/2024.wassa-1.28.pdf",
+      "local_file": "research/sources/novelty_check/2024.wassa-1.28.pdf",
+      "sha256": "b8fe647fc6d4670925defa92a9ccbe2e864e43593e199eb5a8563ad1b3791ee4",
+      "reading_scope": "Methods/results examined for SMHD selection, sentiment tools, topic and linguistic-marker interpretation"
+    },
+    {
+      "url": "https://aclanthology.org/W18-4102.pdf",
+      "local_file": "research/sources/novelty_check/W18-4102.pdf",
+      "sha256": "19d26ab124c6382b3740b42b44d3689dde4cb4eab6b135e03c1abd15ad6099fd",
+      "reading_scope": "Abstract and methods/results examined for topic restriction and lexical/linguistic prediction"
+    },
+    {
+      "url": "https://aclanthology.org/2024.rapid-1.8.pdf",
+      "local_file": "research/sources/novelty_check/2024.rapid-1.8.pdf",
+      "sha256": "675ae8a795933be3ec919a791426133880ec318ae03e33a3c85ac7e65f7742c2",
+      "reading_scope": "Abstract and methods examined for control-corpus construction; not used for a full results comparison"
+    },
+    {
+      "url": "https://aclanthology.org/2024.clpsych-1.13.pdf",
+      "local_file": "research/sources/novelty_check/2024.clpsych-1.13.pdf",
+      "sha256": "ad68fa591b254406ff5dcafa2c4505f1d814d5a2454fa1d5ad668eb6fe241279",
+      "reading_scope": "Abstract, methods/results, discussion and limitations examined for label-quality case auditing"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2503.07653",
+      "local_file": "research/sources/novelty_check/arxiv_2503.07653.pdf",
+      "sha256": "b13dba6a31409d73d771c046dd893ee071ac0f6625fdc4b1df4fd3a95a7906a7",
+      "reading_scope": "Abstract, dataset section and source reference examined; not a full model-validity audit"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2311.05075",
+      "local_file": "research/sources/novelty_check/arxiv_2311.05075.pdf",
+      "sha256": "0228d9feb1d16b14d7e522699aee95aed075924c47dbc3c7d91d42b2a8bd0919",
+      "reading_scope": "Abstract, dataset section and source reference examined; not a full model-validity audit"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2505.18464",
+      "local_file": "research/sources/novelty_check/arxiv_2505.18464.pdf",
+      "sha256": "005d6b8fee9f28822ef0a35e11ceb8e3b86e745ec762163c6ea7b50800f881be",
+      "reading_scope": "Abstract examined to distinguish anxiety-support generation from community classification"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.2196/22635",
+      "local_file": "research/sources/novelty_check/candidate_metadata_0.json",
+      "sha256": "23836fa32d7de14e52583483f9b52ecdf00d602da3dc6f258f3d26b825728b17",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.2139/ssrn.6788301",
+      "local_file": "research/sources/novelty_check/candidate_metadata_1.json",
+      "sha256": "78f2ea091fd1554b381bafbce4206fc89201100b9e6425c88b51c4207dfb99c9",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.21203/rs.3.rs-6392473/v2",
+      "local_file": "research/sources/novelty_check/candidate_metadata_2.json",
+      "sha256": "46cb4dc870baf56a1f220fad4983d4409df883e0176fa0c26a4b73476d96c694",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.procs.2025.04.398",
+      "local_file": "research/sources/novelty_check/candidate_metadata_3.json",
+      "sha256": "b67005e8c242bd2a274ef27b10c2e2230ef71c70eed00674fc674fc0f9f51bae",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.5220/0013375900003911",
+      "local_file": "research/sources/novelty_check/candidate_metadata_4.json",
+      "sha256": "588212e87329ddd2982780b95b381302240482d3fe7c2f6d9191ce102815bbd8",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.11591/ijece.v14i5.pp5998-6005",
+      "local_file": "research/sources/novelty_check/candidate_metadata_5.json",
+      "sha256": "f0e21f5d618691cd048702430d7f85c892150de1000387d12727b96cd8262beb",
+      "reading_scope": "Bibliographic metadata and available abstract only; full text not read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1038/s41598-026-35918-3",
+      "local_file": "research/sources/novelty_check/candidate_journal_metadata.json",
+      "sha256": "4b0edf1b890e6e2ced509a7d13bca0a99662cbc603d4fe61adf19e9d7ac2e117",
+      "reading_scope": "Bibliographic metadata, version relations and references only; published full text blocked and abstract absent"
     }
   ],
   "limitations": [
@@ -206,5 +314,11 @@
     "retrieval_scope": "Publisher HTML/XML returned 403; publisher asset PDF obtained after runtime reconnect; methods/organization/ethics/availability read",
     "exact_uploaded_dataset_version_verified": true,
     "verification": "Complete RMHD version-1 archive downloaded and hashed; all 15 authored uploads byte-identical to upstream files. See rmhd_source_manifest.json."
+  },
+  "novelty_followup": {
+    "assessment_date": "2026-10-07",
+    "report": "research/NOVELTY_CHECK.md",
+    "search_manifest": "research/novelty_search_manifest.json",
+    "scope": "Expanded metadata search and targeted close-paper reading; conceptual overlap established, no exact duplicate identified among inspected records/texts, worldwide uniqueness not proven"
   }
 }

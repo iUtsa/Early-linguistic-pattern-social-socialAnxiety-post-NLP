@@ -3,11 +3,11 @@
   "pandoc_version": "pandoc 3.1.11.1",
   "pdflatex_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
   "sha256": {
-    "research/REVISED_PILOT_MANUSCRIPT.md": "70b3c37ad12754ac63d23dce9570710cd1b6b25e75531c8544a56f31b0f2fd12",
+    "research/REVISED_PILOT_MANUSCRIPT.md": "252624790d901066c1dda74f98292fa0a5d7597d70591539bedc76b14368ffd1",
     "research/figures/reviewer_controls.png": "eda29a9c51ed8b2ddae576fe2d851f1246070443ee0c637c45ade9064ffc9e7d",
     "research/figures/temporal_extension.png": "9e7f6e1b7213a3a453fa759a16ed192d085ecac26de183bf0ca7c26b0476ed9e",
     "scripts/render_research_manuscript.py": "e1df542c5931513b0bf9f7bc1b76005a1c71b5e67f971f5e88dec0df62341917",
-    "research/REVISED_PILOT_MANUSCRIPT.pdf": "90694c2a6895002add621ea5f4e85ba983f8d0eeb972376e070c8c89b549b9b1",
-    "research/REVISED_PILOT_MANUSCRIPT.docx": "693f7788ce10582b6803662a581607e57cfaf2d0a132d7671c0bf748b51936e6"
+    "research/REVISED_PILOT_MANUSCRIPT.pdf": "67293f727aa15847099929ad3d0940ca360170e41aa430c697ab346c5b85307b",
+    "research/REVISED_PILOT_MANUSCRIPT.docx": "e0b70e62b427b3607754e45b7db658386b4a455d7572b83525518f9f0367b8fb"
   }
 }

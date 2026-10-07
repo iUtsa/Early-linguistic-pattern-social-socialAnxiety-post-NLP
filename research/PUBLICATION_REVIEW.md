@@ -6,6 +6,8 @@ Update after data uploads: [new data findings and actual pilot results](UPLOADED
 
 Later reassessment: [evidence-based submission decision](SUBMISSION_DECISION.md) includes exact Kaggle version/license findings and additional operating-point, comparator-transfer, near-duplicate and nonlinear-model checks. The original-manuscript verdict below is unchanged; the replacement has a different question and evidence base. The earlier priority table is a strengthening plan, not a universal prerequisite for all journal papers.
 
+Expanded novelty reassessment: [search and reviewer judgment](NOVELTY_CHECK.md) documents 16 Crossref queries, complete ACL metadata screening, arXiv queries and additional close-paper reading. The replacement is now explicitly positioned as an empirical replication/extension. The current narrow claims do not require another identified experiment before a suitable applied submission; incremental contribution remains the main rejection risk. The full frozen later-period evaluation and training resampling are reported in the [extension findings](TEMPORAL_EXTENSION_FINDINGS.md).
+
 ## Verdict
 
 **I would not submit the present manuscript to a Q2, Q3, or Q4 journal. As a reviewer I would recommend rejection in its current form, with encouragement to undertake a new, narrower study.** The primary problems are validity and traceability, not insufficiently high F1 or a lack of deep learning. Lower-quartile journals still require genuine observations, valid labels, and defensible evaluation.

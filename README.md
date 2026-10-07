@@ -8,6 +8,8 @@ The uploaded examples now support two completed, exploratory community-language 
 
 The complete version-1 archive has now been verified. [Frozen July/August evaluation and 40 training resamples](research/TEMPORAL_EXTENSION_FINDINGS.md) strengthen the result beyond the initial examples; they remain within one source.
 
+The expanded [novelty check](research/NOVELTY_CHECK.md) finds substantial prior work and positions the replacement as an applied replication/extension. No exact duplicate of its complete design was identified in inspected sources. The supported narrow claims do not require another experiment before an appropriately scoped submission; incremental contribution remains a rejection risk.
+
 The replacement manuscript is available as [Markdown](research/REVISED_PILOT_MANUSCRIPT.md), [PDF](research/REVISED_PILOT_MANUSCRIPT.pdf) and editable [DOCX](research/REVISED_PILOT_MANUSCRIPT.docx). These are human-review drafts, with actual ethics details and author declarations still to be completed. Rebuild the exports with `python scripts/render_research_manuscript.py` when Pandoc and pdflatex are available.
 
 ## Development setup
