@@ -1,1 +1,6 @@
 data/raw/final_dataset_fixed.csv
+__pycache__/
+*.pyc
+.venv/
+venv/
+research/sources/

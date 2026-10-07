@@ -45,11 +45,13 @@ def evaluate_model(model, X, y, split_name='test'):
         'f1': f1_score(y, y_pred, zero_division=0),
     }
     
-    if y_proba is not None:
+    if y_proba is not None and len(np.unique(y)) == 2:
         metrics['roc_auc'] = roc_auc_score(y, y_proba)
+    elif y_proba is not None:
+        metrics['roc_auc'] = None  # Undefined for a one-class sample.
     
     # Confusion matrix
-    cm = confusion_matrix(y, y_pred)
+    cm = confusion_matrix(y, y_pred, labels=[0, 1])
     metrics['confusion_matrix'] = cm.tolist()
     
     # Per-class metrics
@@ -64,7 +66,7 @@ def evaluate_model(model, X, y, split_name='test'):
     print(f"  Precision: {metrics['precision']:.4f}")
     print(f"  Recall:    {metrics['recall']:.4f}")
     print(f"  F1:        {metrics['f1']:.4f}")
-    if 'roc_auc' in metrics:
+    if metrics.get('roc_auc') is not None:
         print(f"  ROC-AUC:   {metrics['roc_auc']:.4f}")
     
     print(f"\n  Confusion Matrix:")

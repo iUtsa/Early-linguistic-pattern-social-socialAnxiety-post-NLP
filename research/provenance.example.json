@@ -1,0 +1,10 @@
+{
+  "dataset_source": "",
+  "dataset_version": "",
+  "permission_basis": "",
+  "label_definition": "",
+  "ethics_status": "",
+  "author_id_origin": "observed_stable",
+  "synthetic_data": false,
+  "notes": "Fill the empty fields from source documentation before running. This is a template, not verified provenance. Never substitute fabricated IDs for missing real authors."
+}

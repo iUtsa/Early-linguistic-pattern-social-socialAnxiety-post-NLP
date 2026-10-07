@@ -1,0 +1,1042 @@
+{
+  "retrieved_date": "2026-10-07",
+  "short_link": "https://rb.gy/ewtjy",
+  "resolved_dataset_url": "https://www.kaggle.com/datasets/entenam/reddit-mental-health-dataset",
+  "dataset_id": 3687885,
+  "dataset_version": 1,
+  "date_modified": "2023-09-01T01:46:35.443Z",
+  "stated_license": {
+    "@type": "CreativeWork",
+    "name": "CC0: Public Domain",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "pagination_complete": true,
+  "upstream_file_count": 225,
+  "upstream_listed_total_bytes": 1681516066,
+  "upload_correspondence": [
+    {
+      "upload_name": "mhmay22.csv",
+      "upload_sha256": "4455a38b2d15ef53f0eef924a4c34477de79aa0a4f336f693e03b632d433e6cd",
+      "upload_bytes": 10723780,
+      "source_path": "Original Reddit Data/raw data/2022/May 22/mhmay22.csv",
+      "source_bytes": 10723780,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "lonemay22.csv",
+      "upload_sha256": "5a3f60b8a819c033f50a6cc91a496674ae2933a68a99f5cdfaa2f327958b121a",
+      "upload_bytes": 3839947,
+      "source_path": "Original Reddit Data/raw data/2022/May 22/lonemay22.csv",
+      "source_bytes": 3839947,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "anximay22.csv",
+      "upload_sha256": "09b2dee43490c71e28cfcb7c3e05a1a4d9c4377278b263310a97e48d4e411365",
+      "upload_bytes": 6270850,
+      "source_path": "Original Reddit Data/raw data/2022/May 22/anximay22.csv",
+      "source_bytes": 6270850,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "depmay22.csv",
+      "upload_sha256": "c4047255291044e699d12067350f4c13a78dea778cbf200b857bffb6de487475",
+      "upload_bytes": 10906224,
+      "source_path": "Original Reddit Data/raw data/2022/May 22/depmay22.csv",
+      "source_bytes": 10906224,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "Swmay22.csv",
+      "upload_sha256": "3d2972b0d842cc445deef6aeb8dae69a0f8305284baca0d187390741be1e468b",
+      "upload_bytes": 9917235,
+      "source_path": "Original Reddit Data/raw data/2022/May 22/Swmay22.csv",
+      "source_bytes": 9917235,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "lonmar22.csv",
+      "upload_sha256": "cc193e8d271d26578d32ca09988d66947587707e1e71c81273096e57c6159281",
+      "upload_bytes": 3800186,
+      "source_path": "Original Reddit Data/raw data/2022/Mar 22/lonmar22.csv",
+      "source_bytes": 3800186,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "mhmar22.csv",
+      "upload_sha256": "f10223aca7502d49dd322a96a28bfd1df2130ff22ff631df3e62072664222be7",
+      "upload_bytes": 11371978,
+      "source_path": "Original Reddit Data/raw data/2022/Mar 22/mhmar22.csv",
+      "source_bytes": 11371978,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "anximar22.csv",
+      "upload_sha256": "eaf262fa26bbc00005790257291597e9497a92dbb3b28fc6c6bd4d51a9b5077c",
+      "upload_bytes": 6690203,
+      "source_path": "Original Reddit Data/raw data/2022/Mar 22/anximar22.csv",
+      "source_bytes": 6690203,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "depmar22.csv",
+      "upload_sha256": "b5069d78dea7f6c1702192e3df2a57bd00491819a2e122e7a8199781a964c066",
+      "upload_bytes": 11564014,
+      "source_path": "Original Reddit Data/raw data/2022/Mar 22/depmar22.csv",
+      "source_bytes": 11564014,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "Swmar22.csv",
+      "upload_sha256": "6ca933ee2d7b1f77df6e0168ba875fae0315fa26695084efaf88299b388e3279",
+      "upload_bytes": 9793165,
+      "source_path": "Original Reddit Data/raw data/2022/Mar 22/Swmar22.csv",
+      "source_bytes": 9793165,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "mhjun22.csv",
+      "upload_sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+      "upload_bytes": 9737214,
+      "source_path": "Original Reddit Data/raw data/2022/June 22/mhjun22.csv",
+      "source_bytes": 9737214,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "mh1jun22.csv",
+      "upload_sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+      "upload_bytes": 9737214,
+      "source_path": "Original Reddit Data/raw data/2022/June 22/mh1jun22.csv",
+      "source_bytes": 9737214,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "lone1jun22.csv",
+      "upload_sha256": "47861ef7ed9451ddad66722ba37047ddfff4af09dbe2d9b5b40bc9fa34ec0440",
+      "upload_bytes": 3758561,
+      "source_path": "Original Reddit Data/raw data/2022/June 22/lone1jun22.csv",
+      "source_bytes": 3758561,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "anijun22.csv",
+      "upload_sha256": "8b3b7436a673b70d69ae2769e34f0fce5477dea671066602fc45a3d6d663a56f",
+      "upload_bytes": 6110470,
+      "source_path": "Original Reddit Data/raw data/2022/June 22/anijun22.csv",
+      "source_bytes": 6110470,
+      "same_byte_length": true
+    },
+    {
+      "upload_name": "depjun22.csv",
+      "upload_sha256": "76a5523c1e3a8fe4bc24f0933b3fd66883c249f962ba75d5a7166389662f5728",
+      "upload_bytes": 10031934,
+      "source_path": "Original Reddit Data/raw data/2022/June 22/depjun22.csv",
+      "source_bytes": 10031934,
+      "same_byte_length": true
+    }
+  ],
+  "upstream_content_sha256_verified": false,
+  "download_status": "Full-archive redirect host blocked by current execution network; metadata accessible. Draft network addition saved, not activated.",
+  "upstream_files": [
+    {
+      "path": "Original Reddit Data/Labelled Data/LD DA 1.csv",
+      "bytes": 216294
+    },
+    {
+      "path": "Original Reddit Data/Labelled Data/LD EL1.csv",
+      "bytes": 363828
+    },
+    {
+      "path": "Original Reddit Data/Labelled Data/LD PF1.csv",
+      "bytes": 240506
+    },
+    {
+      "path": "Original Reddit Data/Labelled Data/LD TS 1.csv",
+      "bytes": 254945
+    },
+    {
+      "path": "Original Reddit Data/Labelled Data/Meta Labelled data kaggel.rtf",
+      "bytes": 517
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/Aug/anipjaug19.csv",
+      "bytes": 4948595
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/Aug/depjaug19.csv",
+      "bytes": 14647605
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/Aug/lonaug19.csv",
+      "bytes": 1702685
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/Aug/mhaug19.csv",
+      "bytes": 4860387
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/Aug/swaug19.csv",
+      "bytes": 6786969
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/JAN/anijan19.csv",
+      "bytes": 4754656
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/JAN/depjan19.csv",
+      "bytes": 12292357
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/JAN/lonejan19.csv",
+      "bytes": 865199
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/JAN/mhjan22.csv",
+      "bytes": 4156893
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/JAN/swjun19.csv",
+      "bytes": 5244185
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/MAy/animay19.csv",
+      "bytes": 4530293
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/MAy/depamay19.csv",
+      "bytes": 14453222
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/MAy/lonemay19.csv",
+      "bytes": 1083294
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/MAy/mhmay19.csv",
+      "bytes": 4958724
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/MAy/swmay19.csv",
+      "bytes": 5853630
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/apr/anxapr19.csv",
+      "bytes": 4534894
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/apr/depapr19.csv",
+      "bytes": 13834129
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/apr/loneapr19.csv",
+      "bytes": 986652
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/apr/mentalhealthapr19.csv",
+      "bytes": 4520595
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/apr/swapr19.csv",
+      "bytes": 5638637
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/dec/anidec19.csv",
+      "bytes": 4590026
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/dec/depdec19.csv",
+      "bytes": 7232609
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/dec/lonedec19.csv",
+      "bytes": 2295698
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/dec/mhdec19.csv",
+      "bytes": 5308087
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/dec/swdec19.csv",
+      "bytes": 7232609
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/feb/Swfeb19.csv",
+      "bytes": 4877645
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/feb/anifeb19.csv",
+      "bytes": 4277810
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/feb/depfeb19.csv",
+      "bytes": 12250392
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/feb/lonfeb19.csv",
+      "bytes": 790657
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/feb/mhfeb19.csv",
+      "bytes": 4262029
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/jul/anijul19.csv",
+      "bytes": 5162136
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/jul/depjul19.csv",
+      "bytes": 15407379
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/jul/lonejul19.csv",
+      "bytes": 1554417
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/jul/mhjul19.csv",
+      "bytes": 4264791
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/jul/swjul19.csv",
+      "bytes": 6766658
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/june/anijun19.csv",
+      "bytes": 4503087
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/june/depjun19.csv",
+      "bytes": 14394182
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/june/lonejun19.csv",
+      "bytes": 1313254
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/june/mhjun19.csv",
+      "bytes": 4672394
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/june/swjun19.csv",
+      "bytes": 6220962
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/mar/anxmar19.csv",
+      "bytes": 4894856
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/mar/depmar19.csv",
+      "bytes": 14348453
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/mar/lonmar19.csv",
+      "bytes": 790120
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/mar/mhmar19.csv",
+      "bytes": 4694958
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/mar/swmar19.csv",
+      "bytes": 5492241
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/nov/aninov19.csv",
+      "bytes": 4389241
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/nov/lonnov19.csv",
+      "bytes": 1919290
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/nov/mhnov19.csv",
+      "bytes": 5308642
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/nov/sdepnov19.csv",
+      "bytes": 15897706
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/nov/swnov19.csv",
+      "bytes": 6593169
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/oct/anioct19.csv",
+      "bytes": 4762606
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/oct/depoct19.csv",
+      "bytes": 16625801
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/oct/lonoct19.csv",
+      "bytes": 1865013
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/oct/mhoct19.csv",
+      "bytes": 5572576
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/oct/swsoct19.csv",
+      "bytes": 6906204
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/sep/anisep19.csv",
+      "bytes": 4738867
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/sep/depasep19.csv",
+      "bytes": 15137400
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/sep/lonasep19.csv",
+      "bytes": 1702605
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/sep/mhsep19.csv",
+      "bytes": 4940780
+    },
+    {
+      "path": "Original Reddit Data/raw data/2019/sep/swsep19.csv",
+      "bytes": 6572679
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Apr 20/Mhapr20.csv",
+      "bytes": 6136264
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Apr 20/Swapr20.csv",
+      "bytes": 7942445
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Apr 20/anxiapr20.csv",
+      "bytes": 5364896
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Apr 20/depapr20.csv",
+      "bytes": 13129131
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Apr 20/loneapr20.csv",
+      "bytes": 2292836
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Aug 20/Mheaug20.csv",
+      "bytes": 7224296
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Aug 20/Swaug20 copy.csv",
+      "bytes": 8931226
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Aug 20/anxiaug20.csv",
+      "bytes": 6394163
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Aug 20/depaug20.csv",
+      "bytes": 12852126
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Aug 20/loneaug20.csv",
+      "bytes": 2432018
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Dec 20/Mhdec20.csv",
+      "bytes": 11084032
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Dec 20/Swdec20.csv",
+      "bytes": 12428750
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Dec 20/anxietydec20.csv",
+      "bytes": 6805331
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Dec 20/depdec20.csv",
+      "bytes": 16722860
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Dec 20/lonedec20.csv",
+      "bytes": 2657618
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Feb20/Mhfeb20.csv",
+      "bytes": 5751308
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Feb20/anxifeb20.csv",
+      "bytes": 5037838
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Feb20/depfeb20.csv",
+      "bytes": 14934113
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Feb20/lonefeb20.csv",
+      "bytes": 2272531
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Feb20/swfeb20.csv",
+      "bytes": 7842622
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jan 20/Mhjan20.csv",
+      "bytes": 5892460
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jan 20/SWjan20.csv",
+      "bytes": 7421689
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jan 20/anxijan20.csv",
+      "bytes": 5317487
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jan 20/depjan20 .csv",
+      "bytes": 16366848
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jan 20/lonejan20.csv",
+      "bytes": 2181322
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jul 20/MHjul20.csv",
+      "bytes": 7002747
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jul 20/Swjul20.csv",
+      "bytes": 8797108
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jul 20/anxijul20.csv",
+      "bytes": 6193084
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jul 20/depjul20.csv",
+      "bytes": 13815424
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Jul 20/lonejul20.csv",
+      "bytes": 2458603
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/June 20/Mhjun20.csv",
+      "bytes": 6919208
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/June 20/anxijun20.csv",
+      "bytes": 6116346
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/June 20/depjun20.csv",
+      "bytes": 13605813
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/June 20/lonejun20.csv",
+      "bytes": 2278556
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/June 20/swjun20.csv",
+      "bytes": 8705403
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Mar 20/Mhmar20.csv",
+      "bytes": 5879594
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Mar 20/anximar20.csv",
+      "bytes": 5176764
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Mar 20/depmar20.csv",
+      "bytes": 13989147
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Mar 20/lonemar20.csv",
+      "bytes": 2371925
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Mar 20/swmar20.csv",
+      "bytes": 7728147
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/May 20/Mhmay20.csv",
+      "bytes": 7514033
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/May 20/Swmay20.csv",
+      "bytes": 9120263
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/May 20/anxmay20.csv",
+      "bytes": 5718753
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/May 20/depmay20.csv",
+      "bytes": 14976823
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/May 20/lonemay20.csv",
+      "bytes": 2314949
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Nov 20/anxinov20.csv",
+      "bytes": 6021204
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Nov 20/depnov20.csv",
+      "bytes": 14259144
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Nov 20/lonenov20.csv",
+      "bytes": 2306452
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Nov 20/mhov20.csv",
+      "bytes": 9596831
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Nov 20/swnov20.csv",
+      "bytes": 10095814
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Oct 20/Swoct20.csv",
+      "bytes": 8443404
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Oct 20/anxioct20.csv",
+      "bytes": 5382945
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Oct 20/depoct20.csv",
+      "bytes": 12255536
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Oct 20/loneoct20.csv",
+      "bytes": 1995569
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Oct 20/mhoct20.csv",
+      "bytes": 7854838
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Sep 20/Mhsep20.csv",
+      "bytes": 6544786
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Sep 20/Swsep20.csv",
+      "bytes": 8193978
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Sep 20/anxisep20.csv",
+      "bytes": 5746393
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Sep 20/depsep20.csv",
+      "bytes": 12182481
+    },
+    {
+      "path": "Original Reddit Data/raw data/2020/Sep 20/lonesep20.csv",
+      "bytes": 2123309
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Apr 21/Mhapr21.csv",
+      "bytes": 9713240
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Apr 21/anxiapr21.csv",
+      "bytes": 5983115
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Apr 21/depapr21.csv",
+      "bytes": 12424683
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Apr 21/loneapr21.csv",
+      "bytes": 2819789
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Apr 21/swapr21.csv",
+      "bytes": 10303643
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Aug 21/anxiaug21.csv",
+      "bytes": 7207802
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Aug 21/depaug21.csv",
+      "bytes": 13656429
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Aug 21/loneaug21.csv",
+      "bytes": 3390699
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Aug 21/mhaug21.csv",
+      "bytes": 8426438
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Aug 21/swaug21.csv",
+      "bytes": 11260616
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Dec 21/anxdec21.csv",
+      "bytes": 6231072
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Dec 21/depdec21.csv",
+      "bytes": 11730045
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Dec 21/lonepdec21.csv",
+      "bytes": 4173605
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Dec 21/mhdec21.csv",
+      "bytes": 10434753
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Dec 21/swdec21.csv",
+      "bytes": 10638627
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Feb21/anxifeb21.csv",
+      "bytes": 5564522
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Feb21/depfeb21.csv",
+      "bytes": 12127629
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Feb21/lonefeb21.csv",
+      "bytes": 2373677
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Feb21/mhfeb21.csv",
+      "bytes": 8419412
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Feb21/swfeb21.csv",
+      "bytes": 8501287
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jan 21/Mhjan21.csv",
+      "bytes": 11538130
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jan 21/anxijan21.csv",
+      "bytes": 7406049
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jan 21/dep5jan21.csv",
+      "bytes": 16227654
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jan 21/lonejan21.csv",
+      "bytes": 2783788
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jan 21/swjan21.csv",
+      "bytes": 11640524
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jul 21/anxijul21.csv",
+      "bytes": 6993481
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jul 21/depjul21.csv",
+      "bytes": 13033292
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jul 21/lonejul21.csv",
+      "bytes": 3331309
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jul 21/mhjul21.csv",
+      "bytes": 11004637
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Jul 21/swjjul21.csv",
+      "bytes": 11041160
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/June 21/anxijun21.csv",
+      "bytes": 6798696
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/June 21/depjun21.csv",
+      "bytes": 12781606
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/June 21/lonejun21.csv",
+      "bytes": 3094109
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/June 21/mhjun21.csv",
+      "bytes": 10922791
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/June 21/swjun21.csv",
+      "bytes": 11315100
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Mar 21/Swmar21.csv",
+      "bytes": 6214524
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Mar 21/anximar21.csv",
+      "bytes": 3762039
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Mar 21/depmar21.csv",
+      "bytes": 7959115
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Mar 21/lonmar21.csv",
+      "bytes": 1559090
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Mar 21/mhmar21.csv",
+      "bytes": 5994575
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/May 21/Mhmay21.csv",
+      "bytes": 11473522
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/May 21/anximay21.csv",
+      "bytes": 7108608
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/May 21/depmay21.numbers",
+      "bytes": 28511882
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/May 21/lonemay21.csv",
+      "bytes": 3191496
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/May 21/swmay21.csv",
+      "bytes": 11789106
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Nov 21/anxinov21.csv",
+      "bytes": 6453955
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Nov 21/depnov21.csv",
+      "bytes": 13211684
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Nov 21/lonenov21.csv",
+      "bytes": 4124883
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Nov 21/mhnov21.csv",
+      "bytes": 10608325
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Nov 21/swnov21.csv",
+      "bytes": 10915919
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Oct 21/anxioct21.csv",
+      "bytes": 6624252
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Oct 21/depoct21.csv",
+      "bytes": 12925723
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Oct 21/loneoct21.csv",
+      "bytes": 3494888
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Oct 21/mhoct21.csv",
+      "bytes": 10218988
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Oct 21/swoct21.csv",
+      "bytes": 10721667
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Sep 21/anxietysep21.csv",
+      "bytes": 6843782
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Sep 21/depsep21.csv",
+      "bytes": 12485704
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Sep 21/lonesep21.csv",
+      "bytes": 3041541
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Sep 21/mhsep21.csv",
+      "bytes": 9900326
+    },
+    {
+      "path": "Original Reddit Data/raw data/2021/Sep 21/swsep21.csv",
+      "bytes": 11035669
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Apr 22/Swapr22.csv",
+      "bytes": 9288136
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Apr 22/anxapr22.csv",
+      "bytes": 6130648
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Apr 22/depapr22.csv",
+      "bytes": 10221390
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Apr 22/loneapr22.csv",
+      "bytes": 3643450
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Apr 22/mhapr22.csv",
+      "bytes": 10591335
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Aug 22/anxiaug22.csv",
+      "bytes": 6671252
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Aug 22/depaug22.csv",
+      "bytes": 9384576
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Aug 22/loneaug22.csv",
+      "bytes": 4213332
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Aug 22/mhaug22.csv",
+      "bytes": 10982244
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Aug 22/swaug22.csv",
+      "bytes": 9459168
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Feb22/Swfeb22.csv",
+      "bytes": 9008620
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Feb22/anxifeb22.csv",
+      "bytes": 5538295
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Feb22/depfeb22.csv",
+      "bytes": 10488848
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Feb22/lonefeb22.csv",
+      "bytes": 2858437
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Feb22/mhfeb22.csv",
+      "bytes": 9649257
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jan 22/anxjan22.csv",
+      "bytes": 6742348
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jan 22/depjan22.csv",
+      "bytes": 11860759
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jan 22/lonejan22.csv",
+      "bytes": 2101249
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jan 22/mhjan22.csv",
+      "bytes": 11023703
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jan 22/swjan22.csv",
+      "bytes": 10121762
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jul 22/anijul22.csv",
+      "bytes": 6333994
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jul 22/depjul22.csv",
+      "bytes": 9985743
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jul 22/lonejul22.csv",
+      "bytes": 3995877
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jul 22/mhjul22.csv",
+      "bytes": 10516910
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Jul 22/swjul22.csv",
+      "bytes": 9625782
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/June 22/anijun22.csv",
+      "bytes": 6110470
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/June 22/depjun22.csv",
+      "bytes": 10031934
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/June 22/lone1jun22.csv",
+      "bytes": 3758561
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/June 22/mh1jun22.csv",
+      "bytes": 9737214
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/June 22/mhjun22.csv",
+      "bytes": 9737214
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Mar 22/Swmar22.csv",
+      "bytes": 9793165
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Mar 22/anximar22.csv",
+      "bytes": 6690203
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Mar 22/depmar22.csv",
+      "bytes": 11564014
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Mar 22/lonmar22.csv",
+      "bytes": 3800186
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/Mar 22/mhmar22.csv",
+      "bytes": 11371978
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/May 22/Swmay22.csv",
+      "bytes": 9917235
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/May 22/anximay22.csv",
+      "bytes": 6270850
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/May 22/depmay22.csv",
+      "bytes": 10906224
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/May 22/lonemay22.csv",
+      "bytes": 3839947
+    },
+    {
+      "path": "Original Reddit Data/raw data/2022/May 22/mhmay22.csv",
+      "bytes": 10723780
+    }
+  ]
+}

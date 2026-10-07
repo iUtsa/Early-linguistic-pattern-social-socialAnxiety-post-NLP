@@ -105,7 +105,7 @@ def load_dreaddit(csv_path):
     return df
 
 
-def prepare_external_data(df, config, scaler=None):
+def prepare_external_data(df, config, scaler=None, reducer=None):
     """
     Prepare external dataset for testing.
     
@@ -119,6 +119,8 @@ def prepare_external_data(df, config, scaler=None):
     """
     print("\nPreparing external data...")
     
+    if scaler is None:
+        raise ValueError('External inference requires the saved training scaler')
     # Preprocess
     df['text_clean'] = preprocess_corpus(df['text'].values, show_progress=True)
     
@@ -135,27 +137,29 @@ def prepare_external_data(df, config, scaler=None):
         use_cache=False  # Don't cache external data
     )
     
-    # Reduce dimensions if needed
-    from src.embeds import reduce_dimensions
+    # Apply the training transform. Fitting new PCA here changes the model's coordinate system.
     n_components = config['training'].get('pca_components', 300)
     if embeddings.shape[1] > n_components:
-        embeddings, _ = reduce_dimensions(embeddings, n_components)
+        if reducer is None:
+            raise ValueError('External inference requires the saved TRAINING PCA; do not fit on external data')
+        embeddings = reducer.transform(embeddings)
     
     # Combine
     X = np.hstack([features_df.values, embeddings])
     y = df['label'].values
     
     # Standardize using training scaler
-    if scaler is not None:
-        print("Applying training scaler...")
-        X = scaler.transform(X)
+    if scaler is None:
+        raise ValueError('External inference requires the saved training scaler')
+    print("Applying training scaler...")
+    X = scaler.transform(X)
     
     print(f"Prepared {X.shape[0]} samples with {X.shape[1]} features")
     
     return X, y
 
 
-def test_on_external(model_path, external_csv, dataset_name, config, scaler_path=None):
+def test_on_external(model_path, external_csv, dataset_name, config, scaler_path=None, reducer_path=None):
     """
     Test trained model on external dataset.
     
@@ -175,6 +179,8 @@ def test_on_external(model_path, external_csv, dataset_name, config, scaler_path
     
     # Load model
     model = load_model_checkpoint(model_path)
+    if not scaler_path or not Path(scaler_path).is_file():
+        raise ValueError('A valid --scaler from training is required')
     
     # Load scaler if provided
     scaler = None
@@ -183,6 +189,9 @@ def test_on_external(model_path, external_csv, dataset_name, config, scaler_path
         with open(scaler_path, 'rb') as f:
             scaler = pickle.load(f)
         print(f"Loaded scaler from {scaler_path}")
+    reducer = None
+    if reducer_path:
+        reducer = load_model_checkpoint(reducer_path)
     
     # Load external data
     if dataset_name == 'kaggle_anxiety':
@@ -193,7 +202,7 @@ def test_on_external(model_path, external_csv, dataset_name, config, scaler_path
         raise ValueError(f"Unknown dataset: {dataset_name}")
     
     # Prepare data
-    X, y = prepare_external_data(df, config, scaler)
+    X, y = prepare_external_data(df, config, scaler, reducer)
     
     # Evaluate
     metrics = evaluate_model(model, X, y, split_name=dataset_name)
@@ -210,8 +219,10 @@ def main():
                         help='External dataset name')
     parser.add_argument('--csv', type=str, required=True,
                         help='Path to external dataset CSV')
-    parser.add_argument('--scaler', type=str, default=None,
-                        help='Path to fitted scaler (optional)')
+    parser.add_argument('--scaler', type=str, required=True,
+                        help='Path to training scaler (required)')
+    parser.add_argument('--reducer', type=str, default=None,
+                        help='Path to training PCA (required when training reduced embeddings)')
     parser.add_argument('--config', type=str, default='config.yaml',
                         help='Path to config file')
     parser.add_argument('--output', type=str, default=None,
@@ -228,7 +239,8 @@ def main():
         args.csv,
         args.dataset,
         config,
-        args.scaler
+        args.scaler,
+        args.reducer
     )
     
     # Save results

@@ -93,6 +93,9 @@ def run_full_experiment(config, model_name='lr'):
     # Save model
     model_path = f"models/checkpoints/{model_name}_full.pkl"
     save_model_checkpoint(model, model_path)
+    save_model_checkpoint(data['scaler'], f"models/checkpoints/{model_name}_full_scaler.pkl")
+    if data['reducer'] is not None:
+        save_model_checkpoint(data['reducer'], f"models/checkpoints/{model_name}_full_reducer.pkl")
     
     print("\n" + "="*60)
     print("Full experiment complete!")
@@ -149,6 +152,9 @@ def run_early_slice_experiment(config, model_name='lr'):
         # Save model checkpoint
         model_path = f"models/checkpoints/{model_name}_k{k}.pkl"
         save_model_checkpoint(model, model_path)
+        save_model_checkpoint(data['scaler'], f"models/checkpoints/{model_name}_k{k}_scaler.pkl")
+        if data['reducer'] is not None:
+            save_model_checkpoint(data['reducer'], f"models/checkpoints/{model_name}_k{k}_reducer.pkl")
     
     # Save results
     results_df = pd.DataFrame(results_list)

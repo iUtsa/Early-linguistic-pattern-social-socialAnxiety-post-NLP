@@ -1,0 +1,3297 @@
+{
+  "date": "2026-10-07",
+  "status": "exploratory_community_proxy_pilot",
+  "scope": "Selected uploaded examples; community-affiliation labels, not anxiety diagnosis or onset",
+  "provenance_status": "Kaggle RMHD version 1 and publisher-stated CC0 verified; uploaded names/byte lengths match release listing, upstream checksum identity/completeness and secondary institutional determination remain unresolved",
+  "author_attributed_dataset_study": "https://www.mdpi.com/2076-3417/14/4/1547",
+  "source_study_documented_facts": {
+    "source_pdf": "https://mdpi-res.com/d_attachment/applsci/applsci-14-01547/article_deploy/applsci-14-01547.pdf",
+    "source_pdf_sha256": "6ed5f1ad02f7a9ff9a9d3ad6be3c7074f2e5eca348e2902cb1c95f4f0fb6e1bb",
+    "reading_scope": "Methods, organization/annotation, ethics and availability sections",
+    "reported_original_posts": 1494019,
+    "reported_collection_period": "January 2019 to August 2022",
+    "annotated_subset": "800 posts in four proposed root-cause categories, not anxiety diagnoses",
+    "original_study_reported_approval": "Victoria University HREC HRE23-005, 29 May 2023; does not establish coverage for current secondary analysis",
+    "dataset_short_link": "https://rb.gy/ewtjy",
+    "resolved_dataset_url": "https://www.kaggle.com/datasets/entenam/reddit-mental-health-dataset",
+    "identified_version": 1,
+    "publisher_stated_license": "CC0: Public Domain",
+    "version_and_stated_license_metadata_verified": true,
+    "upstream_content_checksum_identity_verified": false
+  },
+  "comparison_dependence": "The two comparisons share some Anxiety authors and are not independent replications",
+  "comparisons": {
+    "mentalhealth": {
+      "cohort_audit": {
+        "comparison": "mentalhealth",
+        "loaded_authored_rows": 137255,
+        "exclusions": {
+          "noncanonical_community_rows_all_authored_files": 118,
+          "invalid_or_placeholder_author_rows": 67,
+          "invalid_numeric_time_or_score_rows": 0,
+          "short_empty_or_removed_body_rows_all_dates": 5732,
+          "identical_record_rows": 8
+        },
+        "selected_community_rows": 50612,
+        "metadata_valid_rows": 50545,
+        "windows": {
+          "train": {
+            "metadata_valid_posts": 17085,
+            "metadata_valid_authors": 12892,
+            "ambiguous_community_authors": 291,
+            "ambiguous_community_posts": 1087,
+            "previously_observed_authors_excluded": 0,
+            "previously_observed_posts_excluded": 0,
+            "text_quality_posts_excluded": 1727,
+            "shared_text_posts_quarantined_within_window": 11,
+            "repeated_same_author_text_rows": 64,
+            "earlier_window_duplicate_text_rows_excluded": 0,
+            "retained_posts": 14196,
+            "retained_authors": 11528,
+            "positive_authors": 4905,
+            "negative_authors": 6623,
+            "retained_posts_by_label": {
+              "0": 8034,
+              "1": 6162
+            },
+            "authors_with_at_least_3_posts_by_label": {
+              "0": 262,
+              "1": 244
+            },
+            "author_timestamp_tied_rows": 0,
+            "utc_start": "2022-03-01T00:08:50+00:00",
+            "utc_end": "2022-03-31T12:51:26+00:00"
+          },
+          "val": {
+            "metadata_valid_posts": 17031,
+            "metadata_valid_authors": 12798,
+            "ambiguous_community_authors": 302,
+            "ambiguous_community_posts": 1100,
+            "previously_observed_authors_excluded": 1151,
+            "previously_observed_posts_excluded": 2126,
+            "text_quality_posts_excluded": 1653,
+            "shared_text_posts_quarantined_within_window": 17,
+            "repeated_same_author_text_rows": 40,
+            "earlier_window_duplicate_text_rows_excluded": 0,
+            "retained_posts": 12095,
+            "retained_authors": 10267,
+            "positive_authors": 4312,
+            "negative_authors": 5955,
+            "retained_posts_by_label": {
+              "0": 6864,
+              "1": 5231
+            },
+            "authors_with_at_least_3_posts_by_label": {
+              "0": 159,
+              "1": 169
+            },
+            "author_timestamp_tied_rows": 0,
+            "utc_start": "2022-05-01T00:02:19+00:00",
+            "utc_end": "2022-05-31T23:58:59+00:00"
+          },
+          "test": {
+            "metadata_valid_posts": 15833,
+            "metadata_valid_authors": 11893,
+            "ambiguous_community_authors": 279,
+            "ambiguous_community_posts": 1011,
+            "previously_observed_authors_excluded": 1970,
+            "previously_observed_posts_excluded": 3424,
+            "text_quality_posts_excluded": 1311,
+            "shared_text_posts_quarantined_within_window": 10,
+            "repeated_same_author_text_rows": 86,
+            "earlier_window_duplicate_text_rows_excluded": 0,
+            "retained_posts": 9991,
+            "retained_authors": 8717,
+            "positive_authors": 3704,
+            "negative_authors": 5013,
+            "retained_posts_by_label": {
+              "0": 5606,
+              "1": 4385
+            },
+            "authors_with_at_least_3_posts_by_label": {
+              "0": 92,
+              "1": 113
+            },
+            "author_timestamp_tied_rows": 0,
+            "utc_start": "2022-06-01T00:03:49+00:00",
+            "utc_end": "2022-06-30T13:46:25+00:00"
+          }
+        },
+        "cohort_integrity": {
+          "split_counts": {
+            "train": {
+              "users": 11528,
+              "positive_users": 4905,
+              "posts": 14196
+            },
+            "val": {
+              "users": 10267,
+              "positive_users": 4312,
+              "posts": 12095
+            },
+            "test": {
+              "users": 8717,
+              "positive_users": 3704,
+              "posts": 9991
+            }
+          },
+          "within_split_duplicate_text_rows": 0,
+          "mixed_author_labels": 0,
+          "author_overlap": 0,
+          "cross_split_duplicate_text": 0
+        },
+        "observed_nonmodel_month_rows": 588,
+        "files": [
+          {
+            "name": "whatsbotheringyou_reddit_data.csv",
+            "sha256": "c20035be40249b406394e4cf53b3f1256956062faa3f435baed7e65685317ef5",
+            "status": "schema_not_used",
+            "rows": 996
+          },
+          {
+            "name": "employment_reddit_data.csv",
+            "sha256": "f12d6d742849624482c061c50ce0db01ae3ed85d01bcd758776ac5a116962898",
+            "status": "schema_not_used",
+            "rows": 2495
+          },
+          {
+            "name": "the-reddit-dataset-dataset-comments 2.csv",
+            "sha256": "79ea777dec147d019b60d5583ef189b082ea6e72b1a2db44fca32bbaa3a3c62f",
+            "status": "schema_not_used",
+            "rows": 54848
+          },
+          {
+            "name": "mhmay22.csv",
+            "sha256": "4455a38b2d15ef53f0eef924a4c34477de79aa0a4f336f693e03b632d433e6cd",
+            "status": "authored_schema_loaded",
+            "rows": 9647
+          },
+          {
+            "name": "lonemay22.csv",
+            "sha256": "5a3f60b8a819c033f50a6cc91a496674ae2933a68a99f5cdfaa2f327958b121a",
+            "status": "authored_schema_loaded",
+            "rows": 5595
+          },
+          {
+            "name": "the-reddit-dataset-dataset-comments.csv",
+            "sha256": "610a469af0bd6d5cc0c7299064a24ce722edce3be61582b4ee64cf28a9489038",
+            "status": "schema_not_used",
+            "rows": 54851
+          },
+          {
+            "name": "anximay22.csv",
+            "sha256": "09b2dee43490c71e28cfcb7c3e05a1a4d9c4377278b263310a97e48d4e411365",
+            "status": "authored_schema_loaded",
+            "rows": 7408
+          },
+          {
+            "name": "depmay22.csv",
+            "sha256": "c4047255291044e699d12067350f4c13a78dea778cbf200b857bffb6de487475",
+            "status": "authored_schema_loaded",
+            "rows": 13911
+          },
+          {
+            "name": "Swmay22.csv",
+            "sha256": "3d2972b0d842cc445deef6aeb8dae69a0f8305284baca0d187390741be1e468b",
+            "status": "authored_schema_loaded",
+            "rows": 14973
+          },
+          {
+            "name": "lonmar22.csv",
+            "sha256": "cc193e8d271d26578d32ca09988d66947587707e1e71c81273096e57c6159281",
+            "status": "authored_schema_loaded",
+            "rows": 5402
+          },
+          {
+            "name": "mhmar22.csv",
+            "sha256": "f10223aca7502d49dd322a96a28bfd1df2130ff22ff631df3e62072664222be7",
+            "status": "authored_schema_loaded",
+            "rows": 9742
+          },
+          {
+            "name": "anximar22.csv",
+            "sha256": "eaf262fa26bbc00005790257291597e9497a92dbb3b28fc6c6bd4d51a9b5077c",
+            "status": "authored_schema_loaded",
+            "rows": 7718
+          },
+          {
+            "name": "depmar22.csv",
+            "sha256": "b5069d78dea7f6c1702192e3df2a57bd00491819a2e122e7a8199781a964c066",
+            "status": "authored_schema_loaded",
+            "rows": 14459
+          },
+          {
+            "name": "Swmar22.csv",
+            "sha256": "6ca933ee2d7b1f77df6e0168ba875fae0315fa26695084efaf88299b388e3279",
+            "status": "authored_schema_loaded",
+            "rows": 14148
+          },
+          {
+            "name": "mhjun22.csv",
+            "sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+            "status": "authored_schema_loaded",
+            "rows": 8745
+          },
+          {
+            "name": "mh1jun22.csv",
+            "sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+            "status": "duplicate_file_skipped"
+          },
+          {
+            "name": "lone1jun22.csv",
+            "sha256": "47861ef7ed9451ddad66722ba37047ddfff4af09dbe2d9b5b40bc9fa34ec0440",
+            "status": "authored_schema_loaded",
+            "rows": 5447
+          },
+          {
+            "name": "anijun22.csv",
+            "sha256": "8b3b7436a673b70d69ae2769e34f0fce5477dea671066602fc45a3d6d663a56f",
+            "status": "authored_schema_loaded",
+            "rows": 7365
+          },
+          {
+            "name": "depjun22.csv",
+            "sha256": "76a5523c1e3a8fe4bc24f0933b3fd66883c249f962ba75d5a7166389662f5728",
+            "status": "authored_schema_loaded",
+            "rows": 12695
+          },
+          {
+            "name": "feature_importance.csv",
+            "sha256": "2d938b7466992b675d37ececb7e8f4e06f73afd9afb94107fdbe400eba12a279",
+            "status": "schema_not_used",
+            "rows": 13
+          },
+          {
+            "name": "post_level_results.csv",
+            "sha256": "1f215ea4fa540b1cfa2a00356db58cfc1b46b0d2a8df3d2e703de3867c7ea873",
+            "status": "schema_not_used",
+            "rows": 3
+          },
+          {
+            "name": "cross_domain_validation.csv",
+            "sha256": "a88b398d50e11a9aa711a587cad82b0a5411c46ba1030cd552b1658ba92fca0d",
+            "status": "schema_not_used",
+            "rows": 13
+          },
+          {
+            "name": "early_slice_results.csv",
+            "sha256": "dc02c04ca225f557ddb8585b9e63c22447b5b567d5e0f03675265800a7081c54",
+            "status": "schema_not_used",
+            "rows": 4
+          }
+        ],
+        "protocol_sha256": "3c550f9a4fee79a5a3553f03090e41325201e3137c3192e355169fa5b408651c",
+        "preparation_code_sha256": "68471bb5b2a0c0765bd21bd465e3207fc98a574bec06d2e277dee83f27362a68",
+        "prepared_csv_sha256": "838a71e4078f6b6523f212fbb1397bd65f27414ae0e61d39e4a9dc2811b37bcb"
+      },
+      "length_activity": {
+        "train": {
+          "0": {
+            "users": 6623,
+            "median_posts": 1.0,
+            "median_mean_words": 167.5,
+            "one_post_users": 5842
+          },
+          "1": {
+            "users": 4905,
+            "median_posts": 1.0,
+            "median_mean_words": 129.0,
+            "one_post_users": 4254
+          }
+        },
+        "val": {
+          "0": {
+            "users": 5955,
+            "median_posts": 1.0,
+            "median_mean_words": 168.0,
+            "one_post_users": 5382
+          },
+          "1": {
+            "users": 4312,
+            "median_posts": 1.0,
+            "median_mean_words": 129.0,
+            "one_post_users": 3765
+          }
+        },
+        "test": {
+          "0": {
+            "users": 5013,
+            "median_posts": 1.0,
+            "median_mean_words": 168.0,
+            "one_post_users": 4598
+          },
+          "1": {
+            "users": 3704,
+            "median_posts": 1.0,
+            "median_mean_words": 131.25,
+            "one_post_users": 3311
+          }
+        }
+      },
+      "outcomes": {
+        "metrics": {
+          "majority": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.5750831708156476,
+            "macro_f1": 0.3651128914785142,
+            "positive_f1": 0.0,
+            "positive_precision": 0.0,
+            "positive_recall": 0.0,
+            "roc_auc": 0.5,
+            "average_precision": 0.4249168291843524,
+            "brier": 0.4249168291843524,
+            "log_loss": 15.315554910323495,
+            "confusion_matrix": [
+              [
+                5013,
+                0
+              ],
+              [
+                3704,
+                0
+              ]
+            ]
+          },
+          "length_only": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.5812779626018125,
+            "macro_f1": 0.4659372324402949,
+            "positive_f1": 0.21774539219888556,
+            "positive_precision": 0.5280665280665281,
+            "positive_recall": 0.13714902807775378,
+            "roc_auc": 0.6070437435023152,
+            "average_precision": 0.5000404620851076,
+            "brier": 0.23670102775324875,
+            "log_loss": 0.6656744568122926,
+            "confusion_matrix": [
+              [
+                4559,
+                454
+              ],
+              [
+                3196,
+                508
+              ]
+            ]
+          },
+          "pronoun_only": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.5739359871515429,
+            "macro_f1": 0.447106456196812,
+            "positive_f1": 0.18229854689564068,
+            "positive_precision": 0.49403341288782815,
+            "positive_recall": 0.11177105831533478,
+            "roc_auc": 0.5963787618714022,
+            "average_precision": 0.4800686888682716,
+            "brier": 0.23705045470349073,
+            "log_loss": 0.6661255428337179,
+            "confusion_matrix": [
+              [
+                4589,
+                424
+              ],
+              [
+                3290,
+                414
+              ]
+            ]
+          },
+          "without_sentiment": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.5829987380979695,
+            "macro_f1": 0.47997018431575067,
+            "positive_f1": 0.24850113706843086,
+            "positive_precision": 0.53045013239188,
+            "positive_recall": 0.16225701943844492,
+            "roc_auc": 0.6115216258462339,
+            "average_precision": 0.5011848550123075,
+            "brier": 0.23604666860624302,
+            "log_loss": 0.6641649418875921,
+            "confusion_matrix": [
+              [
+                4481,
+                532
+              ],
+              [
+                3103,
+                601
+              ]
+            ]
+          },
+          "linguistic_13": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.6005506481587702,
+            "macro_f1": 0.5333947938995699,
+            "positive_f1": 0.3563770794824399,
+            "positive_precision": 0.5650644783118406,
+            "positive_recall": 0.2602591792656587,
+            "roc_auc": 0.6311319510956179,
+            "average_precision": 0.5309060297228005,
+            "brier": 0.2327896889520658,
+            "log_loss": 0.6573644821084407,
+            "confusion_matrix": [
+              [
+                4271,
+                742
+              ],
+              [
+                2740,
+                964
+              ]
+            ]
+          },
+          "tfidf_lr": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.862796833773087,
+            "macro_f1": 0.8576662130785202,
+            "positive_f1": 0.8306428773718494,
+            "positive_precision": 0.8734365693865396,
+            "positive_recall": 0.7918466522678186,
+            "roc_auc": 0.9305076240220351,
+            "average_precision": 0.9058945709252164,
+            "brier": 0.10135705368065771,
+            "log_loss": 0.3366816925500388,
+            "confusion_matrix": [
+              [
+                4588,
+                425
+              ],
+              [
+                771,
+                2933
+              ]
+            ]
+          }
+        },
+        "model_selection": {
+          "majority": {
+            "C": null,
+            "validation_macro_f1": 0.36709406978177783
+          },
+          "length_only": {
+            "C": 0.1,
+            "validation_macro_f1": 0.4688275977769567
+          },
+          "pronoun_only": {
+            "C": 1.0,
+            "validation_macro_f1": 0.4378456129991227
+          },
+          "without_sentiment": {
+            "C": 1.0,
+            "validation_macro_f1": 0.4833511881869489
+          },
+          "linguistic_13": {
+            "C": 10.0,
+            "validation_macro_f1": 0.5264997197814251
+          },
+          "tfidf_lr": {
+            "C": 10.0,
+            "validation_macro_f1": 0.8467467437109683
+          }
+        },
+        "ci95": {
+          "majority": {
+            "macro_f1": [
+              0.3651128914785142,
+              0.3651128914785142
+            ],
+            "positive_f1": [
+              0.0,
+              0.0
+            ],
+            "roc_auc": [
+              0.5,
+              0.5
+            ],
+            "average_precision": [
+              0.4249168291843524,
+              0.4249168291843524
+            ],
+            "brier": [
+              0.4249168291843524,
+              0.4249168291843524
+            ]
+          },
+          "length_only": {
+            "macro_f1": [
+              0.4561776831671153,
+              0.47594985569560744
+            ],
+            "positive_f1": [
+              0.20149648366371165,
+              0.23424646243557043
+            ],
+            "roc_auc": [
+              0.5954946405005733,
+              0.6191494043133641
+            ],
+            "average_precision": [
+              0.4883923933888999,
+              0.5135389111455442
+            ],
+            "brier": [
+              0.2352036684356928,
+              0.23809280848437864
+            ]
+          },
+          "pronoun_only": {
+            "macro_f1": [
+              0.4386200991818429,
+              0.4557621854708062
+            ],
+            "positive_f1": [
+              0.1673298352751397,
+              0.197139870957458
+            ],
+            "roc_auc": [
+              0.5857681939753617,
+              0.6078994506292279
+            ],
+            "average_precision": [
+              0.46986993493149565,
+              0.49205977078317625
+            ],
+            "brier": [
+              0.2356734157649883,
+              0.2383382782787458
+            ]
+          },
+          "without_sentiment": {
+            "macro_f1": [
+              0.47037741998865124,
+              0.48998036089480385
+            ],
+            "positive_f1": [
+              0.23271618110562314,
+              0.26453178662113286
+            ],
+            "roc_auc": [
+              0.600204546472907,
+              0.6228955552496555
+            ],
+            "average_precision": [
+              0.4898654218560871,
+              0.514048242284937
+            ],
+            "brier": [
+              0.234545710834324,
+              0.23743578767227144
+            ]
+          },
+          "linguistic_13": {
+            "macro_f1": [
+              0.5234701624966849,
+              0.5436671615690686
+            ],
+            "positive_f1": [
+              0.34077772660402056,
+              0.37238414767938366
+            ],
+            "roc_auc": [
+              0.6195169812806358,
+              0.6431212473379149
+            ],
+            "average_precision": [
+              0.5181764498033443,
+              0.5442752494015557
+            ],
+            "brier": [
+              0.23081670136663704,
+              0.23464313091046915
+            ]
+          },
+          "tfidf_lr": {
+            "macro_f1": [
+              0.8500436981223881,
+              0.8655952896258533
+            ],
+            "positive_f1": [
+              0.8213267954400264,
+              0.8400066127274626
+            ],
+            "roc_auc": [
+              0.925304032679181,
+              0.9359996447142398
+            ],
+            "average_precision": [
+              0.8975066093826886,
+              0.914428316584964
+            ],
+            "brier": [
+              0.09712009615377794,
+              0.10546558723881747
+            ]
+          }
+        },
+        "paired_vs_linguistic_13": {
+          "majority": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.16828190242105567,
+              "positive_f1": -0.3563770794824399,
+              "average_precision": -0.10598920053844813
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.17855427009055438,
+                -0.15835727101817065
+              ],
+              "positive_f1": [
+                -0.3723841476793837,
+                -0.34077772660402056
+              ],
+              "average_precision": [
+                -0.11935842021720328,
+                -0.09325962061899193
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 964,
+              "a_wrong_b_correct": 742,
+              "pvalue": 8.420940747892821e-08,
+              "log10_pvalue": -7.074639388453508,
+              "pvalue_underflow": false
+            }
+          },
+          "length_only": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.067457561459275,
+              "positive_f1": -0.13863168728355435,
+              "average_precision": -0.030865567637692992
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.07768001687685415,
+                -0.05734546513780502
+              ],
+              "positive_f1": [
+                -0.15527376291195735,
+                -0.12145689488222138
+              ],
+              "average_precision": [
+                -0.04152457111844612,
+                -0.01941735510113072
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 806,
+              "a_wrong_b_correct": 638,
+              "pvalue": 1.0854850012939304e-05,
+              "log10_pvalue": -4.964376173039171,
+              "pvalue_underflow": false
+            }
+          },
+          "pronoun_only": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.0862883377027579,
+              "positive_f1": -0.17407853258679923,
+              "average_precision": -0.050837340854528956
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.09715331532853128,
+                -0.07607835633451565
+              ],
+              "positive_f1": [
+                -0.1908709964163307,
+                -0.15709816653350486
+              ],
+              "average_precision": [
+                -0.062424411520468494,
+                -0.040089097787111
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 890,
+              "a_wrong_b_correct": 658,
+              "pvalue": 4.056817129231001e-09,
+              "log10_pvalue": -8.391814568720918,
+              "pvalue_underflow": false
+            }
+          },
+          "without_sentiment": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.05342460958381923,
+              "positive_f1": -0.10787594241400905,
+              "average_precision": -0.02972117471049307
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.06355037737717832,
+                -0.04349496151683421
+              ],
+              "positive_f1": [
+                -0.12480692015110662,
+                -0.09097802168760846
+              ],
+              "average_precision": [
+                -0.039763872826388234,
+                -0.019104976626414933
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 776,
+              "a_wrong_b_correct": 623,
+              "pvalue": 4.750101217035532e-05,
+              "log10_pvalue": -4.3232971361578585,
+              "pvalue_underflow": false
+            }
+          },
+          "tfidf_lr": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": 0.3242714191789503,
+              "positive_f1": 0.4742657978894095,
+              "average_precision": 0.37498854120241587
+            },
+            "ci95": {
+              "macro_f1": [
+                0.3116438370449937,
+                0.3362747085921456
+              ],
+              "positive_f1": [
+                0.45604928134742273,
+                0.4920608812578281
+              ],
+              "average_precision": [
+                0.35980241266275703,
+                0.3885527942128586
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 467,
+              "a_wrong_b_correct": 2753,
+              "pvalue": null,
+              "log10_pvalue": -391.69628281952765,
+              "pvalue_underflow": true
+            }
+          }
+        },
+        "masked_test": {
+          "metrics": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.5731329585866697,
+            "macro_f1": 0.4816537115879138,
+            "positive_f1": 0.2638971315529179,
+            "positive_precision": 0.49370836417468544,
+            "positive_recall": 0.1800755939524838,
+            "roc_auc": 0.5893946258087505,
+            "average_precision": 0.4825313319658944,
+            "brier": 0.2393355651712606,
+            "log_loss": 0.670977390626895,
+            "confusion_matrix": [
+              [
+                4329,
+                684
+              ],
+              [
+                3037,
+                667
+              ]
+            ]
+          },
+          "paired_delta": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.051741082311656084,
+              "positive_f1": -0.09247994792952202,
+              "average_precision": -0.04837469775690617
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.05829997178005225,
+                -0.04560241422587121
+              ],
+              "positive_f1": [
+                -0.1033014862748139,
+                -0.08237237726464039
+              ],
+              "average_precision": [
+                -0.05147739087098598,
+                -0.04504816331960926
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 308,
+              "a_wrong_b_correct": 69,
+              "pvalue": 3.742484962531197e-37,
+              "log10_pvalue": -36.42683993599566,
+              "pvalue_underflow": false
+            }
+          },
+          "replacement": "term",
+          "keyword_list": [
+            "anxiety",
+            "anxious",
+            "benzodiazepine",
+            "diagnosed",
+            "disorder",
+            "lexapro",
+            "medication",
+            "mental health",
+            "mental illness",
+            "panic",
+            "psychiatrist",
+            "ssri",
+            "therapist",
+            "therapy",
+            "xanax",
+            "zoloft"
+          ]
+        }
+      },
+      "run_metadata": {
+        "status": "observational_proxy_experiment",
+        "created_utc": "2026-10-07T15:21:21.447458+00:00",
+        "seed": 42,
+        "input_sha256": "838a71e4078f6b6523f212fbb1397bd65f27414ae0e61d39e4a9dc2811b37bcb",
+        "versions": {
+          "numpy": "2.5.3",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "vaderSentiment": "3.3.2",
+          "textblob": "0.20.1",
+          "emoji": "2.16.0"
+        },
+        "code_sha256": {
+          "src/research_benchmark.py": "a82928b1615f7b927d2cb7e4dd72ce16395fc66339361ea9bb90ec0a400732c5",
+          "src/features.py": "8f8778096e4db1cb7378a84327c25992c7cd9533c56404ad939db78aa86c210e",
+          "src/preprocess.py": "87604acffc4cf3cdd44980f8d687d62eb7b090661e4d61f9a7cfeacd34a601be",
+          "scripts/keyword_lists.py": "104df0e6f855de5268bfa56754456422807ed47702a28e16d75abe5740d80a5a"
+        },
+        "git_commit": "2794831bbb27504f735ea6ec7ef76bd31051d0a2",
+        "git_dirty": true,
+        "bootstrap": {
+          "replicates": 1000,
+          "unit": "author",
+          "method": "stratified percentile",
+          "conditional_on": "fitted models, observed split, and class counts"
+        },
+        "outcome_scope": "Label prediction; no diagnosis, onset, screening utility, or causal interpretation",
+        "analysis_notes": [
+          "User features are post-level means; TF-IDF uses concatenated user text.",
+          "Primary metric: macro-F1; primary comparator: TF-IDF LR versus linguistic_13.",
+          "Paired comparisons and intervals are per-comparison, exploratory, and not multiplicity-adjusted.",
+          "Keyword masking tests a fixed list, not independence from all topic vocabulary."
+        ],
+        "artifact_sha256": {
+          "full_length_only.joblib": "225b8c6af7daf1a693b221b2b8862914aa3cd88e8c793c88d90b7e06990e99ce",
+          "full_linguistic_13.joblib": "6b845cc27cfbb70ae6fdc4a207d0b2cc2eeb36faa0f4505387253986ed4f7bf6",
+          "full_majority.joblib": "95f66ec9f621cb0ebaa91edfd813a785194fa8f0ed372a766e3e922cafd118f9",
+          "full_predictions.csv": "16b87c46b8bff702e784f4485845363530c1812dcaa98c38440eb01f83e1c0ae",
+          "full_pronoun_only.joblib": "dfd87b77580398a34407bd45e1ff820c12c3f787338108ff85467bc67e637274",
+          "full_tfidf_lr.joblib": "519cb4106f16187f34898581746ab00901cb8dbcff59dc018234e6dea6ff9cda",
+          "full_without_sentiment.joblib": "0f12ee5c3e409e38367481ab067330ec1c35b2cf55b4322edf89b65b1f783c25"
+        }
+      },
+      "private_report_sha256": "82a30a87f4ed7a667f400d8a470a2acd5ce1f0ef2628b53e289f0e6f31f02771",
+      "saved_prediction_arithmetic_verified": true,
+      "secondary_sensitivity": {
+        "status": "exploratory_frozen_model_sensitivity",
+        "seed": 42,
+        "bootstrap_replicates": 1000,
+        "protocol_sha256": "1afdd73a4b97ea1abfbc5daf30025b33bbc85abf4e39c769831e5a7e90254a9b",
+        "code_sha256": "b7f7c764c30e5d911b85867f7e70390f64d120cb234af0841fcb003adbc58259",
+        "primary_report_sha256": "82a30a87f4ed7a667f400d8a470a2acd5ce1f0ef2628b53e289f0e6f31f02771",
+        "matched_test": {
+          "n_users": 7248,
+          "source_test_users": 8717,
+          "positive_prevalence": 0.5,
+          "strata": [
+            {
+              "length_bin": 0,
+              "activity_bin": 1,
+              "available_negative": 378,
+              "available_positive": 329,
+              "kept_per_class": 329
+            },
+            {
+              "length_bin": 0,
+              "activity_bin": 2,
+              "available_negative": 18,
+              "available_positive": 23,
+              "kept_per_class": 18
+            },
+            {
+              "length_bin": 0,
+              "activity_bin": 3,
+              "available_negative": 3,
+              "available_positive": 7,
+              "kept_per_class": 3
+            },
+            {
+              "length_bin": 1,
+              "activity_bin": 1,
+              "available_negative": 821,
+              "available_positive": 823,
+              "kept_per_class": 821
+            },
+            {
+              "length_bin": 1,
+              "activity_bin": 2,
+              "available_negative": 70,
+              "available_positive": 94,
+              "kept_per_class": 70
+            },
+            {
+              "length_bin": 1,
+              "activity_bin": 3,
+              "available_negative": 14,
+              "available_positive": 41,
+              "kept_per_class": 14
+            },
+            {
+              "length_bin": 2,
+              "activity_bin": 1,
+              "available_negative": 810,
+              "available_positive": 683,
+              "kept_per_class": 683
+            },
+            {
+              "length_bin": 2,
+              "activity_bin": 2,
+              "available_negative": 63,
+              "available_positive": 64,
+              "kept_per_class": 63
+            },
+            {
+              "length_bin": 2,
+              "activity_bin": 3,
+              "available_negative": 19,
+              "available_positive": 36,
+              "kept_per_class": 19
+            },
+            {
+              "length_bin": 3,
+              "activity_bin": 1,
+              "available_negative": 1144,
+              "available_positive": 844,
+              "kept_per_class": 844
+            },
+            {
+              "length_bin": 3,
+              "activity_bin": 2,
+              "available_negative": 82,
+              "available_positive": 58,
+              "kept_per_class": 58
+            },
+            {
+              "length_bin": 3,
+              "activity_bin": 3,
+              "available_negative": 34,
+              "available_positive": 19,
+              "kept_per_class": 19
+            },
+            {
+              "length_bin": 4,
+              "activity_bin": 1,
+              "available_negative": 1015,
+              "available_positive": 514,
+              "kept_per_class": 514
+            },
+            {
+              "length_bin": 4,
+              "activity_bin": 2,
+              "available_negative": 67,
+              "available_positive": 35,
+              "kept_per_class": 35
+            },
+            {
+              "length_bin": 4,
+              "activity_bin": 3,
+              "available_negative": 17,
+              "available_positive": 9,
+              "kept_per_class": 9
+            },
+            {
+              "length_bin": 5,
+              "activity_bin": 1,
+              "available_negative": 351,
+              "available_positive": 97,
+              "kept_per_class": 97
+            },
+            {
+              "length_bin": 5,
+              "activity_bin": 2,
+              "available_negative": 20,
+              "available_positive": 5,
+              "kept_per_class": 5
+            },
+            {
+              "length_bin": 5,
+              "activity_bin": 3,
+              "available_negative": 3,
+              "available_positive": 1,
+              "kept_per_class": 1
+            },
+            {
+              "length_bin": 6,
+              "activity_bin": 1,
+              "available_negative": 79,
+              "available_positive": 21,
+              "kept_per_class": 21
+            },
+            {
+              "length_bin": 6,
+              "activity_bin": 2,
+              "available_negative": 3,
+              "available_positive": 1,
+              "kept_per_class": 1
+            },
+            {
+              "length_bin": 6,
+              "activity_bin": 3,
+              "available_negative": 2,
+              "available_positive": 0,
+              "kept_per_class": 0
+            }
+          ],
+          "metrics": {
+            "majority": {
+              "n_users": 7248,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5,
+              "macro_f1": 0.3333333333333333,
+              "positive_f1": 0.0,
+              "positive_precision": 0.0,
+              "positive_recall": 0.0,
+              "roc_auc": 0.5,
+              "average_precision": 0.5,
+              "brier": 0.5,
+              "log_loss": 18.021826694558577,
+              "confusion_matrix": [
+                [
+                  3624,
+                  0
+                ],
+                [
+                  3624,
+                  0
+                ]
+              ]
+            },
+            "length_only": {
+              "n_users": 7248,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5092439293598234,
+              "macro_f1": 0.4290071307842733,
+              "positive_f1": 0.21496358419774883,
+              "positive_precision": 0.5369349503858876,
+              "positive_recall": 0.13438189845474613,
+              "roc_auc": 0.5342718429747233,
+              "average_precision": 0.524168224953526,
+              "brier": 0.2550241859046361,
+              "log_loss": 0.7047093751055201,
+              "confusion_matrix": [
+                [
+                  3204,
+                  420
+                ],
+                [
+                  3137,
+                  487
+                ]
+              ]
+            },
+            "pronoun_only": {
+              "n_users": 7248,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5040011037527594,
+              "macro_f1": 0.41351165293042613,
+              "positive_f1": 0.18314019541013407,
+              "positive_precision": 0.5186615186615187,
+              "positive_recall": 0.11120309050772627,
+              "roc_auc": 0.5256451958734754,
+              "average_precision": 0.508578046924357,
+              "brier": 0.2549180593419292,
+              "log_loss": 0.7043134438052205,
+              "confusion_matrix": [
+                [
+                  3250,
+                  374
+                ],
+                [
+                  3221,
+                  403
+                ]
+              ]
+            },
+            "without_sentiment": {
+              "n_users": 7248,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5129690949227373,
+              "macro_f1": 0.44342768686999207,
+              "positive_f1": 0.24669227486128895,
+              "positive_precision": 0.544256120527307,
+              "positive_recall": 0.15949227373068434,
+              "roc_auc": 0.5414021878304558,
+              "average_precision": 0.5264166989810605,
+              "brier": 0.254314293378733,
+              "log_loss": 0.7031483705664717,
+              "confusion_matrix": [
+                [
+                  3140,
+                  484
+                ],
+                [
+                  3046,
+                  578
+                ]
+              ]
+            },
+            "linguistic_13": {
+              "n_users": 7248,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5364238410596026,
+              "macro_f1": 0.49679508875339107,
+              "positive_f1": 0.35558112773302647,
+              "positive_precision": 0.5830188679245283,
+              "positive_recall": 0.25579470198675497,
+              "roc_auc": 0.5750536648002768,
+              "average_precision": 0.5608854962539448,
+              "brier": 0.2510772474430482,
+              "log_loss": 0.6965152926723668,
+              "confusion_matrix": [
+                [
+                  2961,
+                  663
+                ],
+                [
+                  2697,
+                  927
+                ]
+              ]
+            },
+            "tfidf_lr": {
+              "n_users": 7248,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.8486479028697572,
+              "macro_f1": 0.8481158058870633,
+              "positive_f1": 0.8391259715500806,
+              "positive_precision": 0.8954616588419405,
+              "positive_recall": 0.7894591611479028,
+              "roc_auc": 0.9251285427296074,
+              "average_precision": 0.9214878799313224,
+              "brier": 0.1099126520624924,
+              "log_loss": 0.35931597907440255,
+              "confusion_matrix": [
+                [
+                  3290,
+                  334
+                ],
+                [
+                  763,
+                  2861
+                ]
+              ]
+            }
+          },
+          "ci95": {
+            "linguistic_13": {
+              "macro_f1": [
+                0.4863673604999271,
+                0.5081065970543793
+              ],
+              "positive_f1": [
+                0.33946132865770506,
+                0.3728655739623934
+              ],
+              "roc_auc": [
+                0.562233339698795,
+                0.5891602071698853
+              ],
+              "average_precision": [
+                0.548150464214381,
+                0.5747511671713944
+              ],
+              "brier": [
+                0.2489319858484513,
+                0.2531951672502481
+              ]
+            },
+            "tfidf_lr": {
+              "macro_f1": [
+                0.8400239916380978,
+                0.8565502721484316
+              ],
+              "positive_f1": [
+                0.8300832785888252,
+                0.8485298563319642
+              ],
+              "roc_auc": [
+                0.9189837365502973,
+                0.9311070759719359
+              ],
+              "average_precision": [
+                0.9131889558073528,
+                0.9297365936704124
+              ],
+              "brier": [
+                0.10518048736617998,
+                0.11483803123530088
+              ]
+            }
+          },
+          "standardized_mean_differences": {
+            "before": {
+              "mean_words": -0.3204639792979563,
+              "posts": 0.09360822145267529
+            },
+            "after": {
+              "mean_words": -0.019359932631841898,
+              "posts": 0.023830128827836992
+            }
+          },
+          "tfidf_minus_linguistic_13": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": 0.3513207171336722,
+              "positive_f1": 0.48354484381705415,
+              "average_precision": 0.3606023836773776
+            },
+            "ci95": {
+              "macro_f1": [
+                0.33789877168528715,
+                0.36416494471502986
+              ],
+              "positive_f1": [
+                0.465344738262884,
+                0.5021352071781101
+              ],
+              "average_precision": [
+                0.34590668688869836,
+                0.37462903809414305
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 388,
+              "a_wrong_b_correct": 2651,
+              "pvalue": null,
+              "log10_pvalue": -412.0317078873761,
+              "pvalue_underflow": true
+            }
+          }
+        },
+        "lexical_masked_test": {
+          "mask_terms": [
+            "anxiety",
+            "anxious",
+            "benzodiazepine",
+            "depressed",
+            "depression",
+            "depressive",
+            "diagnosed",
+            "disorder",
+            "lexapro",
+            "medication",
+            "mental health",
+            "mental illness",
+            "mentalhealth",
+            "panic",
+            "psychiatrist",
+            "ssri",
+            "subreddit",
+            "suicidewatch",
+            "therapist",
+            "therapy",
+            "xanax",
+            "zoloft"
+          ],
+          "replacement": "term",
+          "frozen_model": true,
+          "metrics": {
+            "n_users": 8717,
+            "positive_prevalence": 0.4249168291843524,
+            "threshold": 0.5,
+            "accuracy": 0.7356888837902948,
+            "macro_f1": 0.6983465205558459,
+            "positive_f1": 0.592212389380531,
+            "positive_precision": 0.8597122302158273,
+            "positive_recall": 0.45167386609071275,
+            "roc_auc": 0.852025392726212,
+            "average_precision": 0.8123628005626817,
+            "brier": 0.1771675865123241,
+            "log_loss": 0.5322123592729492,
+            "confusion_matrix": [
+              [
+                4740,
+                273
+              ],
+              [
+                2031,
+                1673
+              ]
+            ]
+          },
+          "paired_delta": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.1593196925226743,
+              "positive_f1": -0.23843048799131838,
+              "average_precision": -0.09353177036253468
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.16917760027321707,
+                -0.15053845505914687
+              ],
+              "positive_f1": [
+                -0.2533754141514777,
+                -0.2256380695476742
+              ],
+              "average_precision": [
+                -0.10298731783667867,
+                -0.08386192409749284
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 1311,
+              "a_wrong_b_correct": 203,
+              "pvalue": 1.6015058264164499e-198,
+              "log10_pvalue": -197.79547147699603,
+              "pvalue_underflow": false
+            }
+          }
+        },
+        "artifact_sha256": {
+          "matched_predictions.csv": "66142c401e92eebe3e12355877badbcdd0e94d628ff53e56c1c62c0d51630e92",
+          "lexical_masked_predictions.csv": "72896c13c78b72eabfca2da90ad62863d18791f77eccc71cc79a3dc3b38b44de"
+        }
+      }
+    },
+    "depression": {
+      "cohort_audit": {
+        "comparison": "depression",
+        "loaded_authored_rows": 137255,
+        "exclusions": {
+          "noncanonical_community_rows_all_authored_files": 118,
+          "invalid_or_placeholder_author_rows": 80,
+          "invalid_numeric_time_or_score_rows": 0,
+          "short_empty_or_removed_body_rows_all_dates": 12620,
+          "identical_record_rows": 14
+        },
+        "selected_community_rows": 63512,
+        "metadata_valid_rows": 63432,
+        "windows": {
+          "train": {
+            "metadata_valid_posts": 21724,
+            "metadata_valid_authors": 16041,
+            "ambiguous_community_authors": 441,
+            "ambiguous_community_posts": 1668,
+            "previously_observed_authors_excluded": 0,
+            "previously_observed_posts_excluded": 0,
+            "text_quality_posts_excluded": 4008,
+            "shared_text_posts_quarantined_within_window": 15,
+            "repeated_same_author_text_rows": 66,
+            "earlier_window_duplicate_text_rows_excluded": 0,
+            "retained_posts": 15967,
+            "retained_authors": 13049,
+            "positive_authors": 4760,
+            "negative_authors": 8289,
+            "retained_posts_by_label": {
+              "0": 10040,
+              "1": 5927
+            },
+            "authors_with_at_least_3_posts_by_label": {
+              "0": 331,
+              "1": 225
+            },
+            "author_timestamp_tied_rows": 0,
+            "utc_start": "2022-03-01T00:07:06+00:00",
+            "utc_end": "2022-03-31T12:51:26+00:00"
+          },
+          "val": {
+            "metadata_valid_posts": 21284,
+            "metadata_valid_authors": 15740,
+            "ambiguous_community_authors": 399,
+            "ambiguous_community_posts": 1426,
+            "previously_observed_authors_excluded": 1542,
+            "previously_observed_posts_excluded": 2965,
+            "text_quality_posts_excluded": 3321,
+            "shared_text_posts_quarantined_within_window": 17,
+            "repeated_same_author_text_rows": 51,
+            "earlier_window_duplicate_text_rows_excluded": 0,
+            "retained_posts": 13504,
+            "retained_authors": 11473,
+            "positive_authors": 4204,
+            "negative_authors": 7269,
+            "retained_posts_by_label": {
+              "0": 8457,
+              "1": 5047
+            },
+            "authors_with_at_least_3_posts_by_label": {
+              "0": 203,
+              "1": 152
+            },
+            "author_timestamp_tied_rows": 0,
+            "utc_start": "2022-05-01T00:01:30+00:00",
+            "utc_end": "2022-05-31T23:59:55+00:00"
+          },
+          "test": {
+            "metadata_valid_posts": 19724,
+            "metadata_valid_authors": 14459,
+            "ambiguous_community_authors": 366,
+            "ambiguous_community_posts": 1284,
+            "previously_observed_authors_excluded": 2567,
+            "previously_observed_posts_excluded": 4537,
+            "text_quality_posts_excluded": 2684,
+            "shared_text_posts_quarantined_within_window": 19,
+            "repeated_same_author_text_rows": 141,
+            "earlier_window_duplicate_text_rows_excluded": 1,
+            "retained_posts": 11058,
+            "retained_authors": 9622,
+            "positive_authors": 3631,
+            "negative_authors": 5991,
+            "retained_posts_by_label": {
+              "0": 6770,
+              "1": 4288
+            },
+            "authors_with_at_least_3_posts_by_label": {
+              "0": 128,
+              "1": 106
+            },
+            "author_timestamp_tied_rows": 0,
+            "utc_start": "2022-06-01T00:03:45+00:00",
+            "utc_end": "2022-06-30T13:57:36+00:00"
+          }
+        },
+        "cohort_integrity": {
+          "split_counts": {
+            "train": {
+              "users": 13049,
+              "positive_users": 4760,
+              "posts": 15967
+            },
+            "val": {
+              "users": 11473,
+              "positive_users": 4204,
+              "posts": 13504
+            },
+            "test": {
+              "users": 9622,
+              "positive_users": 3631,
+              "posts": 11058
+            }
+          },
+          "within_split_duplicate_text_rows": 0,
+          "mixed_author_labels": 0,
+          "author_overlap": 0,
+          "cross_split_duplicate_text": 0
+        },
+        "observed_nonmodel_month_rows": 686,
+        "files": [
+          {
+            "name": "whatsbotheringyou_reddit_data.csv",
+            "sha256": "c20035be40249b406394e4cf53b3f1256956062faa3f435baed7e65685317ef5",
+            "status": "schema_not_used",
+            "rows": 996
+          },
+          {
+            "name": "employment_reddit_data.csv",
+            "sha256": "f12d6d742849624482c061c50ce0db01ae3ed85d01bcd758776ac5a116962898",
+            "status": "schema_not_used",
+            "rows": 2495
+          },
+          {
+            "name": "the-reddit-dataset-dataset-comments 2.csv",
+            "sha256": "79ea777dec147d019b60d5583ef189b082ea6e72b1a2db44fca32bbaa3a3c62f",
+            "status": "schema_not_used",
+            "rows": 54848
+          },
+          {
+            "name": "mhmay22.csv",
+            "sha256": "4455a38b2d15ef53f0eef924a4c34477de79aa0a4f336f693e03b632d433e6cd",
+            "status": "authored_schema_loaded",
+            "rows": 9647
+          },
+          {
+            "name": "lonemay22.csv",
+            "sha256": "5a3f60b8a819c033f50a6cc91a496674ae2933a68a99f5cdfaa2f327958b121a",
+            "status": "authored_schema_loaded",
+            "rows": 5595
+          },
+          {
+            "name": "the-reddit-dataset-dataset-comments.csv",
+            "sha256": "610a469af0bd6d5cc0c7299064a24ce722edce3be61582b4ee64cf28a9489038",
+            "status": "schema_not_used",
+            "rows": 54851
+          },
+          {
+            "name": "anximay22.csv",
+            "sha256": "09b2dee43490c71e28cfcb7c3e05a1a4d9c4377278b263310a97e48d4e411365",
+            "status": "authored_schema_loaded",
+            "rows": 7408
+          },
+          {
+            "name": "depmay22.csv",
+            "sha256": "c4047255291044e699d12067350f4c13a78dea778cbf200b857bffb6de487475",
+            "status": "authored_schema_loaded",
+            "rows": 13911
+          },
+          {
+            "name": "Swmay22.csv",
+            "sha256": "3d2972b0d842cc445deef6aeb8dae69a0f8305284baca0d187390741be1e468b",
+            "status": "authored_schema_loaded",
+            "rows": 14973
+          },
+          {
+            "name": "lonmar22.csv",
+            "sha256": "cc193e8d271d26578d32ca09988d66947587707e1e71c81273096e57c6159281",
+            "status": "authored_schema_loaded",
+            "rows": 5402
+          },
+          {
+            "name": "mhmar22.csv",
+            "sha256": "f10223aca7502d49dd322a96a28bfd1df2130ff22ff631df3e62072664222be7",
+            "status": "authored_schema_loaded",
+            "rows": 9742
+          },
+          {
+            "name": "anximar22.csv",
+            "sha256": "eaf262fa26bbc00005790257291597e9497a92dbb3b28fc6c6bd4d51a9b5077c",
+            "status": "authored_schema_loaded",
+            "rows": 7718
+          },
+          {
+            "name": "depmar22.csv",
+            "sha256": "b5069d78dea7f6c1702192e3df2a57bd00491819a2e122e7a8199781a964c066",
+            "status": "authored_schema_loaded",
+            "rows": 14459
+          },
+          {
+            "name": "Swmar22.csv",
+            "sha256": "6ca933ee2d7b1f77df6e0168ba875fae0315fa26695084efaf88299b388e3279",
+            "status": "authored_schema_loaded",
+            "rows": 14148
+          },
+          {
+            "name": "mhjun22.csv",
+            "sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+            "status": "authored_schema_loaded",
+            "rows": 8745
+          },
+          {
+            "name": "mh1jun22.csv",
+            "sha256": "fd94ab955e7a8209195515555f931fd8900737cb5781e3f465a2606e9a571a62",
+            "status": "duplicate_file_skipped"
+          },
+          {
+            "name": "lone1jun22.csv",
+            "sha256": "47861ef7ed9451ddad66722ba37047ddfff4af09dbe2d9b5b40bc9fa34ec0440",
+            "status": "authored_schema_loaded",
+            "rows": 5447
+          },
+          {
+            "name": "anijun22.csv",
+            "sha256": "8b3b7436a673b70d69ae2769e34f0fce5477dea671066602fc45a3d6d663a56f",
+            "status": "authored_schema_loaded",
+            "rows": 7365
+          },
+          {
+            "name": "depjun22.csv",
+            "sha256": "76a5523c1e3a8fe4bc24f0933b3fd66883c249f962ba75d5a7166389662f5728",
+            "status": "authored_schema_loaded",
+            "rows": 12695
+          },
+          {
+            "name": "feature_importance.csv",
+            "sha256": "2d938b7466992b675d37ececb7e8f4e06f73afd9afb94107fdbe400eba12a279",
+            "status": "schema_not_used",
+            "rows": 13
+          },
+          {
+            "name": "post_level_results.csv",
+            "sha256": "1f215ea4fa540b1cfa2a00356db58cfc1b46b0d2a8df3d2e703de3867c7ea873",
+            "status": "schema_not_used",
+            "rows": 3
+          },
+          {
+            "name": "cross_domain_validation.csv",
+            "sha256": "a88b398d50e11a9aa711a587cad82b0a5411c46ba1030cd552b1658ba92fca0d",
+            "status": "schema_not_used",
+            "rows": 13
+          },
+          {
+            "name": "early_slice_results.csv",
+            "sha256": "dc02c04ca225f557ddb8585b9e63c22447b5b567d5e0f03675265800a7081c54",
+            "status": "schema_not_used",
+            "rows": 4
+          }
+        ],
+        "protocol_sha256": "3c550f9a4fee79a5a3553f03090e41325201e3137c3192e355169fa5b408651c",
+        "preparation_code_sha256": "68471bb5b2a0c0765bd21bd465e3207fc98a574bec06d2e277dee83f27362a68",
+        "prepared_csv_sha256": "500c57b4cfd7e531ec9a54dd7ad8c391b265a7c958b5f0b51088e6b8736b0273"
+      },
+      "length_activity": {
+        "train": {
+          "0": {
+            "users": 8289,
+            "median_posts": 1.0,
+            "median_mean_words": 140.0,
+            "one_post_users": 7291
+          },
+          "1": {
+            "users": 4760,
+            "median_posts": 1.0,
+            "median_mean_words": 131.0,
+            "one_post_users": 4156
+          }
+        },
+        "val": {
+          "0": {
+            "users": 7269,
+            "median_posts": 1.0,
+            "median_mean_words": 144.0,
+            "one_post_users": 6510
+          },
+          "1": {
+            "users": 4204,
+            "median_posts": 1.0,
+            "median_mean_words": 131.0,
+            "one_post_users": 3691
+          }
+        },
+        "test": {
+          "0": {
+            "users": 5991,
+            "median_posts": 1.0,
+            "median_mean_words": 146.0,
+            "one_post_users": 5491
+          },
+          "1": {
+            "users": 3631,
+            "median_posts": 1.0,
+            "median_mean_words": 132.0,
+            "one_post_users": 3254
+          }
+        }
+      },
+      "outcomes": {
+        "metrics": {
+          "majority": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.6226356266888381,
+            "macro_f1": 0.3837186959584961,
+            "positive_f1": 0.0,
+            "positive_precision": 0.0,
+            "positive_recall": 0.0,
+            "roc_auc": 0.5,
+            "average_precision": 0.3773643733111619,
+            "brier": 0.3773643733111619,
+            "log_loss": 13.601590673028932,
+            "confusion_matrix": [
+              [
+                5991,
+                0
+              ],
+              [
+                3631,
+                0
+              ]
+            ]
+          },
+          "length_only": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.6326127624194554,
+            "macro_f1": 0.4930164685205799,
+            "positive_f1": 0.2269844740870326,
+            "positive_precision": 0.5509554140127388,
+            "positive_recall": 0.1429358303497659,
+            "roc_auc": 0.6430197715558006,
+            "average_precision": 0.49097290964440965,
+            "brier": 0.2230065477656703,
+            "log_loss": 0.6363529622634502,
+            "confusion_matrix": [
+              [
+                5568,
+                423
+              ],
+              [
+                3112,
+                519
+              ]
+            ]
+          },
+          "pronoun_only": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.6183745583038869,
+            "macro_f1": 0.4661539131002371,
+            "positive_f1": 0.18108831400535236,
+            "positive_precision": 0.47596717467760846,
+            "positive_recall": 0.11181492701735059,
+            "roc_auc": 0.6486987894859824,
+            "average_precision": 0.4725080080869275,
+            "brier": 0.2241611830318144,
+            "log_loss": 0.6382754885152924,
+            "confusion_matrix": [
+              [
+                5544,
+                447
+              ],
+              [
+                3225,
+                406
+              ]
+            ]
+          },
+          "without_sentiment": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.6335481188942008,
+            "macro_f1": 0.5208793146768833,
+            "positive_f1": 0.2885391444713479,
+            "positive_precision": 0.539622641509434,
+            "positive_recall": 0.19691545028917654,
+            "roc_auc": 0.6701196796571889,
+            "average_precision": 0.503807530718045,
+            "brier": 0.21864184718457144,
+            "log_loss": 0.6260288840395266,
+            "confusion_matrix": [
+              [
+                5381,
+                610
+              ],
+              [
+                2916,
+                715
+              ]
+            ]
+          },
+          "linguistic_13": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.6579713157347745,
+            "macro_f1": 0.5774174888215349,
+            "positive_f1": 0.3929164360819037,
+            "positive_precision": 0.5949720670391061,
+            "positive_recall": 0.2933076287524098,
+            "roc_auc": 0.7009281939065763,
+            "average_precision": 0.5425316731671903,
+            "brier": 0.21060335047477796,
+            "log_loss": 0.6079699240899201,
+            "confusion_matrix": [
+              [
+                5266,
+                725
+              ],
+              [
+                2566,
+                1065
+              ]
+            ]
+          },
+          "tfidf_lr": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.9234046975680732,
+            "macro_f1": 0.9170096358347083,
+            "positive_f1": 0.8939720903467127,
+            "positive_precision": 0.935843373493976,
+            "positive_recall": 0.8556871385293308,
+            "roc_auc": 0.9730979927156871,
+            "average_precision": 0.9640736009051748,
+            "brier": 0.05781609036455746,
+            "log_loss": 0.1999146320908273,
+            "confusion_matrix": [
+              [
+                5778,
+                213
+              ],
+              [
+                524,
+                3107
+              ]
+            ]
+          }
+        },
+        "model_selection": {
+          "majority": {
+            "C": null,
+            "validation_macro_f1": 0.3878454807384484
+          },
+          "length_only": {
+            "C": 10.0,
+            "validation_macro_f1": 0.4984266336560758
+          },
+          "pronoun_only": {
+            "C": 1.0,
+            "validation_macro_f1": 0.45584642490956995
+          },
+          "without_sentiment": {
+            "C": 10.0,
+            "validation_macro_f1": 0.5271128728014689
+          },
+          "linguistic_13": {
+            "C": 10.0,
+            "validation_macro_f1": 0.5754547215938604
+          },
+          "tfidf_lr": {
+            "C": 10.0,
+            "validation_macro_f1": 0.9164302323286881
+          }
+        },
+        "ci95": {
+          "majority": {
+            "macro_f1": [
+              0.3837186959584961,
+              0.3837186959584961
+            ],
+            "positive_f1": [
+              0.0,
+              0.0
+            ],
+            "roc_auc": [
+              0.5,
+              0.5
+            ],
+            "average_precision": [
+              0.3773643733111619,
+              0.3773643733111619
+            ],
+            "brier": [
+              0.3773643733111619,
+              0.3773643733111619
+            ]
+          },
+          "length_only": {
+            "macro_f1": [
+              0.48325492294456995,
+              0.5031368191785581
+            ],
+            "positive_f1": [
+              0.2102948545350695,
+              0.24428757545214982
+            ],
+            "roc_auc": [
+              0.6314191089489278,
+              0.6548720181621924
+            ],
+            "average_precision": [
+              0.4770720208236925,
+              0.5045857956024531
+            ],
+            "brier": [
+              0.22101161564530974,
+              0.22497835481228917
+            ]
+          },
+          "pronoun_only": {
+            "macro_f1": [
+              0.4575477335766361,
+              0.4748241834545256
+            ],
+            "positive_f1": [
+              0.1663970872995101,
+              0.19606799772336592
+            ],
+            "roc_auc": [
+              0.6373596932624678,
+              0.6593439726973183
+            ],
+            "average_precision": [
+              0.46095250849533403,
+              0.48454597745412065
+            ],
+            "brier": [
+              0.22250273785627364,
+              0.22596805700134504
+            ]
+          },
+          "without_sentiment": {
+            "macro_f1": [
+              0.511342169194647,
+              0.5309938223298117
+            ],
+            "positive_f1": [
+              0.27211613509455096,
+              0.3048660615936494
+            ],
+            "roc_auc": [
+              0.6587410440686275,
+              0.680784113377447
+            ],
+            "average_precision": [
+              0.4907607957454428,
+              0.5180380242536209
+            ],
+            "brier": [
+              0.2164297818581333,
+              0.22091591471958832
+            ]
+          },
+          "linguistic_13": {
+            "macro_f1": [
+              0.5666547188792145,
+              0.5881539424167547
+            ],
+            "positive_f1": [
+              0.3761788849311064,
+              0.4098485416760792
+            ],
+            "roc_auc": [
+              0.689915513360006,
+              0.7112237310799578
+            ],
+            "average_precision": [
+              0.5286590602137502,
+              0.5572870982173123
+            ],
+            "brier": [
+              0.2080893615863672,
+              0.21336395263520577
+            ]
+          },
+          "tfidf_lr": {
+            "macro_f1": [
+              0.9113354030918814,
+              0.9224844566427782
+            ],
+            "positive_f1": [
+              0.8863821201793132,
+              0.9011593392440195
+            ],
+            "roc_auc": [
+              0.969792299759655,
+              0.9762505458361966
+            ],
+            "average_precision": [
+              0.9599924754230259,
+              0.9678250250995939
+            ],
+            "brier": [
+              0.054769537609989184,
+              0.061042442120547574
+            ]
+          }
+        },
+        "paired_vs_linguistic_13": {
+          "majority": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.19369879286303876,
+              "positive_f1": -0.3929164360819037,
+              "average_precision": -0.1651672998560284
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.20443524645825858,
+                -0.18293602292071834
+              ],
+              "positive_f1": [
+                -0.4098485416760792,
+                -0.3761788849311064
+              ],
+              "average_precision": [
+                -0.17992272490615036,
+                -0.15129468690258827
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 1065,
+              "a_wrong_b_correct": 725,
+              "pvalue": 9.24554171900272e-16,
+              "log10_pvalue": -15.034067637378621,
+              "pvalue_underflow": false
+            }
+          },
+          "length_only": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.08440102030095498,
+              "positive_f1": -0.1659319619948711,
+              "average_precision": -0.05155876352278066
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.09470627467317955,
+                -0.07413309821495886
+              ],
+              "positive_f1": [
+                -0.1826644911942949,
+                -0.14854138736205597
+              ],
+              "average_precision": [
+                -0.06318459488990723,
+                -0.03973291150584498
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 816,
+              "a_wrong_b_correct": 572,
+              "pvalue": 6.196781539866925e-11,
+              "log10_pvalue": -10.207833814113219,
+              "pvalue_underflow": false
+            }
+          },
+          "pronoun_only": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.11126357572129775,
+              "positive_f1": -0.21182812207655133,
+              "average_precision": -0.07002366508026281
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.12288524228990333,
+                -0.09902597121134814
+              ],
+              "positive_f1": [
+                -0.2315197967602559,
+                -0.192146594270278
+              ],
+              "average_precision": [
+                -0.08411764363767762,
+                -0.056937614051824424
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 993,
+              "a_wrong_b_correct": 612,
+              "pvalue": 1.5741062133089108e-21,
+              "log10_pvalue": -20.80296596683201,
+              "pvalue_underflow": false
+            }
+          },
+          "without_sentiment": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.056538174144651565,
+              "positive_f1": -0.10437729161055581,
+              "average_precision": -0.03872414244914535
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.0659846592434979,
+                -0.04689799011116785
+              ],
+              "positive_f1": [
+                -0.12072722911931526,
+                -0.0882776110233686
+              ],
+              "average_precision": [
+                -0.04810504301448911,
+                -0.02967360700395298
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 711,
+              "a_wrong_b_correct": 476,
+              "pvalue": 9.511052354669077e-12,
+              "log10_pvalue": -11.021771427694985,
+              "pvalue_underflow": false
+            }
+          },
+          "tfidf_lr": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": 0.3395921470131734,
+              "positive_f1": 0.501055654264809,
+              "average_precision": 0.4215419277379845
+            },
+            "ci95": {
+              "macro_f1": [
+                0.3279555734023296,
+                0.3511267000231285
+              ],
+              "positive_f1": [
+                0.4831455648629323,
+                0.518788836110353
+              ],
+              "average_precision": [
+                0.40632123975970985,
+                0.4348729172200106
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 280,
+              "a_wrong_b_correct": 2834,
+              "pvalue": null,
+              "log10_pvalue": -529.7748408072872,
+              "pvalue_underflow": true
+            }
+          }
+        },
+        "masked_test": {
+          "metrics": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.6671170234878404,
+            "macro_f1": 0.5900000738336724,
+            "positive_f1": 0.41218572215085336,
+            "positive_precision": 0.6177117711771177,
+            "positive_recall": 0.30928118975488844,
+            "roc_auc": 0.7151306230437182,
+            "average_precision": 0.5607278550140538,
+            "brier": 0.20696748083176314,
+            "log_loss": 0.5998757346524337,
+            "confusion_matrix": [
+              [
+                5296,
+                695
+              ],
+              [
+                2508,
+                1123
+              ]
+            ]
+          },
+          "paired_delta": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": 0.012582585012137493,
+              "positive_f1": 0.019269286068949676,
+              "average_precision": 0.018196181846863446
+            },
+            "ci95": {
+              "macro_f1": [
+                0.008735850239836921,
+                0.01645705246732368
+              ],
+              "positive_f1": [
+                0.012992879825136906,
+                0.025524898513926645
+              ],
+              "average_precision": [
+                0.016477121397849397,
+                0.01992760892078481
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 35,
+              "a_wrong_b_correct": 123,
+              "pvalue": 1.1200911360125994e-12,
+              "log10_pvalue": -11.95074663960025,
+              "pvalue_underflow": false
+            }
+          },
+          "replacement": "term",
+          "keyword_list": [
+            "anxiety",
+            "anxious",
+            "benzodiazepine",
+            "diagnosed",
+            "disorder",
+            "lexapro",
+            "medication",
+            "mental health",
+            "mental illness",
+            "panic",
+            "psychiatrist",
+            "ssri",
+            "therapist",
+            "therapy",
+            "xanax",
+            "zoloft"
+          ]
+        }
+      },
+      "run_metadata": {
+        "status": "observational_proxy_experiment",
+        "created_utc": "2026-10-07T15:22:36.174323+00:00",
+        "seed": 42,
+        "input_sha256": "500c57b4cfd7e531ec9a54dd7ad8c391b265a7c958b5f0b51088e6b8736b0273",
+        "versions": {
+          "numpy": "2.5.3",
+          "pandas": "3.0.6",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1",
+          "vaderSentiment": "3.3.2",
+          "textblob": "0.20.1",
+          "emoji": "2.16.0"
+        },
+        "code_sha256": {
+          "src/research_benchmark.py": "a82928b1615f7b927d2cb7e4dd72ce16395fc66339361ea9bb90ec0a400732c5",
+          "src/features.py": "8f8778096e4db1cb7378a84327c25992c7cd9533c56404ad939db78aa86c210e",
+          "src/preprocess.py": "87604acffc4cf3cdd44980f8d687d62eb7b090661e4d61f9a7cfeacd34a601be",
+          "scripts/keyword_lists.py": "104df0e6f855de5268bfa56754456422807ed47702a28e16d75abe5740d80a5a"
+        },
+        "git_commit": "2794831bbb27504f735ea6ec7ef76bd31051d0a2",
+        "git_dirty": true,
+        "bootstrap": {
+          "replicates": 1000,
+          "unit": "author",
+          "method": "stratified percentile",
+          "conditional_on": "fitted models, observed split, and class counts"
+        },
+        "outcome_scope": "Label prediction; no diagnosis, onset, screening utility, or causal interpretation",
+        "analysis_notes": [
+          "User features are post-level means; TF-IDF uses concatenated user text.",
+          "Primary metric: macro-F1; primary comparator: TF-IDF LR versus linguistic_13.",
+          "Paired comparisons and intervals are per-comparison, exploratory, and not multiplicity-adjusted.",
+          "Keyword masking tests a fixed list, not independence from all topic vocabulary."
+        ],
+        "artifact_sha256": {
+          "full_length_only.joblib": "22011d8fc5db7eab725d84abdfda6cbea10d3e56c540ae080c974e576b0dd881",
+          "full_linguistic_13.joblib": "ec7d989bad20872d62d3073024674ebb98b80dfdbb1b11200f3376d6e2892b30",
+          "full_majority.joblib": "71b7268bb454e8ff41f85ac2f3948dfb2abc6fca3ecfabdb438b111803e62329",
+          "full_predictions.csv": "4df596f483bf90f47b1206216f5aedd55d7cfe69296d85046b7d87742c762084",
+          "full_pronoun_only.joblib": "2993c0ba2bce17ae7ea22a8b77723f2e3d65772ebc708b611dfcfca0d8c65b3c",
+          "full_tfidf_lr.joblib": "4a9035a8df2f57616a7a54c7cd62754ca8dc1d550994033f492b5e98f83c8c6d",
+          "full_without_sentiment.joblib": "c3d00e9a607c71d43773d1252a2351ee06be819c55bd07f455a3b9f4cd549a59"
+        }
+      },
+      "private_report_sha256": "a440abfda6858f9c897716fb70e58a893b7d80c1f065404448333ed747865dc4",
+      "saved_prediction_arithmetic_verified": true,
+      "secondary_sensitivity": {
+        "status": "exploratory_frozen_model_sensitivity",
+        "seed": 42,
+        "bootstrap_replicates": 1000,
+        "protocol_sha256": "1afdd73a4b97ea1abfbc5daf30025b33bbc85abf4e39c769831e5a7e90254a9b",
+        "code_sha256": "b7f7c764c30e5d911b85867f7e70390f64d120cb234af0841fcb003adbc58259",
+        "primary_report_sha256": "a440abfda6858f9c897716fb70e58a893b7d80c1f065404448333ed747865dc4",
+        "matched_test": {
+          "n_users": 7260,
+          "source_test_users": 9622,
+          "positive_prevalence": 0.5,
+          "strata": [
+            {
+              "length_bin": 0,
+              "activity_bin": 1,
+              "available_negative": 650,
+              "available_positive": 311,
+              "kept_per_class": 311
+            },
+            {
+              "length_bin": 0,
+              "activity_bin": 2,
+              "available_negative": 45,
+              "available_positive": 22,
+              "kept_per_class": 22
+            },
+            {
+              "length_bin": 0,
+              "activity_bin": 3,
+              "available_negative": 12,
+              "available_positive": 7,
+              "kept_per_class": 7
+            },
+            {
+              "length_bin": 1,
+              "activity_bin": 1,
+              "available_negative": 1117,
+              "available_positive": 807,
+              "kept_per_class": 807
+            },
+            {
+              "length_bin": 1,
+              "activity_bin": 2,
+              "available_negative": 103,
+              "available_positive": 91,
+              "kept_per_class": 91
+            },
+            {
+              "length_bin": 1,
+              "activity_bin": 3,
+              "available_negative": 43,
+              "available_positive": 39,
+              "kept_per_class": 39
+            },
+            {
+              "length_bin": 2,
+              "activity_bin": 1,
+              "available_negative": 984,
+              "available_positive": 676,
+              "kept_per_class": 676
+            },
+            {
+              "length_bin": 2,
+              "activity_bin": 2,
+              "available_negative": 78,
+              "available_positive": 60,
+              "kept_per_class": 60
+            },
+            {
+              "length_bin": 2,
+              "activity_bin": 3,
+              "available_negative": 35,
+              "available_positive": 34,
+              "kept_per_class": 34
+            },
+            {
+              "length_bin": 3,
+              "activity_bin": 1,
+              "available_negative": 1267,
+              "available_positive": 836,
+              "kept_per_class": 836
+            },
+            {
+              "length_bin": 3,
+              "activity_bin": 2,
+              "available_negative": 81,
+              "available_positive": 56,
+              "kept_per_class": 56
+            },
+            {
+              "length_bin": 3,
+              "activity_bin": 3,
+              "available_negative": 21,
+              "available_positive": 17,
+              "kept_per_class": 17
+            },
+            {
+              "length_bin": 4,
+              "activity_bin": 1,
+              "available_negative": 1104,
+              "available_positive": 509,
+              "kept_per_class": 509
+            },
+            {
+              "length_bin": 4,
+              "activity_bin": 2,
+              "available_negative": 55,
+              "available_positive": 34,
+              "kept_per_class": 34
+            },
+            {
+              "length_bin": 4,
+              "activity_bin": 3,
+              "available_negative": 14,
+              "available_positive": 8,
+              "kept_per_class": 8
+            },
+            {
+              "length_bin": 5,
+              "activity_bin": 1,
+              "available_negative": 312,
+              "available_positive": 96,
+              "kept_per_class": 96
+            },
+            {
+              "length_bin": 5,
+              "activity_bin": 2,
+              "available_negative": 10,
+              "available_positive": 7,
+              "kept_per_class": 7
+            },
+            {
+              "length_bin": 5,
+              "activity_bin": 3,
+              "available_negative": 3,
+              "available_positive": 1,
+              "kept_per_class": 1
+            },
+            {
+              "length_bin": 6,
+              "activity_bin": 1,
+              "available_negative": 57,
+              "available_positive": 19,
+              "kept_per_class": 19
+            },
+            {
+              "length_bin": 6,
+              "activity_bin": 2,
+              "available_negative": 0,
+              "available_positive": 1,
+              "kept_per_class": 0
+            }
+          ],
+          "metrics": {
+            "majority": {
+              "n_users": 7260,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5,
+              "macro_f1": 0.3333333333333333,
+              "positive_f1": 0.0,
+              "positive_precision": 0.0,
+              "positive_recall": 0.0,
+              "roc_auc": 0.5,
+              "average_precision": 0.5,
+              "brier": 0.5,
+              "log_loss": 18.021826694558573,
+              "confusion_matrix": [
+                [
+                  3630,
+                  0
+                ],
+                [
+                  3630,
+                  0
+                ]
+              ]
+            },
+            "length_only": {
+              "n_users": 7260,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5370523415977961,
+              "macro_f1": 0.4517994957227377,
+              "positive_f1": 0.23561519217648397,
+              "positive_precision": 0.6753585397653195,
+              "positive_recall": 0.14269972451790633,
+              "roc_auc": 0.6371865916869672,
+              "average_precision": 0.6156684770110067,
+              "brier": 0.25351740026168446,
+              "log_loss": 0.7011705567043336,
+              "confusion_matrix": [
+                [
+                  3381,
+                  249
+                ],
+                [
+                  3112,
+                  518
+                ]
+              ]
+            },
+            "pronoun_only": {
+              "n_users": 7260,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5184573002754821,
+              "macro_f1": 0.4230720971668047,
+              "positive_f1": 0.18848653667595172,
+              "positive_precision": 0.5988200589970502,
+              "positive_recall": 0.1118457300275482,
+              "roc_auc": 0.6440002580273053,
+              "average_precision": 0.5946614103001846,
+              "brier": 0.25458349494003174,
+              "log_loss": 0.7024850115791235,
+              "confusion_matrix": [
+                [
+                  3358,
+                  272
+                ],
+                [
+                  3224,
+                  406
+                ]
+              ]
+            },
+            "without_sentiment": {
+              "n_users": 7260,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5491735537190082,
+              "macro_f1": 0.48521591150818977,
+              "positive_f1": 0.30376515634971285,
+              "positive_precision": 0.6666666666666666,
+              "positive_recall": 0.19669421487603306,
+              "roc_auc": 0.666271353656778,
+              "average_precision": 0.6290556560104744,
+              "brier": 0.24719587725668643,
+              "log_loss": 0.6872006839453364,
+              "confusion_matrix": [
+                [
+                  3273,
+                  357
+                ],
+                [
+                  2916,
+                  714
+                ]
+              ]
+            },
+            "linguistic_13": {
+              "n_users": 7260,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.5840220385674931,
+              "macro_f1": 0.5455639821837005,
+              "positive_f1": 0.4133644133644134,
+              "positive_precision": 0.7009222661396575,
+              "positive_recall": 0.2931129476584022,
+              "roc_auc": 0.6970099188731795,
+              "average_precision": 0.6603493933261066,
+              "brier": 0.23755973375131226,
+              "log_loss": 0.6668938151037668,
+              "confusion_matrix": [
+                [
+                  3176,
+                  454
+                ],
+                [
+                  2566,
+                  1064
+                ]
+              ]
+            },
+            "tfidf_lr": {
+              "n_users": 7260,
+              "positive_prevalence": 0.5,
+              "threshold": 0.5,
+              "accuracy": 0.9089531680440771,
+              "macro_f1": 0.9086937206369875,
+              "positive_f1": 0.9038265677287939,
+              "positive_precision": 0.9577551649707061,
+              "positive_recall": 0.8556473829201102,
+              "roc_auc": 0.9731061175238486,
+              "average_precision": 0.9761020593965356,
+              "brier": 0.06678608589371374,
+              "log_loss": 0.22430525268983287,
+              "confusion_matrix": [
+                [
+                  3493,
+                  137
+                ],
+                [
+                  524,
+                  3106
+                ]
+              ]
+            }
+          },
+          "ci95": {
+            "linguistic_13": {
+              "macro_f1": [
+                0.5345486833586072,
+                0.5571082327810907
+              ],
+              "positive_f1": [
+                0.3969281494063757,
+                0.4314281081001211
+              ],
+              "roc_auc": [
+                0.6842366964156972,
+                0.7094150881466809
+              ],
+              "average_precision": [
+                0.645392369839888,
+                0.6753878712154616
+              ],
+              "brier": [
+                0.23445953531216976,
+                0.24062356733740958
+              ]
+            },
+            "tfidf_lr": {
+              "macro_f1": [
+                0.9020925420208992,
+                0.915502395271248
+              ],
+              "positive_f1": [
+                0.8968181780868812,
+                0.9113598104368262
+              ],
+              "roc_auc": [
+                0.969955793851361,
+                0.9764266329713361
+              ],
+              "average_precision": [
+                0.9731785313377415,
+                0.9789273055309856
+              ],
+              "brier": [
+                0.06271917426789655,
+                0.07059018348317785
+              ]
+            }
+          },
+          "standardized_mean_differences": {
+            "before": {
+              "mean_words": -0.16673287535192038,
+              "posts": 0.06935654456651676
+            },
+            "after": {
+              "mean_words": -0.014082286470459747,
+              "posts": 0.013021921939728013
+            }
+          },
+          "tfidf_minus_linguistic_13": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": 0.363129738453287,
+              "positive_f1": 0.4904621543643805,
+              "average_precision": 0.31575266607042896
+            },
+            "ci95": {
+              "macro_f1": [
+                0.3508331497028829,
+                0.3756843072313016
+              ],
+              "positive_f1": [
+                0.47298218334405673,
+                0.5081291118590481
+              ],
+              "average_precision": [
+                0.3007565096534162,
+                0.32957395714644955
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 226,
+              "a_wrong_b_correct": 2585,
+              "pvalue": null,
+              "log10_pvalue": -505.9038810518297,
+              "pvalue_underflow": true
+            }
+          }
+        },
+        "lexical_masked_test": {
+          "mask_terms": [
+            "anxiety",
+            "anxious",
+            "benzodiazepine",
+            "depressed",
+            "depression",
+            "depressive",
+            "diagnosed",
+            "disorder",
+            "lexapro",
+            "medication",
+            "mental health",
+            "mental illness",
+            "mentalhealth",
+            "panic",
+            "psychiatrist",
+            "ssri",
+            "subreddit",
+            "suicidewatch",
+            "therapist",
+            "therapy",
+            "xanax",
+            "zoloft"
+          ],
+          "replacement": "term",
+          "frozen_model": true,
+          "metrics": {
+            "n_users": 9622,
+            "positive_prevalence": 0.3773643733111619,
+            "threshold": 0.5,
+            "accuracy": 0.8334026189981293,
+            "macro_f1": 0.8070661929618264,
+            "positive_f1": 0.7357837481457062,
+            "positive_precision": 0.916256157635468,
+            "positive_recall": 0.6147066923712476,
+            "roc_auc": 0.9275113900999299,
+            "average_precision": 0.8931638809670387,
+            "brier": 0.11835076056719711,
+            "log_loss": 0.37309811472411974,
+            "confusion_matrix": [
+              [
+                5787,
+                204
+              ],
+              [
+                1399,
+                2232
+              ]
+            ]
+          },
+          "paired_delta": {
+            "direction": "B minus A",
+            "delta": {
+              "macro_f1": -0.10994344287288194,
+              "positive_f1": -0.15818834220100642,
+              "average_precision": -0.0709097199381361
+            },
+            "ci95": {
+              "macro_f1": [
+                -0.11703230944805007,
+                -0.10285825509700622
+              ],
+              "positive_f1": [
+                -0.16857159540686698,
+                -0.1476385681546
+              ],
+              "average_precision": [
+                -0.07717085600936013,
+                -0.06452497554487403
+              ]
+            },
+            "mcnemar_exact": {
+              "a_correct_b_wrong": 953,
+              "a_wrong_b_correct": 87,
+              "pvalue": 6.637036927984723e-185,
+              "log10_pvalue": -184.17802576596836,
+              "pvalue_underflow": false
+            }
+          }
+        },
+        "artifact_sha256": {
+          "matched_predictions.csv": "80dfebc93722de59a5bcec105e8f90d76dcb30762466a6ff02786886d8a04660",
+          "lexical_masked_predictions.csv": "f96227d663423884d3320e15d7ac3e1e00bc590fddc021f1969d59542245cfeb"
+        }
+      }
+    }
+  },
+  "export_code_sha256": "e28951f79b7976bd5ae793cce8df920886a81506993fcef015a8fba26adbeebc",
+  "uploads": {
+    "uploaded_files": 36,
+    "raw_csv_rows_including_duplicates": 259190,
+    "authored_csv_files": 15,
+    "byte_identical_existing_artifacts": [
+      "cross_domain_validation.csv",
+      "early_slice_results.csv",
+      "feature_importance.csv",
+      "fig1_main_results.pdf",
+      "fig2_early_detection.pdf",
+      "fig3_keyword_robustness.pdf",
+      "fig4_cross_domain.pdf",
+      "fig5_feature_importance.pdf",
+      "fig6_roc_curves.pdf",
+      "fig7_confusion_matrices.pdf",
+      "fig8_feature_distributions.pdf",
+      "fig9_learning_curves.pdf",
+      "final_results_fixed.json",
+      "post_level_results.csv"
+    ],
+    "timestamp_offset_audit": {
+      "mhmay22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "lonemay22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "anximay22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "depmay22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "Swmay22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "lonmar22.csv": {
+        "delta_seconds_unique": [
+          -39600.0
+        ],
+        "unparseable_rows": 0
+      },
+      "mhmar22.csv": {
+        "delta_seconds_unique": [
+          -39600.0
+        ],
+        "unparseable_rows": 0
+      },
+      "anximar22.csv": {
+        "delta_seconds_unique": [
+          -39600.0
+        ],
+        "unparseable_rows": 0
+      },
+      "depmar22.csv": {
+        "delta_seconds_unique": [
+          -39600.0
+        ],
+        "unparseable_rows": 0
+      },
+      "Swmar22.csv": {
+        "delta_seconds_unique": [
+          -39600.0
+        ],
+        "unparseable_rows": 0
+      },
+      "mhjun22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "mh1jun22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "lone1jun22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "anijun22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      },
+      "depjun22.csv": {
+        "delta_seconds_unique": [
+          -36000.0
+        ],
+        "unparseable_rows": 0
+      }
+    }
+  },
+  "additional_upload_audit": [
+    {
+      "name": "post_level_results.csv",
+      "sha256": "1f215ea4fa540b1cfa2a00356db58cfc1b46b0d2a8df3d2e703de3867c7ea873",
+      "rows": 3,
+      "columns": [
+        "split",
+        "accuracy",
+        "f1",
+        "precision",
+        "recall",
+        "roc_auc"
+      ],
+      "matches_previous_upload_bytes": true
+    },
+    {
+      "name": "labels.csv",
+      "sha256": "fe98249080a29f76291ccc77315dcd1e5ae5e172178b5bfeed976b83b9838bda",
+      "rows": 142,
+      "columns": [
+        "participant_id",
+        "has_depression",
+        "phq8_score",
+        "gender",
+        "PHQ8_NoInterest",
+        "PHQ8_Depressed",
+        "PHQ8_Sleep",
+        "PHQ8_Tired",
+        "PHQ8_Appetite",
+        "PHQ8_Failure",
+        "PHQ8_Concentrating",
+        "PHQ8_Moving",
+        "split",
+        "participant_ID",
+        "anxiety_label"
+      ],
+      "matches_previous_upload_bytes": false,
+      "missing_cells_by_column": {
+        "participant_id": 0,
+        "has_depression": 0,
+        "phq8_score": 0,
+        "gender": 0,
+        "PHQ8_NoInterest": 0,
+        "PHQ8_Depressed": 0,
+        "PHQ8_Sleep": 1,
+        "PHQ8_Tired": 0,
+        "PHQ8_Appetite": 0,
+        "PHQ8_Failure": 0,
+        "PHQ8_Concentrating": 0,
+        "PHQ8_Moving": 0,
+        "split": 0,
+        "participant_ID": 142,
+        "anxiety_label": 0
+      },
+      "phq8_score_summary": {
+        "available": 142,
+        "mean": 6.669014084507042,
+        "range": [
+          0.0,
+          23.0
+        ]
+      },
+      "participant_id_columns": {
+        "participant_id": {
+          "nonmissing_rows": 142,
+          "unique_nonmissing_ids": 142,
+          "duplicate_nonmissing_rows": 0
+        },
+        "participant_ID": {
+          "nonmissing_rows": 0,
+          "unique_nonmissing_ids": 0,
+          "duplicate_nonmissing_rows": 0
+        }
+      }
+    },
+    {
+      "name": "test_split_Depression_AVEC2017.csv",
+      "sha256": "f7103af5cc9be3618f0165d3bf296cf81fb02ac3390669d5ae947ba298b5581c",
+      "rows": 47,
+      "columns": [
+        "participant_ID",
+        "Gender"
+      ],
+      "matches_previous_upload_bytes": false,
+      "missing_cells_by_column": {
+        "participant_ID": 0,
+        "Gender": 0
+      },
+      "unique_participant_count": 47,
+      "duplicate_participant_rows": 0
+    },
+    {
+      "name": "cross_domain_validation.csv",
+      "sha256": "a88b398d50e11a9aa711a587cad82b0a5411c46ba1030cd552b1658ba92fca0d",
+      "rows": 13,
+      "columns": [
+        "feature",
+        "reddit_dir",
+        "reddit_p",
+        "daic_dir",
+        "daic_p",
+        "consistent",
+        "both_significant"
+      ],
+      "matches_previous_upload_bytes": true
+    },
+    {
+      "name": "full_test_split.csv",
+      "sha256": "66640def4bb104b62c4030453f7ef617441439247f1a99dbb83fa6c15271156b",
+      "rows": 47,
+      "columns": [
+        "Participant_ID",
+        "PHQ_Binary",
+        "PHQ_Score",
+        "Gender"
+      ],
+      "matches_previous_upload_bytes": false,
+      "missing_cells_by_column": {
+        "Participant_ID": 0,
+        "PHQ_Binary": 0,
+        "PHQ_Score": 0,
+        "Gender": 0
+      },
+      "unique_participant_count": 47,
+      "duplicate_participant_rows": 0,
+      "binary_label_counts": {
+        "0": 33,
+        "1": 14
+      },
+      "missing_binary_labels": 0
+    },
+    {
+      "name": "train_split_Depression_AVEC2017.csv",
+      "sha256": "d6fd5dd6ed19f76b961ec67b0b005d2e466444fe3498119729d673b2edfad28a",
+      "rows": 107,
+      "columns": [
+        "Participant_ID",
+        "PHQ8_Binary",
+        "PHQ8_Score",
+        "Gender",
+        "PHQ8_NoInterest",
+        "PHQ8_Depressed",
+        "PHQ8_Sleep",
+        "PHQ8_Tired",
+        "PHQ8_Appetite",
+        "PHQ8_Failure",
+        "PHQ8_Concentrating",
+        "PHQ8_Moving"
+      ],
+      "matches_previous_upload_bytes": false,
+      "missing_cells_by_column": {
+        "Participant_ID": 0,
+        "PHQ8_Binary": 0,
+        "PHQ8_Score": 0,
+        "Gender": 0,
+        "PHQ8_NoInterest": 0,
+        "PHQ8_Depressed": 0,
+        "PHQ8_Sleep": 1,
+        "PHQ8_Tired": 0,
+        "PHQ8_Appetite": 0,
+        "PHQ8_Failure": 0,
+        "PHQ8_Concentrating": 0,
+        "PHQ8_Moving": 0
+      },
+      "unique_participant_count": 107,
+      "duplicate_participant_rows": 0,
+      "binary_label_counts": {
+        "0": 77,
+        "1": 30
+      },
+      "missing_binary_labels": 0,
+      "phq8_score_summary": {
+        "available": 107,
+        "mean": 6.420560747663552,
+        "range": [
+          0.0,
+          20.0
+        ]
+      }
+    },
+    {
+      "name": "dev_split_Depression_AVEC2017.csv",
+      "sha256": "81478dcb078b8cbed07aec79944b8cfdac8bc5d1f16851f6d0b75e81dae95e9d",
+      "rows": 35,
+      "columns": [
+        "Participant_ID",
+        "PHQ8_Binary",
+        "PHQ8_Score",
+        "Gender",
+        "PHQ8_NoInterest",
+        "PHQ8_Depressed",
+        "PHQ8_Sleep",
+        "PHQ8_Tired",
+        "PHQ8_Appetite",
+        "PHQ8_Failure",
+        "PHQ8_Concentrating",
+        "PHQ8_Moving"
+      ],
+      "matches_previous_upload_bytes": false,
+      "missing_cells_by_column": {
+        "Participant_ID": 0,
+        "PHQ8_Binary": 0,
+        "PHQ8_Score": 0,
+        "Gender": 0,
+        "PHQ8_NoInterest": 0,
+        "PHQ8_Depressed": 0,
+        "PHQ8_Sleep": 0,
+        "PHQ8_Tired": 0,
+        "PHQ8_Appetite": 0,
+        "PHQ8_Failure": 0,
+        "PHQ8_Concentrating": 0,
+        "PHQ8_Moving": 0
+      },
+      "unique_participant_count": 35,
+      "duplicate_participant_rows": 0,
+      "binary_label_counts": {
+        "0": 23,
+        "1": 12
+      },
+      "missing_binary_labels": 0,
+      "phq8_score_summary": {
+        "available": 35,
+        "mean": 7.428571428571429,
+        "range": [
+          0.0,
+          23.0
+        ]
+      }
+    },
+    {
+      "name": "whatsbotheringyou_reddit_data.csv",
+      "sha256": "c20035be40249b406394e4cf53b3f1256956062faa3f435baed7e65685317ef5",
+      "rows": 996,
+      "columns": [
+        "Unnamed: 0",
+        "ID",
+        "is_Original",
+        "Flair",
+        "num_comments",
+        "Title",
+        "Subreddit",
+        "Body",
+        "URL",
+        "Upvotes",
+        "Comments",
+        "creation_date"
+      ],
+      "matches_previous_upload_bytes": true
+    },
+    {
+      "name": "employment_reddit_data.csv",
+      "sha256": "f12d6d742849624482c061c50ce0db01ae3ed85d01bcd758776ac5a116962898",
+      "rows": 2495,
+      "columns": [
+        "Unnamed: 0",
+        "ID",
+        "is_Original",
+        "Flair",
+        "num_comments",
+        "Title",
+        "Subreddit",
+        "Body",
+        "URL",
+        "Upvotes",
+        "Comments",
+        "creation_date"
+      ],
+      "matches_previous_upload_bytes": true
+    },
+    {
+      "name": "the-reddit-dataset-dataset-comments 2.csv",
+      "sha256": "79ea777dec147d019b60d5583ef189b082ea6e72b1a2db44fca32bbaa3a3c62f",
+      "rows": 54848,
+      "columns": [
+        "type",
+        "id",
+        "subreddit.id",
+        "subreddit.name",
+        "subreddit.nsfw",
+        "created_utc",
+        "permalink",
+        "body",
+        "sentiment",
+        "score"
+      ],
+      "matches_previous_upload_bytes": true
+    },
+    {
+      "name": "the-reddit-dataset-dataset-comments.csv",
+      "sha256": "610a469af0bd6d5cc0c7299064a24ce722edce3be61582b4ee64cf28a9489038",
+      "rows": 54851,
+      "columns": [
+        "index",
+        "type",
+        "id",
+        "subreddit.id",
+        "subreddit.name",
+        "subreddit.nsfw",
+        "created_utc",
+        "permalink",
+        "body",
+        "sentiment",
+        "score"
+      ],
+      "matches_previous_upload_bytes": true
+    }
+  ],
+  "clinical_label_audit": {
+    "status": "aggregate_label_provenance_audit",
+    "source_files": [
+      {
+        "name": "labels.csv",
+        "sha256": "fe98249080a29f76291ccc77315dcd1e5ae5e172178b5bfeed976b83b9838bda",
+        "rows": 142,
+        "columns": [
+          "participant_id",
+          "has_depression",
+          "phq8_score",
+          "gender",
+          "PHQ8_NoInterest",
+          "PHQ8_Depressed",
+          "PHQ8_Sleep",
+          "PHQ8_Tired",
+          "PHQ8_Appetite",
+          "PHQ8_Failure",
+          "PHQ8_Concentrating",
+          "PHQ8_Moving",
+          "split",
+          "participant_ID",
+          "anxiety_label"
+        ]
+      },
+      {
+        "name": "train_split_Depression_AVEC2017.csv",
+        "sha256": "d6fd5dd6ed19f76b961ec67b0b005d2e466444fe3498119729d673b2edfad28a",
+        "rows": 107,
+        "columns": [
+          "Participant_ID",
+          "PHQ8_Binary",
+          "PHQ8_Score",
+          "Gender",
+          "PHQ8_NoInterest",
+          "PHQ8_Depressed",
+          "PHQ8_Sleep",
+          "PHQ8_Tired",
+          "PHQ8_Appetite",
+          "PHQ8_Failure",
+          "PHQ8_Concentrating",
+          "PHQ8_Moving"
+        ]
+      },
+      {
+        "name": "dev_split_Depression_AVEC2017.csv",
+        "sha256": "81478dcb078b8cbed07aec79944b8cfdac8bc5d1f16851f6d0b75e81dae95e9d",
+        "rows": 35,
+        "columns": [
+          "Participant_ID",
+          "PHQ8_Binary",
+          "PHQ8_Score",
+          "Gender",
+          "PHQ8_NoInterest",
+          "PHQ8_Depressed",
+          "PHQ8_Sleep",
+          "PHQ8_Tired",
+          "PHQ8_Appetite",
+          "PHQ8_Failure",
+          "PHQ8_Concentrating",
+          "PHQ8_Moving"
+        ]
+      },
+      {
+        "name": "test_split_Depression_AVEC2017.csv",
+        "sha256": "f7103af5cc9be3618f0165d3bf296cf81fb02ac3390669d5ae947ba298b5581c",
+        "rows": 47,
+        "columns": [
+          "participant_ID",
+          "Gender"
+        ]
+      },
+      {
+        "name": "full_test_split.csv",
+        "sha256": "66640def4bb104b62c4030453f7ef617441439247f1a99dbb83fa6c15271156b",
+        "rows": 47,
+        "columns": [
+          "Participant_ID",
+          "PHQ_Binary",
+          "PHQ_Score",
+          "Gender"
+        ]
+      }
+    ],
+    "observed_participants_in_labels": 142,
+    "unused_blank_participant_ID_column_rows": 142,
+    "labels_equal_train_dev_id_union": true,
+    "split_overlap_counts": {
+      "train_dev": 0,
+      "train_test": 0,
+      "dev_test": 0
+    },
+    "full_and_blind_test_ids_equal": true,
+    "total_distinct_participants": 189,
+    "anxiety_label_exact_phq8_thresholds": [
+      10
+    ],
+    "anxiety_label_counts": {
+      "0": 99,
+      "1": 43
+    },
+    "derived_label_disagrees_with_supplied_depression_binary_rows": 1,
+    "merged_labels_match_original_scores": true,
+    "merged_labels_match_original_depression_binary": true,
+    "merged_labels_match_original_split": true,
+    "official_binary_counts_by_split": {
+      "train": {
+        "0": 77,
+        "1": 30
+      },
+      "dev": {
+        "0": 23,
+        "1": 12
+      },
+      "test": {
+        "0": 33,
+        "1": 14
+      }
+    },
+    "dev_derived_anxiety_label_counts": {
+      "0": 23,
+      "1": 12
+    },
+    "interpretation": "The uploaded anxiety_label is derivable from a depression scale; no validated anxiety outcome was supplied.",
+    "measurement_scope": "PHQ-8 depression symptoms; binary score thresholds are not clinician diagnoses.",
+    "clinical_text_or_measured_linguistic_features_supplied": false,
+    "clinical_effects_recomputed": false,
+    "discrepancy_action": "Retain original supplied binary labels and document the one disagreement; verify authoritative version before choosing any correction."
+  },
+  "statistical_format_note": "Underflowed exact McNemar p-values are stored as null with finite log10 probability; private original reports remain unchanged.",
+  "figure_sha256": {
+    "pilot_baselines.pdf": "9be53a4f5722b1b6ebb71d0a03c715d3626917d1b91aa17893756080485d0208",
+    "pilot_baselines.png": "5f4e35977f59bb375286e35851516a7ba1dc63d2410ba4404ddf5c9fc89636f4"
+  }
+}

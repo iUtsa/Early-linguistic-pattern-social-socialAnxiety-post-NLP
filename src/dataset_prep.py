@@ -5,9 +5,14 @@ Dataset preparation and feature combination.
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from features import extract_features_batch, aggregate_user_features, get_feature_names
-from embeds import encode_texts, aggregate_user_embeddings, reduce_dimensions
-from preprocess import preprocess_corpus
+try:
+    from .features import extract_features_batch, aggregate_user_features, get_feature_names
+    from .embeds import encode_texts, aggregate_user_embeddings, reduce_dimensions
+    from .preprocess import preprocess_corpus
+except ImportError:
+    from features import extract_features_batch, aggregate_user_features, get_feature_names
+    from embeds import encode_texts, aggregate_user_embeddings, reduce_dimensions
+    from preprocess import preprocess_corpus
 
 
 def prepare_full_dataset(posts, config, use_embeddings=True, use_features=True):
@@ -27,6 +32,11 @@ def prepare_full_dataset(posts, config, use_embeddings=True, use_features=True):
     print("Preparing Full Dataset")
     print("="*60)
     
+    try:
+        from .research_validation import validate_author_metadata
+    except ImportError:
+        from research_validation import validate_author_metadata
+    validate_author_metadata(posts)
     # Preprocess text
     print("Preprocessing text...")
     posts['text_clean'] = preprocess_corpus(posts['text'].values, show_progress=True)
@@ -55,7 +65,9 @@ def prepare_full_dataset(posts, config, use_embeddings=True, use_features=True):
         
         # Reduce dimensions
         n_components = config['training'].get('pca_components', 300)
-        user_embeddings, _ = reduce_dimensions(user_embeddings, n_components)
+        user_embeddings, reducer = reduce_dimensions(
+            user_embeddings, n_components, training_data=user_embeddings[user_splits == 'train']
+        )
     else:
         user_embeddings = None
     
@@ -86,7 +98,10 @@ def prepare_full_dataset(posts, config, use_embeddings=True, use_features=True):
     data['test_X'] = scaler.transform(data['test_X'])
     
     data['scaler'] = scaler
+    data['reducer'] = reducer if use_embeddings else None
     data['feature_names'] = get_feature_names() if use_features else []
+    if use_embeddings:
+        data['feature_names'] += [f'embedding_{i}' for i in range(user_embeddings.shape[1])]
     
     return data
 

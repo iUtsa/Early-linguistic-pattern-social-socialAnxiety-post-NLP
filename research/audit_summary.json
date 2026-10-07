@@ -1,0 +1,76 @@
+{
+  "scope": "Arithmetic and artifact consistency only; experiments and data provenance are NOT reproduced",
+  "input_sha256": "834c73f1946ee18d8b399ac45474f170da1aec9d64e30dbcfa3e0639017ae87e",
+  "test_confusion_matrix_n": 42645,
+  "test_positive_prevalence": 0.4884746160159456,
+  "confusion_matrix_metrics": {
+    "accuracy": 0.8998241294407316,
+    "precision": 0.9301709357302437,
+    "recall": 0.8594402573088186,
+    "f1": 0.8934078546833675
+  },
+  "json_matches_confusion_matrix": {
+    "accuracy": true,
+    "precision": true,
+    "recall": true,
+    "f1": true
+  },
+  "roc_auc": "Cannot recompute from a single confusion matrix; individual scores are missing",
+  "cross_domain_direction_agreement": {
+    "all_features": {
+      "consistent": 9,
+      "denominator": 13
+    },
+    "non_missing_daic_p": {
+      "consistent": 9,
+      "denominator": 12
+    },
+    "interpretation": "Sign agreement is not external classifier validation or anxiety construct validation"
+  },
+  "early_history_cohort_sizes": [
+    {
+      "k": 3,
+      "n_users": 18484,
+      "test_size": 8270,
+      "anxiety_pct": 50.5193681021424
+    },
+    {
+      "k": 5,
+      "n_users": 6834,
+      "test_size": 5144,
+      "anxiety_pct": 51.40474100087796
+    },
+    {
+      "k": 10,
+      "n_users": 1722,
+      "test_size": 2714,
+      "anxiety_pct": 55.57491289198606
+    },
+    {
+      "k": 20,
+      "n_users": 222,
+      "test_size": 679,
+      "anxiety_pct": 93.24324324324324
+    }
+  ],
+  "readme_users": {
+    "stated": 155599,
+    "sum_of_split_rows": 178058
+  },
+  "preprint_users": {
+    "sum_of_split_rows": 183058,
+    "stated_total": 183058
+  },
+  "preprint_mcnemar_from_printed_discordant_pairs": {
+    "b": 52,
+    "c": 76,
+    "uncorrected_chi_square": 4.5,
+    "uncorrected_p": 0.033894853524689295,
+    "continuity_corrected_chi_square": 4.1328125,
+    "continuity_corrected_p": 0.04205939394353999,
+    "exact_p": 0.04163828383950257,
+    "finding": "Paper prints an uncorrected formula but its statistic corresponds to continuity correction"
+  },
+  "model_sha256": "bfb0d57a58de1b749efebec50821203530acfb4d683053355e70899e2180b839",
+  "experiment_reproduction": "BLOCKED: no raw study CSV, individual predictions, split manifest, or clinical participant data"
+}

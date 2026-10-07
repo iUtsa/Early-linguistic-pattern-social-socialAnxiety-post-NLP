@@ -5,8 +5,14 @@ Text embedding utilities using Sentence Transformers.
 import numpy as np
 import pandas as pd
 from pathlib import Path
+import hashlib
+import json
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
+try:
+    from .research_validation import validate_author_metadata, validate_finite_matrix
+except ImportError:
+    from research_validation import validate_author_metadata, validate_finite_matrix
 
 
 class EmbeddingCache:
@@ -21,18 +27,28 @@ class EmbeddingCache:
         safe_model_name = model_name.replace('/', '_')
         return self.cache_dir / f'embeddings_{safe_model_name}_{dataset_name}.npy'
     
-    def load(self, model_name, dataset_name='rmhd'):
+    def load(self, model_name, dataset_name='rmhd', fingerprint=None):
         """Load cached embeddings."""
         cache_path = self.get_cache_path(model_name, dataset_name)
-        if cache_path.exists():
+        metadata_path = cache_path.with_suffix('.json')
+        if cache_path.exists() and metadata_path.exists() and fingerprint is not None:
+            metadata = json.loads(metadata_path.read_text())
+            if metadata.get('fingerprint') != fingerprint or metadata.get('model') != model_name:
+                return None
+            if hashlib.sha256(cache_path.read_bytes()).hexdigest() != metadata.get('sha256'):
+                raise ValueError('Embedding cache checksum mismatch')
             print(f"Loading cached embeddings from {cache_path}")
-            return np.load(cache_path)
+            return np.load(cache_path, allow_pickle=False)
         return None
     
-    def save(self, embeddings, model_name, dataset_name='rmhd'):
+    def save(self, embeddings, model_name, dataset_name='rmhd', fingerprint=None):
         """Save embeddings to cache."""
         cache_path = self.get_cache_path(model_name, dataset_name)
         np.save(cache_path, embeddings)
+        cache_path.with_suffix('.json').write_text(json.dumps({
+            'model': model_name, 'fingerprint': fingerprint,
+            'sha256': hashlib.sha256(cache_path.read_bytes()).hexdigest()
+        }))
         print(f"Saved embeddings to {cache_path}")
 
 
@@ -52,10 +68,12 @@ def encode_texts(texts, model_name='all-MiniLM-L6-v2', batch_size=32,
     Returns:
         np.ndarray: Embeddings (n_texts, embedding_dim)
     """
-    # Try loading from cache
+    texts = [str(text) if text is not None else '' for text in texts]
+    fingerprint = hashlib.sha256(json.dumps(texts, ensure_ascii=False).encode()).hexdigest()
+    # Try loading from cache; equal row counts alone do not establish identity.
     if use_cache:
         cache = EmbeddingCache()
-        cached_embeds = cache.load(model_name, cache_name)
+        cached_embeds = cache.load(model_name, cache_name, fingerprint=fingerprint)
         if cached_embeds is not None and len(cached_embeds) == len(texts):
             return cached_embeds
     
@@ -82,7 +100,7 @@ def encode_texts(texts, model_name='all-MiniLM-L6-v2', batch_size=32,
     # Save to cache
     if use_cache:
         cache = EmbeddingCache()
-        cache.save(embeddings, model_name, cache_name)
+        cache.save(embeddings, model_name, cache_name, fingerprint=fingerprint)
     
     return embeddings
 
@@ -101,14 +119,19 @@ def aggregate_user_embeddings(embeddings, posts_df, aggregation='mean'):
     """
     print(f"Aggregating embeddings to user level (method: {aggregation})...")
     
-    # Add embeddings to dataframe temporarily
-    df = posts_df[['author', 'label', 'split', 'posts_seen']].copy()
+    validate_author_metadata(posts_df)
+    embeddings = validate_finite_matrix(embeddings, len(posts_df))
+    # Keep metadata and embeddings in their original common row order.
+    df = posts_df[['author', 'label', 'split']].copy()
+    if aggregation == 'last':
+        if 'posts_seen' not in posts_df:
+            raise ValueError('Last-post aggregation requires observed ordering in posts_seen')
+        df['posts_seen'] = posts_df['posts_seen'].to_numpy()
     
-    # Sort by author and posts_seen
-    df = df.sort_values(['author', 'posts_seen']).reset_index(drop=True)
+    df = df.reset_index(drop=True)
     
     # Group by author
-    unique_authors = df['author'].unique()
+    unique_authors = sorted(df['author'].unique())
     user_embeddings = []
     user_labels = []
     user_splits = []
@@ -123,7 +146,9 @@ def aggregate_user_embeddings(embeddings, posts_df, aggregation='mean'):
         elif aggregation == 'max':
             user_embed = user_posts_embeds.max(axis=0)
         elif aggregation == 'last':
-            user_embed = user_posts_embeds[-1]
+            positions = np.flatnonzero(mask.to_numpy())
+            last_position = positions[np.argmax(df.loc[mask, 'posts_seen'].to_numpy())]
+            user_embed = embeddings[last_position]
         else:
             raise ValueError(f"Unknown aggregation method: {aggregation}")
         
@@ -142,7 +167,7 @@ def aggregate_user_embeddings(embeddings, posts_df, aggregation='mean'):
     return user_embeddings, user_labels, user_splits
 
 
-def reduce_dimensions(embeddings, n_components=300, method='pca'):
+def reduce_dimensions(embeddings, n_components=300, method='pca', training_data=None):
     """
     Reduce embedding dimensions using PCA.
     
@@ -164,7 +189,9 @@ def reduce_dimensions(embeddings, n_components=300, method='pca'):
     
     if method == 'pca':
         reducer = PCA(n_components=n_components, random_state=42)
-        reduced = reducer.fit_transform(embeddings)
+        fit_data = embeddings if training_data is None else training_data
+        reducer.fit(fit_data)
+        reduced = reducer.transform(embeddings)
         variance_explained = reducer.explained_variance_ratio_.sum()
         print(f"Variance explained: {variance_explained:.3f}")
         return reduced, reducer

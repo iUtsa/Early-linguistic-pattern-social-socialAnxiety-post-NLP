@@ -1,0 +1,203 @@
+{
+  "retrieved_date": "2026-10-07",
+  "scope": "Targeted audit, not an exhaustive systematic review",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2601.11758v1",
+      "local_file": "research/sources/preprint_2601.11758.txt",
+      "sha256": "ef1aff1448e2589e70ea64bf63bd58d3762cd932b1d3f5ce39414a54bb17eaa4",
+      "reading_scope": "Manuscript full text read"
+    },
+    {
+      "url": "https://huggingface.co/spaces/nimbus1011/anxiety-detectionNLP/blob/main/app.py",
+      "local_file": "research/sources/huggingface_app.py",
+      "sha256": "f8b623912590a10be600e24522a49981d18edc5872bdcb47f154fa37ef3f9242",
+      "reading_scope": "Demo source read; no remote changes"
+    },
+    {
+      "url": "https://aclanthology.org/2021.clpsych-1.2.pdf",
+      "local_file": "research/sources/2021.clpsych-1.2.pdf",
+      "sha256": "2ddb307f6f5c8894e910203e335870a409a4b23ff915e318277cc14e29c91187",
+      "reading_scope": "Full text examined for data limitations"
+    },
+    {
+      "url": "https://aclanthology.org/2022.clpsych-1.6.pdf",
+      "local_file": "research/sources/2022.clpsych-1.6.pdf",
+      "sha256": "91af87998cedd1e672347efb005f9bf098ee992bc63747a69aea82b8726d189a",
+      "reading_scope": "Full text examined for longitudinal validity and controls"
+    },
+    {
+      "url": "https://aclanthology.org/2024.clpsych-1.12.pdf",
+      "local_file": "research/sources/2024.clpsych-1.12.pdf",
+      "sha256": "d00059f4540a9246078582629f5bd48c04afa4c63a5c8ba2638a1fbf0d7bd385",
+      "reading_scope": "Full text examined for anxiety/panic and source effects"
+    },
+    {
+      "url": "https://aclanthology.org/2025.clpsych-1.6.pdf",
+      "local_file": "research/sources/2025.clpsych-1.6.pdf",
+      "sha256": "3cd6b0bb51df55ed88e4a87ccb4742624b831b99b7c6a2cc9dbff7fed0b2aea0",
+      "reading_scope": "Full text examined for measurement validity"
+    },
+    {
+      "url": "https://aclanthology.org/2026.clpsych-1.14.pdf",
+      "local_file": "research/sources/2026.clpsych-1.14.pdf",
+      "sha256": "c49ccfca7e354145d541691200c1a58cf8a75484660a4ba92a469a344a18492b",
+      "reading_scope": "Full text and abstract examined for representation/aggregation comparison"
+    },
+    {
+      "url": "https://aclanthology.org/C18-1126.pdf",
+      "local_file": "research/sources/smhd_pdf.pdf",
+      "sha256": "7bf5d42bbaca42237bc1f7849b3888b7a18010c94692c818c1bf465710b841e6",
+      "reading_scope": "Full text examined for diagnoses, matched controls, permission requirements"
+    },
+    {
+      "url": "https://aclanthology.org/D17-1322.pdf",
+      "local_file": "research/sources/yates_pdf.pdf",
+      "sha256": "ef42e347f135357e938a6b84429ba2f6500434e75a09efacc1922ae027427ec5",
+      "reading_scope": "Methods and references read for person-level split and comparisons"
+    },
+    {
+      "url": "https://dcapswoz.ict.usc.edu/",
+      "local_file": "research/sources/daic.html",
+      "sha256": "85296464c6b06a5cb0d298c47cad1869082a76bc782e6ad9cbc947d0d177828a",
+      "reading_scope": "Official data scope and access conditions read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3390/app14041547",
+      "local_file": "research/sources/dataset_source_metadata.json",
+      "sha256": "9484585d3b6e00e22568221361c62701162a7a7f23f3e92481300cc6f01fae22",
+      "reading_scope": "Source-study metadata/abstract only; exact derived corpus is unresolved"
+    },
+    {
+      "url": "https://api.crossref.org/works?query.title=Detection+of+Depression-Related+Posts+in+Reddit+Social+Media+Forum&rows=3",
+      "local_file": "research/sources/tadesse_crossref.json",
+      "sha256": "f5a6831e0c63b0975fc97cf4483db34303fd2c1fd96f08c9ad95ada3de39a678",
+      "reading_scope": "Bibliographic metadata, not the full study"
+    },
+    {
+      "url": "https://link.springer.com/journal/42001/submission-guidelines",
+      "local_file": "research/sources/jcss_guidelines.html",
+      "sha256": "c3a84971672481c8984f9765c6dc17d4843f656d756bc2f2a24388b969a09576",
+      "reading_scope": "Publisher submission, data and AI-assistance requirements read"
+    },
+    {
+      "url": "https://link.springer.com/journal/42001/aims-and-scope",
+      "local_file": "research/sources/jcss_scope.html",
+      "sha256": "7d0aff06bfd5f1d1f897008c6a4d5c49a490bb5520aca3ef1feb8fe26c4f5494",
+      "reading_scope": "Official journal scope read"
+    },
+    {
+      "url": "https://www.inderscience.com/jhome.php?jcode=ijict",
+      "local_file": "research/sources/ijict_publisher.html",
+      "sha256": "1c701a0e901f4dbd1b491a1c052c1c6d6ee2afa5a33a562fe87f96b7d49da053",
+      "reading_scope": "Official scope and OA-only/APC notice read; fee amount not verified"
+    },
+    {
+      "url": "https://www.inderscience.com/jhome.php?jcode=ijdmmm",
+      "local_file": "research/sources/ijdmmm_publisher.html",
+      "sha256": "61aaa63d7fd668736a9bbf41776bbae806f8cfa265165d7fee54bebc4c337ecc",
+      "reading_scope": "Official scope read"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101078232&tip=sid&clean=0",
+      "local_file": "research/sources/jcss_sjr.html",
+      "sha256": "2df59c46c611a5f9041f7c707c136c0f68370405d0e6714fbe7e17814f1789ff",
+      "reading_scope": "SJR 2025 category/year/quartile table read; not a JCR lookup"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=11300153726&tip=sid&clean=0",
+      "local_file": "research/sources/ida_sjr.html",
+      "sha256": "06765e9291d17e51de5c05b070ea5b1a475db90bc0b87943a87b9f4a49203137",
+      "reading_scope": "SJR 2025 category/year/quartile table read; not a JCR lookup"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=24310&tip=sid&clean=0",
+      "local_file": "research/sources/ijprai_sjr.html",
+      "sha256": "a2940afdb291733da5f7384e216cd6f0a9f476bb6147f0334104e1605cb707cc",
+      "reading_scope": "SJR 2025 category/year/quartile table read; not a JCR lookup"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=17700156776&tip=sid&clean=0",
+      "local_file": "research/sources/ijict_sjr.html",
+      "sha256": "36e9316a80a004fd7c40f274d2835ff31d35cf70e785e1ec6a4e627d0f16916a",
+      "reading_scope": "SJR 2025 category/year/quartile table read; not a JCR lookup"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21100199341&tip=sid&clean=0",
+      "local_file": "research/sources/ijdmmm_sjr.html",
+      "sha256": "7b1348ac6d8bc8c611df657d0e3087fca2ec901b63468686dd4ff0a314cad70f",
+      "reading_scope": "SJR 2025 category/year/quartile table read; not a JCR lookup"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21100830173&tip=sid&clean=0",
+      "local_file": "research/sources/peerjcs_sjr.html",
+      "sha256": "5a17c4bf0eeaa8f63df29c3b59a51ef5d27c1018e11c4b085a2951a792125c1a",
+      "reading_scope": "SJR 2025 category/year/quartile table read; not a JCR lookup"
+    },
+    {
+      "url": "https://www.bmj.com/content/385/bmj-2023-078378",
+      "local_file": "research/sources/tripod.html",
+      "sha256": "2a05c707c49e1caa97d86b754198cd439a0114476882970d6ec7dc53ed4b307e",
+      "reading_scope": "Reporting-guideline methods and definitions read"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jad.2008.06.026",
+      "local_file": "research/sources/phq8_metadata.json",
+      "sha256": "0b58afdcadfc2816e2942b01f9aafdfd12e55c492b1a5dae531a178ef9e6131f",
+      "reading_scope": "Bibliographic metadata only"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1001/archinte.166.10.1092",
+      "local_file": "research/sources/gad7_metadata.json",
+      "sha256": "a3e0ea08413ee91696033933b0aa9ed3cafad761579b10f5e9d6389f9777455d",
+      "reading_scope": "Bibliographic metadata only"
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/applsci/applsci-14-01547/article_deploy/applsci-14-01547.pdf",
+      "local_file": "research/sources/source_dataset_rani2024.pdf",
+      "sha256": "6ed5f1ad02f7a9ff9a9d3ad6be3c7074f2e5eca348e2902cb1c95f4f0fb6e1bb",
+      "reading_scope": "Methods, dataset organization/annotation, ethics and availability sections read; source schema/date/approval verified as paper reports, exact CSV version/use terms unresolved"
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/f995248f9f3ed770655c1d2f73d38bb6555ea2fcbb1055f50f5354e3c6c4100d",
+      "local_file": "research/sources/kaggle_landing.html",
+      "sha256": "0ccb40c5aa34684b9029162ff2ad43ed3dc9f0a94b15cfb75487139a7a855567",
+      "reading_scope": "Dataset JSON-LD read: owner, version 1, stated CC0 license and source citation"
+    },
+    {
+      "url": "https://www.kaggle.com/api/v1/datasets/view/entenam/reddit-mental-health-dataset",
+      "local_file": "research/sources/kaggle_metadata_0.json",
+      "sha256": "52977d4a8d6d0d56a70bac2f64ff9391e5b5e2969647b0856715e79704af64a9",
+      "reading_scope": "Public dataset metadata verified, not downloaded content"
+    },
+    {
+      "url": "https://www.kaggle.com/api/v1/datasets/list/entenam/reddit-mental-health-dataset?datasetVersionNumber=1",
+      "local_file": "research/sources/kaggle_files_v1.json",
+      "sha256": "f90271ec07452f09d9dd28a9047d1ef18f9b52b5abf4e1317cb5d65b4cea2080",
+      "reading_scope": "All 225 files read through paginated API; matched uploaded names and byte lengths"
+    },
+    {
+      "url": "https://aclanthology.org/2020.findings-emnlp.337.pdf",
+      "local_file": "research/sources/2020.findings-emnlp.337.pdf",
+      "sha256": "a082bd618cf4baf8b7da7933044aaa9da7c797ca0adbec365839ef428e177a12",
+      "reading_scope": "Methods, results, limitations and feature/hyperparameter appendices read; directly constrains novelty"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1145/3290605.3300364",
+      "local_file": "research/sources/ernala2019_crossref.json",
+      "sha256": "71ebf495d954c2844374fe2bac4aab4c3d84df47372835f6dc63eb966bba41de",
+      "reading_scope": "Bibliographic metadata only; measurement claims checked against Shani and Stade 2025, not independently against this full text"
+    }
+  ],
+  "limitations": [
+    "Several publisher pages returned HTTP 403; source statuses are retained locally.",
+    "SMHD access was not obtained. No private datasets downloaded.",
+    "Hugging Face model identity checked using public LFS SHA-256 and matching local artifact; model CDN download initially failed."
+  ],
+  "dataset_attribution_followup": {
+    "source_study_identified_by": "User",
+    "url": "https://www.mdpi.com/2076-3417/14/4/1547",
+    "retrieval_scope": "Publisher HTML/XML returned 403; publisher asset PDF obtained after runtime reconnect; methods/organization/ethics/availability read",
+    "exact_uploaded_dataset_version_verified": false
+  }
+}
