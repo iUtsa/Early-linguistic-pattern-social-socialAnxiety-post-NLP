@@ -36,6 +36,8 @@ Scores from different papers are not comparable experiments: datasets, outcomes,
 
 The closest conceptual challenges are **Pirina & Çöltekin, Harrigian and colleagues, and Hassan**. Ignoring them could make the contribution look larger than it is. They are now explicitly reflected in the manuscript's positioning and citations.
 
+The subsequent [Elsevier journal search](ELSEVIER_JOURNAL_FIT.md) also identifies [Farruque et al., 2024](https://doi.org/10.1016/j.nlp.2023.100052). Its matching [author preprint v3](https://arxiv.org/abs/2211.07717v3) was read for the abstract, data/linguistic analysis, limitations and conclusion. It compares semantic and symptom/activity representations on self-disclosed-depression Twitter datasets and reports dataset-dependent feature usefulness. This further bounds the broad representation-gap motivation; it is not the same RMHD anxiety-community design. The final publisher text was inaccessible, and this author version is not claimed to be byte-identical to it. The manuscript now cites this precedent as well.
+
 ## Same dataset name and unresolved recent candidates
 
 “Reddit Mental Health Dataset,” “RMHD” or “Kaggle” alone does not identify the same collection. The present inputs are checksum-verified **Rani, Ahmed & Subramani's version-1 release**, collected January 2019–August 2022, dataset ID 3687885 and owner `entenam`. Its five authored communities differ from several other widely reused collections.

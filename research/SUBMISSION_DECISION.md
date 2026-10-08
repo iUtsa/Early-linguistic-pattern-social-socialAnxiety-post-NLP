@@ -4,6 +4,8 @@ Assessment date: 7 October 2026. This document separates problems in the origina
 
 Follow-up: the expanded [novelty check](NOVELTY_CHECK.md) searches complete ACL metadata, 16 Crossref query sets and arXiv metadata, and reads additional close papers. It identifies substantial conceptual overlap, including common-target source comparisons in 2018 and lexical/style label auditing in 2026. No exact duplicate of the complete RMHD design was identified in the inspected records/texts; this is not proof of global uniqueness. The defensible route is an applied replication/extension. No additional experiment is identified as necessary to support its explicitly bounded claims before an appropriately scoped submission.
 
+Publisher-specific follow-up: the [Elsevier fit assessment](ELSEVIER_JOURNAL_FIT.md) identifies replication-friendly reproduced scopes, including Natural Language Processing Journal, as legitimate thematic options. Its SJR 2025 Q1 ranking makes it an ambitious scope-based attempt, not an upgrade of the paper's novelty or an acceptance prediction. Social Sciences & Humanities Open and Informatics in Medicine Unlocked have conditional merits and distinct disciplinary risks. The general conservative Q4 route below remains reasonable; scope-specific options and journal quartiles are separate judgments. Direct publisher guides, Journal Finder and current APCs remain blocked/unverified.
+
 ## Decision and study route
 
 The original **early social-anxiety detection** manuscript is not supported for submission. Community labels, synthetic control histories and a depression-scale clinical comparison do not measure that outcome. Changing a journal tier cannot repair those claims.

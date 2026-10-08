@@ -301,6 +301,90 @@
       "local_file": "research/sources/novelty_check/candidate_journal_metadata.json",
       "sha256": "4b0edf1b890e6e2ced509a7d13bca0a99662cbc603d4fe61adf19e9d7ac2e117",
       "reading_scope": "Bibliographic metadata, version relations and references only; published full text blocked and abstract absent"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101162637&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_mlwa.html",
+      "sha256": "60c3a6bd298db1f9ca6260c72cb743bb6162287a3a2c0d3b8c9ec359f614f1d4",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101341269&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_nlp.html",
+      "sha256": "05a5111e8e103851c5bdc6630110b7b8795c8de6b10851d99dabe0be6dcff5c6",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101078838&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_chbr.html",
+      "sha256": "ccc3d3b9f652ba71aa29cc9bd0446477cd4d2acc00262e7170cea0ce5f1bb84b",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101051831&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_isa.html",
+      "sha256": "048e1e515d4eacc7a2ea5c959239da3fbf37c488fcdd15588ca2ab03b7d4a3ef",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21100780477&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_imu.html",
+      "sha256": "97af7bed47ed301f73e71c51b83a03a01ee55763a526f245b2b9902dfb0d47e7",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101136665&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_health.html",
+      "sha256": "14de4eb368b29d6bb5cef2b696071ee0cbfc31cbb0aa252fc0b70ba14f3dfc38",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101098756&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_decision.html",
+      "sha256": "57f166fcb91b1cb8fbe488bc678a44b02c5e1f86e227589753c5db1b3927df44",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101142603&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_social.html",
+      "sha256": "e45475203544280eeee6b820b0dfd493d6a295bad0cf8be65806a6a75632e9e3",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101076317&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_ibm.html",
+      "sha256": "b25bd90bbe620459df7fb1bef42030c53d62a158323ff795f22f70a386bfe8d0",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21100411756&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_heliyon.html",
+      "sha256": "a75f4a554a343f933d74fc4935b563d01052e743b690f568a1492974628644ec",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101080486&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_array.html",
+      "sha256": "573c21f76fc259a6d265869e2da21f62ae7bce9acfd207c076c9efed31245de0",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101263036&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_franklin.html",
+      "sha256": "972ebdff480a8cf0c8ec68dc48548186bc8179b696fa9a75896fb2c56f2586c6",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101329156&tip=sid&clean=0",
+      "local_file": "research/sources/elsevier_fit/sjr_infohealth.html",
+      "sha256": "4aad5c4931b2497a0be8207b1230624b83df2734efbf29d29169d8d0a9b82e48",
+      "reading_scope": "Reproduced scope and explicit SJR category/year/quartile table read; not live publisher requirements, pricing or official JCR/index verification"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2211.07717v3",
+      "local_file": "research/sources/elsevier_fit/farruque_temporal_preprint.pdf",
+      "sha256": "99ffa241488031917873e74d0ebe0ce281f0f73eac470416be306dbffe9d21ff",
+      "reading_scope": "Abstract, dataset construction, linguistic analysis, limitations and conclusion examined; final publisher version not accessible and not claimed byte-identical"
     }
   ],
   "limitations": [
@@ -320,5 +404,13 @@
     "report": "research/NOVELTY_CHECK.md",
     "search_manifest": "research/novelty_search_manifest.json",
     "scope": "Expanded metadata search and targeted close-paper reading; conceptual overlap established, no exact duplicate identified among inspected records/texts, worldwide uniqueness not proven"
+  },
+  "elsevier_journal_followup": {
+    "assessment_date": "2026-10-07",
+    "timezone": "America/New_York",
+    "report": "research/ELSEVIER_JOURNAL_FIT.md",
+    "search_manifest": "research/elsevier_journal_search_manifest.json",
+    "access_status": "Direct ScienceDirect/Journal Finder/publisher guides blocked; title metadata, reproduced scopes and SJR tables inspected; author preprint examined",
+    "current_apcs_and_publisher_policies_verified": false
   }
 }

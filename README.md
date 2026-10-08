@@ -10,6 +10,8 @@ The complete version-1 archive has now been verified. [Frozen July/August evalua
 
 The expanded [novelty check](research/NOVELTY_CHECK.md) finds substantial prior work and positions the replacement as an applied replication/extension. No exact duplicate of its complete design was identified in inspected sources. The supported narrow claims do not require another experiment before an appropriately scoped submission; incremental contribution remains a rejection risk.
 
+The [Elsevier journal-fit assessment](research/ELSEVIER_JOURNAL_FIT.md) ranks candidates using the revised abstract, journal-specific publication records and reproduced scopes. Natural Language Processing Journal is the strongest thematic match; it is an ambitious Q1 option, while other candidates have specific scope risks. Direct publisher guides and current APCs remain unverified because of network restrictions. A [short factual abstract and pitch](research/ELSEVIER_ABSTRACT_AND_PITCH.md) is included for author review.
+
 The replacement manuscript is available as [Markdown](research/REVISED_PILOT_MANUSCRIPT.md), [PDF](research/REVISED_PILOT_MANUSCRIPT.pdf) and editable [DOCX](research/REVISED_PILOT_MANUSCRIPT.docx). These are human-review drafts, with actual ethics details and author declarations still to be completed. Rebuild the exports with `python scripts/render_research_manuscript.py` when Pandoc and pdflatex are available.
 
 ## Development setup

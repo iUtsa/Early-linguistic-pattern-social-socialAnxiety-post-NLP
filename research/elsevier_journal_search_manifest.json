@@ -1,0 +1,1274 @@
+{
+  "assessment_date": "2026-10-07",
+  "user_facing_timezone": "America/New_York",
+  "manifest_generated_utc": "2026-10-08T00:05:58.438490+00:00",
+  "scope": "Abstract-led qualitative fit assessment of selected Elsevier journals; not a complete catalogue search, a live Journal Finder run, or an acceptance forecast",
+  "report": "research/ELSEVIER_JOURNAL_FIT.md",
+  "abstract_and_pitch": "research/ELSEVIER_ABSTRACT_AND_PITCH.md",
+  "input": {
+    "manuscript_file": "research/REVISED_PILOT_MANUSCRIPT.md",
+    "manuscript_sha256": "e1613a0e24520582c406edeff9212fdf1a7bf3341e3abfe0c02a6b89424c3ec8",
+    "abstract_sha256": "1f948430f34e6ed54d2cf3556949d0e9114d15283b71f352a51883b4da754853",
+    "abstract_whitespace_word_count": 231,
+    "short_abstract_sha256": "fc8fa77bfde3b45b8ab29bf097254783d274a8d768dffe718a0148907dab29c8",
+    "short_abstract_whitespace_word_count": 205,
+    "experimental_design_or_outcomes_changed": false
+  },
+  "catalogue_lookups": {
+    "query_count": 18,
+    "method": "Crossref journal-title lookup with selected exact publisher/ISSN checks; initial punctuation-related empty results do not establish journal absence",
+    "sources": [
+      {
+        "query": "Machine Learning with Applications",
+        "url": "https://api.crossref.org/journals?query=Machine+Learning+with+Applications&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_00.json",
+        "bytes": 3723,
+        "sha256": "f2a9212acf5e1649251c8c47b6579c7d1df42748bcc1dfdca1f984b81997e984",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Natural Language Processing Journal",
+        "url": "https://api.crossref.org/journals?query=Natural+Language+Processing+Journal&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_01.json",
+        "bytes": 10529,
+        "sha256": "fa602c65c56e2e8f6f92c1736f4aa43d9afa2ad25963139e9895f99de3c40d4e",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Computers in Human Behavior Reports",
+        "url": "https://api.crossref.org/journals?query=Computers+in+Human+Behavior+Reports&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_02.json",
+        "bytes": 3827,
+        "sha256": "c72b96845275386dcbb8b71fc32bbbbf39937dd2fdd14f03553139b53dc5f79d",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Intelligent Systems with Applications",
+        "url": "https://api.crossref.org/journals?query=Intelligent+Systems+with+Applications&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_03.json",
+        "bytes": 7395,
+        "sha256": "f4e6193ad305514665b6777dc237cbad57c9b246f19274fbc33335e3ac3a1dbc",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Informatics in Medicine Unlocked",
+        "url": "https://api.crossref.org/journals?query=Informatics+in+Medicine+Unlocked&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_04.json",
+        "bytes": 3819,
+        "sha256": "68c887dca706b4763152e870c4323c9f1c446a9eada23a04208fc1f45b19607c",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Healthcare Analytics",
+        "url": "https://api.crossref.org/journals?query=Healthcare+Analytics&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_05.json",
+        "bytes": 10416,
+        "sha256": "66d42ebb1900e25171f50e603c345654cbe1b46aedab3f6b97639839eece130f",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Decision Analytics Journal",
+        "url": "https://api.crossref.org/journals?query=Decision+Analytics+Journal&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_06.json",
+        "bytes": 10690,
+        "sha256": "108f5424cca0727a7aa105048f1ab2e5cbc5abb7ef27eeeadb88626a0cb7c390",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Social Sciences & Humanities Open",
+        "url": "https://api.crossref.org/journals?query=Social+Sciences+%26+Humanities+Open&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_07.json",
+        "bytes": 208,
+        "sha256": "0317c2f18f743eb2385c0f10661114f440575bdbe0fcfd618956a6346813f69c",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Intelligence-Based Medicine",
+        "url": "https://api.crossref.org/journals?query=Intelligence-Based+Medicine&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_08.json",
+        "bytes": 3710,
+        "sha256": "b5b70bfe16ac1768d0dc67293b83cb00975776fb0b549845d308850a522dec2b",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Heliyon",
+        "url": "https://api.crossref.org/journals?query=Heliyon&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_09.json",
+        "bytes": 7061,
+        "sha256": "f0acaf658296f10d038d79ae0b9ebac930eeb4dab2d18056e917c24b514064e8",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Array",
+        "url": "https://api.crossref.org/journals?query=Array&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_10.json",
+        "bytes": 10104,
+        "sha256": "cda95d92f44153bb8400796f01fd645d66c3a1410a08cd0e35b4620c9c70a30b",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Expert Systems with Applications",
+        "url": "https://api.crossref.org/journals?query=Expert+Systems+with+Applications&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_11.json",
+        "bytes": 7707,
+        "sha256": "2bb450478ba97dca2760ec03557df14c568adc10d5570d34958b94b2cf1100b2",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Information Processing & Management",
+        "url": "https://api.crossref.org/journals?query=Information+Processing+%26+Management&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_12.json",
+        "bytes": 210,
+        "sha256": "cdadbcc9e011e24c36ba2cd614d783d2abb7e88f5afb9ad36758beb69dd0bc5b",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Computers in Human Behavior",
+        "url": "https://api.crossref.org/journals?query=Computers+in+Human+Behavior&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_13.json",
+        "bytes": 11300,
+        "sha256": "1ea8f76a0a012f9797f405eb1737a3591f3b63af336f66c515eb132cda1e786b",
+        "cache_redistributed": false
+      },
+      {
+        "query": "MethodsX",
+        "url": "https://api.crossref.org/journals?query=MethodsX&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_14.json",
+        "bytes": 3886,
+        "sha256": "1a3e388d21d17cb1e78e5335a3c2b20de6efe6036d07ac300f640b00c9e58aee",
+        "cache_redistributed": false
+      },
+      {
+        "query": "Data in Brief",
+        "url": "https://api.crossref.org/journals?query=Data+in+Brief&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/journal_metadata_15.json",
+        "bytes": 3907,
+        "sha256": "8a3bb94174bc6a14e6040a60ea9b233ce67ccff900e9a19ac23c0fc528e0b71b",
+        "cache_redistributed": false
+      },
+      {
+        "query": null,
+        "url": "https://api.crossref.org/journals?query=Franklin+Open&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/franklin_crossref.json",
+        "bytes": 3549,
+        "sha256": "f572fb48c29264cd511799b99a520825ee368244b10c6a02f8607a70ed880faf",
+        "cache_redistributed": false
+      },
+      {
+        "query": null,
+        "url": "https://api.crossref.org/journals?query=Informatics+and+Health&rows=3",
+        "http_status": 200,
+        "saved": true,
+        "local_cache": "research/sources/elsevier_fit/infohealth_crossref.json",
+        "bytes": 10393,
+        "sha256": "c017a4cf1402316c19cb390215c644ff233acd7b178286acf16e71cf974ee789",
+        "cache_redistributed": false
+      }
+    ]
+  },
+  "journal_specific_article_search": {
+    "query_count": 30,
+    "core_journals": 13,
+    "returned_records": 485,
+    "unique_dois": 467,
+    "abstracts_available_in_unique_crossref_records": 0,
+    "publication_date_filter": "2022-01-01 through 2026-10-07",
+    "method": "Top relevance-ranked bibliographic records (20 per broad query, 15 per focused Reddit query); titles/bibliographic metadata screened, not all articles read in full",
+    "queries": [
+      {
+        "journal": "Machine Learning with Applications",
+        "key": null,
+        "issn": "2666-8270",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2666-8270/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 77,
+        "local_cache": "research/sources/elsevier_fit/works_mlwa_0.json",
+        "bytes": 333337,
+        "sha256": "4d802eb401946c465a324613832f9e4e61bb34f1f741ae363e3e852834141b8f",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Machine Learning with Applications",
+        "key": null,
+        "issn": "2666-8270",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2666-8270/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 696,
+        "local_cache": "research/sources/elsevier_fit/works_mlwa_1.json",
+        "bytes": 442055,
+        "sha256": "168bc227038a765a6b0e9f8e3ae08211defe624986236a6656ac6048960a3a65",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Natural Language Processing Journal",
+        "key": null,
+        "issn": "2949-7191",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2949-7191/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 44,
+        "local_cache": "research/sources/elsevier_fit/works_nlp_0.json",
+        "bytes": 386307,
+        "sha256": "5c0292a8ba9b53164bad082c0a582eb2f0f33340492dc4e245751406ebe409b0",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Natural Language Processing Journal",
+        "key": null,
+        "issn": "2949-7191",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2949-7191/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 48,
+        "local_cache": "research/sources/elsevier_fit/works_nlp_1.json",
+        "bytes": 454835,
+        "sha256": "11711d0e04e6018d539429733bdefc3b7c253c3c526dd41271d8aefd33cea541",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Computers in Human Behavior Reports",
+        "key": null,
+        "issn": "2451-9588",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2451-9588/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 100,
+        "local_cache": "research/sources/elsevier_fit/works_chbr_0.json",
+        "bytes": 534385,
+        "sha256": "69e3735873794c82b432a5e053c1d2d24a4b80d1254e507d404a65c3f1fac412",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Computers in Human Behavior Reports",
+        "key": null,
+        "issn": "2451-9588",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2451-9588/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 211,
+        "local_cache": "research/sources/elsevier_fit/works_chbr_1.json",
+        "bytes": 542432,
+        "sha256": "de95c9fee65393314c1788c9009174974c27cc465cf1ef48123a0918a7867973",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Intelligent Systems with Applications",
+        "key": null,
+        "issn": "2667-3053",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2667-3053/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 54,
+        "local_cache": "research/sources/elsevier_fit/works_isa_0.json",
+        "bytes": 456621,
+        "sha256": "a553f89ad1c8bdcb0604462be10ff40caf5ed09b21ab746f02984e37e6699232",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Intelligent Systems with Applications",
+        "key": null,
+        "issn": "2667-3053",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2667-3053/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 204,
+        "local_cache": "research/sources/elsevier_fit/works_isa_1.json",
+        "bytes": 407338,
+        "sha256": "fe9d41abfee4beb772a986c92445cf486713fdffe8c6ffa7f6cc46f3d6129712",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Informatics in Medicine Unlocked",
+        "key": null,
+        "issn": "2352-9148",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2352-9148/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 146,
+        "local_cache": "research/sources/elsevier_fit/works_imu_0.json",
+        "bytes": 394976,
+        "sha256": "2f657ba79fdd09049ec4433b183ff7fc349e58e844fccaec23139dea9a312751",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Informatics in Medicine Unlocked",
+        "key": null,
+        "issn": "2352-9148",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2352-9148/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 205,
+        "local_cache": "research/sources/elsevier_fit/works_imu_1.json",
+        "bytes": 413109,
+        "sha256": "a51ab453802735cb9cfcad4d5ddb699cec2260d74ce3137a063e28654c504f8f",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Healthcare Analytics",
+        "key": null,
+        "issn": "2772-4425",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2772-4425/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 71,
+        "local_cache": "research/sources/elsevier_fit/works_health_0.json",
+        "bytes": 421815,
+        "sha256": "23a52db57da123deb4e1450488617cdd1caf87360e4af1a3b3465103a9916522",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Healthcare Analytics",
+        "key": null,
+        "issn": "2772-4425",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2772-4425/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 124,
+        "local_cache": "research/sources/elsevier_fit/works_health_1.json",
+        "bytes": 411604,
+        "sha256": "676463af958252ef2ecd9c03870046a766fc98616c37459076e6414b91de6669",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Decision Analytics Journal",
+        "key": null,
+        "issn": "2772-6622",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2772-6622/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 34,
+        "local_cache": "research/sources/elsevier_fit/works_decision_0.json",
+        "bytes": 413867,
+        "sha256": "635111896e983193b842ee9640f688cd2ae5404a0ce045517c0dea1b36549d94",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Decision Analytics Journal",
+        "key": null,
+        "issn": "2772-6622",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2772-6622/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 130,
+        "local_cache": "research/sources/elsevier_fit/works_decision_1.json",
+        "bytes": 551424,
+        "sha256": "a35b52fbd9e0796e02461e4433144bbe1a21aaded3eecdb8be6e785992cd3143",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Social Sciences and Humanities Open",
+        "key": null,
+        "issn": "2590-2911",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2590-2911/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 168,
+        "local_cache": "research/sources/elsevier_fit/works_social_0.json",
+        "bytes": 325703,
+        "sha256": "96d64ed6e6dd671ca8ab3af75b2f8e342102f669eed46669bd6449052bfff7d9",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Social Sciences and Humanities Open",
+        "key": null,
+        "issn": "2590-2911",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2590-2911/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 2807,
+        "local_cache": "research/sources/elsevier_fit/works_social_1.json",
+        "bytes": 386380,
+        "sha256": "72b23e060622c354f769c2f2180034862b250f3ada94c7814fc65ed9d16e0aba",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Intelligence-Based Medicine",
+        "key": null,
+        "issn": "2666-5212",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2666-5212/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 85,
+        "local_cache": "research/sources/elsevier_fit/works_ibm_0.json",
+        "bytes": 299707,
+        "sha256": "43077270264a91cdd6a9f196dd1e4a63f370efac602c5db34d99ea290b770374",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Intelligence-Based Medicine",
+        "key": null,
+        "issn": "2666-5212",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2666-5212/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 162,
+        "local_cache": "research/sources/elsevier_fit/works_ibm_1.json",
+        "bytes": 381222,
+        "sha256": "69a6ec3161a460fd261cc640c088d64c341bf4b973afa6b73651864f695c6cf8",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Array",
+        "key": null,
+        "issn": "2590-0056",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2590-0056/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 99,
+        "local_cache": "research/sources/elsevier_fit/works_array_0.json",
+        "bytes": 302455,
+        "sha256": "4c0feac8a61bc44936466bcc4b844b7cd440c3f407f065239ab01c27238cd2a9",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Array",
+        "key": null,
+        "issn": "2590-0056",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2590-0056/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 251,
+        "local_cache": "research/sources/elsevier_fit/works_array_1.json",
+        "bytes": 323777,
+        "sha256": "8615fcf962eb8e412fb2993f623e70c4507094acfa35636cc0afc384955a61e2",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Heliyon",
+        "key": null,
+        "issn": "2405-8440",
+        "query": "Reddit anxiety depression mental health text classification",
+        "url": "https://api.crossref.org/journals/2405-8440/works?query.bibliographic=Reddit+anxiety+depression+mental+health+text+classification&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 1404,
+        "local_cache": "research/sources/elsevier_fit/works_heliyon_0.json",
+        "bytes": 426046,
+        "sha256": "995d305a2f3075d2043a54169b7f6d2ec3bba980a7fca53fe5cd077dc4fd068b",
+        "cache_redistributed": false
+      },
+      {
+        "journal": "Heliyon",
+        "key": null,
+        "issn": "2405-8440",
+        "query": "social media linguistic machine learning robustness generalization",
+        "url": "https://api.crossref.org/journals/2405-8440/works?query.bibliographic=social+media+linguistic+machine+learning+robustness+generalization&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 1785,
+        "local_cache": "research/sources/elsevier_fit/works_heliyon_1.json",
+        "bytes": 442127,
+        "sha256": "335a79dcba32eceffc07aaa1a6ea6c99dc916768b6a1d78486110093990beb23",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "nlp",
+        "issn": "2949-7191",
+        "query": "Reddit",
+        "url": "https://api.crossref.org/journals/2949-7191/works?query.bibliographic=Reddit&rows=15&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 1,
+        "total_results": 1,
+        "local_cache": "research/sources/elsevier_fit/works_nlp_reddit.json",
+        "bytes": 30763,
+        "sha256": "200962f2691814c22d7c0b97f7713847a61c5bb934632cf7234e4687ae1849eb",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "chbr",
+        "issn": "2451-9588",
+        "query": "Reddit",
+        "url": "https://api.crossref.org/journals/2451-9588/works?query.bibliographic=Reddit&rows=15&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 3,
+        "total_results": 3,
+        "local_cache": "research/sources/elsevier_fit/works_chbr_reddit.json",
+        "bytes": 65016,
+        "sha256": "370014dc1903af7e40909ed328af65b632076e90fff3cae4dce0a1912163e38c",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "imu",
+        "issn": "2352-9148",
+        "query": "Reddit",
+        "url": "https://api.crossref.org/journals/2352-9148/works?query.bibliographic=Reddit&rows=15&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 0,
+        "total_results": 0,
+        "local_cache": "research/sources/elsevier_fit/works_imu_reddit.json",
+        "bytes": 187,
+        "sha256": "09106de974da9d8943aaf91fd20a6ced65cadfbaa82304d917ec5efc089984ec",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "social",
+        "issn": "2590-2911",
+        "query": "Reddit",
+        "url": "https://api.crossref.org/journals/2590-2911/works?query.bibliographic=Reddit&rows=15&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 1,
+        "total_results": 1,
+        "local_cache": "research/sources/elsevier_fit/works_social_reddit.json",
+        "bytes": 11521,
+        "sha256": "7165a58ff83bd05574b43ea49f1a356d45bfe36b66419d0182729dd507ecfca6",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "isa",
+        "issn": "2667-3053",
+        "query": "Reddit",
+        "url": "https://api.crossref.org/journals/2667-3053/works?query.bibliographic=Reddit&rows=15&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 0,
+        "total_results": 0,
+        "local_cache": "research/sources/elsevier_fit/works_isa_reddit.json",
+        "bytes": 187,
+        "sha256": "09106de974da9d8943aaf91fd20a6ced65cadfbaa82304d917ec5efc089984ec",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "mlwa",
+        "issn": "2666-8270",
+        "query": "Reddit",
+        "url": "https://api.crossref.org/journals/2666-8270/works?query.bibliographic=Reddit&rows=15&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 0,
+        "total_results": 0,
+        "local_cache": "research/sources/elsevier_fit/works_mlwa_reddit.json",
+        "bytes": 187,
+        "sha256": "09106de974da9d8943aaf91fd20a6ced65cadfbaa82304d917ec5efc089984ec",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "franklin",
+        "issn": "2773-1863",
+        "query": "mental health social media text classification machine learning robustness",
+        "url": "https://api.crossref.org/journals/2773-1863/works?query.bibliographic=mental+health+social+media+text+classification+machine+learning+robustness&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 142,
+        "local_cache": "research/sources/elsevier_fit/works_franklin_0.json",
+        "bytes": 327993,
+        "sha256": "ec03e982a695d0d5a24c52ffd5f30774bbf7e78cf6622fdb4194b469dbbe8a69",
+        "cache_redistributed": false
+      },
+      {
+        "journal": null,
+        "key": "infohealth",
+        "issn": "2949-9534",
+        "query": "mental health social media text classification machine learning robustness",
+        "url": "https://api.crossref.org/journals/2949-9534/works?query.bibliographic=mental+health+social+media+text+classification+machine+learning+robustness&rows=20&filter=from-pub-date%3A2022-01-01%2Cuntil-pub-date%3A2026-10-07",
+        "http_status": 200,
+        "returned": 20,
+        "total_results": 57,
+        "local_cache": "research/sources/elsevier_fit/works_infohealth_0.json",
+        "bytes": 349092,
+        "sha256": "da1a6ed1b73c0fb765200cbcd11982a233567a402f1185886c8fe751835f8998",
+        "cache_redistributed": false
+      }
+    ]
+  },
+  "scimago_profiles": [
+    {
+      "key": "mlwa",
+      "title": "Machine Learning with Applications",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101162637&tip=sid&clean=0",
+      "scope_summary": "Broad ML/NLP applications; scope explicitly requires novelty and practical value.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Artificial Intelligence",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computational Theory and Mathematics",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computer Science Applications",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Information Systems",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_mlwa.html",
+      "bytes": 90704,
+      "sha256": "60c3a6bd298db1f9ca6260c72cb743bb6162287a3a2c0d3b8c9ec359f614f1d4",
+      "cache_redistributed": false
+    },
+    {
+      "key": "nlp",
+      "title": "Natural Language Processing Journal",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101341269&tip=sid&clean=0",
+      "scope_summary": "Trustworthy, interpretable human-language research; replicated scope explicitly invites scientific replication and promotes reproducibility.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Artificial Intelligence",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computer Networks and Communications",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computer Science (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Linguistics and Language",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_nlp.html",
+      "bytes": 84790,
+      "sha256": "05a5111e8e103851c5bdc6630110b7b8795c8de6b10851d99dabe0be6dcff5c6",
+      "cache_redistributed": false
+    },
+    {
+      "key": "chbr",
+      "title": "Computers in Human Behavior Reports",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101078838&tip=sid&clean=0",
+      "scope_summary": "Human-centered computing/behavior, with replication and negative results welcomed; behavioral contribution is weaker here than technical contribution.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Applied Psychology",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Artificial Intelligence",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Cognitive Neuroscience",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computer Science Applications",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Human-Computer Interaction",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Neuroscience (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_chbr.html",
+      "bytes": 92429,
+      "sha256": "ccc3d3b9f652ba71aa29cc9bd0446477cd4d2acc00262e7170cea0ce5f1bb84b",
+      "cache_redistributed": false
+    },
+    {
+      "key": "isa",
+      "title": "Intelligent Systems with Applications",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101051831&tip=sid&clean=0",
+      "scope_summary": "Broad intelligent-system applications with an explicit novelty requirement.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Artificial Intelligence",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computer Science Applications",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computer Science (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Computer Vision and Pattern Recognition",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Signal Processing",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_isa.html",
+      "bytes": 94315,
+      "sha256": "048e1e515d4eacc7a2ea5c959239da3fbf37c488fcdd15588ca2ab03b7d4a3ef",
+      "cache_redistributed": false
+    },
+    {
+      "key": "imu",
+      "title": "Informatics in Medicine Unlocked",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21100780477&tip=sid&clean=0",
+      "scope_summary": "Broad medical and public-health informatics; possible technical fit but no patient/clinical outcome in the current study.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Computer Science Applications",
+          "year": "2025",
+          "quartile": "Q2"
+        },
+        {
+          "category": "Health Informatics",
+          "year": "2025",
+          "quartile": "Q2"
+        },
+        {
+          "category": "Information Systems",
+          "year": "2025",
+          "quartile": "Q2"
+        },
+        {
+          "category": "Software",
+          "year": "2025",
+          "quartile": "Q2"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_imu.html",
+      "bytes": 97325,
+      "sha256": "97af7bed47ed301f73e71c51b83a03a01ee55763a526f245b2b9902dfb0d47e7",
+      "cache_redistributed": false
+    },
+    {
+      "key": "health",
+      "title": "Healthcare Analytics",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101136665&tip=sid&clean=0",
+      "scope_summary": "Healthcare-organization decision-making and problem-solving; no such decision utility evaluated here.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Analytical Chemistry",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Health Informatics",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_health.html",
+      "bytes": 88680,
+      "sha256": "14de4eb368b29d6bb5cef2b696071ee0cbfc31cbb0aa252fc0b70ba14f3dfc38",
+      "cache_redistributed": false
+    },
+    {
+      "key": "decision",
+      "title": "Decision Analytics Journal",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101098756&tip=sid&clean=0",
+      "scope_summary": "Available reproduced scope is very brief; related publications identified, no actual decision problem evaluated here.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Analysis",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Applied Mathematics",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Decision Sciences (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Modeling and Simulation",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_decision.html",
+      "bytes": 87228,
+      "sha256": "57f166fcb91b1cb8fbe488bc678a44b02c5e1f86e227589753c5db1b3927df44",
+      "cache_redistributed": false
+    },
+    {
+      "key": "social",
+      "title": "Social Sciences and Humanities Open",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101142603&tip=sid&clean=0",
+      "scope_summary": "Broad social-science/humanities empirical and methodological work; reproduced scope includes replication and negative findings, emphasizing validity and robustness.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Decision Sciences (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q2"
+        },
+        {
+          "category": "Psychology (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q2"
+        },
+        {
+          "category": "Social Sciences (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_social.html",
+      "bytes": 92462,
+      "sha256": "e45475203544280eeee6b820b0dfd493d6a295bad0cf8be65806a6a75632e9e3",
+      "cache_redistributed": false
+    },
+    {
+      "key": "ibm",
+      "title": "Intelligence-Based Medicine",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101076317&tip=sid&clean=0",
+      "scope_summary": "Clinical translation, care practices and patient benefit; not measured in the present case.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Artificial Intelligence",
+          "year": "2025",
+          "quartile": "Q2"
+        },
+        {
+          "category": "Computer Science Applications",
+          "year": "2025",
+          "quartile": "Q2"
+        },
+        {
+          "category": "Health Informatics",
+          "year": "2025",
+          "quartile": "Q3"
+        },
+        {
+          "category": "Medicine (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q2"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_ibm.html",
+      "bytes": 89741,
+      "sha256": "b25bd90bbe620459df7fb1bef42030c53d62a158323ff795f22f70a386bfe8d0",
+      "cache_redistributed": false
+    },
+    {
+      "key": "heliyon",
+      "title": "Heliyon",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21100411756&tip=sid&clean=0",
+      "scope_summary": "Broad sound-science empirical scope; live institutional indexing eligibility and current publisher requirements unverified.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Multidisciplinary",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_heliyon.html",
+      "bytes": 96848,
+      "sha256": "a75f4a554a343f933d74fc4935b563d01052e743b690f568a1492974628644ec",
+      "cache_redistributed": false
+    },
+    {
+      "key": "array",
+      "title": "Array",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101080486&tip=sid&clean=0",
+      "scope_summary": "Broad computational and interdisciplinary applications; no evidence of an easier editorial threshold for this case.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Computer Science (miscellaneous)",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_array.html",
+      "bytes": 89064,
+      "sha256": "573c21f76fc259a6d265869e2da21f62ae7bce9acfd207c076c9efed31245de0",
+      "cache_redistributed": false
+    },
+    {
+      "key": "franklin",
+      "title": "Franklin Open",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101263036&tip=sid&clean=0",
+      "scope_summary": "Engineering and applied mathematics with Data Science/AI and application-oriented work; disciplinary relevance remains a scope risk.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Electrical and Electronic Engineering",
+          "year": "2025",
+          "quartile": "Q2"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_franklin.html",
+      "bytes": 86601,
+      "sha256": "972ebdff480a8cf0c8ec68dc48548186bc8179b696fa9a75896fb2c56f2586c6",
+      "cache_redistributed": false
+    },
+    {
+      "key": "infohealth",
+      "title": "Informatics and Health",
+      "url": "https://www.scimagojr.com/journalsearch.php?q=21101329156&tip=sid&clean=0",
+      "scope_summary": "Significant, innovative, practice-changing healthcare informatics; practice change not demonstrated.",
+      "scope_source": "Third-party scope reproduction, not a live publisher verification",
+      "sjr_2025_category_quartiles": [
+        {
+          "category": "Health Informatics",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Health Policy",
+          "year": "2025",
+          "quartile": "Q1"
+        },
+        {
+          "category": "Public Health, Environmental and Occupational Health",
+          "year": "2025",
+          "quartile": "Q1"
+        }
+      ],
+      "publisher_scope_live_verified": false,
+      "current_apc_verified": false,
+      "current_jcr_or_official_index_eligibility_verified": false,
+      "local_cache": "research/sources/elsevier_fit/sjr_infohealth.html",
+      "bytes": 83826,
+      "sha256": "4aad5c4931b2497a0be8207b1230624b83df2734efbf29d29169d8d0a9b82e48",
+      "cache_redistributed": false
+    }
+  ],
+  "author_version_search": {
+    "query_count": 7,
+    "sources": [
+      {
+        "key": "aging",
+        "query": "ti:\"linguistic markers\" AND all:\"aging\"",
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22linguistic+markers%22+AND+all%3A%22aging%22&max_results=8",
+        "http_status": 200,
+        "returned": 1,
+        "total": "1",
+        "local_cache": "research/sources/elsevier_fit/arxiv_aging.xml",
+        "bytes": 3138,
+        "sha256": "85398cff88c4ea9e94f5225b90b56b5553c8a9fa44f5210ecbe6bb68e847809c",
+        "cache_redistributed": false
+      },
+      {
+        "key": "temporal",
+        "query": "ti:\"temporal\" AND ti:\"depression\"",
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22temporal%22+AND+ti%3A%22depression%22&max_results=8",
+        "http_status": 200,
+        "returned": 8,
+        "total": "15",
+        "local_cache": "research/sources/elsevier_fit/arxiv_temporal.xml",
+        "bytes": 20432,
+        "sha256": "7076ddccd230386cc75fc34c218ba70d9b3f3ced1cba6575f5af7b717d891372",
+        "cache_redistributed": false
+      },
+      {
+        "key": "taxonomy",
+        "query": "ti:\"mental stress\" AND ti:\"taxonomy\"",
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22mental+stress%22+AND+ti%3A%22taxonomy%22&max_results=8",
+        "http_status": 200,
+        "returned": 0,
+        "total": "0",
+        "local_cache": "research/sources/elsevier_fit/arxiv_taxonomy.xml",
+        "bytes": 751,
+        "sha256": "7090c8a5a691a18e2e2e4acd36cd5a3d6664326c99fa52f353140cca9e0ef224",
+        "cache_redistributed": false
+      },
+      {
+        "key": "encoders",
+        "query": "ti:\"sentence encoders\" AND all:\"vocabulary governance\"",
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22sentence+encoders%22+AND+all%3A%22vocabulary+governance%22&max_results=8",
+        "http_status": 200,
+        "returned": 0,
+        "total": "0",
+        "local_cache": "research/sources/elsevier_fit/arxiv_encoders.xml",
+        "bytes": 787,
+        "sha256": "0fffce72dbb20b380de85f9a9f400d8856a46cc2e758c9f4025159eff61d72d9",
+        "cache_redistributed": false
+      },
+      {
+        "key": "posting",
+        "query": "ti:\"posting\" AND ti:\"Reddit\"",
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22posting%22+AND+ti%3A%22Reddit%22&max_results=8",
+        "http_status": 200,
+        "returned": 8,
+        "total": "26",
+        "local_cache": "research/sources/elsevier_fit/arxiv_posting.xml",
+        "bytes": 16560,
+        "sha256": "1c480c26b1d5070d865f57d71f14b86ec74e3961d1c3f140f08bb83685bf05d2",
+        "cache_redistributed": false
+      },
+      {
+        "key": "mrc",
+        "query": "ti:\"Robustness-Eva-MRC\"",
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Robustness-Eva-MRC%22&max_results=8",
+        "http_status": 200,
+        "returned": 0,
+        "total": "0",
+        "local_cache": "research/sources/elsevier_fit/arxiv_mrc.xml",
+        "bytes": 721,
+        "sha256": "57285d3480eb3d88e197f58dced1b1a3b094b2ceca8640e8825f4a3dfad3576d",
+        "cache_redistributed": false
+      },
+      {
+        "key": "masud",
+        "query": "ti:\"depression\" AND au:\"Masud\"",
+        "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22depression%22+AND+au%3A%22Masud%22&max_results=8",
+        "http_status": 200,
+        "returned": 0,
+        "total": "0",
+        "local_cache": "research/sources/elsevier_fit/arxiv_masud.xml",
+        "bytes": 739,
+        "sha256": "ef3193ffeaf3b2ebfcee1b6ea519c8bb45d4c22e66d801e2dc1c56ac7708120b",
+        "cache_redistributed": false
+      }
+    ],
+    "limitations": "Temporal-title query returns 8 of 15 matches and Reddit-posting query 8 of 26; other query results also have finite caps. No full-text or comprehensive citation-index search."
+  },
+  "read_author_preprint": {
+    "url": "https://arxiv.org/pdf/2211.07717v3",
+    "associated_journal_doi": "10.1016/j.nlp.2023.100052",
+    "association_basis": "Matching title and four-author list; arXiv record has no DOI/journal_ref. The downloaded preprint predates the indexed journal publication.",
+    "reading_scope": "Abstract, dataset construction, linguistic analysis, limitations and conclusion examined; final publisher version not accessible and not claimed byte-identical",
+    "local_cache": "research/sources/elsevier_fit/farruque_temporal_preprint.pdf",
+    "bytes": 648403,
+    "sha256": "99ffa241488031917873e74d0ebe0ce281f0f73eac470416be306dbffe9d21ff",
+    "cache_redistributed": false
+  },
+  "access_limitations": {
+    "blocked_requests": [
+      {
+        "url": "https://journalfinder.elsevier.com/",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/machine-learning-with-applications/about/aims-and-scope",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/decision-analytics-journal/about/aims-and-scope",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/computers-in-human-behavior-reports/about/aims-and-scope",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/natural-language-processing-journal/about/aims-and-scope",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/search?qs=Reddit%20anxiety%20linguistic%20temporal%20classification",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.elsevier.com/journals/machine-learning-with-applications/2666-8270",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://doaj.org/api/search/journals/issn%3A2666-8270",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/natural-language-processing-journal/publish/guide-for-authors",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/social-sciences-and-humanities-open/publish/guide-for-authors",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/informatics-in-medicine-unlocked/publish/guide-for-authors",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/franklin-open/publish/guide-for-authors",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/machine-learning-with-applications/publish/guide-for-authors",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://www.sciencedirect.com/journal/natural-language-processing-journal/publish/guide-for-authors",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      },
+      {
+        "url": "https://journalfinder.elsevier.com/",
+        "http_status": null,
+        "error_type": "ProxyError",
+        "saved": false
+      }
+    ],
+    "live_elsevier_journal_finder_used": false,
+    "direct_sciencedirect_search_used": false,
+    "live_publisher_guides_read": false,
+    "current_prices_waivers_review_times_verified": false,
+    "network_domain_requirements_saved": true,
+    "draft_save_activates_runtime": false,
+    "user_action": "Apply the saved appropriate network settings through environment settings before resuming direct-site checks."
+  },
+  "decision": {
+    "ranked_shortlist": [
+      "Natural Language Processing Journal",
+      "Social Sciences & Humanities Open",
+      "Informatics in Medicine Unlocked",
+      "Franklin Open",
+      "Machine Learning with Applications"
+    ],
+    "strongest_thematic_fit": "Natural Language Processing Journal",
+    "no_convincing_q3_q4_elsevier_fallback_in_examined_set": true,
+    "additional_experiment_identified_as_necessary_for_current_claims": false,
+    "main_scientific_risk": "Incremental contribution from one source",
+    "remaining_operational_checks": [
+      "Live publisher scope/guide",
+      "Actual APC, tax and waiver/institutional agreement",
+      "Required index/category/year eligibility"
+    ],
+    "numerical_acceptance_odds_provided": false
+  }
+}
